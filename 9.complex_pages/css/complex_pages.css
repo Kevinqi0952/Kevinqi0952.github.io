@@ -1,0 +1,899 @@
+.main{
+    width: 100%;
+    min-width: 1280px;
+}
+/*header start*/
+.header{
+    width: 100%;
+    height: 56px;
+    background-color: #2189bf;
+    position: relative;
+}
+#topIcon{
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    margin-left: 40px;
+    float: left;
+}
+#topIcon img{
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+.header .topSearch{
+    width: 21%;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    position: absolute;
+    top: 14px;
+    left: 64.35%;
+    overflow: hidden;
+}
+.header .topSearch .topSearchIcon{
+    width: 17px;
+    height: 17px;
+    margin-left: 18px;
+    transform:translateY(5.5px);
+    -ms-transform:translateY(5.5px); 	/* IE 9 */
+    -moz-transform:translateY(5.5px);	/* Firefox */
+    -webkit-transform:translateY(5.5px); /* Safari 和 Chrome */
+    -o-transform:translateY(5.5px);
+}
+.header .topSearch input{
+    font-size: 12px;
+    width: 80%;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding: 4px;
+    border: none;
+}
+#topSignIn{
+    position: absolute;
+    top: 35%;
+    right: 11%;
+}
+#topSignIn span{
+    margin-right: 3px;
+}
+#topSignIn a{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+#topSignIn a:hover{
+    color: #e0e1e1;
+}
+/*header end*/
+/*content start*/
+.sidebar{
+    width: 20%;
+    height: 1208px;
+    background-color: #2a2e3d;
+    float: left;
+}
+ /*头像*/
+.sidebarHeader{
+    width: 100%;
+}
+.portrait{
+    padding: 18px 18px 23px 45px;
+    overflow: hidden;
+}
+.portrait .portraitImgBox{
+    width: 58px;
+    height: 58px;
+    background-color: #b2aaad;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    z-index: 100;
+    cursor:pointer;
+    float: left;
+}
+.portrait .portraitImgBox .circle1{
+    width: 54px;
+    height: 54px;
+    background-color: #2a2e3d;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 200;
+}
+.portrait .portraitImgBox .circle1 img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 200;
+    overflow: hidden;
+}
+.portrait p {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: #d7d3d4;
+    line-height: 58px;
+}
+  /*收藏粉丝*/
+.portraitContent{
+    padding-left: 22px;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+.portraitContent a:hover p,
+.portraitContent a:hover h5
+{
+    color: #fff;
+}
+.portraitContent p{
+    color: #647388;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+.portraitContent h5{
+    color: #647388;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    text-align: center;
+}
+#collection{
+    width: 40%;
+    border-right: 2px solid #313645;
+    float: left;
+}
+#fans{
+    width: 40%;
+    float: left;
+}
+
+/*侧边导航栏*/
+    /*一级导航栏*/
+.navClassA li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 17.3%;
+    cursor:pointer;
+}
+.navClassA span{
+    margin-right: 4px;
+}
+.navClassA span>img{
+    margin-top: 2px;
+}
+.navClassA li a{
+    color: #5b6779;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+}
+    /*点击and鼠标事件*/
+.navClassAclick,
+.navClassA > li:hover{
+    background-color: #383d4e;
+}
+.navClassA .navClassAclick a,
+.navClassA > li:hover a{
+    color: #fff;
+}
+    /*二级导航栏*/
+.navClassB{
+    background-color: #383d4e;
+    margin-top: -15px;
+}
+.navClassB li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 23%;
+}
+.navClassB li a{
+    color: #5b6779;
+}
+.navClassB .navClassBup{
+    width: 13px;
+    height: 13px;
+    background: url("../images/pic_navClassBupIcon1.png") no-repeat;
+    background-size: 73% 95%;
+    margin-top: 3px;
+    margin-right: 5px;
+    float: left;
+}
+.navClassB .navClassBicon{
+    width: 12px;
+    height: 12px;
+    background: url("../images/pic_navClassBiconIcon1.png") no-repeat;
+    float: left;
+    margin-top: 3px;
+    background-size: 100% 100%;
+}
+    /*鼠标and点击事件*/
+.navClassBclick .navClassBup,
+.navClassB li:hover .navClassBup{
+    width: 13px;
+    height: 13px;
+    background: url("../images/pic_navClassBupIcon2.png") no-repeat;
+    background-size: 84.6% 81.5%;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.navClassBclick .navClassBicon,
+.navClassB li:hover .navClassBicon{
+    background: url("../images/pic_navClassBiconIcon2.png") no-repeat;
+}
+.navClassB li:hover a{
+    color: #fff;
+}
+.navClassB .navClassBclick a{
+    color: #fff;
+}
+ /*第三极菜单*/
+.navClassC{
+    background-color: #383d4e;
+}
+.navClassC li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 32.5%;;
+}
+.navClassC span{
+    width: 10px;
+    height: 11px;
+    background: url("../images/pic_navClassCspan1.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 3px;
+}
+    /*鼠标and点击事件*/
+.navClassC .navClassCclick a,
+.navClassC li:hover a{
+    color: #fff;
+}
+.navClassC .navClassCclick span ,
+.navClassC li:hover span{
+    background: url("../images/pic_navClassCspan2.png") no-repeat;
+}
+ /*主要内容*/
+.centerContent{
+    width: 80%;
+    height: 1208px;
+    background-color: #eeeeed;
+    float: left;
+}
+/*center header*/
+.centerContent .centerHeader{
+    width: 100%;
+    height: 30px;
+    background: #fff;
+}
+.centerContent .centerHeader{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding-left: 18px;
+}
+.centerContent .centerHeader li a,
+.centerContent .centerHeader p{
+    font-size: 13px;
+    font-family: "Microsoft YaHei";
+    color: #abaaaa;
+    margin-left: 10px;
+    line-height: 30px;
+    float: left;
+}
+.centerContent .centerHeader .centerHeaderClick a,
+.centerContent .centerHeader li:hover a{
+    color: #2189bf;
+}
+/*centerModule*/
+.centerModule{
+    width: 890px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerModule .queryModule{
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    border: 1px solid #c8c6ca;
+    overflow: hidden;
+}
+.centerModule .queryModule p{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color:#b1b0b0;
+    line-height: 24px;
+    margin-right: 14px;
+    float: left;
+}
+.centerModule .queryModule select,
+.centerModule .queryModule input{
+    height: 24px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #000;
+    border: 1px solid #cfcfd0;
+}
+.centerModule .query,
+.centerModule .queryTrading,
+.centerModule .queryInfo,
+.centerModule .queryBtn{
+    margin-top: 17px;
+    margin-left: 30px;
+    float: left;
+}
+.centerModule .query select{
+    width: 72px;
+}
+/*.centerModule .queryTrading*/
+.centerModule .queryTrading{
+    margin-left: 38px;
+}
+.centerModule .queryTrading select{
+    width: 120px;
+}
+.centerModule .queryTrading .trading{
+    float: left;
+}
+.centerModule .queryTrading .queryBuyer{
+    margin-bottom: 5px;
+}
+.centerModule .queryTrading .queryModuleIcon{
+    margin-top: 9px;
+    float: left;
+}
+/*.centerModule .queryInfo*/
+.centerModule .queryInfo{
+    width: 300px;
+    overflow: hidden;
+}
+.centerModule .queryInfo div{
+    margin-bottom: 5px;
+    float: left;
+}
+.centerModule .queryInfo .queryDate input,
+.centerModule .queryInfo .querySuccess select{
+    width: 120px;
+}
+.centerModule .queryInfo .timeConsuming select,
+.centerModule .queryInfo .queryPeople select{
+    width: 70px;
+}
+.centerModule .queryInfo .timeConsuming p,
+.centerModule .queryInfo .querySuccess p{
+    margin-left: 10px;
+}
+.centerModule .queryBtn button{
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    background-color: #388ac1;
+    border-radius: 3px;
+    margin-top: 14px;
+}
+/*priceModule*/
+.centerModule .priceModule{
+    width: 100%;
+    height: 66px;
+    margin-top:10px;
+    overflow: hidden;
+}
+.centerModule .priceModule div{
+    height: 64px;
+    background-color: #fff;
+    border-top: 1px solid #c8c6ca ;
+    border-left: 1px solid #c8c6ca;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.centerModule .priceModule .priceTurnLeft,
+.centerModule .priceModule .priceTurnRight{
+    width: 30px;
+}
+.centerModule .priceModule .priceTurnLeft img,
+.centerModule .priceModule .priceTurnRight img{
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.centerModule .priceModule .priceTurnLeft:hover,
+.centerModule .priceModule .priceTurnRight:hover{
+    background-color: #eeeeed;
+}
+.centerModule .priceModule .price{
+    width: 110px;
+    overflow: hidden;
+}
+.centerModule .priceModule .price p{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: inherit;
+    color: #3e3c3b;
+    line-height: 32px;
+    text-align: center;
+}
+.centerModule .priceModule .price h1{
+    font-size: 21px;
+    font-family: "Microsoft YaHei";
+    font-weight: inherit;
+    color: #ec6600;
+    position: relative;
+    left: 35px;
+}
+.centerModule .priceModule .price span{
+    position: absolute;
+    top: 12px;
+    left: -11px;
+}
+.centerModule .priceModule .priceClick,
+.centerModule .priceModule .price:hover
+{
+    border-top: 3px solid #4388c9;
+}
+.centerModule .priceModule .priceHistory{
+    width: 121px;
+    margin-right: 0;
+    overflow: hidden;
+}
+.centerModule .priceModule .priceHistory p{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: #3e3c3b;
+    position: relative;
+    top: 26px;
+    left: 58px;
+}
+.centerModule .priceModule .priceHistory span{
+    position: absolute;
+    top: -9px;
+    left: -42px;
+}
+/*statisticsModule*/
+.statisticsModule{
+    width: 100%;
+    margin-top:20px;
+    overflow: hidden;
+}
+.statisticsModule p{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: #323333;
+    line-height: 30px;
+}
+.statisticsModule .statistics{
+    width: 196.5px;
+    height: 70px;
+    background-color: #fff;
+    border-top: 1px solid #d7d5d6;
+    border-right: 1px solid #d7d5d6;
+    border-bottom: 1px solid #d7d5d6;
+    border-radius: 3px;
+    margin-right: 29px;
+    overflow: hidden;
+    float: left;
+}
+.statisticsText{
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 70px;
+    float: left;
+}
+.statisticsText h1{
+    font-size: 12px;
+    color: #494543;
+    line-height: 26px;
+}
+.statisticsText p{
+    font-size: 10px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: #b1b0b0;
+}
+.statisticsColorBox{
+    width: 60px;
+    height: 46px;
+    margin-top: 12px;
+    float: left;
+}
+.statisticsModule .statisticsGreen{
+    border-left: 3px solid #43b29e;
+}
+.statisticsGreen .statisticsColorBox{
+    background-color: #43b29e;
+}
+.statisticsModule .statisticsBlue{
+    border-left: 3px solid #388ac1;
+}
+.statisticsBlue .statisticsColorBox{
+    background-color: #388ac1;
+}
+.statisticsModule .statisticsRed{
+    border-left: 3px solid #d04a36;
+}
+.statisticsRed .statisticsColorBox{
+    background-color: #d04a36;
+}
+.statisticsModule .statisticsYellow{
+    border-left: 3px solid #e2cd46;
+    margin-left: 1px;
+    margin-right: 0;
+}
+.statisticsYellow .statisticsColorBox{
+    background-color: #e2cd46;
+}
+/*firstGroupModule*/
+.firstGroupModule{
+    width: 100%;
+    height: 358px;
+    margin-top:12px;
+    overflow: hidden;
+}
+.firstGroupModule .firstGroupProject,
+.functionModule .functionRanking{
+    width: 530px;
+    height: 356px;
+    background-color: #fff;
+    border: 1px solid #c8c6ca;
+    border-radius: 6px;
+    overflow: hidden;
+    float: left;
+}
+.firstGroupModule .firstGroupContent h3,
+.firstGroupModule .firstGroupProject h3,
+.functionModule .functionDate h3,
+.functionModule .functionRanking h3{
+    font-size: 10px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #bebdbe;
+    line-height: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e6e6e8;
+    background-color: #f4f5f6;
+}
+.firstGroupModule .firstGroupContent{
+    width: 350px;
+    height: 356px;
+    background-color: #fff;
+    border: 1px solid #c8c6ca;
+    border-radius: 6px;
+    margin-left: 6px;
+    overflow: hidden;
+    float: left;
+}
+/*.firstGroupProject*/
+.firstGroupModule .firstGroupProject .firstGroupTab{
+    width: 490px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.firstGroupProject .firstGroupTab .tabMenu{
+    position: absolute;
+    overflow: hidden;
+    z-index: 900;
+}
+.firstGroupProject .firstGroupTab .tabMenu li{
+    width: 85px;
+    height: 28px;
+    background-color: #ededf0;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    line-height: 28px;
+    float: left;
+    cursor:pointer;
+}
+.firstGroupProject .firstGroupTab .tabMenu li > a{
+    display: block;
+}
+.firstGroupProject .firstGroupTab .tabContent{
+    width: 490px;
+    height: 250px;
+    border: 1px solid #cbcccc;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 28px;
+    z-index: 800;
+}
+
+.firstGroupProject .firstGroupTab .tabMenu .tabMenuClick{
+    border-top:1px solid #cbcccc;
+    border-left:1px solid #cbcccc;
+    border-right:1px solid #cbcccc;
+    background-color: #fff;
+}
+
+.firstGroupTab .tabContent .tabContentTable{
+    width: 405px;
+    margin-top: 28px;
+    margin-left: 36px;
+    display: none;
+}
+.firstGroupTab .tabContent .tabContentTableClick{
+    display: block;
+}
+.firstGroupTab .tabContent .tabContentTable td{
+    width: 100px;
+    height: 28px;
+    border: 1px solid #e1e1e2;
+    text-align: center;
+    line-height: 28px;
+    cursor:pointer;
+}
+.firstGroupTab .tabContent .tabContentTable td:hover{
+    background-color: #f4f5f6;
+}
+/*.firstGroupContentText*/
+.firstGroupContentText{
+    width: 288px;
+    height: 280px;
+    margin: 16px auto auto auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.firstGroupContentText h5{
+    font-size: 12px;
+    color: #c3c2c2;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 23px;
+}
+.firstGroupContentText p{
+    font-size: 12px;
+    color: #000;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    line-height: 23px;
+}
+.firstGroupContentText .ContentTextTitle{
+    border-bottom: 1px solid #e9e8e8;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.firstGroupContentText .ContentTextInfo{
+    overflow: hidden;
+}
+.firstGroupContentText .ContentTextInfo div{
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+}
+.firstGroupContentText .ContentTextInfo .ContentTextInfoPrice{
+    width: 96px;
+    border-right: 1px solid #e9e8e8;
+}
+.firstGroupContentText .ContentTextDescribe{
+    height: 146px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #e9e8e8;
+    border-bottom: 1px solid #e9e8e8;
+}
+.firstGroupContentText > input{
+    margin-top: 10px;
+    float: left;
+}
+.firstGroupContentText > h5{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+.firstGroupContentText .queryBtn{
+    margin: -10px auto auto 141px;
+}
+/*functionModule*/
+.functionModule{
+    width: 100%;
+    height: 358px;
+    margin-top:12px;
+    /*background-color: #fff;*/
+    /*border: 1px solid #c8c6ca;*/
+}
+/*.functionModule .functionDate*/
+.functionModule .functionDate{
+    width: 350px;
+    height: 356px;
+    background-color: #fff;
+    border: 1px solid #c8c6ca;
+    border-radius: 6px;
+    margin-right: 6px;
+    overflow: hidden;
+    float: left;
+}
+.functionModule .functionDate .dateContent{
+    width: 310px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.functionModule .functionDate .dateInfo select{
+    margin-right: 10px;
+    height: 22px;
+    border: 1px solid #cbcccc;
+    float: left;
+}
+.functionModule .functionDate .dateInfo .choseMonth{
+    width: 78px;
+    height: 22px;
+    border: 1px solid #cbcccc;
+    margin-right: 10px;
+    float: left;
+}
+.functionModule .functionDate .dateInfo .choseMonth select{
+    border: none;
+    width: 63px;
+    margin-right: 0;
+    border-right:1px solid #e9e8e8;
+    float: left;
+}
+.functionModule .functionDate .dateInfo .choseMonth span{
+    width: 14px;
+    height: 22px;
+    padding-top: 6px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    cursor:pointer;
+    float: left;
+}
+.functionModule .functionDate .dateInfo .choseMonth span:hover,
+.functionModule .functionDate .dateInfo button:hover{
+    background-color: #cbcccc;
+}
+.functionModule .functionDate .dateInfo button{
+    width: 56px;
+    height: 22px;
+    background: #fff;
+    border: 1px solid #cbcccc;
+}
+.functionDate .dateContent .dateNumber{
+    width: 100%;
+    height: 34px;
+    border-top: 1px solid #b2cfed;
+    border-bottom: 1px solid #e9e8e8;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.functionDate .dateContent .dateNumber li{
+    width: 43.75px;
+    line-height: 34px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.functionDate .dateContent .dateDay{
+    margin-top: 10px;
+}
+.functionDate .dateContent .dateDay li{
+    width: 43.75px;
+    height: 43.75px;
+    border: 1px solid #fff;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    cursor:pointer;
+}
+.functionDate .dateContent .dateDay li > h5,
+.functionDate .dateContent .dateNumber{
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+}
+.functionDate .dateContent .dateDay .choseDay,
+.functionDate .dateContent .dateDay li:hover{
+    border: 1px solid #f5c534;
+}
+
+.functionDate .dateContent .dateDay .noDay:hover{
+    border: 1px solid #fff;
+    cursor:default;
+}
+.functionDate .dateContent .dateDay .holidayDay{
+    color: #cf432c;
+}
+.functionDate .dateContent .dateDay .weekendDay{
+    color: #cf432c;
+}
+/*.functionModule .functionRanking*/
+.functionModule .functionRanking .RankingInfo{
+    margin: 10px auto auto auto;
+    border: 1px solid #cbcccc;
+}
+.functionModule .functionRanking .RankingInfo td{
+    padding: 4px 32px 4px 32px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+}
+.functionModule .functionRanking .RankingInfo tr:hover{
+    background-color: #f4f5f6;
+    cursor:pointer;
+}
+.functionModule .functionRanking .RankingInfo tr:first-child:hover{
+    background-color: #fff;
+    cursor:default;
+}
+.functionModule .functionRanking .RankingInfo td:first-child{
+    text-align: center;
+}
+.functionModule .functionRanking .RankingInfo td > p{
+    float: left;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg{
+    width: 168px;
+    height: 4px;
+    background-color: #dcdcdc;
+    margin-top: 6px;
+    margin-left: 10px;
+    float: left;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoDz{
+    width: 150px;
+    height: 4px;
+    background-color: #ed6e52;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoFt{
+    width: 130px;
+    height: 4px;
+    background-color: #ef8150;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoAd{
+    width: 115px;
+    height: 4px;
+    background-color: #f19f4f;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoBt{
+    width: 105px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoFtian{
+    width: 95px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoBmw{
+    width: 90px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoXd{
+    width: 85px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoQy{
+    width: 78px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoBc{
+    width: 72px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+.functionModule .functionRanking .RankingInfo .RankingInfoBg .RankingInfoBk{
+    width: 68px;
+    height: 4px;
+    background-color:#7fcbf0;
+}
+/*content end*/
