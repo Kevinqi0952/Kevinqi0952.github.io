@@ -134,7 +134,7 @@ html{
     color: #999999;
     position: absolute;
     left: 2.125rem;
-    bottom: 0;
+    bottom: 0.05rem;
 }
 .seckill-content .seckill-list .details-price button{
     width: 3.5rem;
@@ -172,14 +172,14 @@ html{
     font-weight: normal;
     color: #a9a9a9;
     position: absolute;
-    bottom: 0;
+    bottom: 0.05rem;
     right: 3.6rem;
 }
 .details-sales .details-sales-volume{
     width: 3.4rem;
     height: 0.5rem;
     border: 1px solid #ffdeee;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     position: absolute;
     bottom: 0;
