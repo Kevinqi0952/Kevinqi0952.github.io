@@ -140,14 +140,17 @@ html{
     width: 3.5rem;
     height: 1.25rem;
     background-color: #ff007d;
-    font-size: 0.65rem;
-    font-family: "Microsoft YaHei";
-    font-weight: normal;
-    color: #fff;
     border-radius: 0.3rem;
     position: absolute;
     bottom: 0.2rem;
     right: 0;
+}
+.seckill-content .seckill-list .details-price button > a{
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #fff;
+    display: block;
 }
 .seckill-content .seckill-list .details-price h1 > span{
     font-size: 0.6rem;
@@ -192,6 +195,8 @@ html{
 }
 .seckill-content .seckill-notdetails .details-price button{
     background-color: #d6d6d6;
+}
+.seckill-content .seckill-notdetails .details-price button > a{
     color: #787878;
 }
 .seckill-content .seckill-notstart .details-price button{
