@@ -134,7 +134,7 @@ html{
     color: #fff;
     border-radius: 0.3rem;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
 }
 .seckill-content .seckill-list .details-price h1 > span{
