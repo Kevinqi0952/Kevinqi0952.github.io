@@ -114,7 +114,7 @@ html{
     word-break: break-all;
 }
 .seckill-content .seckill-list .details-price{
-    height: 1.25rem;
+    height: 1.5rem;
     margin-top: 0.25rem;
     overflow: hidden;
     position: relative;
@@ -134,7 +134,7 @@ html{
     color: #999999;
     position: absolute;
     left: 2.125rem;
-    bottom: 0.05rem;
+    bottom: 0.1rem;
 }
 .seckill-content .seckill-list .details-price button{
     width: 3.5rem;
@@ -146,7 +146,7 @@ html{
     color: #fff;
     border-radius: 0.3rem;
     position: absolute;
-    bottom: 0;
+    bottom: 0.2rem;
     right: 0;
 }
 .seckill-content .seckill-list .details-price h1 > span{
@@ -182,7 +182,7 @@ html{
     border-radius: 0.5rem;
     overflow: hidden;
     position: absolute;
-    bottom: 0;
+    bottom: 0.1rem;
     right: 0;
 }
 .details-sales .details-sales-volume .details-sales-data{
