@@ -92,7 +92,7 @@ html{
     height: 100%;
 }
 .seckill-content .seckill-list .details-name{
-    height: 2.6rem;
+    height: 2.2rem;
     overflow: hidden;
 }
 .seckill-content .seckill-list .details-name h3{
@@ -100,12 +100,12 @@ html{
     font-family: "Microsoft YaHei";
     font-weight: lighter;
     color: #414141;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
     word-break: break-all;
 }
 .seckill-content .seckill-list .details-price{
     height: 1.25rem;
-    margin-top: 0.25rem;
+    margin-top: 0.4rem;
     overflow: hidden;
     position: relative;
 }
@@ -115,6 +115,8 @@ html{
     font-weight: lighter;
     color: #ff4292;
     margin-right: 0.1rem;
+    position: absolute;
+    bottom: 0;
 }
 .seckill-content .seckill-list .details-price s{
     font-size: 0.6rem;
@@ -142,6 +144,7 @@ html{
     font-size: 0.6rem;
 }
 .seckill-content .seckill-list .details-sales{
+    height: 1rem;
     margin-top: 0.25rem;
     overflow: hidden;
     position: relative;
@@ -151,6 +154,8 @@ html{
     font-family: "Microsoft YaHei";
     font-weight: normal;
     color: #a9a9a9;
+    position: absolute;
+    bottom: 0;
 }
 .seckill-content .seckill-list .details-sales p{
     font-size: 0.35rem;
