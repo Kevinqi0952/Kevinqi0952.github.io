@@ -105,7 +105,6 @@ html{
 }
 .seckill-content .seckill-list .details-price{
     margin-top: 0.25rem;
-    overflow: hidden;
     position: relative;
 }
 .seckill-content .seckill-list .details-price h1{
@@ -142,7 +141,6 @@ html{
 }
 .seckill-content .seckill-list .details-sales{
     margin-top: 0.25rem;
-    overflow: hidden;
     position: relative;
 }
 .seckill-content .seckill-list .details-sales h3{
