@@ -1,0 +1,179 @@
+html{
+    font-size: 125%;
+}
+
+.seckill-main{
+    width: 100%;
+}
+.seckill-header{
+    width: 100%;
+    overflow: hidden;
+}
+/*top-fixed start*/
+.top-fixed{
+    width: 100%;
+    height: 2.125rem;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+}
+.top-fixed .top-back-btn{
+    width: 2.125rem;
+    height: 2.125rem;
+    padding: 0.65rem 0.75rem 0.65rem 0.75rem;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    position: absolute;
+}
+.top-fixed .top-back-btn img{
+    width: 0.425rem;
+    height: 0.825rem;
+}
+.top-fixed .top-fixed-title{
+    /*width: 100%;*/
+    height: 2.125rem;
+    text-align: center;
+}
+.top-fixed .top-fixed-title h1{
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #3d3d3d;
+    line-height: 2.125rem;
+}
+.top-fixed .top-share-btn{
+    width: 2.125rem;
+    height: 2.125rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*top-fixed end*/
+
+/*top-banner start*/
+.top-banner{
+    margin-top: 2.125rem;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+.top-banner img{
+    width: 100%;
+    height: 100%;
+}
+/*top-banner end*/
+
+/*seckill-content start*/
+.seckill-content{
+    background-color: #f6f6f6;
+    padding-top: 0.25rem;
+}
+.seckill-content .seckill-list .seckill-details{
+    background-color: #fff;
+    margin-top: 0.25rem;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+}
+.seckill-content .seckill-list .details-imgbox{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    margin-right: 0.5rem;
+    float: left;
+}
+.seckill-content .seckill-list .details-imgbox img{
+    width: 100%;
+    height: 100%;
+}
+.seckill-content .seckill-list .details-name{
+    height: 2.6rem;
+    overflow: hidden;
+}
+.seckill-content .seckill-list .details-name h3{
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #414141;
+    line-height: 1.3rem;
+    word-break: break-all;
+}
+.seckill-content .seckill-list .details-price{
+    margin-top: 0.25rem;
+    overflow: hidden;
+    position: relative;
+}
+.seckill-content .seckill-list .details-price h1{
+    font-size: 0.9rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #ff4292;
+    margin-right: 0.1rem;
+}
+.seckill-content .seckill-list .details-price s{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #999999;
+    position: absolute;
+    left: 2.125rem;
+    bottom: 0;
+}
+.seckill-content .seckill-list .details-price button{
+    width: 3.5rem;
+    height: 1.25rem;
+    background-color: #ff007d;
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #fff;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.seckill-content .seckill-list .details-price h1 > span{
+    font-size: 0.6rem;
+}
+.seckill-content .seckill-list .details-sales{
+    margin-top: 0.25rem;
+    overflow: hidden;
+    position: relative;
+}
+.seckill-content .seckill-list .details-sales h3{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #a9a9a9;
+}
+.seckill-content .seckill-list .details-sales p{
+    font-size: 0.35rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #a9a9a9;
+    position: absolute;
+    bottom: 0;
+    right: 3.6rem;
+}
+
+.details-sales .details-sales-volume{
+    width: 3.4rem;
+    height: 0.5rem;
+    border: 1px solid #ffdeee;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.details-sales .details-sales-volume .details-sales-data{
+    width: 75%;
+    height: 0.5rem;
+    background-color: #ffdeee;
+}
+/*seckill-content end*/
