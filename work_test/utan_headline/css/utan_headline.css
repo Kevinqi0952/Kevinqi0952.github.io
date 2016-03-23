@@ -1,0 +1,206 @@
+html{
+    font-size: 125%;
+}
+.utan-main{
+    width: 100%;
+    overflow: hidden;
+}
+/*utan-content start*/
+.utan-content{
+    padding: 0.5rem;
+}
+.utan-content .content-title{
+    font-size: 0.9rem;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: #050505;
+    /*text-align: center;*/
+    word-break: break-all;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+.utan-content .content-date{
+    overflow: hidden;
+}
+.utan-content .content-date h3 {
+    font-size: 0.55rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #8b7e84;
+    margin-right: 0.25rem;
+    float: left;
+}
+.utan-content .content-date a{
+    font-size: 0.55rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #f15f9d;
+    margin-right: 0.25rem;
+    float: left;
+}
+.utan-content .content-date span{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: url("../images/pic_headlines1.png") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+.utan-content .content-date .span-click{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: url("../images/pic_headlines2.png") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+.utan-content .content-text{
+    margin-top: 0.5rem;
+}
+.utan-content .content-text .content-imgbox{
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+.utan-content .content-text .content-imgbox h5{
+    text-align: center;
+    font-size: 0.4rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #8b7e84;
+}
+.utan-content .content-text .content-imgbox img{
+    width: 100%;
+    display: block;
+}
+.utan-content .content-text p{
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #040404;
+    text-indent: 2em;
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+}
+/*utan-content end*/
+
+/*utan-comment start*/
+.utan-comment{
+    border-top: 0.8rem solid #ededed;
+    padding: 0.5rem 0.5rem 3rem 0.5rem;
+}
+.utan-comment li{
+    overflow: hidden;
+}
+.utan-comment > h2{
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #8b7e84;
+    text-align: center;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #dddddd;
+}
+.utan-comment .comment-portrait{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.utan-comment .comment-portrait img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.utan-comment .comment-info{
+    width: 13rem;
+    margin-left: 0.5rem;
+    float: left;
+}
+.utan-comment .comment-info .comment-name{
+    overflow: hidden;
+}
+.utan-comment .comment-info .comment-name h1{
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #f15f9d;
+    float: left;
+}
+.utan-comment .comment-info .comment-name .comment-nameicon{
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url("../images/pic_commentname.png") no-repeat;
+    background-size: 100%;
+    margin-top: 0.25rem;
+    margin-left: 0.1rem;
+    float: left;
+}
+.utan-comment .comment-info .comment-name .comment-sex{
+    width: 0.3rem;
+    height: 0.45rem;
+    background: url("../images/pic_commentsex.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.3rem;
+    margin-left: 0.1rem;
+    float: left;
+}
+.utan-comment .comment-info .comment-name h2{
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #b0b0b0;
+    float: right;
+}
+.utan-comment .comment-text{
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dddddd;
+}
+.utan-comment .comment-text p{
+    font-size: 0.7rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #85777d;
+    word-break: break-all;
+}
+.utan-comment .comment-text p > span{
+    color: #f15f9d;
+}
+/*utan-comment end*/
+
+/*.bottom-fixed start*/
+.bottom-fixed{
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 0;
+}
+.bottom-fixed img{
+    width: 100%;
+    height: 100%;
+}
+.bottom-fixed h1{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    left: 3rem;
+    bottom: 0.7rem;
+}
+.bottom-fixed button{
+    width: 30%;
+    height: 69%;
+    background-color: #f95897;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.bottom-fixed button > a{
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #fff;
+    display: block;
+}
