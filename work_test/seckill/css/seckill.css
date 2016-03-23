@@ -16,7 +16,7 @@ html{
     border: 1px solid #d6d6d6;
     background-color: #fff;
     text-align: center;
-    z-index: 999;
+    z-index: 9999;
     position: fixed;
 }
 .top-fixed .top-back-btn{
@@ -203,3 +203,17 @@ html{
     background-color: #49c852;
 }
 /*seckill-content end*/
+
+/*seckill-right-fixed*/
+.seckill-right-fixed{
+    width: 2.2rem;
+    height: 2.2rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 0;
+    z-index: 9999;
+}
+.seckill-right-fixed img{
+    width: 100%;
+    height: 100%;
+}
