@@ -1,0 +1,72 @@
+/*commodityList*/
+.commodityList{
+    width: 7.65rem;
+    height: 11.5rem;
+    margin-top: .225rem;
+    margin-left: .225rem;
+    float: left;
+}
+.commodityList .imgBox{
+    width: 7.65rem;
+    height: 7.65rem;
+    border: 1px solid #d9d7e0;
+    overflow: hidden;
+    display: block;
+}
+.commodityList .imgBox img{
+    width: 100%;
+    display: block;
+}
+.commodityList .commodityName{
+    width: 6.7rem;
+    height: 1.52rem;
+    overflow: hidden;
+    margin-top: .2rem;
+    margin-left: .2rem;
+}
+.commodityList .commodityName p{
+    line-height: .76rem;
+    font-size: .58rem;
+    font-family: "Microsoft YaHei";
+    color: #d9d7e0;
+}
+.commodityList .commodityPrice{
+    width: 6.7rem;
+    height: 1.375rem;
+    margin-top: .4rem;
+    margin-left: .2rem;
+}
+.commodityList .commodityPrice .currentPrice{
+    font-size: .6rem;
+    font-family: "Microsoft YaHei";
+    color: #ae8bff;
+    font-weight: bold;
+    display: block;
+}
+.commodityList .commodityPrice .originalCost{
+    font-size: .45rem;
+    font-family: "Microsoft YaHei";
+    color: #d9d7e0;
+    display: block;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 4.475rem;
+    display: block;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+/*bottom banner*/
+.bottomBanner{
+    width: 100%;
+    height: 5rem;
+    margin-top: .25rem;
+    overflow: hidden;
+}
+.bottomBanner img{
+    width: 100%;
+    display: block;
+}

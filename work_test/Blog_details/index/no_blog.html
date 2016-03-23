@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=Content-Type content=“text/html;charset=utf-8″>
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="../css/reset_mobile.css"/>
+    <link rel="stylesheet" href="../css/blog_details.css"/>
+    <link rel="stylesheet" href="../css/no_blog.css"/>
+    <title></title>
+</head>
+<body>
+<div class="main">
+    <div class="topFixed">
+        <div class="guimiIcon">
+            <img src="../images/guimiIcon.png"/>
+        </div>
+        <div class="guimiText">
+            <h1>闺蜜联盟-就要全世界！</h1>
+            <p>潮流海淘女性时尚购物</p>
+        </div>
+        <div class="downloadBtn">
+            <a href="#"><p>立即下载</p></a>
+        </div>
+    </div>
+    <div class="noBlogContent">
+        <img src="../images/noblogImg.png"/>
+        <p>该文章不存在或已删除</p>
+    </div>
+</div>
+<script src="../js/jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript">
+    //    自适应start
+    function screenSizeSetting()
+    {
+        $('html').css("font-size",$(window).width()*125/320+"%");
+    }
+    $(function()
+    {
+        screenSizeSetting();
+        $(window).resize(screenSizeSetting);
+    });
+    //    自适应end
+</script>
+</body>
+</html>
