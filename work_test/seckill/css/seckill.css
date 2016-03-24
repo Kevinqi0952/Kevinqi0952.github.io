@@ -125,33 +125,36 @@ html{
     height: 1.5rem;
     margin-top: 0.25rem;
     overflow: hidden;
-    position: relative;
 }
-.seckill-content .seckill-list .details-price h1{
+.seckill-content .seckill-list .details-price-num{
+    float: left;
+    height: 1.5rem;
+    width: 5.75rem;
+    overflow: hidden;
+}
+.seckill-content .seckill-list .details-price .details-price-num h1{
     font-size: 0.9rem;
     font-family: "Microsoft YaHei";
     font-weight: lighter;
     color: #ff4292;
-    position: absolute;
-    bottom: 0;
+    margin-top: 0.1rem;
+    float: left;
 }
-.seckill-content .seckill-list .details-price s{
+.seckill-content .seckill-list .details-price .details-price-num s{
     font-size: 0.6rem;
     font-family: "Microsoft YaHei";
     font-weight: lighter;
     color: #999999;
-    position: absolute;
-    left: 2.125rem;
-    bottom: 0.1rem;
+    margin-left: 0.25rem;
+    margin-top: 0.4rem;
+    float: left;
 }
 .seckill-content .seckill-list .details-price button{
     width: 3.5rem;
     height: 1.25rem;
     background-color: #ff007d;
     border-radius: 0.3rem;
-    position: absolute;
-    bottom: 0.2rem;
-    right: 0;
+    float: right;
 }
 .seckill-content .seckill-list .details-price button > a{
     font-size: 0.65rem;
