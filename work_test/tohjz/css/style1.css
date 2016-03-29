@@ -71,7 +71,7 @@ div,p,span,input,textarea,a,input,button
     overflow: hidden;
 }
 .moments-content .moments-details .details-date{
-    width: 2.75rem;
+    width: 2.5rem;
     margin-right: 0.8rem;
     float: left;
     overflow: hidden;
@@ -92,6 +92,7 @@ div,p,span,input,textarea,a,input,button
 .moments-content .moments-details .details-content{
     width: 11.75rem;
     overflow: hidden;
+    margin-right: 0.3rem; 
     margin-bottom: 1rem;
     float: right;
 }
