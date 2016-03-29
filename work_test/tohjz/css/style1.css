@@ -13,6 +13,7 @@ div,p,span,input,textarea,a,input,button
 }
 
 /*moments-header start...*/
+/*moments-header start...*/
 .moments-header{
     width: 100%;
     height: 16.05rem;
@@ -24,27 +25,31 @@ div,p,span,input,textarea,a,input,button
     background-color: #8e8c8c;
 }
 .moments-header .moments-personal-info{
-    width: 5.95rem;
+    width: 100%;
     position: absolute;
     top: 11.65rem;
     right: 0;
     overflow: hidden;
 }
-
+.moments-personal-info .personal-clearfloat{
+    overflow: hidden;
+}
 .moments-header .moments-personal-info .personal-name h2{
     font-size: 0.75rem;
     font-weight: lighter;
     color: #fff;
     padding-top: 0.85rem;
     margin-right: 0.9rem;
-    float: left;
+    float: right;
 }
 .moments-header .moments-personal-info .personal-portrait{
     width: 3.05rem;
     height: 3.05rem;
     background-color: #535353;
     border: 0.1rem solid #fff;
+    margin-right: 0.3rem;
     overflow: hidden;
+    float: right;
 }
 
 .moments-header .moments-personal-info .personal-autograph p{
@@ -67,20 +72,29 @@ div,p,span,input,textarea,a,input,button
     overflow: hidden;
 }
 .moments-content .moments-details .details-date{
+    width: 2.75rem;
     margin-right: 0.8rem;
     float: left;
     overflow: hidden;
     display: block;
 }
 .moments-content .moments-details .details-date h1{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #000;
     font-weight: lighter;
+    float: left;
+}
+.moments-content .moments-details .details-date h2{
+    font-size: 0.4rem;
+    color: #000;
+    font-weight: lighter;
+    margin-top: 0.75rem;
 }
 .moments-content .moments-details .details-content{
     width: 11.75rem;
     overflow: hidden;
-    float: left;
+    // padding-right: 0.2rem;
+    float: right;
 }
 .moments-details .details-content .details-portrait{
     width: 3.2rem;
@@ -106,6 +120,7 @@ div,p,span,input,textarea,a,input,button
     height: 0.8rem;
     display: block;
     margin-top: 0.2rem;
+    margin-right: 0.2rem;
     float: right;
 }
 .details-content .details-text .details-btn img{
