@@ -1,0 +1,228 @@
+html
+{
+    font-size: 125%;
+}
+div,p,span,input,textarea,a,input,button
+{
+    font-family: Microsoft YaHei;
+}
+
+.moments-main{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*moments-header start...*/
+.moments-header{
+    width: 100%;
+    height: 16.05rem;
+    overflow: hidden;
+}
+.moments-header .header-bg{
+    width: 100%;
+    height: 13.85rem;
+    background-color: #8e8c8c;
+}
+.moments-header .moments-personal-info{
+    width: 5.95rem;
+    position: absolute;
+    top: 11.65rem;
+    right: 0;
+    overflow: hidden;
+}
+
+.moments-header .moments-personal-info .personal-name h2{
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #fff;
+    padding-top: 0.85rem;
+    margin-right: 0.9rem;
+    float: left;
+}
+.moments-header .moments-personal-info .personal-portrait{
+    width: 3.05rem;
+    height: 3.05rem;
+    background-color: #535353;
+    border: 0.1rem solid #fff;
+    overflow: hidden;
+}
+
+.moments-header .moments-personal-info .personal-autograph p{
+    font-size: 0.6rem;
+    margin-top: 0.6rem;
+    margin-right: 0.375rem;
+    color: #707070;
+    float: right;
+}
+/*moments-header end...*/
+
+/*moments-content start...*/
+.moments-content{
+    width: auto;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.moments-content .moments-details{
+    padding: 0.3rem;
+    overflow: hidden;
+}
+.moments-content .moments-details .details-date{
+    margin-right: 0.8rem;
+    float: left;
+    overflow: hidden;
+    display: block;
+}
+.moments-content .moments-details .details-date h1{
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: lighter;
+}
+.moments-content .moments-details .details-content{
+    width: 11.75rem;
+    overflow: hidden;
+    float: left;
+}
+.moments-details .details-content .details-portrait{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #7d7d7d;
+    float: left;
+    overflow: hidden;
+}
+.moments-details .details-content .details-text{
+    width: 8.2rem;
+    margin-left: 0.2rem;
+    float: left;
+}
+.moments-details .details-content .details-text p{
+    font-size: 0.65rem;
+    height: 2.4rem;
+    overflow: hidden;
+    line-height: .8rem;
+    text-align: justify;
+}
+.details-content .details-text .details-btn{
+    width: 0.825rem;
+    height: 0.8rem;
+    display: block;
+    margin-top: 0.2rem;
+    float: right;
+}
+.details-content .details-text .details-btn img{
+    width: 100%;
+}
+
+
+
+
+
+.commentModule
+{
+    width: 11.7rem;
+    overflow: hidden;
+}
+.commentModule .sj
+{
+    width: 0;
+    margin-left:10.6rem;
+    border-bottom: .4rem solid #e6e8ef;
+    border-left: .45rem solid transparent;
+    border-right: .45rem solid transparent;
+}
+.commentModule .main
+{
+    width: 100%;
+    background-color: #e6e8ef;
+    padding-top:.45rem;
+    padding-bottom:.65rem;
+}
+.commentModule .main .toolBar
+{
+    width: 100%;
+    overflow: hidden;
+}
+.commentModule .main .toolBar div
+{
+    float: left;
+    height: 1.05rem;
+    line-height: 1.05rem;
+    font-size: .5rem;
+    color: #1b1b1b;
+}
+.commentModule .main .toolBar .praise
+{
+    padding-left: 1rem;
+    background: url("../image/handIcon.png") no-repeat left center;
+    background-size: .8rem auto;
+    margin-left: .8rem;
+}
+.commentModule .main .toolBar .dePraise
+{
+    padding-left: .85rem;
+    background: url("../image/hand2Icon.png") no-repeat left center;
+    background-size: .6rem auto;
+    margin-left: .45rem;
+}
+.commentModule .main .toolBar .commentCount
+{
+    padding-left: 1.15rem;
+    background: url("../image/commentIcon.png") no-repeat left center;
+    background-size: .95rem auto;
+    margin-left: .45rem;
+}
+.commentModule .main .commentForm
+{
+    width: 11.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .4rem;
+    display: none;
+}
+.commentModule .main .commentForm textarea
+{
+    width: 100%;
+    height: 2.25rem;
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+    font-size: .65rem;
+    padding: .2rem;
+    box-sizing: border-box;
+}
+.commentModule .main .commentForm .submitButton
+{
+    width: 2rem;
+    height: .75rem;
+    font-size: .6rem;
+    display: block;
+    margin-left: 9.15rem;
+    margin-top: .3rem;
+    color: #434343;
+    background-color: #cccccc;
+}
+.commentModule .main .details
+{
+    width: 10.35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .2rem;
+}
+.commentModule .main .details p
+{
+    line-height: .95rem;
+    font-size: .64rem;
+    color: #1b1b1b;
+    text-align: justify;
+}
+.commentModule .main .details p span:first-child
+{
+    color: #5c6b8d;
+}
+.commentModule .main .loadMore
+{
+    font-size: .65rem;
+    color: #5c6b8d;
+    text-align: center;
+    margin-top: .25rem;
+}

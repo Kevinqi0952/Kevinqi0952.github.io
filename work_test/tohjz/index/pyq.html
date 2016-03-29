@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="../css/reset_mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <title></title>
+</head>
+<body>
+<div class="moments-main">
+    <div class="moments-header">
+        <div class="header-bg"></div>
+        <div class="moments-personal-info">
+            <div class="personal-name">
+                <h2>刘佳</h2>
+            </div>
+            <div class="personal-portrait"></div>
+            <div class="personal-autograph">
+                <p>一场游戏 一场梦</p>
+            </div>
+        </div>
+    </div>
+    <div class="moments-content">
+        <div class="moments-details">
+            <div class="details-date">
+                <h1>今天</h1>
+            </div>
+            <div class="details-content">
+                <div class="details-portrait"></div>
+                <div class="details-text">
+                    <p>此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论</p>
+                    <div class="details-btn">
+                        <img src="../image/pic_detailstextBtn.png"/>
+                    </div>
+                </div>
+                <div class="commentModule">
+                    <div class="sj"></div>
+                    <div class="main">
+                        <div class="toolBar">
+                            <div class="praise"><span>1</span>赞</div>
+                            <div class="dePraise"><span>1</span>踩</div>
+                            <div class="commentCount"><span>1</span>评论</div>
+                        </div>
+                        <form class="commentForm">
+                            <textarea></textarea>
+                            <button class="submitButton">提交</button>
+                        </form>
+                        <div class="details">
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                        </div>
+                        <p class="loadMore">>>>显示更多评论<<<</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="moments-details">
+            <div class="details-date">
+                <h1>今天</h1>
+            </div>
+            <div class="details-content">
+                <div class="details-portrait"></div>
+                <div class="details-text">
+                    <p>此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论此处是评论</p>
+                    <div class="details-btn">
+                        <img src="../image/pic_detailstextBtn.png"/>
+                    </div>
+                </div>
+                <div class="commentModule">
+                    <div class="sj"></div>
+                    <div class="main">
+                        <div class="toolBar">
+                            <div class="praise"><span>1</span>赞</div>
+                            <div class="dePraise"><span>1</span>踩</div>
+                            <div class="commentCount"><span>1</span>评论</div>
+                        </div>
+                        <form class="commentForm">
+                            <textarea></textarea>
+                            <button class="submitButton">提交</button>
+                        </form>
+                        <div class="details">
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                            <p>
+                                <span>姓名：</span>&nbsp;
+                                <span>假字假字假字假字假字假字假字假字假字假字假字假字假字假字</span>
+                            </p>
+                        </div>
+                        <p class="loadMore">>>>显示更多评论<<<</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function()
+    {
+        function screenSizeSetting()
+        {
+            $('html').css("font-size",$(window).width()*125/320+"%");
+        }
+        $(function()
+        {
+            screenSizeSetting();
+            $(window).resize(screenSizeSetting);
+
+
+            $('.commentCount').click(function()
+            {
+                $('.commentForm').css("display","block");
+            });
+        });
+    });
+</script>
+</body>
+</html>
