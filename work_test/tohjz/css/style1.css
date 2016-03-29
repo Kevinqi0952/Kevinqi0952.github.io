@@ -13,7 +13,6 @@ div,p,span,input,textarea,a,input,button
 }
 
 /*moments-header start...*/
-/*moments-header start...*/
 .moments-header{
     width: 100%;
     height: 16.05rem;
@@ -93,7 +92,7 @@ div,p,span,input,textarea,a,input,button
 .moments-content .moments-details .details-content{
     width: 11.75rem;
     overflow: hidden;
-    // padding-right: 0.2rem;
+    margin-bottom: 1rem;
     float: right;
 }
 .moments-details .details-content .details-portrait{
