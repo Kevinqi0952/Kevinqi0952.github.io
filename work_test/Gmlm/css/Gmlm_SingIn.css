@@ -5,10 +5,17 @@ html{
 /*signin-main start*/
 .signin-main{
     width: 100%;
-    background: url("../image/signin_backgroundImg.jpg") no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    overflow: hidden;
+}
+.signin-main:before{
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:  url("../image/signin_backgroundImg.jpg") center 0 no-repeat;
+    background-size: cover;
 }
 .signin-main h1{
     font-size: 1.25rem;
@@ -74,11 +81,13 @@ html{
 }
 /*bottom*/
 .signin-main .signin-bottom{
-    margin-top: 3.55rem;
+    margin-top: 3rem;
     margin-right: auto;
     margin-left: auto;
 }
 .signin-main .signin-bottom p{
-
+    font-size: 0.55rem;
+    color: #fff;
+    font-weight: normal;
 }
 /*signin-main end*/
