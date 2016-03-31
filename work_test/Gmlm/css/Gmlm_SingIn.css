@@ -5,6 +5,7 @@ html{
 /*signin-main start*/
 .signin-main{
     width: 100%;
+    max-height: 26rem;
 }
 .signin-main:before{
     content: ' ';
@@ -32,6 +33,52 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.9rem;
+    overflow: hidden;
+}
+.signin-main .signin-input input{
+    width: 9.5rem;
+    height: 1.15rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 0.55rem;
+    line-height: 1.15rem;
+    margin-left: 0.6rem;
+    display: inline-block;
+}
+input:-ms-input-placeholder{
+    color: #fff;
+}
+input::-webkit-input-placeholder{
+    color: #fff;
+}
+#input-telephone,
+#input-password{
+    width: 12.25rem;
+    border-bottom: 1px solid #fff;
+}
+#input-telephone{
+    margin-bottom: 1.25rem;
+}
+#input-telephone span {
+    width: 1rem;
+    height: 1rem;
+    background: url("../image/signin_inputTelephoneIcon.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+#input-password span{
+    width: 1rem;
+    height: 1rem;
+    background: url("../image/signin_inputPasswordIcon.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.signin-main .signin-input p > a{
+    margin-top: 0.25rem;
+    font-size: 0.55rem;
+    color: #fff;
+    float: right;
 }
 /*button*/
 .signin-main button{
@@ -81,13 +128,29 @@ html{
 }
 /*bottom*/
 .signin-main .signin-bottom{
-    margin-top: 3rem;
-    margin-right: auto;
-    margin-left: auto;
+    width: 12.25rem;
+    margin: 3rem auto 1rem auto;
+}
+.signin-main .signin-bottom .bottom-checked{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #fff;
+    margin-left: 1.2rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+.signin-main .signin-bottom .bottom-checked span{
+    width: 0.5rem;
+    height: 0.3rem;
+    margin-top: 0.1rem;
+    background: url("../image/signin_checked.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
 }
 .signin-main .signin-bottom p{
     font-size: 0.55rem;
     color: #fff;
     font-weight: normal;
+    display: inline-block;
 }
 /*signin-main end*/

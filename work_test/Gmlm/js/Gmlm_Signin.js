@@ -3,9 +3,21 @@
  */
 //SingIn start...
 $(function(){
-    var signinHeight = $(document).height();
-    var signinNewHeight = signinHeight/20 + "rem";
-    console.log(signinHeight);
-    $('.signin-main').css('height',signinNewHeight);
+    var signinHeight = $(window).height();
+    var signinNewHeight = signinHeight/20 + "rem";//获取到屏幕的新高度
+
+    $('.signin-main').css('height',signinNewHeight);//设置屏幕高度
+
+    //checked选择
+    $('.bottom-checked').click(function(){
+        var thisSpan = $('.bottom-checked span')
+        var displaySpan = $('.bottom-checked span').css("display")
+
+        if(displaySpan == "none"){
+            thisSpan.css("display","block");
+        } else{
+            thisSpan.css("display","none");
+        }
+    })
 })
 //SingIn end...
