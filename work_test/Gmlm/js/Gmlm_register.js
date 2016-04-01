@@ -3,7 +3,7 @@
  */
 
 $(function(){
-    //È¡ÏûÊÖ»úºÅÂëÎÄ×Ö
+    //È¡ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     $('.register_phone span').click(function(){
         $('.register_phone input').val("");
     })
@@ -18,9 +18,9 @@ $(function(){
             thisSpan.css("display","none");
         }
     })
-    //»ñÈ¡¶ÌĞÅÑéÖ¤Âëµã»÷µ¹¼ÆÊ±
+    //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±
     $(function  () {
-        //»ñÈ¡¶ÌĞÅÑéÖ¤Âë
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½
         var validCode=true;
         $("#register_getcode").click (function() {
             var time=10;
@@ -35,7 +35,7 @@ $(function(){
                     code.removeClass("register_click");
                     if (time==0) {
                         clearInterval(t);
-                        code.html("again");
+                        code.html("è·å–éªŒè¯ç ");
                         validCode=true;
                         code.removeClass("register_click");
                         code.addClass("register_click");
