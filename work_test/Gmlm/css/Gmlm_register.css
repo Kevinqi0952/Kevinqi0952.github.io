@@ -76,6 +76,10 @@ input::-webkit-input-placeholder{
     position: absolute;
     right: 1.25rem;
 }
+.register_content .register_code .register_click{
+    color: #fff;
+    background-color: #fe5380;
+}
 /*ÃÜÂë*/
 .register_content .register_password input{
     width: 6rem;

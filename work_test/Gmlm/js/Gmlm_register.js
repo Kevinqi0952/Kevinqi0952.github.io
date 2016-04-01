@@ -19,5 +19,29 @@ $(function(){
         }
     })
     //获取短信验证码点击倒计时
-    
+    $(function  () {
+        //获取短信验证码
+        var validCode=true;
+        $("#register_getcode").click (function() {
+            var time=10;
+            var code=$(this);
+
+            code.removeClass("register_click");
+            if (validCode) {
+                validCode=false;
+                var t = setInterval(function() {
+                    time--;
+                    code.html(time+ "S ");
+                    code.removeClass("register_click");
+                    if (time==0) {
+                        clearInterval(t);
+                        code.html("again");
+                        validCode=true;
+                        code.removeClass("register_click");
+                        code.addClass("register_click");
+                    }
+                },1000)
+            }
+        })
+    })
 })
