@@ -3,7 +3,7 @@
  */
 
 $(function(){
-    //ȡ���ֻ���������
+    //手机号码清空
     $('.register_phone span').click(function(){
         $('.register_phone input').val("");
     })
@@ -18,9 +18,8 @@ $(function(){
             thisSpan.css("display","none");
         }
     })
-    //��ȡ������֤��������ʱ
+    //获取验证码倒计时
     $(function  () {
-        //��ȡ������֤��
         var validCode=true;
         $("#register_getcode").click (function() {
             var time=10;
