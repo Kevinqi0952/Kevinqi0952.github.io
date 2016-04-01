@@ -1,0 +1,32 @@
+html{
+    font-size: 125%;
+    font-family: "Microsoft YaHei";
+}
+/*头部start*/
+.Gmlm_header{
+    width: 100%;
+    height: 2.05rem;
+    background-color: #000;
+}
+.Gmlm_header .header_leftbtn{
+    width: 2.05rem;
+    height: 2.05rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Gmlm_header .header_rightbtn{
+    width: 2.05rem;
+    height: 2.05rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.Gmlm_header h1{
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2.05rem;
+}
+/*头部end*/

@@ -1,7 +1,3 @@
-html{
-    font-size: 125%;
-    font-family: "Microsoft YaHei";
-}
 /*signin-main start*/
 .signin-main{
     width: 100%;
@@ -75,7 +71,7 @@ input::-webkit-input-placeholder{
     display: inline-block;
 }
 .signin-main .signin-input p > a{
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     font-size: 0.55rem;
     color: #fff;
     float: right;
@@ -129,13 +125,13 @@ input::-webkit-input-placeholder{
 /*bottom*/
 .signin-main .signin-bottom{
     width: 12.25rem;
-    margin: 3rem auto 1rem auto;
+    margin: 3rem auto auto auto;
 }
 .signin-main .signin-bottom .bottom-checked{
     width: 0.5rem;
     height: 0.5rem;
     border: 1px solid #fff;
-    margin-left: 1.2rem;
+    margin-left: 1.5rem;
     margin-right: 0.2rem;
     display: inline-block;
 }

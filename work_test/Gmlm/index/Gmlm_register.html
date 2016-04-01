@@ -16,31 +16,40 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <link rel="stylesheet" href="../css/reset_mobile.css"/>
     <link rel="stylesheet" href="../css/Gmlm_common.css"/>
-    <link rel="stylesheet" href="../css/Gmlm_SingIn.css"/>
+    <link rel="stylesheet" href="../css/Gmlm_register.css"/>
     <title></title>
 </head>
 <body>
-<div class="signin-main">
-    <h1>用户登录</h1>
-    <div class="signin-input">
-        <div id="input-telephone"><span></span><input type="text" placeholder="请输入手机号码"/></div>
-        <div id="input-password"><span></span><input type="password" placeholder="请输入密码"/></div>
-        <p><a href="#">忘记密码?</a></p>
+<div class="register_main">
+    <div class="Gmlm_header">
+        <div class="header_leftbtn" id="register_leftbtn">
+            <a href="#" onClick="javascript :history.go(-1);"><img src="../image/Gmlm_backicon.png"/></a>
+        </div>
+        <h1>注册</h1>
+        <div class="header_rightbtn"></div>
     </div>
-    <button type="button" id="signin-signin"><a href="#">登录</a></button>
-    <button type="button" id="signin-register"><a href="../index/Gmlm_register.html">注册</a></button>
-    <div class="signin-shareicon">
-        <img src="../image/signin_sinaIcon.png" alt="sina" id="sina"/>
-        <img src="../image/signin_QQIcon.png" alt="QQ" id="QQ"/>
-        <img src="../image/signin_wechatIcon.png" alt="wechat" id="wechat"/>
-    </div>
-    <div class="signin-bottom">
-        <div class="bottom-checked"><span></span></div>
-        <p>我已经同意《闺蜜联盟服务协议》</p>
+    <div class="register_content">
+        <div class="register_phone">
+            <p>+86</p>
+            <input type="tel" placeholder="请输入手机号码" value=""/>
+            <span></span>
+        </div>
+        <div class="register_code">
+            <input type="text" placeholder="请输入验证码"/>
+            <button type="button" id="register_getcode">获取验证码</button>
+        </div>
+        <div class="register_password">
+            <input type="password" placeholder="请输入密码"/>
+        </div>
+        <div class="register_arrguement">
+            <div class="bottom-checked"><span></span></div>
+            <p>我已经同意《闺蜜联盟服务协议》</p>
+        </div>
+        <a href="../index/Gmlm_SignIn.html"><button type="button" id="register_success">完成</button></a>
     </div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
-<script src="../js/Gmlm_Signin.js"></script>
+<script src="../js/Gmlm_register.js"></script>
 <script type="text/javascript">
     //    自适应start
     function screenSizeSetting()
