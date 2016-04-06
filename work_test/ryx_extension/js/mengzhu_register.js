@@ -1,7 +1,7 @@
 /**
  * Created by yurong on 2016/4/6.
  */
-    //»ñÈ¡ÑéÖ¤Âëµ¹¼ÆÊ±
+    //éªŒè¯ç å€’è®¡æ—¶
 $(function  () {
     var validCode=true;
     $("#code-btn-active").click (function() {
@@ -17,7 +17,7 @@ $(function  () {
                 code.addClass("code-btn-active");
                 if (time==0) {
                     clearInterval(t);
-                    code.html("»ñÈ¡ÑéÖ¤Âë");
+                    code.html("è·å–éªŒè¯ç ");
                     validCode=true;
                     code.addClass("code-btn-active");
                     code.removeClass("code-btn-active");
