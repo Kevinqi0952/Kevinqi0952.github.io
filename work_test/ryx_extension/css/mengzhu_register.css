@@ -145,7 +145,7 @@ input::-webkit-input-placeholder{
 /*register-text start*/
 .main-register .register-text{
     margin-top: 2rem;
-    padding: 0 1.25rem 0 1.25rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
 }
 .main-register .register-text em{
     font-size: 0.6rem;
