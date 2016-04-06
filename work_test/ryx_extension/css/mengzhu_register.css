@@ -92,7 +92,7 @@ input::-webkit-input-placeholder{
     right: 1.15rem;
 }
 
- .register-content .register-phone .code-btn-active{
+.main-register .register-content .register-phone .code-btn-active{
      /*点击获取验证码倒数样式*/
     background-color: #9f9f9f;
 }
