@@ -1,7 +1,9 @@
 html{
     font-size: 125%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
 }
-
 /*common-header start*/
 .common-header{
     width: 100%;
