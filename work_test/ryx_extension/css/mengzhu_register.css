@@ -47,15 +47,16 @@ html{
 }
 .main-register .register-content div{
     border-bottom: 1px solid #e2e2e2;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 .main-register .register-content div > input{
     border: none;
     height: 1rem;
     line-height: 1rem;
     font-size:0.55rem;
-    margin-top: -0.25rem;
+    margin-top: -0.5rem;
     color: #999999;
+    /*border: 1px solid #000;*/
 }
 input:-ms-input-placeholder{
     font-size: 0.55rem;
