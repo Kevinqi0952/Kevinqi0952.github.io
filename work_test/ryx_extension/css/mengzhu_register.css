@@ -1,6 +1,3 @@
-html{
-    font-size: 125%;
-}
 .main-register{
     width: 100%;
     font-family: "Microsoft YaHei";
@@ -39,13 +36,15 @@ html{
 
 /*register-content start*/
 .main-register .register-content{
-    margin-top: 2.65rem;
+    margin-top: 2.25rem;
     padding: 0 1.15rem 0 1.15rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
 }
-.main-register .register-content div{
+.main-register .register-content .register-phone,
+.main-register .register-content .register-code,
+.main-register .register-content .register-password{
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 0.75rem;
 }
@@ -56,7 +55,6 @@ html{
     font-size:0.55rem;
     margin-top: -0.5rem;
     color: #999999;
-    /*border: 1px solid #000;*/
 }
 input:-ms-input-placeholder{
     font-size: 0.55rem;
@@ -68,8 +66,7 @@ input::-webkit-input-placeholder{
     font-family: "Microsoft YaHei";
     color: #999999;
 }
-.main-register .register-content .register-phone{
-}
+
 .main-register .register-content .register-phone span{
     width: 1rem;
     height: 1rem;
@@ -124,7 +121,7 @@ input::-webkit-input-placeholder{
     color: #fff;
     font-weight: lighter;
     font-family: "Microsoft YaHei";
-    margin-top: 1.25rem;
+    margin-top: 0.75rem;
 }
 .main-register .register-content .register-user-btn{
     width: 100%;
@@ -144,7 +141,7 @@ input::-webkit-input-placeholder{
 /*register-content end*/
 /*register-text start*/
 .main-register .register-text{
-    margin-top: 2rem;
+    margin-top: 2.7rem;
     padding: 0 1.25rem 1.25rem 1.25rem;
 }
 .main-register .register-text em{
@@ -155,7 +152,6 @@ input::-webkit-input-placeholder{
 .main-register .register-text p{
     font-size: 0.5rem;
     color: #999999;
-    line-height: 1rem;
-    word-break: break-all;
+    line-height: 0.85rem;
 }
 /*register-text end*/

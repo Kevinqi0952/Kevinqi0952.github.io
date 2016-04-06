@@ -1,0 +1,8 @@
+.signin-forget{
+    text-align: right;
+    margin-bottom: 4rem;
+}
+.signin-forget a{
+    font-size: 0.5rem;
+    color: #65dbd9;
+}
