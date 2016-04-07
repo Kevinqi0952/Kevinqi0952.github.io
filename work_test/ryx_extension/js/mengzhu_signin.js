@@ -12,15 +12,17 @@ $(function(){
         //手机号码验证
         if(!isMobile.test(dianhua)){ //如果用户输入的值不满足手机号
             alert("手机号输入错误，请重新输入");
-            $("#signin-phone").focus();
+            $("#signin-phone").focus();//获取光标
             return false;
         }
         //密码位数验证
         if(plenth < 6){
             alert("您的密码有误，请重试");
+            $("#signin-password").focus();
             return false;
         } else if(plenth > 20){
             alert("您的密码有误，请重试");
+            $("#signin-password").focus();
             return false;
         } else{
             location.href = 'mengzhu_apply.html';
