@@ -33,6 +33,7 @@
     font-weight: lighter;
     text-align: right;
     line-height: 1rem;
+    color: #a9a9a9;
     border: none;
     margin-top: 0.3rem;
     position: absolute;
@@ -59,5 +60,79 @@
     font-weight: lighter;
     font-family: "Microsoft YaHei";
     margin-top: 0.75rem;
+}
+/*checked*/
+.apply-content .checked-sex{
+    overflow: hidden;
+}
+.apply-content .apply-checked .checked-man{
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+}
+.apply-content .apply-checked .checked-man p{
+    color: #6597db;
+}
+.apply-content .apply-checked .checked-woman{
+    display: inline-block;
+    position: absolute;
+    right: 1.25rem;
+}
+.apply-content .apply-checked .checked-woman p{
+    color: #65dbd9;
+}
+.checked-box{
+    width: 0.55rem;
+    height: 0.55rem;
+    border: 1px solid #9f9f9f;
+    float: right;
+    margin-top: 0.52rem;
+    margin-left: 0.2rem;
+}
+.checked-sex-active{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: url("../image/mengzhu_apply/pic_applyCheckedSex.png") no-repeat;
+    background-size: 81% 59%;
+    background-position: center;
+    display: block;
+}
+.apply-content .apply-cost{
+    margin-bottom: 0.25rem;
+}
+.apply-content .apply-cost .cost-checked{
+    width: 0.55rem;
+    height: 0.55rem;
+    border: 1px solid #65dbd9;
+    display: inline-block;
+    margin-top: 0.1rem;
+}
+.apply-content .apply-cost .cost-checked-active{
+    width: 0.55rem;
+    height: 0.55rem;
+    background: url("../image/mengzhu_apply/pic_applyCheckedPackage.png") no-repeat;
+    background-size: 81% 61%;
+    background-position: center;
+    display: inline-block;
+}
+.apply-content .apply-cost p{
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    color: #65dbd9;
+    display: inline-block;
+}
+/*select*/
+.apply-select span{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../image/mengzhu_apply/pic_applySelectUp.png") no-repeat;
+    background-position: center;
+    background-size: 46% 30.7%;
+    border: 1px solid #bcbcbc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 0.45rem;
+    position: absolute;
+    right: 1.25rem;
 }
 /*apply-content end...*/

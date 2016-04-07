@@ -38,7 +38,7 @@
             </li>
             <li class="apply-input">
                 <em>手机号</em>
-                <input type="tel" placeholder="请填写"/>
+                <input type="tel" id="apply-phone" placeholder="请填写" maxlength="11"/>
             </li>
             <li class="apply-input">
                 <em>微信</em>
@@ -52,10 +52,16 @@
                 <em>邮箱</em>
                 <input type="text" placeholder="请填写"/>
             </li>
-            <li class="apply-checked">
+            <li class="apply-checked ">
                 <em>性别</em>
-                <p>男</p><span></span>
-                <p>女</p><span></span>
+                <div class="checked-man">
+                    <p>男</p>
+                    <div class="checked-box checked-sex-active"></div>
+                </div>
+                <div class="checked-woman">
+                    <p>女</p>
+                    <div class="checked-box"></div>
+                </div>
             </li>
             <li class="apply-select">
                 <em>生日</em>
@@ -77,16 +83,17 @@
                 <em>兴趣爱好</em>
                 <input type="text" placeholder="请填写"/>
             </li>
-            <li class="apply-checked">
-                <span></span>
+            <li class="apply-cost">
+                <div class="cost-checked cost-checked-active"></div>
                 <p>299元加盟费</p>
             </li>
         </ul>
         <p>新盟主可获得超级大礼包</p>
-        <button type="button">支付/下一步</button>
+        <button type="button" id="apply-next-btn">支付/下一步</button>
     </div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
+<script src="../js/mengzhu_apply.js"></script>
 <script type="text/javascript">
     //    自适应start
     function screenSizeSetting()
