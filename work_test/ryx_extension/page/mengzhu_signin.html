@@ -33,13 +33,13 @@
     <div class="register-content">
         <div class="register-phone">
             <span></span>
-            <input type="tel" placeholder="请输入手机号码"/>
+            <input type="tel" id="signin-phone" placeholder="请输入手机号码" maxlength="11"/>
         </div>
         <div class="register-password">
             <span></span>
-            <input type="password" placeholder="请输入密码"/>
+            <input type="password" id="signin-password" placeholder="请输入密码" maxlength="20"/>
         </div>
-        <button type="button" class="register-next-btn">下一步</button>
+        <button type="button" id="signin-next-btn" class="register-next-btn">下一步</button>
         <a href="../page/mengzhu_register.html">
             <button type="button" class="register-user-btn">注册新用户</button>
         </a>
@@ -54,6 +54,7 @@
     </div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
+<script src="../js/mengzhu_signin.js"></script>
 <script type="text/javascript">
     //    自适应start
     function screenSizeSetting()

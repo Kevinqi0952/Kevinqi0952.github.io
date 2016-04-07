@@ -87,6 +87,9 @@ input::-webkit-input-placeholder{
      /*点击获取验证码倒数样式*/
     background-color: #9f9f9f;
 }
+.main-register .register-content .register-code input{
+    width: 12rem;
+}
 .main-register .register-content .register-code span{
     width: 1rem;
     height: 1.075rem;
@@ -96,7 +99,7 @@ input::-webkit-input-placeholder{
     display: inline-block;
 }
 .main-register .register-content .register-password input{
-    width: 8rem;
+    width: 12rem;
 }
 .main-register .register-content .register-password span{
     width:  1rem;
