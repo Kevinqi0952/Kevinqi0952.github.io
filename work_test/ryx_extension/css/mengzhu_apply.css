@@ -79,16 +79,17 @@ input::-webkit-input-placeholder{
 }
 /*checked*/
 .apply-content .checked-sex{
+
     overflow: hidden;
 }
 .apply-content .apply-checked .checked-man{
     display: inline-block;
     position: absolute;
-    right: 50%;;
+    right: 50%;
 }
 .apply-content .apply-checked .checked-man p{
     color: #6597db;
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     display: inline-block;
 }
 .apply-content .apply-checked .checked-woman{
@@ -98,6 +99,7 @@ input::-webkit-input-placeholder{
 }
 .apply-content .apply-checked .checked-woman p{
     color: #65dbd9;
+    font-size: 0.65rem;
     display: inline-block;
 }
 .checked-box{
