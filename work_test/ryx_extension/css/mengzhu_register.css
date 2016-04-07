@@ -88,7 +88,7 @@ input::-webkit-input-placeholder{
     background-color: #9f9f9f;
 }
 .main-register .register-content .register-code input{
-    width: 12rem;
+    width: 10rem;
 }
 .main-register .register-content .register-code span{
     width: 1rem;
@@ -99,7 +99,7 @@ input::-webkit-input-placeholder{
     display: inline-block;
 }
 .main-register .register-content .register-password input{
-    width: 12rem;
+    width: 10rem;
 }
 .main-register .register-content .register-password span{
     width:  1rem;
