@@ -13,6 +13,8 @@ $(function(){
             alert("手机号输入错误，请重新输入");
             $("#apply-phone").focus();//获取光标，弹出输入键盘
             return false;
+        } else{
+            location.href = 'mengzhu_gift.html';
         }
     })
     //点击切换性别

@@ -1,0 +1,56 @@
+/*gift-content start*/
+.gift-content .gift-header{
+    padding: 0.75rem 1.1rem 0.75rem 1.1rem;
+}
+.gift-content .gift-header p{
+    font-size: 0.55rem;
+    color: #65dbd9;
+}
+/*gift-content end*/
+
+/*gift-chose start*/
+.gift-content .gift-chose{
+    height: 7.1rem;
+    border-top: 0.25rem solid #65dbd9;
+    border-bottom: 0.25rem solid #65dbd9;
+}
+/*gift-chose end*/
+
+/*gift start*/
+.gift-content .gift-giftB,
+.gift-content .gift-giftA{
+    width: 100%;
+    background-color: #5ec2c6;
+    padding-bottom: 2.5rem;
+}
+.gift-content .gift-giftB img,
+.gift-content .gift-giftA img{
+    width: 100%;
+    display: block;
+}
+.gift-content .gift-giftB{
+    display: none;
+}
+/*gift end*/
+
+/*gift-bottom-fixed start*/
+.gift-bottom-fixed{
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    bottom: 0;
+}
+.gift-bottom-fixed button{
+    width: 8.75rem;
+    height: 1.5rem;
+    background-color: #65dbd9;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    font-family: "Microsoft YaHei";
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+}
+/*gift-bottom-fixed end*/
