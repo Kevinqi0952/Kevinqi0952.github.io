@@ -44,12 +44,16 @@ input:-ms-input-placeholder{
     font-family: "Microsoft YaHei";
     text-align: right;
     color: #a9a9a9;
+    position: absolute;
+    right: 1.15rem;
 }
 input::-webkit-input-placeholder{
     font-size: 0.55rem;
     font-family: "Microsoft YaHei";
     text-align: right;
     color: #a9a9a9;
+    position: absolute;
+    right: 1.15rem;
 }
 .apply-content  .apply-checked p{
     font-size: 0.6rem;
