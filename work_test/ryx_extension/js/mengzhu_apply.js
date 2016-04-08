@@ -39,7 +39,11 @@ $(function(){
 
     $('.apply-input').focus(function()
     {
-        $(this).val("");
+        var self = $(this);
+        if(self.val() == "请填写")
+        {
+            self.val("");
+        }
     }).blur(function()
     {
         if($(this).val() == ""||$(this).val() == " ")
