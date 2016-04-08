@@ -38,10 +38,10 @@
     margin-top: 0.3rem;
     position: absolute;
     right: 1.15rem;
-    display: block;
 }
 .apply-content .apply-input input::-webkit-input-placeholder
 {
+    width: 9rem;
     text-align: right;
 }
 .apply-content  .apply-checked p{
