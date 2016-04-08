@@ -39,6 +39,11 @@
     position: absolute;
     right: 1.15rem;
 }
+.apply-content .apply-input input::-webkit-input-placeholder
+{
+    text-align: right;
+}
+
 input:-ms-input-placeholder{
     font-size: 0.55rem;
     font-family: "Microsoft YaHei";
