@@ -5,14 +5,85 @@
 .gift-content .gift-header p{
     font-size: 0.55rem;
     color: #65dbd9;
+    line-height: 1rem;
 }
 /*gift-content end*/
 
 /*gift-chose start*/
 .gift-content .gift-chose{
-    height: 7.1rem;
     border-top: 0.25rem solid #65dbd9;
     border-bottom: 0.25rem solid #65dbd9;
+    padding: 0.25rem 0.75rem 0.5rem 0.75rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.gift-chose .chose-giftA{
+    width: 8.7rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.gift-chose .chose-giftA em{
+    font-size: 0.6rem;
+    color: #65dbd9;
+    vertical-align: middle;
+}
+.gift-chose .chose-giftA .chose-giftA-box{
+    width: 100%;
+    height: 4.75rem;
+    border: 0.2rem solid #65dbd9;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    border-radius: 0.2rem;
+    background-color: #f1f1f1;
+}
+.gift-chose .chose-giftA .chose-giftA-box h4{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    color: #65dbd9;
+}
+.gift-chose .chose-giftA .chose-giftA-box .chose-giftA-img{
+    width: 100%;
+    height: 2.575rem;
+    background: url("../image/mengzhu_gift/pic_commdityAimg.png") no-repeat;
+    background-size: 90% 100%;
+    background-position: center;
+}
+.gift-chose .chose-giftB{
+    width: 5.15rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.gift-chose .chose-giftB em{
+    font-size: 0.6rem;
+    color: #65dbd9;
+    vertical-align: middle;
+}
+.gift-chose .chose-giftB .chose-giftB-box{
+    width: 100%;
+    height: 4.75rem;
+    border: 1px solid #65dbd9;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    border-radius: 0.2rem;
+    background-color: #f1f1f1;
+}
+.gift-chose .chose-giftB .chose-giftB-box h4{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    color: #65dbd9;
+}
+.chose-giftB .chose-giftB-box .chose-giftA-img{
+    width: 100%;
+    height: 2.575rem;
+    background: url("../image/mengzhu_gift/pic_commdityBimg.png") no-repeat;
+    background-size: 90% 80%;
+    background-position: center;
 }
 /*gift-chose end*/
 

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="css/reset_mobile.css"/>
+    <link rel="stylesheet" href="css/share_style.css"/>
+    <title></title>
+</head>
+<body>
+    <div class="main">
+        <div class="topFixed">
+            <a href="#" class="topBreak"></a>
+            <a href="javascript:;" class="topShare"></a>
+        </div>
+        <div class="content">
+            <div class="picture"></div>
+            <h1>鱼幼薇</h1>
+            <p>成鱼落雁，闭月羞花。</p>
+            <div class="btn">
+                <div class="redBtn">
+                    <div class="redBtnIcon"></div>
+                    <p>12306</p>
+                </div>
+                <div class="greenBtn">
+                    <div class="greenBtnIcon"></div>
+                    <p>12306</p>
+                </div>
+            </div>
+        </div>
+        <div class="share">
+            <div class="first">
+                <div class="qq"><p>QQ好友</p></div>
+                <div class="sina"><p>新浪微博</p></div>
+                <div class="wechat"><p>微信</p></div>
+                <div class="qqZone"><p>QQ空间</p></div>
+            </div>
+            <div class="second">
+                <div class="friend"><p>朋友圈</p></div>
+            </div>
+            <div class="return">
+                <p>取消</p>
+            </div>
+        </div>
+        <div class="mask"></div>
+    </div>
+    <script src="js/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript">
+    	 $(function()
+    		{
+    			 function screenSizeSetting()
+        	{
+            	$('html').css("font-size",$(window).width()*125/320+"%");
+       		 }
+       	 $(function()
+       		 {
+           		 screenSizeSetting();
+           		 $(window).resize(screenSizeSetting);
+        		});
+   		 });
+//         控制宽度自适应
+        $(function(){
+            $('.topShare').click(function(){
+                $('.share').show();
+                $(".mask").css("height",$(document).height());
+                $(".mask").css("width",$(document).width());
+                $(".mask").show();
+                $("body,html").css({"overflow":"hidden"});
+            })
+            $('.return').click(function(){
+                $('.share').css("display","none");
+                $(".mask").hide();
+                $("body,html").css({"overflow":"visible"});
+            })
+        })
+//    		点击分享遮罩层
+		$(function(){
+			$('.redBtn').click(function(){
+				$('.redBtn P').html(12307);
+			});
+		})
+    </script>
+</body>
+</html>

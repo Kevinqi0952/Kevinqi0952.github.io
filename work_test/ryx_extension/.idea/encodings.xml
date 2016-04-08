@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/js/mengzhu_apply.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/mengzhu_gift.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mengzhu_register.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/mengzhu_signin.js" charset="UTF-8" />
   </component>

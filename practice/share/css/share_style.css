@@ -1,0 +1,256 @@
+html
+{
+    font-size: 125%;
+}
+.main{
+    width: 100%;
+}
+/*header start...*/
+.topFixed{
+    width: 100%;
+    height: 2.1rem;
+    background: url(../images/topBg.png) no-repeat;
+    background-position: center;
+    background-size: 100%  auto;
+    background-color: #effa42;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topFixed .topBreak{
+    width: .825rem;
+    height: 1.275rem;
+    background: url(../images/topBreakBtn.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    top: .7rem;
+    left: .425rem;
+}
+
+.topFixed .topShare{
+    width: 1.4rem;
+    height: 1.3rem;
+    background: url("../images/topShareBtn.png");
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    top: .7rem;
+    right: .425rem;
+}
+/*header end*/
+
+/*content start...*/
+.content{
+    width: 100%;
+    background: #fff;
+}
+
+.content .picture{
+    width: 12rem;
+    height: 12.375rem;
+    background: url("../images/contentPic.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin: 2rem auto 1.25rem auto;
+    margin-top: 4.1rem;
+}
+
+.content h1{
+    font-family: "Microsoft Yahei";
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: normal;
+    color: #3e3a39;
+    margin-bottom: .7rem;
+}
+
+.content p{
+    font-family: "Microsoft Yahei";
+    font-size: .85rem;
+    text-align: center;
+    color: #3e3a39;
+    margin-bottom: 2rem;
+}
+.content .btn{
+    width: 100%;
+    height: 1.5rem;
+    margin: 0 auto 1.625rem auto;
+}
+.content .redBtn{
+    width: 6.05rem;
+    height: 1.5rem;
+    background-color: #ed5565;
+    border-radius: .75rem;
+    display: block;
+    float: left;
+    margin-left: 1.3rem;
+    position: relative;
+}
+.redBtn .redBtnIcon{
+    width: .875rem;
+    height: .8rem;
+    background: url("../images/dianzan.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 0 auto .95rem;
+    position: absolute;
+    top: .3rem;
+    left: 0;
+    display: block;
+}
+.redBtn p{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    left: 2.2rem;
+    display: block;
+}
+.content .greenBtn{
+    width: 6.05rem;
+    height: 1.5rem;
+    background-color: #75d91d;
+    border-radius: .75rem;
+    float: left;
+    margin-left: 1.05rem;
+    position: relative;
+}
+.greenBtn .greenBtnIcon{
+    width: .875rem;
+    height: .8rem;
+    background: url("../images/toupiao.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 0 auto .95rem;
+    position: absolute;
+    top: .3rem;
+    left: 0;
+}
+.greenBtn p{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    left: 2.2rem;
+}
+/*content end...*/
+
+/*share start*/
+.share{
+    width: 100%;
+    height: 12.375rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+}
+
+.share .first{
+    width: 100%;
+    height: 4.95rem;
+    border-bottom: 1px solid #dcdddd;
+    font-size: .55rem;
+    font-family: "Microsoft Yahei";
+    color: #3e3a39;
+}
+
+.first .qq{
+    width: 2.4rem;
+    height: 2.9rem;
+    background: url("../images/qq.png")no-repeat;
+    background-size: 1.95rem 1.95rem;
+    position: relative;
+    margin: 1.35rem 0.8rem auto 0.8rem;
+    float: left;
+}
+.qq p{
+    position: absolute;
+    bottom: 0;
+}
+
+.first .sina{
+    width: 2.4rem;
+    height: 2.9rem;
+    background: url("../images/sina.png")no-repeat;
+    background-size: 1.95rem 1.95rem;
+    position: relative;
+    margin: 1.35rem 0.8rem auto 0.8rem;
+    float: left;
+}
+.sina p{
+    position: absolute;
+    bottom: 0;
+}
+
+.first .wechat{
+    width: 2.4rem;
+    height: 2.9rem;
+    background: url("../images/wechat.png")no-repeat;
+    background-size: 1.95rem 1.95rem;
+    position: relative;
+    margin: 1.35rem 0.8rem auto 0.8rem;
+    float: left;
+}
+.wechat p{
+    position: absolute;
+    left: .35rem;
+    bottom: 0;
+}
+
+.first .qqZone{
+    width: 2.4rem;
+    height: 2.9rem;
+    background: url("../images/qqzone.png")no-repeat;
+    background-size: 1.9rem 1.9rem;
+    position: relative;
+    margin: 1.35rem 0.8rem auto 0.8rem;
+    float: left;
+}
+.qqZone p{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+
+.second{
+    width: 100%;
+    height: 4.95rem;
+    border-bottom: 1px solid #dcdddd;
+    font-size: .55rem;
+    font-family: "Microsoft Yahei";
+    color: #3e3a39;
+}
+
+.second .friend{
+    width: 2.4rem;
+    height: 2.9rem;
+    background: url("../images/friend.png")no-repeat;
+    background-size: 1.9rem 1.9rem;
+    position: relative;
+    margin: 1.35rem 0.8rem auto 0.8rem;
+    float: left;
+}
+.friend p{
+    position: absolute;
+    bottom: 0;
+}
+.return{
+    width: 100%;
+    height: 2.45rem;
+    background-color: #e6e6e6;
+    font-size: .75rem;
+    color: #000;
+    text-align: center;
+    line-height: 2.45rem;
+    font-family: "Microsoft Yahei";
+}
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
+}
+/*shanre end*/

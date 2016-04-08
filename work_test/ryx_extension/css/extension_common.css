@@ -25,6 +25,18 @@ html{
     height: 100%;
     display: block;
 }
+.common-header  .renyuxian-left-btn{
+    width: 0.575rem;
+    height: 1.05rem;
+    position: absolute;
+    top: 0.45rem;
+    left: 0.5rem;
+}
+.common-header  .renyuxian-left-btn img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .common-header h1{
     font-size: 0.75rem;
     color: #fff;
@@ -32,5 +44,51 @@ html{
     text-align: center;
     line-height: 2rem;
 }
+
+.common-header h1 > span  img{
+    width: 1.2rem;
+    height: 1.3rem;
+    margin-top: 0.3rem;
+}
 /*common-header end*/
 
+/*common-bottom-fixed start*/
+.common-bottom-fixed{
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(101,219,217,0.3);
+    position: fixed;
+    bottom: 0;
+}
+.common-bottom-fixed button{
+    width: 8.75rem;
+    height: 1.5rem;
+    background-color: #65dbd9;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: lighter;
+    font-family: "Microsoft YaHei";
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+}
+/*common-bottom-fixed end*/
+
+/*gift chose start*/
+.chose-checked{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 1px solid #65dbd9;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    display: inline-block;
+    vertical-align: middle;
+}
+.chose-checked-active{
+    background: url("../image/mengzhu_gift/pic_checkedboxChecked.png") no-repeat;
+    background-size: 66% 50%;
+    background-position: center;
+}
+/*gift chose end*/
