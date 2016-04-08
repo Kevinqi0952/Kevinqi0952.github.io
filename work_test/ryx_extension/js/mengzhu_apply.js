@@ -36,4 +36,16 @@ $(function(){
             $(this).addClass("cost-checked-active");
         }
     })
+
+    $('.apply-input').focus(function()
+    {
+        $(this).val("");
+    }).blur(function()
+    {
+        if($(this).val() == ""||$(this).val() == " ")
+        {
+            $(this).val("请填写");
+        }
+    });
+
 })
