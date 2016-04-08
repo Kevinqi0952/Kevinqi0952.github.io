@@ -42,7 +42,6 @@ $(function(){
         var self = $(this);
         if(self.val() == "请填写")
         {
-            console.log('123');
             self.val("");
         }
     }).blur(function()
