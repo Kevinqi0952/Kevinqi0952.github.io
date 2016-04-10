@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv=Content-Type content=“text/html;charset=utf-8″>
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="../css/reset_mobile.css"/>
+    <link rel="stylesheet" href="../css/extension_common.css"/>
+    <link rel="stylesheet" href="../css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="../css/mengzhu_index.css"/>
+    <title></title>
+</head>
+<body>
+<div id="dowebok">
+    <div class="section">
+        <div class="renyuxian-index">
+            <div class="index-header">
+                <div class="header-logo">
+                    <img src="../image/mengzhu_index/logo_renyuxianIndexLogo.png" alt="LOGO"/>
+                </div>
+                <div class="header-text">
+                    <img src="../image/mengzhu_index/text_renyuxianIndexText.png">
+                    <div class="text-ad">
+                        <p>学员好评率100%，最佳学员42天减重30斤。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="index-text">
+                    <p>人鱼线减肥神器，是由专家团队为用户私人订制的社交减肥。专家组是由教练、营养师、心理导师共同组成，通过科学的方法对每位学员的饮食、作息、运动进行管理和调控。人鱼线自2015年1月运营至今，每月学员人数翻倍上升，发展速度迅猛，已成为年度的最火爆的健康应用产品！</p>
+            </div>
+            <div class="index-img">
+                <div class="img-duhaitao">
+                    <img src="../image/mengzhu_index/img_renyuxianIndexDuht.jpg"/>
+                </div>
+                <div class="img-liyu">
+                    <img src="../image/mengzhu_index/img_renyuxianIndexLiyu.jpg"/>
+                </div>
+            </div>
+            <div class="index-bottom">
+                <div class="bottom-logo">
+                    <img src="../image/mengzhu_index/logo_indexBottomLogo.png"/>
+                </div>
+                <div class="bottom-bg">
+                    <img src="../image/mengzhu_index/pic_indexBottomImg.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="mengzhu-index">
+            <div class="mengzhu-index-header">
+                <img src="../image/mengzhu_index/title_mengzhuIndexTitle.jpg"/>
+                <p>申请盟主推荐闺蜜来瘦身，立即返利600元</p>
+            </div>
+            <div class="mengzhu-index-content">
+                <div class="content-text">
+                    <em>999元人鱼线瘦身课程</em>
+                    <p>推荐1人返400元，</p>
+                    <p>推荐3人返1300元，</p>
+                    <p>推荐越多，返得越多！</p>
+                    <p id="now-join">现在加盟还可获得盟主大礼包哦</p>
+                    <a href="#">>>>了解详情<<<</a>
+                </div>
+                <div class="content-link">
+                    <div class="content-more">?</div>
+                    <button type="button">申请盟主</button>
+                    <p>立即登录</p>
+                </div>
+            </div>
+            <div class="index-bottom">
+                <div class="bottom-logo">
+                    <img src="../image/mengzhu_index/logo_indexBottomLogo.png"/>
+                </div>
+                <div class="bottom-bg">
+                    <img src="../image/mengzhu_index/pic_indexBottomImg.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/1.11.1/jquery.js"></script>
+<script src="../js/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+    //    自适应start
+    function screenSizeSetting()
+    {
+        $('html').css("font-size",$(window).width()*125/320+"%");
+    }
+    $(function()
+    {
+        screenSizeSetting();
+        $(window).resize(screenSizeSetting);
+    });
+    //    自适应end
+
+    //fullpage
+    $(function(){
+        $('#dowebok').fullpage({
+            verticalCentered:false
+        });
+    });
+
+</script>
+</body>
+</html>
