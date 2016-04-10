@@ -177,6 +177,12 @@
     position: absolute;
     left: 44.5%;
     bottom: 1.4rem;
+    animation: water 1s;
+    -moz-animation: water 1s;	/* Firefox */
+    -webkit-animation: water 1s;	/* Safari 和 Chrome */
+    -o-animation: water 1s;	/* Opera */
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; /* Safari 和 Chrome */
 }
 .index-bottom .bottom-logo img{
     width: 1.8rem;
@@ -184,4 +190,40 @@
 }
 .index-bottom .bottom-bg img{
     width: 100%;
+}
+/*水滴动画*/
+@keyframes water
+{
+    0%   {  bottom: 1.4rem;  }
+    25%  {bottom: 1.5rem;}
+    50%  {bottom: 1.7rem;}
+    /*75% ｛bottom: 1.5rem;｝*/
+    100% {bottom: 1.4rem;}
+}
+
+@-moz-keyframes water /* Firefox */
+{
+    0%   {bottom: 1.4rem;}
+    25%  {bottom: 1.5rem;}
+    50%  {bottom: 1.7rem;}
+    /*75% ｛bottom: 1.5rem;｝*/
+    100% {bottom: 1.4rem;}
+}
+
+@-webkit-keyframes water /* Safari 和 Chrome */
+{
+    0%   {bottom: 1.4rem;}
+    25%  {bottom: 1.5rem;}
+    50%  {bottom: 1.7rem;}
+    /*75% ｛bottom: 1.5rem;｝*/
+    100% {bottom: 1.4rem;}
+}
+
+@-o-keyframes water /* Opera */
+{
+    0%   {bottom: 1.4rem;}
+    25%  {bottom: 1.5rem;}
+    50%  {bottom: 1.7rem;}
+    /*75% ｛bottom: 1.5rem;｝*/
+    100% {bottom: 1.4rem;}
 }
