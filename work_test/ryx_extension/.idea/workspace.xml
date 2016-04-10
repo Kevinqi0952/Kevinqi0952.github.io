@@ -21,20 +21,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mengzhu_index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mengzhu_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/mengzhu_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.25">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6024229">
+              <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mengzhu_index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mengzhu_giftA.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/mengzhu_giftA.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.285715">
+              <caret line="45" column="73" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mengzhu_index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mengzhu_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18803419">
+            <state vertical-scroll-proportion="0.0">
               <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="39" />
               <folding />
             </state>
@@ -75,8 +85,8 @@
         <option value="$PROJECT_DIR$/css/mengzhu_apply.css" />
         <option value="$PROJECT_DIR$/js/mengzhu_apply.js" />
         <option value="$PROJECT_DIR$/page/mengzhu_apply.html" />
-        <option value="$PROJECT_DIR$/page/mengzhu_index.html" />
         <option value="$PROJECT_DIR$/css/mengzhu_index.css" />
+        <option value="$PROJECT_DIR$/page/mengzhu_index.html" />
       </list>
     </option>
   </component>
@@ -276,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1853" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1853" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2490358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -639,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/mengzhu_register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06277533">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="17" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -679,18 +681,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/mengzhu_index.html">
+    <entry file="file://$PROJECT_DIR$/css/mengzhu_index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.25">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mengzhu_index.css">
+    <entry file="file://$PROJECT_DIR$/page/mengzhu_register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18803419">
-          <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="39" />
+        <state vertical-scroll-proportion="-0.02092511">
+          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/mengzhu_giftA.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.285715">
+          <caret line="45" column="73" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/mengzhu_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6024229">
+          <caret line="76" column="56" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
           <folding />
         </state>
       </provider>
