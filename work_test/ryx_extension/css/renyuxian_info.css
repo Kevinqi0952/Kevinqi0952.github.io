@@ -34,6 +34,10 @@
     color: #999999;
     line-height: 1rem;
 }
+.info-content .info-sex{
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 0.6rem;
+}
 .info-sex .sex-checked{
     width: 0.8rem;
     height: 0.8rem;
@@ -44,6 +48,7 @@
     border-radius: 50%;
     vertical-align: middle;
     display: inline-block;
+    margin-right: 0.5rem;
     overflow: hidden;
 }
 .info-sex .sex-checked-active span{
@@ -53,4 +58,14 @@
     border-radius: 50%;
     margin: 0.18rem auto;
     display:block;
+}
+.info-sex .men{
+    display: inline-block;
+    position: absolute;
+    left: 4.75rem;
+}
+.info-sex .woman{
+    display: inline-block;
+    position: absolute;
+    left: 10.725rem;
 }
