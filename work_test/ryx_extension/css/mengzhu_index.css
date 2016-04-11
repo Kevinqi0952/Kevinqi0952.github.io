@@ -258,6 +258,43 @@
     font-size: 0.5rem;
     line-height: 0.8rem;
 }
+/*µ¯²ã*/
+.mengzhu-what{
+    width: 13.5rem;
+    background-color: #ffa7af;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    position: absolute;
+    left: 0.7rem;
+    bottom: 9rem;
+    display: none;
+}
+.mengzhu-what .what-text h5{
+    font-size: 0.6rem;
+    color: #fff;
+}
+.mengzhu-what .what-text p{
+    font-size: 0.525rem;
+    color: #fff;
+}
+.mengzhu-what .what-text p > em{
+    font-size: 0.6rem;
+    color: #fff;
+}
+.mengzhu-what span{
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #ffa7af;
+    display: block;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari ºÍ Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */
+    position: absolute;
+    left: 2rem;
+    bottom: -0.3rem;
+}
 .mask{
     position: absolute; top: 0px;
     filter: alpha(opacity=60);
