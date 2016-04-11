@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="renyuxian_info.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="renyuxian_info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/renyuxian_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7083888">
-              <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+            <state vertical-scroll-proportion="-10.178572">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -66,6 +66,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-14.178572">
               <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renyuxian_info.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/renyuxian_info.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4878049">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -106,12 +116,12 @@
         <option value="$PROJECT_DIR$/css/mengzhu_index.css" />
         <option value="$PROJECT_DIR$/page/mengzhu_index.html" />
         <option value="$PROJECT_DIR$/css/extension_common.css" />
-        <option value="$PROJECT_DIR$/css/renyuxian_info.css" />
         <option value="$PROJECT_DIR$/js/renxuxian_info.js" />
         <option value="$PROJECT_DIR$/page/renyuxian_details.html" />
         <option value="$PROJECT_DIR$/page/renyuxian_download.html" />
         <option value="$PROJECT_DIR$/css/renyuxian_download.css" />
         <option value="$PROJECT_DIR$/page/renyuxian_info.html" />
+        <option value="$PROJECT_DIR$/css/renyuxian_info.css" />
       </list>
     </option>
   </component>
@@ -311,7 +321,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1509" height="916" extended-state="7" />
+    <frame x="-8" y="-8" width="1509" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24849297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -660,44 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/renxuxian_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17073171">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/renyuxian_info.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6585366">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/mengzhu_apply.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2450067">
           <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mengzhu_gift.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="70" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/renyuxian_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.178572">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -718,10 +694,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/mengzhu_gift.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/renyuxian_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7083888">
-          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/renxuxian_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17073171">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/renyuxian_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.178572">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/renyuxian_info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4878049">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding />
         </state>
       </provider>

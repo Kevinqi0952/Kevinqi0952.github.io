@@ -26,6 +26,8 @@
     color: #999999;
     line-height: 1.5rem;
     border: 1px solid #e2e2e2;
+    box-shadow: none;
+    -moz-box-shadow:none;
     display: block;
 }
 .info-content .content-info p{
