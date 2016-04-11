@@ -145,3 +145,21 @@
     right: 1.25rem;
 }
 /*apply-content end...*/
+
+/*µ¯²ã*/
+.apply-city{
+    display: none;
+    overflow: hidden;
+}
+.city-content{
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+.city-content li{
+    padding: 0.8rem 0 0.5rem 0;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 0.6rem;
+    color: #a9a9a9;
+}
+.city-content li active{
+    color: #65dbd9;
+}

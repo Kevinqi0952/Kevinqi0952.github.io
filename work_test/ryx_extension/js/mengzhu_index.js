@@ -20,10 +20,14 @@ $('.details-close').click(function(){
 })
 $('.mask').click(function(){
     $('.understanding-details').css("display","none");
+    $('.mengzhu-what').css("display","none");
     $(".mask").hide();
     $("body,html").css({"overflow":"visible"});
 })
 //ÎÊºÅµ¯³ö
-//$('.content-more').click(function(){
-//    $('.mengzhu-what').("display","block");
-//})
+$('.content-more').click(function(){
+    $('.mengzhu-what').css("display","block");
+    $(".mask").css("height",$(document).height());
+    $(".mask").css("width",$(document).width());
+    $(".mask").show();
+})

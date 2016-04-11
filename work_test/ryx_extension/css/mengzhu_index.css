@@ -268,10 +268,13 @@
     left: 0.7rem;
     bottom: 9rem;
     display: none;
+    z-index: 999;
 }
 .mengzhu-what .what-text h5{
     font-size: 0.6rem;
     color: #fff;
+    line-height: 1.5rem;
+    font-weight: bold;
 }
 .mengzhu-what .what-text p{
     font-size: 0.525rem;
@@ -280,6 +283,7 @@
 .mengzhu-what .what-text p > em{
     font-size: 0.6rem;
     color: #fff;
+    font-weight: bold;
 }
 .mengzhu-what span{
     width: 0.6rem;
