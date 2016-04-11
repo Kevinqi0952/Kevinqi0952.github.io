@@ -227,3 +227,43 @@
     /*75% £ûbottom: 1.5rem;£ý*/
     100% {bottom: 1.4rem;}
 }
+/*µ¯²ã*/
+.understanding-details{
+    width: 13.5rem;
+    background-color: #dffcfb;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+.understanding-details .details-close{
+    width: 0.875rem;
+    height: 0.875rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.65rem;
+
+}
+.understanding-details .details-close img{
+    width: 100%;
+    height: 100%;
+}
+.understanding-details h5{
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+.understanding-details p{
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
+}
