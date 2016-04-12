@@ -28,27 +28,27 @@
         <entry file="file://$PROJECT_DIR$/js/mengzhu_gift.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mengzhu_giftB.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mengzhu_giftB.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/mengzhu_giftB.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.132116">
+            <state vertical-scroll-proportion="-4.392857">
               <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mengzhu_giftA.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mengzhu_giftA.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/mengzhu_giftA.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.964285">
-              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.47905478">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -97,7 +97,6 @@
         <option value="$PROJECT_DIR$/css/mengzhu_giftA.html" />
         <option value="$PROJECT_DIR$/css/mengzhu_giftA.css" />
         <option value="$PROJECT_DIR$/css/renyuxian_details.css" />
-        <option value="$PROJECT_DIR$/page/mengzhu_giftA.html" />
         <option value="$PROJECT_DIR$/js/renxuxian_info.js" />
         <option value="$PROJECT_DIR$/page/renyuxian_details.html" />
         <option value="$PROJECT_DIR$/page/renyuxian_download.html" />
@@ -116,6 +115,7 @@
         <option value="$PROJECT_DIR$/page/mengzhu_gift.html" />
         <option value="$PROJECT_DIR$/js/mengzhu_gift.js" />
         <option value="$PROJECT_DIR$/page/mengzhu_giftB.html" />
+        <option value="$PROJECT_DIR$/page/mengzhu_giftA.html" />
       </list>
     </option>
   </component>
@@ -315,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1829" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1829" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24765582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -696,6 +696,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/mengzhu_giftB.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.392857">
+          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/mengzhu_signin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -707,23 +715,15 @@
     <entry file="file://$PROJECT_DIR$/js/mengzhu_gift.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/mengzhu_giftA.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.964285">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/mengzhu_giftB.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.132116">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.47905478">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="53" />
           <folding />
         </state>
       </provider>
