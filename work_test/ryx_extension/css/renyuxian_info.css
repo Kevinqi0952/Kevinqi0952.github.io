@@ -28,6 +28,9 @@
     border: 1px solid #e2e2e2;
     -webkit-appearance: none;//»•µÙIOS÷–“ı”∞
     display: block;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
 }
 .info-content .content-info p{
     font-size: 0.5rem;
