@@ -15,6 +15,7 @@
 .apply-content  .apply-checked,
 .apply-content .apply-select,
 .apply-content .apply-input{
+    height: 1.5rem;
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 0.25rem;
 }
