@@ -18,8 +18,47 @@
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
 }
-.gift-chose .chose-giftA{
+/*选择*/
+.gift-chose .chose-chose{
     width: 8.7rem;
+}
+.gift-chose .chose-chose .chose-gift-box{
+    border: 0.2rem solid #65dbd9;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.gift-chose .chose-chose .chose-gift-box .chose-gift-img{
+    width: 100%;
+    height: 2.575rem;
+}
+.gift-chose .chose-chose .chose-gift-box .chose-gift-img img{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+/*没有选择*/
+.gift-chose .chose-not-chose{
+    width: 5.15rem;
+}
+.gift-chose .chose-not-chose .chose-gift-box{
+    border: 1px solid #65dbd9;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.gift-chose .chose-not-chose .chose-gift-box .chose-gift-img{
+    width: 100%;
+    height: 2.575rem;
+}
+.gift-chose .chose-not-chose .chose-gift-box .chose-gift-img img{
+    width: 70%;
+    height: 80%;
+    margin: 0.5rem auto;
+    display: block;
+}
+.gift-chose .chose-giftA{
     margin-right: 0.3rem;
     display: inline-block;
     vertical-align: top;
@@ -29,31 +68,19 @@
     color: #65dbd9;
     vertical-align: middle;
 }
-.gift-chose .chose-giftA .chose-giftA-box{
+.gift-chose .chose-giftA .chose-gift-box{
     width: 100%;
     height: 4.75rem;
-    border: 0.2rem solid #65dbd9;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
-    -webkit-box-sizing:border-box; /* Safari */
     border-radius: 0.2rem;
     background-color: #f1f1f1;
 }
-.gift-chose .chose-giftA .chose-giftA-box h4{
+.gift-chose .chose-giftA .chose-gift-box h4{
     text-align: center;
     line-height: 1.5rem;
     font-size: 0.75rem;
     color: #65dbd9;
 }
-.gift-chose .chose-giftA .chose-giftA-box .chose-giftA-img{
-    width: 100%;
-    height: 2.575rem;
-    background: url("../image/mengzhu_gift/pic_commdityAimg.png") no-repeat;
-    background-size: 90% 100%;
-    background-position: center;
-}
 .gift-chose .chose-giftB{
-    width: 5.15rem;
     display: inline-block;
     vertical-align: top;
 }
@@ -62,28 +89,17 @@
     color: #65dbd9;
     vertical-align: middle;
 }
-.gift-chose .chose-giftB .chose-giftB-box{
+.gift-chose .chose-giftB .chose-gift-box{
     width: 100%;
     height: 4.75rem;
-    border: 1px solid #65dbd9;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
-    -webkit-box-sizing:border-box; /* Safari */
     border-radius: 0.2rem;
     background-color: #f1f1f1;
 }
-.gift-chose .chose-giftB .chose-giftB-box h4{
+.gift-chose .chose-giftB .chose-gift-box h4{
     text-align: center;
     line-height: 1.5rem;
     font-size: 0.75rem;
     color: #65dbd9;
-}
-.chose-giftB .chose-giftB-box .chose-giftA-img{
-    width: 100%;
-    height: 2.575rem;
-    background: url("../image/mengzhu_gift/pic_commdityBimg.png") no-repeat;
-    background-size: 90% 80%;
-    background-position: center;
 }
 /*gift-chose end*/
 
@@ -124,4 +140,3 @@
     display: block;
     margin: 0.5rem auto 0.5rem auto;
 }
-/*gift-bottom-fixed end*/
