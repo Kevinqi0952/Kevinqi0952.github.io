@@ -25,6 +25,13 @@
     line-height: 1.5rem;
     color: #a9a9a9;
 }
+.apply-content .apply-select div{
+    display: none;
+    position: absolute;
+    right: 1.25rem;
+    background-color: #fff;
+    z-index: 997;
+}
 .apply-content .apply-input input{
     width: 9rem;
     height: 0.85rem;
@@ -147,19 +154,45 @@
 /*apply-content end...*/
 
 /*µ¯²ã*/
+.apply-edu,
+.apply-income,
+.apply-job,
+.apply-birth,
 .apply-city{
     display: none;
+    width: 100%;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
 }
+.edu-content,
+.income-content,
+.job-content,
+.birth-content,
 .city-content{
     padding: 0 1.25rem 1.25rem 1.25rem;
 }
+.edu-content li,
+.income-content li,
+.job-content li,
+.birth-content li,
 .city-content li{
     padding: 0.8rem 0 0.5rem 0;
     border-bottom: 1px solid #e2e2e2;
     font-size: 0.6rem;
     color: #a9a9a9;
 }
-.city-content li active{
+.LiActive{
     color: #65dbd9;
+}
+#city{
+    display: none;
+}
+.mask{
+    position: absolute; top: 0px;
+    background-color: #fff;
+    z-index: 998;
 }

@@ -51,5 +51,66 @@ $(function(){
             $(this).val("请填写");
         }
     });
+    //选择城市
+    $('#chose-city').click(function(){
+        $('.apply-city').fadeIn(300);
+        $('#province').show();
+        $(".mask").css("height",$(document).height());
+        $(".mask").css("width",$(document).width());
+        $(".mask").show();
+    })
+    $('#province li').click(function(){
+        $('#province').hide();
+        $('#city').fadeIn(300);
+        var provinceName = $(this).html();
+        $('#city li').click(function(){
+            $(".mask").hide();
+            $('#city').hide();
+            $('.apply-city').hide();
+            $('#this-city').css("display","inline-block");
+            $('#this-city em').html(provinceName+" "+$(this).html());
+        });
+    });
+
+    // 选择生日
+    //选择职业
+    $('#chose-job').click(function(){
+        $('.apply-job').fadeIn(300);
+        $(".mask").css("height",$(document).height());
+        $(".mask").css("width",$(document).width());
+        $(".mask").show();
+    })
+    $('#job li').click(function(){
+        $('.apply-job').hide();
+        $(".mask").hide();
+        $('#this-job').css("display","inline-block");
+        $('#this-job em').html($(this).html());
+    })
+    //选择月收入
+    $('#chose-income').click(function(){
+        $('.apply-income').fadeIn(300);
+        $(".mask").css("height",$(document).height());
+        $(".mask").css("width",$(document).width());
+        $(".mask").show();
+    })
+    $('#income li').click(function(){
+        $('.apply-income').hide();
+        $(".mask").hide();
+        $('#this-income').css("display","inline-block");
+        $('#this-income em').html($(this).html());
+    })
+    //选择教育程度
+    $('#chose-edu').click(function(){
+        $('.apply-edu').fadeIn(300);
+        $(".mask").css("height",$(document).height());
+        $(".mask").css("width",$(document).width());
+        $(".mask").show();
+    })
+    $('#edu li').click(function(){
+        $('.apply-edu').hide();
+        $(".mask").hide();
+        $('#this-edu').css("display","inline-block");
+        $('#this-edu em').html($(this).html());
+    })
 
 })

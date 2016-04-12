@@ -44,8 +44,11 @@
                 <em>微信</em>
                 <input type="text" value = "请填写"/>
             </li>
-            <li class="apply-select">
+            <li class="apply-select" id="chose-city">
                 <em>城市</em>
+                <div id="this-city">
+                    <em></em>
+                </div>
                 <span></span>
             </li>
             <li class="apply-input">
@@ -63,20 +66,33 @@
                     <div class="checked-box"></div>
                 </div>
             </li>
-            <li class="apply-select">
+            <li class="apply-input">
                 <em>生日</em>
-                <span></span>
+                <input type="date"/>
+                <!--<div id="this-birth">-->
+                    <!--<em></em>-->
+                <!--</div>-->
+                <!--<span></span>-->
             </li>
-            <li class="apply-select">
+            <li class="apply-select" id="chose-job">
                 <em>职业</em>
+                <div id="this-job">
+                    <em></em>
+                </div>
                 <span></span>
             </li>
-            <li class="apply-select">
+            <li class="apply-select" id="chose-income">
                 <em>月收入</em>
+                <div id="this-income">
+                    <em></em>
+                </div>
                 <span></span>
             </li>
-            <li class="apply-select">
+            <li class="apply-select" id="chose-edu">
                 <em>教育程度</em>
+                <div id="this-edu">
+                    <em></em>
+                </div>
                 <span></span>
             </li>
             <li class="apply-input">
@@ -96,7 +112,7 @@
             <h1>选择城市</h1>
         </div>
         <div class="city-content">
-            <ul>
+            <ul id="province">
                 <li value="北京">北京</li>
                 <li value="天津">天津</li>
                 <li value="上海">上海</li>
@@ -105,8 +121,110 @@
                 <li value="安徽省">安徽省</li>
                 <li value="江苏省">江苏省</li>
             </ul>
+            <ul id="city">
+                <li value="北京">北京</li>
+                <li value="天津">天津</li>
+                <li value="上海">上海</li>
+            </ul>
         </div>
     </div>
+    <div class="apply-birth">
+        <div class="common-header">
+            <h1>生日</h1>
+        </div>
+        <div class="birth-content">
+            <ul id="year">
+                <li value="1990">1990</li>
+            </ul>
+            <ul id="month">
+                <li value="1">1</li>
+                <li value="2">2</li>
+                <li value="3">3</li>
+                <li value="4">4</li>
+                <li value="5">5</li>
+                <li value="6">6</li>
+                <li value="7">7</li>
+                <li value="8">8</li>
+                <li value="9">9</li>
+                <li value="10">10</li>
+                <li value="11">11</li>
+                <li value="12">12</li>
+            </ul>
+            <ul id="day">
+                <li value="1">1</li>
+                <li value="2">2</li>
+                <li value="3">3</li>
+                <li value="4">4</li>
+                <li value="5">5</li>
+                <li value="6">6</li>
+                <li value="7">7</li>
+                <li value="8">8</li>
+                <li value="9">9</li>
+                <li value="10">10</li>
+                <li value="11">11</li>
+                <li value="12">12</li>
+            </ul>
+        </div>
+    </div>
+    <div class="apply-job">
+        <div class="common-header">
+            <h1>职业</h1>
+        </div>
+        <div class="job-content">
+            <ul id="job">
+                <li value="青春学子">青春学子</li>
+                <li value="奋斗白领">奋斗白领</li>
+                <li value="霸气公务员">霸气公务员</li>
+                <li value="帅气金融人">帅气金融人</li>
+                <li value="救死扶伤医疗业">救死扶伤医疗业</li>
+                <li value="耕耘的老师">耕耘的老师</li>
+                <li value="勤劳蓝领">勤劳蓝领</li>
+                <li value="耕耘的老师">耕耘的老师</li>
+                <li value="自由职业">自由职业</li>
+                <li value="最美全职主妇">最美全职主妇</li>
+                <li value="逍遥退休人">逍遥退休人</li>
+                <li value="其他">其他</li>
+            </ul>
+        </div>
+    </div>
+    <div class="apply-income">
+        <div class="common-header">
+            <div class="header-left-btn">
+                <a href="javascript:;" onclick="javascript:history.back();">
+                    <img src="../image/mengzhu_register/pic_registerBackIcon.png" alt="back"/>
+                </a>
+            </div>
+            <h1>收入</h1>
+        </div>
+        <div class="income-content">
+            <ul id="income">
+                <li value="2000以下">2000以下</li>
+                <li value="2001-5000">2001-5000</li>
+                <li value="5001-8000">5001-8000</li>
+                <li value="8001-10000">8001-10000</li>
+                <li value="10001-15000">10001-15000</li>
+                <li value="20001-30000">20001-30000</li>
+                <li value="30001-50000">30001-50000</li>
+                <li value="50000以上">50000以上</li>
+            </ul>
+        </div>
+    </div>
+    <div class="apply-edu">
+        <div class="common-header">
+            <h1>教育程度</h1>
+        </div>
+        <div class="edu-content">
+            <ul id="edu">
+                <li value="高中以下">高中以下</li>
+                <li value="中专">中专</li>
+                <li value="大专">大专</li>
+                <li value="本科">本科</li>
+                <li value="硕士">硕士</li>
+                <li value="博士">博士</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mask"></div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
 <script src="../js/mengzhu_apply.js"></script>
