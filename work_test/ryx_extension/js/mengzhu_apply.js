@@ -55,17 +55,15 @@ $(function(){
     $('#chose-city').click(function(){
         $('.apply-city').fadeIn(300);
         $('#province').show();
-        $(".mask").css("height",$(document).height());
-        $(".mask").css("width",$(document).width());
-        $(".mask").show();
+        $('.apply-content').hide();
     })
     $('#province li').click(function(){
         $('#province').hide();
         $('#city').fadeIn(300);
         var provinceName = $(this).html();
         $('#city li').click(function(){
-            $(".mask").hide();
             $('#city').hide();
+            $('.apply-content').show();
             $('.apply-city').hide();
             $('#this-city').css("display","inline-block");
             $('#this-city em').html(provinceName+" "+$(this).html());
@@ -73,42 +71,61 @@ $(function(){
     });
 
     // 选择生日
+    $('#chose-birth').click(function(){
+        $('.apply-birth').fadeIn(300);
+        $('#year').show();
+        $('.apply-content').hide();
+    })
+    $('#year li').click(function(){
+        $('#year').hide();
+        $('#month').fadeIn(300);
+        var year = $(this).html();
+        $('#month li').click(function(){
+            $("#month").hide();
+            $('#day').fadeIn(300);
+            var month = $(this).html();
+            $('#day li').click(function(){
+                $('#day').hide();
+                $('.apply-content').show();
+                $('.apply-birth').hide();
+                $('#this-birth').css("display","inline-block");
+                $('#this-birth em').html(year+"年"+month+"月"+$(this).html()+"日");
+            });
+            //$('.apply-city').hide();
+            //$('#this-city').css("display","inline-block");
+            //$('#this-city em').html(provinceName+" "+$(this).html());
+        });
+    });
     //选择职业
     $('#chose-job').click(function(){
         $('.apply-job').fadeIn(300);
-        $(".mask").css("height",$(document).height());
-        $(".mask").css("width",$(document).width());
-        $(".mask").show();
+        $('.apply-content').hide();
     })
     $('#job li').click(function(){
         $('.apply-job').hide();
-        $(".mask").hide();
+        $('.apply-content').show();
         $('#this-job').css("display","inline-block");
         $('#this-job em').html($(this).html());
     })
     //选择月收入
     $('#chose-income').click(function(){
         $('.apply-income').fadeIn(300);
-        $(".mask").css("height",$(document).height());
-        $(".mask").css("width",$(document).width());
-        $(".mask").show();
+        $('.apply-content').hide();
     })
     $('#income li').click(function(){
         $('.apply-income').hide();
-        $(".mask").hide();
+        $('.apply-content').show();
         $('#this-income').css("display","inline-block");
         $('#this-income em').html($(this).html());
     })
     //选择教育程度
     $('#chose-edu').click(function(){
         $('.apply-edu').fadeIn(300);
-        $(".mask").css("height",$(document).height());
-        $(".mask").css("width",$(document).width());
-        $(".mask").show();
+        $('.apply-content').hide();
     })
     $('#edu li').click(function(){
         $('.apply-edu').hide();
-        $(".mask").hide();
+        $('.apply-content').show();
         $('#this-edu').css("display","inline-block");
         $('#this-edu em').html($(this).html());
     })

@@ -46,6 +46,10 @@
     position: absolute;
     right: 1.15rem;
 }
+.apply-content .apply-input input::value{
+    width: 9rem;
+    text-align: right;
+}
 .apply-content .apply-input input::-webkit-input-placeholder
 {
     width: 9rem;
@@ -191,8 +195,12 @@
 #city{
     display: none;
 }
-.mask{
-    position: absolute; top: 0px;
-    background-color: #fff;
-    z-index: 998;
+#year{
+    display: none;
+}
+#month{
+    display: none;
+}
+#day{
+    display: none;
 }
