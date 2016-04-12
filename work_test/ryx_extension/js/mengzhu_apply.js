@@ -89,7 +89,7 @@ $(function(){
                 $('.apply-content').show();
                 $('.apply-birth').hide();
                 $('#this-birth').css("display","inline-block");
-                $('#this-birth em').html(year+"年"+month+"月"+$(this).html()+"日");
+                $('#this-birth em').html(year + month + $(this).html());
             });
             //$('.apply-city').hide();
             //$('#this-city').css("display","inline-block");

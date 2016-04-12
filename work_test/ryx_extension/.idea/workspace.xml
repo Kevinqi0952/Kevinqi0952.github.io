@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mengzhu_apply.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mengzhu_apply.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/mengzhu_apply.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6530612">
+            <state vertical-scroll-proportion="-21.714285">
               <caret line="185" column="30" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mengzhu_apply.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mengzhu_apply.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/mengzhu_apply.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.76225233">
+              <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -90,9 +90,9 @@
         <option value="$PROJECT_DIR$/css/mengzhu_index.css" />
         <option value="$PROJECT_DIR$/css/extension_common.css" />
         <option value="$PROJECT_DIR$/js/mengzhu_index.js" />
-        <option value="$PROJECT_DIR$/js/mengzhu_apply.js" />
         <option value="$PROJECT_DIR$/css/mengzhu_apply.css" />
         <option value="$PROJECT_DIR$/page/mengzhu_apply.html" />
+        <option value="$PROJECT_DIR$/js/mengzhu_apply.js" />
       </list>
     </option>
   </component>
@@ -703,18 +703,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mengzhu_apply.js">
+    <entry file="file://$PROJECT_DIR$/page/mengzhu_apply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+        <state vertical-scroll-proportion="-21.714285">
+          <caret line="185" column="30" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/mengzhu_apply.html">
+    <entry file="file://$PROJECT_DIR$/js/mengzhu_apply.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6530612">
-          <caret line="185" column="30" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.76225233">
+          <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
           <folding />
         </state>
       </provider>
