@@ -1,9 +1,28 @@
-.renyuxian-index{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 0.45rem solid #c6f2f1;
-    box-sizing: border-box;
+@media screen and (max-height: 480px){
+    .renyuxian-index .index-header .header-text{
+        margin-top: 2%;
+    }
+    .renyuxian-index .index-header .header-text img{
+        width: 8.75rem;
+        height: 3.375rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        display: block;
+    }
+}
+@media screen and (min-height: 481px){
+    .renyuxian-index .index-header .header-text{
+        margin-top: 4%;
+    }
+    .renyuxian-index .index-header .header-text img{
+        width: 11.75rem;
+        height: 5.375rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        display: block;
+    }
 }
 /*renyuxian index start*/
 .renyuxian-index .index-header{
@@ -19,17 +38,6 @@
 .renyuxian-index .index-header .header-logo img{
     width: 100%;
     height: 100%;
-}
-.renyuxian-index .index-header .header-text{
-    margin-top: 4%;
-}
-.renyuxian-index .index-header .header-text img{
-    width: 11.75rem;
-    height: 5.375rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    display: block;
 }
 .renyuxian-index .index-header .header-text .text-ad{
     width: 10.85rem;
@@ -133,6 +141,7 @@
     position: absolute;
     bottom: 4.5rem;
     left: 0;
+    z-index: 999;
 }
 .mengzhu-index-content .content-link  .content-more{
     width: 1.1rem;
