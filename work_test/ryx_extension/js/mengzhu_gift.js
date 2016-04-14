@@ -3,6 +3,9 @@
  */
 
 $(function(){
+    $('#gift-next').click(function(){
+        location.href = 'mengzhu_giftA.html';
+    })
     $('.chose-gift').click(function(){
         var checked = $(this).children('.chose-checked');
         var activeDiv = $(this).index();
