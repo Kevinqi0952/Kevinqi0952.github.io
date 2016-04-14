@@ -1,3 +1,5 @@
+/*适配*/
+/*第一屏iphone 4*/
 @media screen and (max-height: 480px){
     .renyuxian-index .index-header .header-text{
         margin-top: 2%;
@@ -11,6 +13,7 @@
         display: block;
     }
 }
+/*第一屏其他*/
 @media screen and (min-height: 481px){
     .renyuxian-index .index-header .header-text{
         margin-top: 4%;
