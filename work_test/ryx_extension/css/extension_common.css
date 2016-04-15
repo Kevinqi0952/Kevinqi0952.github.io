@@ -94,3 +94,19 @@ html{
 /*gift chose end*/
 
 /*go top*/
+.common-go-top{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 0.5rem;
+    bottom: 3rem;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    display: none;
+}
+.common-go-top img{
+    width: 100%;
+    height: 100%;
+}
