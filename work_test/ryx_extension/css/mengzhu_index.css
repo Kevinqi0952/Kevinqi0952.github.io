@@ -1,6 +1,9 @@
 /*适配*/
 /*第一屏iphone 4*/
 @media screen and (max-height: 480px){
+    html{
+        font-size: 10px;
+    }
     .renyuxian-index .index-header .header-text{
         margin-top: 2%;
     }
@@ -12,6 +15,31 @@
         display: block;
         display: block;
     }
+    .renyuxian-index .index-img {
+        width: 14.25rem;
+        height: 6.075rem;
+        margin: 5.5rem auto 0 auto;
+        overflow: hidden;
+    }
+    .mengzhu-index .mengzhu-index-content .content-link{
+        width: 100%;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 0;
+        z-index: 998;
+    }
+    .mengzhu-what{
+        width: 13.5rem;
+        background-color: #ffa7af;
+        border-radius: 0.3rem;
+        padding: 0.6rem;
+        position: absolute;
+        left: 0.7rem;
+        bottom: 7.8rem;
+        display: none;
+        z-index: 999;
+    }
+
 }
 /*第一屏其他*/
 @media screen and (min-height: 481px){
@@ -25,6 +53,30 @@
         margin-right: auto;
         display: block;
         display: block;
+    }
+    .renyuxian-index .index-img {
+        width: 14.25rem;
+        height: 6.075rem;
+        margin: 5.6rem auto 0 auto;
+        overflow: hidden;
+    }
+    .mengzhu-index .mengzhu-index-content .content-link{
+        width: 100%;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 0;
+        z-index: 996;
+    }
+    .mengzhu-what{
+        width: 13.5rem;
+        background-color: #ffa7af;
+        border-radius: 0.3rem;
+        padding: 0.6rem;
+        position: absolute;
+        left: 0.7rem;
+        bottom: 9.8rem;
+        display: none;
+        z-index: 999;
     }
 }
 /*renyuxian index start*/
@@ -67,12 +119,6 @@
     font-size: 0.5rem;
     color: #fff;
     word-break: break-all;
-}
-.renyuxian-index .index-img {
-    width: 14.25rem;
-    height: 6.075rem;
-    margin: 6.125rem auto 0 auto;
-    overflow: hidden;
 }
 .renyuxian-index .index-img .img-duhaitao img {
     width: 7rem;
@@ -139,13 +185,6 @@
     color: #48d2d0;
     margin-left: 1.6rem;
 }
-.mengzhu-index .mengzhu-index-content .content-link{
-    width: 100%;
-    position: absolute;
-    bottom: 4.5rem;
-    left: 0;
-    z-index: 996;
-}
 .mengzhu-index-content .content-link  .content-more{
     width: 1.1rem;
     height: 1.1rem;
@@ -173,6 +212,7 @@
 .mengzhu-index-content .content-link p{
     font-size: 0.55rem;
     color: #ffa7af;
+    margin-top: 0.5rem;
     margin-left: 11rem;
 }
 /*mengzhu index end*/
@@ -271,17 +311,6 @@
     line-height: 0.8rem;
 }
 /*弹层*/
-.mengzhu-what{
-    width: 13.5rem;
-    background-color: #ffa7af;
-    border-radius: 0.3rem;
-    padding: 0.6rem;
-    position: absolute;
-    left: 0.7rem;
-    bottom: 9rem;
-    display: none;
-    z-index: 999;
-}
 .mengzhu-what .what-text h5{
     font-size: 0.6rem;
     color: #fff;
