@@ -105,11 +105,33 @@ html{
 }
 .vouchers-notes .notes-wechat{
     width: 50%;
+    text-align: right;
     float: left;
+}
+.vouchers-notes .notes-wechat em{
+    font-size: 0.5rem;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+.vouchers-notes .notes-wechat p{
+    font-size: 0.45rem;
+    color: #fff;
+    font-family: "Microsoft YaHei";
 }
 .vouchers-notes .notes-what{
     width: 50%;
+    text-align: right;
+    line-height: 2rem;
     float: right;
+}
+.vouchers-notes .notes-what span{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.vouchers-notes .notes-what u{
+    font-size: 0.75rem;
+    color: #fff;
+    font-family: "Microsoft YaHei";
 }
     /*µ×²¿¹Ì¶¨*/
 .bottom-fixed{
