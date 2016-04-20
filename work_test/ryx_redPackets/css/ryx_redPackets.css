@@ -127,11 +127,34 @@ html{
 .vouchers-notes .notes-what span{
     width: 0.8rem;
     height: 0.8rem;
+    background: url("../image/pic_renyuxianWhat.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -0.35rem;;
 }
 .vouchers-notes .notes-what u{
     font-size: 0.75rem;
     color: #fff;
     font-family: "Microsoft YaHei";
+    margin-left: 0;
+}
+.content-rule{
+    border-top: 1px dotted #fff;
+    padding-bottom: 2.6rem;
+}
+.content-rule h2{
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.content-rule p{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    line-height: 0.9rem;
 }
     /*µ×²¿¹Ì¶¨*/
 .bottom-fixed{
