@@ -20,5 +20,6 @@ $(function(){
     //关闭底部固定
     $('.fixed-close').click(function(){
         $('.bottom-fixed').slideUp(500);
+        $('.content-rule').css("padding-bottom","1rem");
     })
 })
