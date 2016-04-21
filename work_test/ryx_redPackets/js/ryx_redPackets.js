@@ -27,6 +27,10 @@ $(function(){
         $('.phone-alert').fadeOut(300);
         $(".mask").fadeOut(200);
     })
+    $(".mask").click(function(){
+        $('.phone-alert').fadeOut(300);
+        $(".mask").fadeOut(200);
+    })
     //关闭底部固定
     $('.fixed-close').click(function(){
         $('.bottom-fixed').slideUp(500);
