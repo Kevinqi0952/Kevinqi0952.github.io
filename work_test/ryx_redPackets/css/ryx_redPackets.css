@@ -78,6 +78,7 @@ html{
     color: #bcc1c0;
     font-family: "Microsoft YaHei";
     padding-left: 3.5rem;
+    padding-right: 3.5rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */

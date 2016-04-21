@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ryx_redPackets.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ryx_redPackets.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/ryx_redPackets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36734694">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state vertical-scroll-proportion="-4.071429">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ryx_redPackets.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ryx_redPackets.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/ryx_redPackets.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="28" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.4358707">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
         <option value="$PROJECT_DIR$/script/ryx_redPackets.js" />
         <option value="$PROJECT_DIR$/style/ryx_redPackets.css" />
         <option value="$PROJECT_DIR$/js/ryx_redPackets.js" />
-        <option value="$PROJECT_DIR$/css/ryx_redPackets.css" />
         <option value="$PROJECT_DIR$/page/ryx_redPackets.html" />
+        <option value="$PROJECT_DIR$/css/ryx_redPackets.css" />
       </list>
     </option>
   </component>
@@ -410,6 +410,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/ryx_redPackets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/ryx_redPackets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -420,16 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ryx_redPackets.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="28" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/ryx_redPackets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36734694">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.4358707">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
           <folding />
         </state>
       </provider>
