@@ -14,8 +14,18 @@ $(function(){
             $("#apply-phone").focus();//获取光标，弹出输入键盘
             return false;
         } else{
-
+            $('.phone-alert').css('left',($(window).width() - $('.phone-alert').outerWidth())/2);
+            $('.phone-alert').css('top',($(window).height() - $('.phone-alert').outerHeight())/2+$(window).scrollTop());
+            $('.phone-alert').fadeIn(200);
+            $(".mask").css("height",$(document).height());
+            $(".mask").css("width",$(document).width());
+            $(".mask").fadeIn(200);
+            $('#phoneNumber').html($('#apply-phone').val());
         }
+    })
+    $('.alert-close').click(function(){
+        $('.phone-alert').fadeOut(300);
+        $(".mask").fadeOut(200);
     })
     //关闭底部固定
     $('.fixed-close').click(function(){

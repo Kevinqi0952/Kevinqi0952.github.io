@@ -223,5 +223,63 @@ html{
     margin-top: 0.6rem;
     margin-left: 0.5rem;
     float: left;
-
+}
+/*µ¯²ã*/
+.phone-alert{
+    width: 13.45rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    padding: 0.8rem 0.55rem 2.175rem 0.55rem;
+    overflow: hidden;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+.phone-alert .alert-close{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../image/pic_alertClose.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0.55rem;
+    right: 0.55rem;
+}
+.phone-alert p{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    color: #a2a2a2;
+    line-height: 1rem;
+    word-break: break-all;
+    display: block;
+    overflow: hidden;
+    padding: 0.8rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.phone-alert em{
+    font-weight: bold;
+    color: #5fc2c7;
+}
+.phone-alert button{
+    width: 100%;
+    height: 2.1rem;
+    border-radius: 0.25rem;
+    background-color: #5fc2c7;
+    font-size: 0.75rem;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    display: block;
+}
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
 }
