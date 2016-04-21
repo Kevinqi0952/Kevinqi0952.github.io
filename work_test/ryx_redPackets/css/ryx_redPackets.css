@@ -65,15 +65,18 @@ html{
     left: 8.6rem;
 }
 .content-vouchers .vouchers-text input{
-    width: 70%;
+    width: 100%;
     background: none;
     border: none;
     font-size: 0.6rem;
     color: #bcc1c0;
     font-family: "Microsoft YaHei";
+    padding-left: 3.5rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     position: absolute;
     bottom: 0.1rem;
-    left: 3.5rem;
 }
 .content-vouchers button{
     width: 8.15rem;
