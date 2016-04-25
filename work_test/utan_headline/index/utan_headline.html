@@ -34,8 +34,32 @@
             </div>
             <p>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容。</p>
         </div>
+        <div class="renyuxian-content">
+            <div class="content-img">
+                <img src="../images/pic_renyuxianGril.jpg"/>
+            </div>
+            <span>减重5斤</span>
+            <p>在人鱼线的42天里每天都有一个不一样的自己【人鱼案例】</p>
+        </div>
+
+        <div class="dayima-app-content">
+            <div class="app-content-text">
+                <h1>人鱼线明星案例</h1>
+                <p>在人鱼线的42天里每天都有一个不一样的自己</p>
+            </div>
+            <div class="app-content-img">
+                <img src="../images/pic_renyuxianGril.jpg"/>
+            </div>
+        </div>
+
+        <div class="renyuxian-declare">人鱼线在线健康减肥课程由人鱼线独家开发，独家拥有知识产权，未经许可严禁传播，更多内容请下载人鱼线app。</div>
+        <div class="renyuxian-banner">
+            <img src="../images/banner_renyuxian.jpg" alt=""/>
+        </div>
         <div class="utan-banner">
-            <img src="../images/banner_utanHeadLine.jpg"/>
+            <div class="qr-code">
+                <img src="../images/banner_utanHeadLineQrCode.jpg" alt="qrCode"/>
+            </div>
         </div>
     </div>
     <div class="like-people">
@@ -123,13 +147,20 @@
             <li></li>
         </ul>
     </div>
-    <div class="bottom-fixed">
-        <img src="../images/pic_bottomfixed.png"/>
-        <h1>致力于做最懂女人的APP</h1>
-        <button type="button"><a href="#">立即体验</a></button>
+    <!--<div class="bottom-fixed">-->
+        <!--<img src="../images/pic_bottomfixed.png"/>-->
+        <!--<h1>致力于做最懂女人的APP</h1>-->
+        <!--<button type="button"><a href="#">立即体验</a></button>-->
+    <!--</div>-->
+    <div class="bottom--renyuxian-fixed bottom-fixed">
+        <img src="../images/pic_bottomRyxfixed.png"/>
+        <em>人鱼线</em>
+        <p>杜海涛的减肥神器</p>
+        <button type="button" id="ryx-btn"><a href="#">立即体验</a></button>
     </div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
+<script src="../js/jqthumb.js"></script>
 <script>
     $(function()
     {
@@ -149,6 +180,10 @@
             } else{
                 $(this).addClass('span-click');
             }
+            //
+        })
+        $(function(){
+            $('.app-content-img img').jqthumb();
         })
     });
 </script>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        label{
+            padding: 10px;
+            margin: 10px;
+            color: #fff;
+
+            transition:color 0.3s;
+            -moz-transition:color 0.3s;
+            -webkit-transiton:color 0.3s;
+            -o-transition:color 0.3s;
+        }
+        .div1{
+            width: 600px;
+            height: 240px;
+            background-color: #6b92b9;
+            margin: 10px auto;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            transition:background-color 0.3s,box-shadow 0.3s;
+            -moz-transition:background-color 0.3s,box-shadow 0.3s; /* Firefox 4 */
+            -webkit-transition:background-color 0.3s,box-shadow 0.3s,border 0.3s; /* Safari and Chrome */
+            -o-transition:background-color 0.3s,box-shadow 0.3s; /* Opera */
+        }
+        .div1:hover{
+            background-color: #8abef2;
+            border: 1px solid #6b92b9;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-shadow: 1px 0px 6px  #6b92b9; /* 老的 Firefox */
+            box-shadow: 1px 0px 6px  #b2b2b2;
+
+            transition:background-color 0.3s,box-shadow 0.3s;
+            -moz-transition:background-color 0.3s,box-shadow 0.3s; /* Firefox 4 */
+            -webkit-transition:background-color 0.3s,box-shadow 0.3s,border 0.3s;; /* Safari and Chrome */
+            -o-transition:background-color 0.3s,box-shadow 0.3s; /* Opera */
+        }
+        .div1 .weather label:hover{
+            color: red;
+
+            transition:color 0.3s;
+            -moz-transition:color 0.3s;
+            -webkit-transiton:color 0.3s;
+            -o-transition:color 0.3s;
+        }
+        .div1 h1{
+            color: #fff;
+            text-align: center;
+            font-family: "Microsoft YaHei";
+        }
+        .div1 .weather{
+            width: 400px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .div1 .weather label{
+            display: block;
+        }
+        * {margin: 0; padding: 0;}</p> <p>body {
+                                        /*You can use any kind of background here.*/
+                                        background: #6b92b9;
+                                    }
+        canvas {
+            /*width: 100%;*/
+            /*height: 100%;*/
+            display: block;
+        }
+        button{
+            width: 600px;
+            height: 200px;
+            background-color: #6b92b9;
+        }
+    </style>
+<body>
+        <div class="div1">
+            <h1>天气</h1>
+            <div class="weather">
+                <canvas id="canvas" style="position:fixed; top:0px;left:0px;z-index:80;pointer-events:none;"></canvas>
+                <form action="">
+                    <label>
+                        城市：<em id="city"></em>
+                    </label>
+                    <label>
+                        天气：<em id="weather"></em>
+                    </label>
+                    <label>
+                        温度：<em id="temperature"></em>
+                    </label>
+                </form>
+            </div>
+        </div>
+    <script src="../js/jquery/1.11.1/jquery.js"></script>
+    <script>
+        $.getScript("http://php.weather.sina.com.cn/js.php?" + $.param({
+                    city :  "哈尔滨", //城市
+                    day : 0,
+                    password : "DJOYnieT8234jlsK"
+                }) , function(json){
+    //        alert('地址：' + city + '\n天气：' + status1 + '\n温度' + temperature1 + '°');
+            $('#city').html(city);
+            $('#weather').html(status1);
+            $('#temperature').html(temperature1 + '°')
+        });
+        /*
+         返回的数据
+         city='北京';
+         year1='14';//
+         month1='02';
+         day1='21';
+         year2='14';
+         month2='02';
+         day2='22';
+         city='北京';
+         savedate_weather='2014-02-21';
+         savedate_life='2014-02-21';
+         savedate_zhishu='2014-02-21';
+         status1='霾';
+         status2='雾';
+         figure1='mai';
+         figure2='wu';
+         direction1='无持续风向';
+         direction2='无持续风向';
+         power1='≤3';
+         power2='≤3';
+         temperature1='3';//白天温度
+         temperature2='-2';//晚上温度
+         */
+        //下雪
+        window.onload = function(){
+//canvas init
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+
+//canvas dimensions
+            var W = window.innerWidth;
+            var H = window.innerHeight;
+            canvas.width = W;
+            canvas.height = H;
+
+//snowflake particles
+            var mp = 3000; //max particles
+            var particles = [];
+            for(var i = 0; i < mp; i++)
+            {
+                particles.push({
+                    x: Math.random()*W, //x-coordinate
+                    y: Math.random()*H, //y-coordinate
+                    r: Math.random()*3+1, //radius
+                    d: Math.random()*mp //density
+                })
+            }
+
+//Lets draw the flakes
+            function draw()
+            {
+                ctx.clearRect(0, 0, W, H);
+
+                ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+                /* ctx.fillStyle = "#FF0000";*/
+                ctx.beginPath();
+                for(var i = 0; i < mp; i++)
+                {
+                    var p = particles[i];
+                    ctx.moveTo(p.x, p.y);
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+                }
+                ctx.fill();
+                update();
+            }
+
+//Function to move the snowflakes
+//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+            var angle = 0;
+            function update()
+            {
+                angle += 0.01;
+                for(var i = 0; i < mp; i++)
+                {
+                    var p = particles[i];
+//Updating X and Y coordinates
+//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+//Every particle has its own density which can be used to make the downward movement different for each flake
+//Lets make it more random by adding in the radius
+                    p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+                    p.x += Math.sin(angle) * 2;
+
+//Sending flakes back from the top when it exits
+//Lets make it a bit more organic and let flakes enter from the left and right also.
+                    if(p.x > W || p.x < 0 || p.y > H)
+                    {
+                        if(i%3 > 0) //66.67% of the flakes
+                        {
+                            particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+                        }
+                        else
+                        {
+//If the flake is exitting from the right
+                            if(Math.sin(angle) > 0)
+                            {
+//Enter fromth
+                                particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+                            }
+                            else
+                            {
+//Enter from the right
+                                particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+                            }
+                        }
+                    }
+                }
+            }
+
+//animation loop
+            setInterval(draw, 15);
+        }
+    </script>
+</body>
+</html>

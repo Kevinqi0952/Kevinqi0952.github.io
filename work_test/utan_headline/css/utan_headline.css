@@ -178,11 +178,22 @@ html{
 /*utan-comment end*/
 /*新加*/
 .utan-main .utan-content .utan-banner{
-    width: 100%;
-    display: block;
+    width: 15rem;
+    height: 10.4rem;
+    background: url("../images/banner_utanHeadLine.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.utan-main .utan-content  .qr-code{
+    width: 4.32rem;
+    height: 4.32rem;
+    background-color: #fff;
+    position: absolute;
+    top: 1.76rem;
+    left: 8.66rem;
     overflow: hidden;
 }
-.utan-main .utan-content .utan-banner img{
+.utan-main .utan-content  .qr-code img{
     width: 100%;
 }
 .utan-main .like-people{
@@ -263,4 +274,107 @@ html{
     font-weight: normal;
     color: #fff;
     display: block;
+}
+
+/*人鱼线新加*/
+.renyuxian-banner img{
+    width: 100%;
+}
+.bottom--renyuxian-fixed em{
+    font-size: 0.76rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    left: 2.8rem;
+    bottom: 1.2rem;
+}
+.bottom--renyuxian-fixed p{
+    font-size: 0.56rem;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #eaeaea;
+    position: absolute;
+    z-index: 999;
+    left: 2.8rem;
+    bottom: 0.5rem;
+}
+#ryx-btn{
+    background-color: #ea292d;
+}
+.renyuxian-content{
+    width: 100%;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+}
+.renyuxian-content .content-img{
+    padding: 0.24rem;
+}
+.renyuxian-content .content-img img{
+    width: 100%;
+    display: block;
+}
+.renyuxian-content span{
+    padding: 0.1rem 0.6rem 0.1rem 0.25rem;
+    background-color: #46ccc2;
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.76rem;
+    display: inline-block;
+    border-radius: 0 0.76rem 0.76rem 0;
+}
+.renyuxian-content p{
+    padding: 0.25rem;
+    font-size: 0.6rem;
+    color: #2f2f2f;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.renyuxian-declare{
+    padding: 0.25rem;
+    font-size: 0.55rem;
+    color: #333333;
+    font-family: "Microsoft YaHei";
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*dayima-app-content*/
+.dayima-app-content{
+    width: 100%;
+    font-size: 125%;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 0.25rem;
+    box-sizing: border-box;
+}
+.app-content-text{
+    width: 10rem;
+    word-break: break-all;
+    overflow: hidden;
+    float: left;
+}
+.app-content-text h1{
+    font-size: 0.75rem;
+}
+.app-content-text p{
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: #2f2f2f;
+    text-decoration: underline;
+}
+.dayima-app-content .app-content-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.5rem;
+    overflow: hidden;
+    float:left;
+}
+.dayima-app-content .app-content-img img{
+    max-height: 3.5rem;
 }
