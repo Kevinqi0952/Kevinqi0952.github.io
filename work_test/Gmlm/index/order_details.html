@@ -16,32 +16,41 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <link rel="stylesheet" href="../css/reset_mobile.css"/>
     <link rel="stylesheet" href="../css/Gmlm_common.css"/>
-    <link rel="stylesheet" href="../css/Gmlm_SingIn.css"/>
-    <title>登录</title>
+    <link rel="stylesheet" href="../css/Gmlm_register.css"/>
+    <title>订单详情</title>
 </head>
 <body>
-<div class="signin-main">
-    <h1>用户登录</h1>
-    <div class="signin-input">
-        <div id="input-telephone"><span></span><input type="tel" placeholder="请输入手机号码"/></div>
-        <div id="input-password"><span></span><input type="password" placeholder="请输入密码"/></div>
-        <p><a href="#">忘记密码?</a></p>
+<div class="order-details-main">
+    <div class="Gmlm_header">
+        <div class="header_leftbtn" id="register_leftbtn">
+            <a href="../index/Gmlm_SignIn.html"><img src="../image/Gmlm/Gmlm_backicon.png"/></a>
+        </div>
+        <h1>订单详情</h1>
+        <div class="header_rightbtn"></div>
     </div>
-    <button type="button" id="signin-signin"><a href="#">登录</a></button>
-    <button type="button" id="signin-register"><a href="../index/Gmlm_register.html">注册</a></button>
-    <div class="signin-shareicon">
-        <img src="../image/signin/signin_sinaIcon.png" alt="sina" id="sina"/>
-        <img src="../image/signin/signin_QQIcon.png" alt="QQ" id="QQ"/>
-        <img src="../image/signin/signin_wechatIcon.png" alt="wechat" id="wechat"/>
+    <div class="order-address">
+        <span></span>
+        <div class="address-details">
+            <li>黄文杰</li>
+            <li>15601722118</li>
+            <li>上海浦东新区张江科技园松涛路春晓路
+                563号A栋501</li>
+        </div>
     </div>
-    <div class="signin-bottom">
-        <div class="bottom-checked"><span></span></div>
-        <p>我已经同意《闺蜜联盟服务协议》</p>
+    <div class="commodity-list">
+        <div class="commodity-details"></div>
+        <div class="commodity-details"></div>
+        <div class="commodity-freight"></div>
+        <div class="commodity-message"></div>
     </div>
+    <div class="payment-method">
+        <div class="method-chose"></div>
+        <div class="payment-total"></div>
+    </div>
+    <div class="order-bottom-fixed"></div>
 </div>
-<script src="../js/jquery/1.11.1/jquery.js"></script>
-<script src="../js/Gmlm_Signin.js"></script>
-<script type="text/javascript">
+<script src="../js/jquery/1.11.1/jquery.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
     //    自适应start
     function screenSizeSetting()
     {

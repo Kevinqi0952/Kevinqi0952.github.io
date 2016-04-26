@@ -53,7 +53,7 @@ input::-webkit-input-placeholder{
 .register_content .register_phone span{
     width: 1rem;
     height: 1rem;
-    background: url("../image/regiser_closetextbtn.png") no-repeat;
+    background: url("../image/regiser/regiser_closetextbtn.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     position: absolute;
@@ -105,7 +105,7 @@ input::-webkit-input-placeholder{
     height: 0.3rem;
     margin-left: 0.05rem;
     margin-top: 0.1rem;
-    background: url("../image/regiser_checkedbtn.png") no-repeat;
+    background: url("../image/regiser/regiser_checkedbtn.png") no-repeat;
     background-size: 100% 100%;
     display: block;
 }
