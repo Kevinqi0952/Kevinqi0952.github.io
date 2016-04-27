@@ -14,7 +14,7 @@ body{
 .space-header .header-background{
     width: 100%;
     height: 100%;
-    background-color: rgba(198,198,198,0.1);
+    background-color: rgba(198,198,198,0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -26,10 +26,10 @@ body{
     background: url("../image/pic_bloggerPortrait.jpg");
     background-size:100% 100%;
     background-repeat: no-repeat;
-    -webkit-filter: blur(50px); /* Chrome, Opera */
-    -moz-filter: blur(50px);
-    -ms-filter: blur(50px);
-    filter: blur(50px);
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
