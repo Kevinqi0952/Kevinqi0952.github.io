@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=Content-Type content=“text/html;charset=utf-8″>
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="../css/reset_mobile.css"/>
+    <link rel="stylesheet" href="../css/blogger_space.css"/>
+    <title>用户空间</title>
+</head>
+<body>
+<div class="blogger-space">
+    <div class="space-header">
+        <div class="header-background"></div>
+        <div class="header-filter"></div>
+        <div class="blogger-portrait">
+            <img src="../image/pic_bloggerPortrait.jpg"/>
+        </div>
+        <p>Muffin Dress</p>
+    </div>
+    <!--//空间详情 start-->
+    <div class="space-content">
+        <div class="content-header">
+            <div class="content-portrait">
+                <img src="../image/pic_contentPortrait.png"/>
+            </div>
+            <div class="content-time">刚刚</div>
+            <em>Muffin Dress</em>
+        </div>
+        <div class="blogger-main">
+            <div class="blogger-text">
+                <p>应该有不少美眉想利用即将到来的农历假期去日本玩吧！说到日本，超级好买的药妆、美妆店绝对是必去行程之一啊～而且光是逛个药妆店大概</p>
+            </div>
+            <div class="blogger-img">
+                <img src="../image/pic_bloggerContentImg.jpg"/>
+            </div>
+            <div class="blogger-info">
+                <div class="blogger-info">
+                    <div class="info-comment">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                    <div class="info-like">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                    <div class="info-watch">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//空间详情 end-->
+    <div class="space-content">
+        <div class="content-header">
+            <div class="content-portrait">
+                <img src="../image/pic_contentPortrait.png"/>
+            </div>
+            <div class="content-time">刚刚</div>
+            <em>Muffin Dress</em>
+        </div>
+        <div class="blogger-main">
+            <div class="blogger-text">
+                <p>应该有不少美眉想利用即将到来的农历假期去日本玩吧！说到日本，超级好买的药妆、美妆店绝对是必去行程之一啊～而且光是逛个药妆店大概</p>
+            </div>
+            <div class="blogger-img">
+                <img src="../image/pic_bloggerContentImg.jpg"/>
+            </div>
+            <div class="blogger-info">
+                <div class="blogger-info">
+                    <div class="info-comment">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                    <div class="info-like">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                    <div class="info-watch">
+                        <span></span>
+                        <em>6322222</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery/1.11.1/jquery.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+    //    自适应start
+    function screenSizeSetting()
+    {
+        $('html').css("font-size",$(window).width()*125/320+"%");
+    }
+    $(function()
+    {
+        screenSizeSetting();
+        $(window).resize(screenSizeSetting);
+    });
+    //    自适应end
+    //点击收藏+1
+    $(function(){
+        $('.info-like').click(function(){
+            var emHtml = $(this).find('em').html();
+
+            if($(this).hasClass('like-active')){
+                $(this).removeClass('like-active');
+                emHtml--;
+                $(this).find('em').html(emHtml);
+            } else{
+                $(this).addClass('like-active');
+                emHtml++;
+                $(this).find('em').html(emHtml);
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+html{
+    font-size: 125%;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+body{
+    background: #f5f5f5;
+}
+.Gmlm_header .header_rightbtn img{
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+}
+/*order-address*/
+.order-address{
+    width: 100%;
+    height: 5.325rem;
+    background-color: #fff;
+    overflow: hidden;
+    padding-right: 0.7rem;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.order-address .address-icon{
+    width: 1.4rem;
+    height: 5.325rem;
+    background: url("../image/order_details/pic_addressIcon.png") no-repeat;
+    background-size: 0.675rem ;
+    background-position: center;
+    display: block;
+    float: left;
+    vertical-align: inherit;
+}
+.order-address .address-chose{
+    width: 0.45rem;
+    height: 5.325rem;
+    background: url("../image/order_details/pic_choseAdderssLeft.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: block;
+    float: right;
+}
+.address-details{
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.address-details li{
+    margin-top: 0.25rem;
+    margin-left: 1.7rem;
+    font-size: 0.65rem;
+}
+/*commodity-list*/
+.commodity-list{
+    border-top: 1px solid #ececec;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-bottom: 1px solid #ececec;
+    margin-top: 0.35rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.commodity-list .commodity-details{
+    padding-top:  0.85rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid #ececec;
+    overflow: hidden;
+}
+.commodity-list .commodity-details .commodity-img-box{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+    float: left;
+}
+.commodity-list .commodity-details .commodity-img-box img{
+    width: 100%;
+    height: 100%;
+}
+.commodity-list .commodity-details .commodity-info{
+    width: 10.75rem;
+    line-height: 1rem;
+    float: right;
+}
+.commodity-list .commodity-details .commodity-info p{
+    font-size: 0.6rem;
+    height: 2rem;
+    overflow: hidden;
+    word-break: break-all;
+    color: #222222;
+}
+.commodity-list .commodity-details .commodity-info em{
+    font-size: 0.55rem;
+    color: #999999;
+}
+.commodity-list .commodity-details .commodity-info b{
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: #222222;
+    position: absolute;
+    right: 0.7rem;
+}
