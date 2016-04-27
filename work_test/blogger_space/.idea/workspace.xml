@@ -34,8 +34,8 @@
       <file leaf-file-name="blogger_space.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/blogger_space.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31699687">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.61418146">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -243,7 +243,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1836" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1836" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -338,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/blogger_space.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31699687">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.61418146">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding />
         </state>
       </provider>
