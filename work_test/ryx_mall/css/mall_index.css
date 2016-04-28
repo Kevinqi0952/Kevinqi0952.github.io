@@ -1,0 +1,104 @@
+/*mall-header start*/
+.mall-header .mall-banner{
+    width: 100%;
+    overflow: hidden;
+}
+.mall-header .mall-banner img{
+    width: 100%;
+}
+/*mall-header end*/
+/*mall-content start*/
+.mall-content .mall-nav-fixed{
+    width: 100%;
+    height: 2.2rem;
+    overflow: hidden;
+    white-space:nowrap;
+    background: #fff;
+}
+.mall-content .mall-nav-fixed li{
+    font-size: 0.65rem;
+    color: #4d4d4d;
+    font-family: "Microsoft YaHei";
+    line-height: 2.2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    display: inline-block;
+}
+.mall-content .content-header{
+    width: 100%;
+    height: 1.5rem;
+    background: url("../image/bg_contentHeaderBg.png");
+    background-size: 100% auto;
+    background-color: #76dbd8;
+    background-position: center;
+    overflow: hidden;
+}
+.mall-content .content-header h2{
+    font-size: 0.65rem;
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.mall-content  .content-hot .hot-details{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 0.8rem;
+    overflow: hidden;
+    position: relative;
+}
+.mall-content  .content-hot .hot-details .hot-banner{
+    width: 100%;
+    overflow: hidden;
+}
+.mall-content  .content-hot .hot-details .hot-banner img{
+    width: 100%;
+}
+.mall-content  .content-hot .hot-details p{
+    font-size: 0.65rem;
+    line-height: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.mall-content  .content-hot .hot-details .hot-price{
+    width: 100%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.mall-content  .content-hot .hot-details .hot-price em{
+    color: #fe5380;
+    font-size: 0.9rem;
+}
+.mall-content  .content-hot .hot-details .hot-price s{
+    color: #b4b4b4;
+    font-size: 0.6rem;
+    margin-left: 0.6rem;
+}
+.mall-content  .content-hot .hot-details .hot-price button{
+    width: 5.25rem;
+    height: 1.35rem;
+    background-color: #fe5380;
+    font-size: 0.6rem;
+    color: #fff;
+    border-radius: 0.2rem;
+    font-family: "Microsoft YaHei";
+    position: absolute;
+    right: 0.8rem;
+}
+.recommend-commodity .commodity-list .commodity-details{
+    width: 45.3%;
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.recommend-commodity .commodity-list .commodity-details .commodity-img-box{
+    width: 100%;
+    height: 100%;
+    background-color: #fe5380;
+    display: block;
+}
+/*mall-content end*/

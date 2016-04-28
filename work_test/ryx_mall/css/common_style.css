@@ -1,0 +1,55 @@
+html{
+    font-size: 125%;
+    font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+body{
+    min-width: 300px;
+    max-width: 640px;
+    background-color: #f6f4f9;
+    margin: 0 auto;
+}
+/*mall-top start*/
+.ryx-mall .mall-top{
+    width: 100%;
+    height: 2.15rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.ryx-mall .mall-top .back-btn{
+    width: 2.15rem;
+    height: 2.15rem;
+    background: url("../image/pic_headerBackBtn.png") no-repeat;
+    background-size: 0.575rem 1.05rem;
+    background-position: 50% 50%;
+    margin-left: 0.125rem;
+    float: left;
+}
+.ryx-mall .mall-top .shopping-cart-btn{
+    width: 2.15rem;
+    height: 2.15rem;
+    background: url("../image/pic_headerShoppingCartBtn.png") no-repeat;
+    background-size: 1.1rem 1.05rem;
+    background-position: 50% 50%;
+    float: right;
+}
+.ryx-mall .mall-top .share-btn{
+    width: 2.15rem;
+    height: 2.15rem;
+    background: url("../image/pic_headerShareBtn.png") no-repeat;
+    background-size: 0.875rem 1.025rem;
+    background-position: 50% 50%;
+    margin-right: 0.5rem;
+    float: right;
+}
+.ryx-mall .mall-top h1{
+    width: 100%;
+    font-size: 0.85rem;
+    color: #404040;
+    font-weight: lighter;
+    line-height: 2.15rem;
+    text-align: center;
+    position: absolute;
+    min-width: 300px;
+    max-width: 640px;
+}
+/*mall-top end*/
