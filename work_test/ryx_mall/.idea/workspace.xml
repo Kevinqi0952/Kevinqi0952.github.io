@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/page/mall_index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.821428">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="34" />
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="maill_index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/maill_index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09906152">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.74244004">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/css/mall_index.html" />
         <option value="$PROJECT_DIR$/css/common_style.css" />
-        <option value="$PROJECT_DIR$/page/mall_index.html" />
         <option value="$PROJECT_DIR$/css/mall_index.css" />
+        <option value="$PROJECT_DIR$/page/mall_index.html" />
         <option value="$PROJECT_DIR$/js/maill_index.js" />
       </list>
     </option>
@@ -422,15 +422,15 @@
     <entry file="file://$PROJECT_DIR$/page/mall_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.821428">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="34" />
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/maill_index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09906152">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.74244004">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding />
         </state>
       </provider>
