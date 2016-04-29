@@ -4,7 +4,6 @@
 $(function(){
     //导航栏顶部吸附
     var navTop = $('.mall-nav-fixed').offset().top;
-    var fixeHigh = $('.mall-nav-fixed').height();
 
     $(window).scroll(function(){
         console.log(fixeHigh);
@@ -13,12 +12,10 @@ $(function(){
                 "position":"fixed",
                 "top":"0"
             });
-            $(".content-hot").css("margin-top",fixeHigh + "px")
         } else{
             $('.mall-nav-fixed').css({
                 "position":"relative"
             });
-            $(".content-hot").css("margin-top","0")
         }
     })
 })
