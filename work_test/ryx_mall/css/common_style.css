@@ -3,8 +3,8 @@ html{
     font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 }
 body{
-    min-width: 300px;
-    max-width: 640px;
+    /*min-width: 300px;*/
+    /*max-width: 640px;*/
     background-color: #f6f4f9;
     margin: 0 auto;
 }
@@ -49,7 +49,5 @@ body{
     line-height: 2.15rem;
     text-align: center;
     position: absolute;
-    min-width: 300px;
-    max-width: 640px;
 }
 /*mall-top end*/
