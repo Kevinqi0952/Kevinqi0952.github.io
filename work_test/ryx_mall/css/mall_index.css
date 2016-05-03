@@ -8,16 +8,21 @@
 }
 /*mall-header end*/
 /*mall-content start*/
-.mall-content .mall-nav-fixed{
+.mall-nav{
+    width: 100%;
+    height: 2.2rem;
+    overflow: hidden;
+}
+.mall-content .mall-nav .mall-nav-fixed{
     width: 100%;
     height: 2.2rem;
     overflow: hidden;
     white-space:nowrap;
     background: #fff;
-   // position: absolute;
+    position: absolute;
     z-index: 999;
 }
-.mall-content .mall-nav-fixed li{
+.mall-content .mall-nav .mall-nav-fixed li{
     font-size: 0.65rem;
     color: #4d4d4d;
     font-family: "Microsoft YaHei";

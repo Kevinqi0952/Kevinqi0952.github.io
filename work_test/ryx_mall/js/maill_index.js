@@ -11,9 +11,8 @@ $(function(){
         if($(window).scrollTop() >= navTop){
             $('.mall-nav-fixed').css({
                 "position":"fixed",
-                "top":"0"
+                "top":"0",
             });
-            $(".content-hot").css("margin-top",fixeHigh + "px")
         } else{
             $('.mall-nav-fixed').css({
                 "position":"relative"
