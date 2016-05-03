@@ -5,7 +5,7 @@ $(function(){
     //导航栏顶部吸附
     var navTop = $('.mall-nav-fixed').offset().top;
 
-    $(window).on('scroll',function(){
+    $(window).scroll(function(){
         if($(window).scrollTop() >= navTop){
             $('.mall-nav-fixed').css({
                 "position":"fixed",
