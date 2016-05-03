@@ -21,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mall_index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mall_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/mall_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.571428">
-              <caret line="129" column="46" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.42857143">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maill_index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maill_index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/maill_index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13868614">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding />
             </state>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/css/common_style.css" />
         <option value="$PROJECT_DIR$/css/mall_index.css" />
         <option value="$PROJECT_DIR$/js/jquery/jQuery-mobile.js" />
-        <option value="$PROJECT_DIR$/page/mall_index.html" />
         <option value="$PROJECT_DIR$/js/maill_index.js" />
+        <option value="$PROJECT_DIR$/page/mall_index.html" />
       </list>
     </option>
   </component>
@@ -462,18 +462,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/mall_index.html">
+    <entry file="file://$PROJECT_DIR$/js/maill_index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.571428">
-          <caret line="129" column="46" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/maill_index.js">
+    <entry file="file://$PROJECT_DIR$/page/mall_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13868614">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.42857143">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="57" />
           <folding />
         </state>
       </provider>
