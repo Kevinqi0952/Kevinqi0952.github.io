@@ -19,7 +19,7 @@
     white-space:nowrap;
     background: #fff;
     position: relative;
-    z-index: 999;
+    z-index: 666;
 }
 .mall-content .mall-nav .mall-nav-fixed li{
     font-size: 0.65rem;
@@ -39,10 +39,27 @@
     top: 0;
     right: 0;
 }
-.mall-content .mall-nav .nav-btn-bg .nvv-btn{
+.mall-content .mall-nav .nav-btn-bg .nav-btn{
     width: 0.7rem;
     height: 0.4rem;
-    background: url("../image/");
+    background: url("../image/pic_navUpBtn.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0.85rem;
+    left: 1.2rem;
+    z-index: 666;
+}
+.mall-content .mall-nav .nav-btn-bg .nav-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.mall-content .mall-nav .nav-btn-bg .nav-btn-click{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
 }
 .mall-content .content-header{
     width: 100%;
@@ -160,3 +177,71 @@
     background-color: #fe5380;
 }
 /*mall-content end*/
+
+/*alert-nav start*/
+.alert-nav{
+    width: 100%;
+    background-color: #fff;
+    padding: 0 0.6rem 0.6rem 0.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    display: none;
+}
+.alert-nav p{
+    font-size: 0.6rem;
+    line-height: 2.2rem;
+    color: #b3b3b3;
+    border-bottom: 1px solid #ececec;
+}
+.alert-nav .alert-nav-btn-bg{
+    width: 2.6rem;
+    height: 2.1rem;
+    background: url("../image/pic_navFixedBtnBg.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0.6rem;
+}
+.alert-nav .alert-nav-btn-bg .alert-nav-btn{
+    width: 0.7rem;
+    height: 0.4rem;
+    background: url("../image/pic_navUpBtn.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0.75rem;
+    left: 1.8rem;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+}
+.alert-nav ul{
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+.alert-nav li{
+    width: 25%;
+    overflow: hidden;
+    font-size: 0.6rem;
+    color: #4d4d4d;
+    line-height: 1.5rem;
+    float: left;
+}
+.alert-nav .alert-nav-active{
+    color: #fe5380;
+}
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
+}
+/*alert-nav end*/

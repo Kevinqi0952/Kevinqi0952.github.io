@@ -51,3 +51,22 @@ body{
     position: absolute;
 }
 /*mall-top end*/
+
+/*go-top start*/
+.mall-go-top{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: fixed;
+    right: 0.8rem;
+    bottom: 2rem;
+    text-align: center;
+    display: none;
+}
+.mall-go-top img{
+    width: 0.55rem;
+    height: 0.775rem;
+    vertical-align: middle;
+}
+/*go-top end*/

@@ -17,28 +17,69 @@ $(function(){
             });
         }
     })
+    //返回顶部
+    $(window).scroll(function(){
+            var top = $('.mall-go-top img').offset().top;
+
+            if(top < 700){
+                $('.mall-go-top').fadeOut(500)
+            } else{
+                $('.mall-go-top').fadeIn(500);
+            }
+        })
+
+    $('.mall-go-top').click(function(){
+        var speed = 500;
+        //var scrollTop = $(window).scrollTop;
+
+        $('html,body').animate({ scrollTop: 0 }, speed);
+    })
+    //出现弹层+遮罩
+    $('#show-alert-nav').click(function(){
+        $('.alert-nav').show();
+        $(".mask").css("height",$(document).height());
+        $(".mask").css("width",$(document).width());
+        $(".mask").show();
+        $("body,html").css({"overflow":"hidden"});
+    })
+    //关闭弹层+遮罩
+    $('#close-alert-nav').click(function () {
+        $('.alert-nav').hide();
+        $(".mask").hide();
+        $("body,html").css({"overflow":"visible"});
+    })
+    //出现弹层禁止滚动
+    $('.mask').click(function () {
+        $('.alert-nav').hide();
+        $(".mask").hide();
+        $("body,html").css({"overflow":"visible"});
+    })
+    //跳转锚点
+    $('.chose-alert-list li').click(function () {
+        //li点击切换颜色
+        if(!$(this).hasClass('alert-nav-active')){
+            $('.chose-alert-list li').removeClass('alert-nav-active');
+            $(this).addClass('alert-nav-active');
+        }
+    })
+    $('#chose-hot').click(function(){
+        //跳转到hot品
+        setTimeout(function () {
+            $("html,body").animate({scrollTop:$("#content-hot").offset().top},500);
+            $('.alert-nav').hide();
+            $(".mask").hide();
+            $("body,html").css({"overflow":"visible"});
+        }, 100);
+    })
+    $('#chose-recommend').click(function(){
+        //跳转到recommend品
+        setTimeout(function () {
+            $("html,body").animate({scrollTop:$("#recommend-commodity").offset().top},500);
+            $('.alert-nav').hide();
+            $(".mask").hide();
+            $("body,html").css({"overflow":"visible"});
+        }, 100);
+    })
 })
 
-//function menuFixed(id){
-//    var obj = document.getElementById("mall-nav-fixed");
-//    var _getHeight = obj.offsetTop;
-//
-//    window.onscroll = function(){
-//        changePos(id,_getHeight);
-//    }
-//}
-//function changePos(id,height){
-//    var obj = document.getElementById("mall-nav-fixed");
-//    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-//    if(scrollTop < height){
-//        obj.style.position = 'relative';
-//    }else{
-//        obj.style.position = 'fixed';
-//        obj.style.top = "0";
-//        /*给元素添加`fixed`固定属性
-//         也可以添加写好的CSS样式`obj.className = 'fix_css';`*/
-//    }
-//}
-//window.onload = function(){
-//        menuFixed('nav');
-//    }
+
