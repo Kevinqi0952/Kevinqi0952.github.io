@@ -13,6 +13,7 @@
     height: 2.2rem;
     position:sticky;
     position: -webkit-sticky;
+    top: 0;
 }
 .mall-content .mall-nav .mall-nav-fixed{
     width: 100%;
