@@ -86,41 +86,43 @@ $(function(){
         }, 100);
     })
     //导航栏滑动
-    var doc = document;
-    doc.addEventListener("touchstart",  startTouchScroll, false);
-    doc.addEventListener("touchmove", moveTouchScroll, false);
-    doc.addEventListener("touchend",  endTouchScroll, false);
-    var startY, endY, startX, endX;
-    function startTouchScroll(event)
-    {
-        var touch = event.touches[0];
-        startX = touch.pageX;
-        startY = touch.pageY;
-    }
-    function moveTouchScroll(event)
-    {
-        var touch = event.touches[0];
-        endX = touch.pageX;
-        endY = touch.pageY;
-    }
-    function endTouchScroll(event)
-    {
-        //在这里判断也可以
-        /*var touch = event.touches[0];
-         if(!touch){
-         return ;
-         }
-         endX = touch.pageX;
-         endY = touch.pageY;
-         */
 
-        //判断移动的点,1为手指向下滑动,-1为手指向上滑动
-        var scrollDirection = (endY - startY) > 0 ? 1 : -1;
-        //判断移动的点,1为手指向右滑动,-1为手指向左滑动
-        var scrollTranslation = (endX - startX) > 0 ? 1 : -1;
-        //计算滑动距离
-        var scrollDistance = Math.abs(endY - startY);
-    }
+        var doc = document;
+
+        doc.addEventListener("touchstart",  startTouchScroll, false);
+        doc.addEventListener("touchmove", moveTouchScroll, false);
+        doc.addEventListener("touchend",  endTouchScroll, false);
+        var startY, endY, startX, endX;
+        function startTouchScroll(event)
+        {
+            var touch = event.touches[0];
+            startX = touch.pageX;
+            startY = touch.pageY;
+        }
+        function moveTouchScroll(event)
+        {
+            var touch = event.touches[0];
+            endX = touch.pageX;
+            endY = touch.pageY;
+        }
+        function endTouchScroll(event)
+        {
+            //在这里判断也可以
+            /*var touch = event.touches[0];
+             if(!touch){
+             return ;
+             }
+             endX = touch.pageX;
+             endY = touch.pageY;
+             */
+
+            //判断移动的点,1为手指向下滑动,-1为手指向上滑动
+            var scrollDirection = (endY - startY) > 0 ? 1 : -1;
+            //判断移动的点,1为手指向右滑动,-1为手指向左滑动
+            var scrollTranslation = (endX - startX) > 0 ? 1 : -1;
+            //计算滑动距离
+            var scrollDistance = Math.abs(endY - startY);
+        }
 
 })
 

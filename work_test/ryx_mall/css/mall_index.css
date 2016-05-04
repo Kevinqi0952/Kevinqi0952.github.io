@@ -20,6 +20,7 @@
     width: 100%;
     height: 2.2rem;
     overflow: hidden;
+    overflow-x: scroll;
     white-space:nowrap;
     background: #fff;
     position: relative;
@@ -44,7 +45,9 @@
     position: absolute;
     background: url("../image/pic_navFixedBtnBg.png") no-repeat;
     background-size: 100% 100%;
+    margin-top: -2.2rem;
     right: 0;
+    z-index: 666;
 }
 .mall-content .mall-nav .nav-btn-bg .nav-btn{
     width: 0.7rem;
