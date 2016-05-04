@@ -21,6 +21,7 @@
     height: 2.2rem;
     overflow: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
     white-space:nowrap;
     background: #fff;
     position: relative;
