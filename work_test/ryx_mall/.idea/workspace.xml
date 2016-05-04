@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/css/mall_index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -80,8 +80,8 @@
         <option value="$PROJECT_DIR$/js/maill_index.js" />
         <option value="$PROJECT_DIR$/page/mall_index.html" />
         <option value="$PROJECT_DIR$/css/common_style.css" />
-        <option value="$PROJECT_DIR$/css/mall_index.css" />
         <option value="$PROJECT_DIR$/js/mall_index.js" />
+        <option value="$PROJECT_DIR$/css/mall_index.css" />
       </list>
     </option>
   </component>
@@ -277,7 +277,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1837" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1837" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24986272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -485,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/css/mall_index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>
