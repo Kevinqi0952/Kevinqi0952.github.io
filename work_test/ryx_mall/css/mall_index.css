@@ -20,18 +20,22 @@
     width: 100%;
     height: 2.2rem;
     overflow: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling:touch;
     white-space:nowrap;
     background: #fff;
     position: relative;
     z-index: 666;
 }
 .mall-content .mall-nav .mall-nav-fixed ul{
-    position: absolute;
-    transform: translate(0px, 0px)
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+    z-index: 666;
+}
+.mall-content .mall-nav .mall-nav-fixed ul::-webkit-scrollbar{
+    width:0;
+    height:0;
 }
 .mall-content .mall-nav .mall-nav-fixed li{
+    height: 2.2rem;
     font-size: 0.65rem;
     color: #4d4d4d;
     font-family: "Microsoft YaHei";
@@ -40,15 +44,24 @@
     margin-right: 0.2rem;
     display: inline-block;
 }
+.mall-content .mall-nav .mall-nav-fixed .nav-chose{
+    border-bottom: 0.2rem solid #fe5380;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.mall-content .mall-nav .mall-nav-fixed .nav-chose a{
+    color: #fe5380;
+}
 .mall-content .mall-nav .nav-btn-bg{
     width: 2.6rem;
     height: 2.2rem;
     position: absolute;
     background: url("../image/pic_navFixedBtnBg.png") no-repeat;
     background-size: 100% 100%;
-    margin-top: -2.2rem;
+    top: 0;
     right: 0;
-    z-index: 666;
+    z-index: 999;
 }
 .mall-content .mall-nav .nav-btn-bg .nav-btn{
     width: 0.7rem;
