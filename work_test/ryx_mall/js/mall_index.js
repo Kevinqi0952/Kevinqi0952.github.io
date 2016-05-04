@@ -22,6 +22,7 @@ $(function(){
             }
         })
     }
+
     //返回顶部
     $(window).scroll(function(){
             var top = $('.mall-go-top img').offset().top;
@@ -39,6 +40,7 @@ $(function(){
 
         $('html,body').animate({ scrollTop: 0 }, speed);
     })
+
     //出现弹层+遮罩
     $('#show-alert-nav').click(function(){
         $('.alert-nav').show();
@@ -59,6 +61,7 @@ $(function(){
         $(".mask").hide();
         $("body,html").css({"overflow":"visible"});
     })
+
     //跳转锚点
     $('.chose-alert-list li').click(function () {
         //li点击切换颜色
@@ -85,7 +88,15 @@ $(function(){
             $("body,html").css({"overflow":"visible"});
         }, 100);
     })
+
     //导航栏滑动
+    $('.mall-nav-fixed li').click(function(){
+        
+        if(!$(this).hasClass('nav-chose')){
+            $('.mall-nav-fixed li').removeClass('nav-chose');
+            $(this).addClass('nav-chose');
+        }
+    })
 })
 
 

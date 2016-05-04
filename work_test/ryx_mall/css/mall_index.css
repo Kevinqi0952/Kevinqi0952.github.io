@@ -49,12 +49,10 @@
 }
 .mall-content .mall-nav .mall-nav-fixed .nav-chose{
     border-bottom: 0.2rem solid #fe5380;
+    color: #fe5380;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
-}
-.mall-content .mall-nav .mall-nav-fixed .nav-chose a{
-    color: #fe5380;
 }
 .mall-content .mall-nav .nav-btn-bg{
     width: 2.6rem;
