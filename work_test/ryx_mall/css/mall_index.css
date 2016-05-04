@@ -26,6 +26,7 @@
     z-index: 666;
 }
 .mall-content .mall-nav .mall-nav-fixed ul{
+    overflow: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling:touch;
     z-index: 666;
