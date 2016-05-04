@@ -3,11 +3,12 @@
  */
 $(function(){
     //导航栏顶部吸附
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);//判断是否为ios
     var navTop = $('.mall-nav-fixed').offset().top;
+    var ua = navigator.userAgent.toLowerCase();
 
-
-    if(!isiOS){
+    if (/iphone|ipad|ipod/.test(ua)) {
+        alert("iphone");
+    } else if (/android/.test(ua)) {
         $(window).scroll(function(){
             if($(window).scrollTop() >= navTop){
                 $('.mall-nav-fixed').css({
