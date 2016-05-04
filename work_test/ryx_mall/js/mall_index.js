@@ -2,22 +2,22 @@
  * Created by yurong on 2016/4/29.
  */
 $(function(){
-    //导航栏顶部吸附
-    //var navTop = $('.mall-nav-fixed').offset().top;
-    //
-    //$(window).scroll(function(){
-    //    if($(window).scrollTop() >= navTop){
-    //        $('.mall-nav-fixed').css({
-    //            "position":"fixed",
-    //            "top":"0",
-    //        });
-    //    } else{
-    //        $('.mall-nav-fixed').css({
-    //            "position":"relative"
-    //        });
-    //    }
-    //})
-    //返回顶部
+    导航栏顶部吸附
+    var navTop = $('.mall-nav-fixed').offset().top;
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= navTop){
+            $('.mall-nav-fixed').css({
+                "position":"fixed",
+                "top":"0",
+            });
+        } else{
+            $('.mall-nav-fixed').css({
+                "position":"relative"
+            });
+        }
+    })
+    返回顶部
     $(window).scroll(function(){
             var top = $('.mall-go-top img').offset().top;
 
