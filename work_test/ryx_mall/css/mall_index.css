@@ -30,6 +30,7 @@
     overflow: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling:touch;
+    padding-right: 4rem;
     z-index: 666;
 }
 /*.mall-content .mall-nav .mall-nav-fixed ul::-webkit-scrollbar{*/
