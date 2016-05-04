@@ -26,15 +26,16 @@
     z-index: 666;
 }
 .mall-content .mall-nav .mall-nav-fixed ul{
+    height: 3rem;
     overflow: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling:touch;
     z-index: 666;
 }
-.mall-content .mall-nav .mall-nav-fixed ul::-webkit-scrollbar{
-    width:0;
-    height:0;
-}
+/*.mall-content .mall-nav .mall-nav-fixed ul::-webkit-scrollbar{*/
+    /*width:0;*/
+    /*height:0;*/
+/*}*/
 .mall-content .mall-nav .mall-nav-fixed li{
     height: 2.2rem;
     font-size: 0.65rem;
