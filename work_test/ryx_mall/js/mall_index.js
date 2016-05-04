@@ -13,6 +13,7 @@ $(function(){
             });
         } else{
             $('.mall-nav-fixed').css({
+                "position":"-webkit-sticky",
                 "position":"relative"
             });
         }

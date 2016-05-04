@@ -24,18 +24,18 @@
       <file leaf-file-name="mall_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/mall_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-93.64286">
-              <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+            <state vertical-scroll-proportion="-19.0">
+              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mall_index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mall_index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/mall_index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.29718456">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -45,16 +45,16 @@
         <entry file="file://$PROJECT_DIR$/css/mall_index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5151199">
+            <state vertical-scroll-proportion="0.0">
               <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
               <folding />
             </state>
@@ -79,9 +79,9 @@
         <option value="$PROJECT_DIR$/js/jquery/jQuery-mobile.js" />
         <option value="$PROJECT_DIR$/js/maill_index.js" />
         <option value="$PROJECT_DIR$/page/mall_index.html" />
+        <option value="$PROJECT_DIR$/css/common_style.css" />
         <option value="$PROJECT_DIR$/css/mall_index.css" />
         <option value="$PROJECT_DIR$/js/mall_index.js" />
-        <option value="$PROJECT_DIR$/css/common_style.css" />
       </list>
     </option>
   </component>
@@ -218,6 +218,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yurong\Desktop\mygit\Kevinqi0952.github.io\work_test\ryx_mall\js\jquery" />
       <recent name="C:\Users\yurong\Desktop\mygit\Kevinqi0952.github.io\work_test\ryx_mall\js" />
       <recent name="C:\Users\yurong\Desktop\mygit\Kevinqi0952.github.io\work_test\ryx_mall\css" />
     </key>
@@ -457,18 +458,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/mall_index.html">
+    <entry file="file://$PROJECT_DIR$/js/jquery/jquery.mobile-1.4.5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-93.64286">
-          <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mall_index.js">
+    <entry file="file://$PROJECT_DIR$/page/mall_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0">
+          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -476,15 +485,15 @@
     <entry file="file://$PROJECT_DIR$/css/mall_index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common_style.css">
+    <entry file="file://$PROJECT_DIR$/js/mall_index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5151199">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.29718456">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding />
         </state>
       </provider>
