@@ -2,7 +2,7 @@
  * Created by yurong on 2016/4/29.
  */
 $(function(){
-    导航栏顶部吸附
+    //导航栏顶部吸附
     var navTop = $('.mall-nav-fixed').offset().top;
 
     $(window).scroll(function(){
@@ -17,7 +17,7 @@ $(function(){
             });
         }
     })
-    返回顶部
+    //返回顶部
     $(window).scroll(function(){
             var top = $('.mall-go-top img').offset().top;
 
