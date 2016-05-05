@@ -106,6 +106,7 @@ html{
     font-size: 0.65rem;
     font-family: "Microsoft YaHei";
     height: 1.6rem;
+    border-radius: 0;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
