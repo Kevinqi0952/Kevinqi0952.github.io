@@ -58,7 +58,7 @@
     width: 2.6rem;
     height: 2.2rem;
     position: absolute;
-    background: url("../image/pic_navFixedBtnBg.png") no-repeat;
+    background: url("../image/mall_index/pic_navFixedBtnBg.png") no-repeat;
     background-size: 100% 100%;
     top: 0;
     right: 0;
@@ -67,7 +67,7 @@
 .mall-content .mall-nav .nav-btn-bg .nav-btn{
     width: 0.7rem;
     height: 0.4rem;
-    background: url("../image/pic_navUpBtn.png") no-repeat;
+    background: url("../image/mall_index/pic_navUpBtn.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 0.85rem;
@@ -89,7 +89,7 @@
 .mall-content .content-header{
     width: 100%;
     height: 1.5rem;
-    background: url("../image/bg_contentHeaderBg.png");
+    background: url("../image/mall_index/bg_contentHeaderBg.png");
     background-size: 100% auto;
     background-color: #76dbd8;
     background-position: center;
@@ -225,7 +225,7 @@
 .alert-nav .alert-nav-btn-bg{
     width: 2.6rem;
     height: 2.1rem;
-    background: url("../image/pic_navFixedBtnBg.png") no-repeat;
+    background: url("../image/mall_index/pic_navFixedBtnBg.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 0;
@@ -234,7 +234,7 @@
 .alert-nav .alert-nav-btn-bg .alert-nav-btn{
     width: 0.7rem;
     height: 0.4rem;
-    background: url("../image/pic_navUpBtn.png") no-repeat;
+    background: url("../image/mall_index/pic_navUpBtn.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 0.75rem;

@@ -18,7 +18,7 @@ body{
 .ryx-mall .mall-top .back-btn{
     width: 2.15rem;
     height: 2.15rem;
-    background: url("../image/pic_headerBackBtn.png") no-repeat;
+    background: url("../image/mall_index/pic_headerBackBtn.png") no-repeat;
     background-size: 0.575rem 1.05rem;
     background-position: 50% 50%;
     margin-left: 0.125rem;
@@ -27,7 +27,7 @@ body{
 .ryx-mall .mall-top .shopping-cart-btn{
     width: 2.15rem;
     height: 2.15rem;
-    background: url("../image/pic_headerShoppingCartBtn.png") no-repeat;
+    background: url("../image/mall_index/pic_headerShoppingCartBtn.png") no-repeat;
     background-size: 1.1rem 1.05rem;
     background-position: 50% 50%;
     float: right;
@@ -35,7 +35,7 @@ body{
 .ryx-mall .mall-top .share-btn{
     width: 2.15rem;
     height: 2.15rem;
-    background: url("../image/pic_headerShareBtn.png") no-repeat;
+    background: url("../image/mall_index/pic_headerShareBtn.png") no-repeat;
     background-size: 0.875rem 1.025rem;
     background-position: 50% 50%;
     margin-right: 0.5rem;

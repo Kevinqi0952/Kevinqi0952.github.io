@@ -62,7 +62,7 @@ $(function(){
         $("body,html").css({"overflow":"visible"});
     })
 
-    //跳转锚点
+    //弹出导航栏点击跳转锚点
     $('.chose-alert-list li').click(function () {
         //li点击切换颜色
         if(!$(this).hasClass('alert-nav-active')){
@@ -91,7 +91,7 @@ $(function(){
 
     //导航栏滑动
     $('.mall-nav-fixed li').click(function(){
-        
+
         if(!$(this).hasClass('nav-chose')){
             $('.mall-nav-fixed li').removeClass('nav-chose');
             $(this).addClass('nav-chose');
