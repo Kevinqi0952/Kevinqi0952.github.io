@@ -118,6 +118,7 @@ html{
     font-size: 0.65rem;
     font-family: "Microsoft YaHei";
     padding-top: 0.25rem;
+    padding-left: 0;
     word-break: break-all;
 }
 .personal-info .personal-content .city:-moz-placeholder{
