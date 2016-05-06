@@ -4,11 +4,11 @@ html{
 }
 /*chose address start*/
 .chose-address{
-    display: none;
 }
 .address-content{
     width: 100%;
     background-color: #fff;
+    padding-top: 2rem;
     overflow: hidden;
 }
 .address-content .address-details{
@@ -78,6 +78,7 @@ html{
 .personal-info{
     width: 100%;
     overflow: hidden;
+    display: none;
 }
 .personal-info .common-header .personal-info-btn{
     width: 2rem;
@@ -93,7 +94,7 @@ html{
 .personal-info .personal-content{
     width: 100%;
     background-color: #fff;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 2.5rem 0.5rem 0 0.5rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */

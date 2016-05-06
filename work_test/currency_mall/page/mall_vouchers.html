@@ -17,6 +17,7 @@
     <title>优惠券</title>
     <link rel="stylesheet" href="../css/reset_mobile.css"/>
     <link rel="stylesheet" href="../css/common_style.css"/>
+    <link rel="stylesheet" href="../css/mall_vochers.css"/>
 </head>
 <body>
 <div class="mall_vouchers">
@@ -27,33 +28,140 @@
     </div>
     <div class="vouchers-nav">
         <ul>
-            <li>未使用</li>
-            <li>已使用</li>
-            <li>已过期</li>
+            <li><a href="javascript:;" class="vouchers-active">未使用</a></li>
+            <li><a href="javascript:;">已使用</a></li>
+            <li><a href="javascript:;">已过期</a></li>
         </ul>
     </div>
-    <div class="vouchers-details">
-        <ul class="not-used">
+    <div class="vouchers-details ">
+        <!--未使用-->
+        <ul class="not-used" id="not-used">
             <li>
                 <div class="voucher-content">
                     <div class="voucher-price">
-                        <em>￥</em>
-                        <h2>50</h2>
+                        <h2><span>￥</span>50</h2>
                     </div>
                     <div class="voucher-info">
-                        <p>优惠劵(满299减50)</p>
+                        <h2>优惠劵(满299减50)</h2>
                         <p>(仅适用于优宝品牌)</p>
-                        <p>有效期：2015.6.5 - 2015.7.5</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">未使用</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>150</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵(满1299减300)</h2>
+                        <p>(仅适用于优宝旗下懒宝贝
+                            卫生巾)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">未使用</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>5</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵</h2>
+                        <p>(通用券)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
                     </div>
                     <div class="state">未使用</div>
                 </div>
             </li>
         </ul>
-        <ul class="already-used">
-            <li></li>
+        <!--已使用-->
+        <ul class="already-used" id="already-used">
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>50</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵(满299减50)</h2>
+                        <p>(仅适用于优宝品牌)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已使用</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>150</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵(满1299减300)</h2>
+                        <p>(仅适用于优宝旗下懒宝贝
+                            卫生巾)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已使用</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>5</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵</h2>
+                        <p>(通用券)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已使用</div>
+                </div>
+            </li>
         </ul>
-        <ul class="be-overdue">
-            <li></li>
+        <!--已过期-->
+        <ul class="already-used" id="be-overdue">
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>50</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵(满299减50)</h2>
+                        <p>(仅适用于优宝品牌)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已过期</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>150</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵(满1299减300)</h2>
+                        <p>(仅适用于优宝旗下懒宝贝
+                            卫生巾)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已过期</div>
+                </div>
+            </li>
+            <li>
+                <div class="voucher-content">
+                    <div class="voucher-price">
+                        <h2><span>￥</span>5</h2>
+                    </div>
+                    <div class="voucher-info">
+                        <h2>优惠劵</h2>
+                        <p>(通用券)</p>
+                        <p class="info-date">有效期：2015.6.5 - 2015.7.5</p>
+                    </div>
+                    <div class="state">已过期</div>
+                </div>
+            </li>
         </ul>
     </div>
 </div>

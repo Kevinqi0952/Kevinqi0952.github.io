@@ -4,7 +4,12 @@
     height: 2rem;
     background-color: #fff;
     border-bottom: 1px solid #d6d6d6;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     overflow: hidden;
+    position: fixed;
+    z-index: 999;
 }
 .common-header .header-back-btn{
     width: 2rem;
