@@ -11,6 +11,11 @@
     position: fixed;
     z-index: 999;
 }
+.header-box{
+    width: 100%;
+    height: 2rem;
+    display: block;
+}
 .common-header .header-back-btn{
     width: 2rem;
     height: 2rem;
@@ -28,6 +33,7 @@
     line-height: 2rem;
     text-align: center;
     position: absolute;
+    z-index: -1;
 }
 .common-header .header-info-btn{
     width: 2rem;
@@ -36,7 +42,6 @@
     background-size: 0.65rem 0.825rem;
     background-position: center;
     float: right;
-    display: none;/*暂时不显示该图标*/
 }
 .common-header .header-back-btn a,
 .common-header .header-info-btn a{

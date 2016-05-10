@@ -140,6 +140,9 @@ html{
     display: inline-block;
     border: 1px solid #d7d7d7;
     border-radius: 50%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     overflow: hidden;
     vertical-align: middle;
 }
@@ -189,6 +192,7 @@ a {
     background-color: #fff;
     overflow: auto;
     width: 100%;
+    padding-top: 2rem;
 }
 
 .city-picker li {

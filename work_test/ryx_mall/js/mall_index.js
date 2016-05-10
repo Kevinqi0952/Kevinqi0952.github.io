@@ -7,7 +7,7 @@ $(function(){
     var ua = navigator.userAgent.toLowerCase();
 
     if (/iphone|ipad|ipod/.test(ua)) {
-        alert("iphone");
+        console.log("iphone");
     } else if (/android/.test(ua)) {
         $(window).scroll(function(){
             if($(window).scrollTop() >= navTop){

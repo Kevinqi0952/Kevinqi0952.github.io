@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/css/chose_address.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/common_style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/currency_index.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/mall_vochers.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/chose_address.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/mall_vouchers.js" charset="UTF-8" />
   </component>
 </project>

@@ -251,3 +251,23 @@ var provinces = {
         return new CityPicker(this, options);
     }
 }(window.jQuery, window, document));
+
+
+//新增地址打开关闭
+
+ $('#add-new-address').click(function(){
+     $('.chose-address').hide();
+     $('.personal-info').show();
+ })
+$('#go-chose-address').click(function(){
+    $('.chose-address').show();;
+    $('.personal-info').hide();
+})
+//底部选择默认按钮
+$('.common-footer span').click(function(){
+    if($(this).hasClass('chose-default')){
+        $(this).removeClass('chose-default');
+    } else{
+        $(this).addClass('chose-default');
+    }
+})
