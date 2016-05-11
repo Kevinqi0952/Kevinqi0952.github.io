@@ -1,0 +1,186 @@
+html{
+    font-size: 125%;
+    background-color: #f6f6f6;
+}
+.product-content{
+    padding-top: 2rem;
+}
+.product-content .product-info{
+    background-color: #fff;
+}
+.product-content .product-info .product-img-box{
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+}
+.product-content .product-info .product-img-box img{
+    width: 100%;
+}
+.product-content .product-info .product-name{
+    width: 100%;
+    /*height: 2rem;*/
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    /*overflow: hidden;*/
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .product-info .product-name p{
+    font-size: 0.65rem;
+    color: #414141;
+    font-family: "Microsoft YaHei";
+    line-height: 1rem;
+    /*-webkit-line-clamp: 2;*/
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+}
+.product-content .product-info .product-price{
+    width: 100%;
+    height: 1.8rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding: 0 0.5rem;
+    overflow: hidden;
+}
+.product-content .product-info .product-price .true-price{
+    line-height: 1.5rem;
+    display: inline;
+    float: left;
+}
+.product-content .product-info .product-price .true-price span{
+    font-size: 0.75rem;
+    color: #fe5380;
+    font-family: "Microsoft YaHei";
+}
+.product-content .product-info .product-price .true-price em{
+    font-size: 1.25rem;
+    color: #fe5380;
+    font-family: "Microsoft YaHei";
+}
+.product-content .product-info .product-price  .old-price{
+    height: 1.8rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    line-height: 1.8rem;
+    float: left;
+}
+.product-content .product-info .product-price  .old-price s{
+    font-size: 0.75rem;
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+.product-content .product-info .product-price .sales-volume{
+    height: 1.8rem;
+    font-size: 0.55rem;
+    color: #787878;
+    font-family: "Microsoft YaHei";
+    line-height: 1.8rem;
+    display: inline-block;
+    float: right;
+}
+.product-content .chose-style{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .chose-style  .product-num em,
+.product-content .chose-style .product-size em,
+.product-content .chose-style .product-color em{
+    font-size: 0.65rem;
+    color: #414141;
+    font-family: "Microsoft YaHei";
+    line-height: 1.5rem;
+}
+.product-content .chose-style .product-size li,
+.product-content .chose-style .product-color li{
+    padding: 0.2rem 0.4rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.55rem;
+    color: #414141;
+    font-family: "Microsoft YaHei";
+    border: 1px solid #d6d6d6;
+    border-radius: 0.15rem;
+    display: inline-block;
+}
+.product-content .chose-style .product-size .style-chose,
+.product-content .chose-style .product-color .style-chose{
+    border: 1px solid #fe5380;
+    color: #fe5380;
+}
+.product-content .chose-style .product-size{
+    margin-top: 0.5rem;
+}
+.product-content .chose-style  .product-num{
+    margin-top: 0.5rem;
+}
+.product-content .chose-style  .product-num .chose-num{
+    width: 4.5rem;
+    height: 1.25rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 0.15rem;
+    overflow: hidden;
+    margin-top: 0.25rem;
+    float: right;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .chose-style  .product-num .chose-num .num-delete{
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    text-align: center;
+    line-height: 1.25rem;
+    float: left;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .chose-style  .product-num .chose-num .num-info{
+    width: 1.9rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #414141;
+    font-family: "Arial";
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .chose-style  .product-num .chose-num .num-add{
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #fe5380;
+    border-left: 1px solid #d6d6d6;
+    text-align: center;
+    line-height: 1.25rem;
+    float: right;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.product-content .details-chose{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+.product-content .details-chose .chose-nav{
+    line-height: 2rem;
+    overflow: hidden;
+}
+.product-content .details-chose .chose-nav li{
+    width: 50%;
+    font-size: 0.7rem;
+    font-family: "Microsoft YaHei";
+    color: #414141;
+    line-height: 2rem;
+    text-align: center;
+    float: left;
+}

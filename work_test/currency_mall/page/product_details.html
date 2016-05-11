@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta http-equiv=Content-Type content=“text/html;charset=utf-8″>
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="../css/reset_mobile.css"/>
+    <link rel="stylesheet" href="../css/common_style.css"/>
+    <link rel="stylesheet" href="../css/product_details.css"/>
+    <title>商品详情</title>
 </head>
 <body>
+<div class="product-details">
+    <div class="common-header">
+        <div class="header-back-btn"><a href="javascript:;"></a></div>
+        <h1>商品详情</h1>
+        <div class="header-info-btn"><a href="javascript:;"></a></div>
+    </div>
+    <div class="product-content">
+        <div class="product-info">
+            <div class="product-img-box">
+                <img src="../image/product_details/pic_productImg.jpg"/>
+            </div>
+            <div class="product-name">
+                <p>雅诗兰黛小棕瓶ANR面部精华液50ML特润修护肌透保湿紧致淡纹</p>
+            </div>
+            <div class="product-price">
+                <div class="true-price"><span>￥</span><em>762.00</em></div>
+                <div class="old-price"><s>¥1098</s></div>
+                <div class="sales-volume">2000件已抢</div>
+            </div>
+        </div>
+        <div class="chose-style">
+            <div class="product-color">
+                <em>颜色：</em>
+                <ul>
+                    <li class="style-chose">白色</li>
+                    <li>黑色</li>
+                    <li>蓝色</li>
+                    <li>紫色</li>
+                    <li>橙色</li>
+                    <li>银灰色</li>
+                    <li>红色</li>
+                    <li>浅灰色</li>
+                    <li>200cm*150cm双面</li>
+                </ul>
+            </div>
+            <div class="product-size">
+                <em>尺寸：</em>
+                <ul>
+                    <li class="style-chose">23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li>32</li>
+                    <li>33</li>
+                    <li>34</li>
+                </ul>
+            </div>
+            <div class="product-num">
+                <em>数量：</em>
+                <div class="chose-num">
+                    <div class="num-delete">-</div>
+                    <div class="num-info">1</div>
+                    <div class="num-add">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="details-chose">
+            <div class="chose-nav">
+                <ul>
+                    <li class=""><em>图文详情</em></li>
+                    <li><em>规格</em></li>
+                </ul>
+            </div>
+            <div class="product-picture"></div>
+            <div class="product-spec"></div>
+        </div>
+    </div>
+    <div class="product-bottom-fixed">
+        <div class="bottom-shopping"></div>
+        <button>加入购物车</button>
+    </div>
+</div>
+<script src="../js/jquery/1.11.1/jquery.js"></script>
+<script src="../js/unslider.min.js"></script>
+<script type="text/javascript">
+    //    自适应start
+    function screenSizeSetting()
+    {
+        $('html').css("font-size",$(window).width()*125/320+"%");
+    }
+    $(function()
+    {
+        screenSizeSetting();
+        $(window).resize(screenSizeSetting);
+    });
 
+    //    自适应end
+</script>
 </body>
 </html>
