@@ -61,7 +61,6 @@ $(function(){
         $(".mask").hide();
         $("body,html").css({"overflow":"visible"});
     })
-
     //弹出导航栏点击跳转锚点
     $('.chose-alert-list li').click(function () {
         //li点击切换颜色
@@ -70,32 +69,35 @@ $(function(){
             $(this).addClass('alert-nav-active');
         }
     })
-    $('#chose-hot').click(function(){
-        //跳转到hot品
-        setTimeout(function () {
-            $("html,body").animate({scrollTop:$("#content-hot").offset().top},500);
-            $('.alert-nav').hide();
-            $(".mask").hide();
-            $("body,html").css({"overflow":"visible"});
-        }, 100);
-    })
-    $('#chose-recommend').click(function(){
-        //跳转到recommend品
-        setTimeout(function () {
-            $("html,body").animate({scrollTop:$("#recommend-commodity").offset().top},500);
-            $('.alert-nav').hide();
-            $(".mask").hide();
-            $("body,html").css({"overflow":"visible"});
-        }, 100);
-    })
+    $('.chose-alert-list li').click(function(){
+        //弹出导航栏点击事件
+        var hostLi = $(this).index();
 
-    //导航栏滑动
+        $('.mall-nav-scroll li').removeClass('nav-chose');
+        $('.mall-nav-scroll li').eq(hostLi).addClass('nav-chose');
+        setTimeout(function () {
+            $("html,body").animate({scrollTop:$(".chose-scroll-content").children("li").eq(hostLi).offset().top},500);
+            $('.alert-nav').hide();
+            $(".mask").hide();
+            $("body,html").css({"overflow":"visible"});
+        }, 100);
+    })
     $('.mall-nav-fixed li').click(function(){
-
+        //横排导航栏点击事件
+        var hostLi = $(this).index();
+        //弹出导航栏同步
+        $('.chose-alert-list li').removeClass('alert-nav-active');
+        $('.chose-alert-list li').eq(hostLi).addClass('alert-nav-active');
+        //点击添加样式
         if(!$(this).hasClass('nav-chose')){
             $('.mall-nav-fixed li').removeClass('nav-chose');
             $(this).addClass('nav-chose');
         }
+        //点击跳转指定位置
+        setTimeout(function () {
+            $("html,body").animate({scrollTop:$(".chose-scroll-content").children("li").eq(hostLi).offset().top},500);
+            $("body,html").css({"overflow":"visible"});
+        }, 100);
     })
 })
 
