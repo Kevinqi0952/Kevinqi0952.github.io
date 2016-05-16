@@ -22,25 +22,6 @@ $(function(){
             }
         })
     }
-
-    //返回顶部
-    $(window).scroll(function(){
-            var top = $('.mall-go-top img').offset().top;
-
-            if(top < 700){
-                $('.mall-go-top').fadeOut(500)
-            } else{
-                $('.mall-go-top').fadeIn(500);
-            }
-        })
-
-    $('.mall-go-top').click(function(){
-        var speed = 500;
-        //var scrollTop = $(window).scrollTop;
-
-        $('html,body').animate({ scrollTop: 0 }, speed);
-    })
-
     //出现弹层+遮罩
     $('#show-alert-nav').click(function(){
         $('.alert-nav').show();
@@ -95,9 +76,26 @@ $(function(){
         }
         //点击跳转指定位置
         setTimeout(function () {
-            $("html,body").animate({scrollTop:$(".chose-scroll-content").children("li").eq(hostLi).offset().top},500);
+            $("html,body").animate({scrollTop:$(".chose-scroll-content").children("li").eq(hostLi).offset().top-48},500);
             $("body,html").css({"overflow":"visible"});
         }, 100);
+    })
+    //返回顶部
+    $(window).scroll(function(){
+        var top = $('.mall-go-top img').offset().top;
+
+        if(top < 700){
+            $('.mall-go-top').fadeOut(500)
+        } else{
+            $('.mall-go-top').fadeIn(500);
+        }
+    })
+
+    $('.mall-go-top').click(function(){
+        var speed = 500;
+        //var scrollTop = $(window).scrollTop;
+
+        $('html,body').animate({ scrollTop: 0 }, speed);
     })
 })
 

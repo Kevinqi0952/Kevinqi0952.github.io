@@ -12,7 +12,6 @@ body{
 .ryx-mall .mall-top{
     width: 100%;
     height: 2.15rem;
-    background-color: #fff;
     overflow: hidden;
 }
 .ryx-mall .mall-top .back-btn{
@@ -45,10 +44,12 @@ body{
     width: 100%;
     font-size: 0.85rem;
     color: #404040;
+    background-color: #fff;
     font-weight: normal;
     line-height: 2.15rem;
     text-align: center;
     position: absolute;
+    z-index: -1;
 }
 /*mall-top end*/
 
