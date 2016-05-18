@@ -1,0 +1,100 @@
+.commodity-price{
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}
+.commodity-price .commodity-img-box{
+    width: 100%;
+    overflow: hidden;
+}
+.commodity-price .commodity-img-box img{
+    width: 100%;
+}
+.commodity-price .commodity-text-box{
+    padding: 0 1.75rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.commodity-price .commodity-text-box .commodity-title-box{
+    width: 100%;
+    height: 3.2rem;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+}
+.commodity-price .commodity-text-box .commodity-title-box p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #414141;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.commodity-price .commodity-text-box .commodity-price-box{
+    overflow: hidden;
+}
+.commodity-price .commodity-text-box .commodity-price-box em{
+    color: #fe5380;
+    font-size: 1.7rem;
+}
+.commodity-price .commodity-text-box .commodity-price-box s{
+    font-size: 1.1rem;
+    color: #999999;
+}
+.commodity-price .commodity-text-box .commodity-tag-box{
+    margin-top: 1rem;
+    overflow: hidden;
+    padding-bottom: 1.3rem;
+}
+.commodity-price .commodity-text-box .commodity-tag-box .tag-box{
+    width: 5.5rem;
+    height: 1.3rem;
+    background-color: #fe5380;
+    color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.3rem;
+    float: left;
+}.commodity-price .commodity-text-box .commodity-tag-box p{
+    font-size: 1rem;
+    color: #999999;
+    display: block;
+    float: right;
+ }
+.chose-info{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 0.8rem;
+}
+.chose-info .chose-info-spec,
+.chose-info .product-parameter{
+    width: 100%;
+    height: 3.4rem;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0 1.75rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    position: relative;
+}
+.chose-info .chose-info-spec .info-spec-text,
+.chose-info .product-parameter .parameter-text{
+    width: 100%;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    color: #333333;
+    font-size: 1.2rem;
+}
+.chose-info .product-parameter span,
+.chose-info .chose-info-spec span{
+    width: 0.7rem;
+    height: 3.4rem;
+    background: url("../image/choseInfoBtn.png") no-repeat;
+    background-size: 0.7rem 1.15rem;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1.75rem;
+}

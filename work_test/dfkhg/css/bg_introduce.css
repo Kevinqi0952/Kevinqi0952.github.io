@@ -1,0 +1,78 @@
+.introduce-content{
+    width: 1160px;
+    background-color: #fff;
+    margin: -50px auto 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 99;
+}
+.introduce-content .introduce-title-box{
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+.introduce-content .introduce-title-box .title-box{
+    width: 224px;
+    height: 60px;
+    background-color: #233959;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    float: left;
+}
+.introduce-content .introduce-title-box  .title-link{
+    margin-top: 20px;
+    font-family: "Microsoft YaHei";
+    color: #999999;
+    font-size: 12px;
+    float: right;
+    vertical-align: bottom;
+    display: inline-block;
+}
+.introduce-content .introduce-title-box  .title-link em{
+    color: #233959;
+}
+.introduce-content .bg-details{
+    padding-top: 20px;
+}
+.introduce-content .bg-details .bg-introduce-link{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.introduce-content .bg-details .bg-introduce-link p{
+    color: #233959;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    display: inline-block;
+}
+.introduce-content .bg-details .bg-introduce-link  span{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    display: inline-block;
+}
+.introduce-content .bg-details .bg-introduce-link em{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #000000;
+}
+.introduce-content  .details-img{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.introduce-content  .details-img p{
+    width: 730px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: #000;
+    margin: 10px auto 15px auto;
+    text-align: center;
+}
+.introduce-content .details-text-box p{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: #000000;
+    margin-bottom: 46px;
+    text-indent:2em;
+    line-height: 30px;
+}
