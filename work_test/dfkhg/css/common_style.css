@@ -32,6 +32,7 @@
 .east-header .chose-language{
     margin-top: 72px;
     margin-right: 40px;
+    width: 120px;
     overflow: hidden;
     float: right;
 }
