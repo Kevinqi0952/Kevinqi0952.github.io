@@ -1,3 +1,8 @@
+html {
+    font-size: 125%;
+    font-family:Helvetica,"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    background-color: #eeeeee;
+}
 .commodity-price{
     background-color: #fff;
     border-bottom: 1px solid #dcdcdc;
@@ -10,20 +15,20 @@
     width: 100%;
 }
 .commodity-price .commodity-text-box{
-    padding: 0 1.75rem;
+    padding: 0 0.85rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
 }
 .commodity-price .commodity-text-box .commodity-title-box{
     width: 100%;
-    height: 3.2rem;
+    height: 1.6rem;
     overflow: hidden;
-    margin: 0.5rem 0 1rem 0;
+    margin: 0.25rem 0 0.5rem 0;
 }
 .commodity-price .commodity-text-box .commodity-title-box p{
-    font-size: 1.3rem;
-    line-height: 1.6rem;
+    font-size: 0.65rem;
+    line-height: 0.8rem;
     color: #414141;
     word-break: break-all;
     -webkit-line-clamp: 2;
@@ -35,28 +40,28 @@
 }
 .commodity-price .commodity-text-box .commodity-price-box em{
     color: #fe5380;
-    font-size: 1.7rem;
+    font-size: 0.85rem;
 }
 .commodity-price .commodity-text-box .commodity-price-box s{
-    font-size: 1.1rem;
+    font-size: 0.55rem;
     color: #999999;
 }
 .commodity-price .commodity-text-box .commodity-tag-box{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     overflow: hidden;
-    padding-bottom: 1.3rem;
+    padding-bottom: 0.65rem;
 }
 .commodity-price .commodity-text-box .commodity-tag-box .tag-box{
-    width: 5.5rem;
-    height: 1.3rem;
+    width: 2.75rem;
+    height: 0.65rem;
     background-color: #fe5380;
     color: #fff;
-    font-size: 0.85rem;
+    font-size: 0.425rem;
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 0.65rem;
     float: left;
 }.commodity-price .commodity-text-box .commodity-tag-box p{
-    font-size: 1rem;
+    font-size: 0.5rem;
     color: #999999;
     display: block;
     float: right;
@@ -65,14 +70,14 @@
     width: 100%;
     overflow: hidden;
     background-color: #fff;
-    margin-top: 0.8rem;
+    margin-top: 0.4rem;
 }
 .chose-info .chose-info-spec,
 .chose-info .product-parameter{
     width: 100%;
-    height: 3.4rem;
+    height: 1.7rem;
     border-bottom: 1px solid #dcdcdc;
-    padding: 0 1.75rem;
+    padding: 0 0.875rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
@@ -81,20 +86,55 @@
 .chose-info .chose-info-spec .info-spec-text,
 .chose-info .product-parameter .parameter-text{
     width: 100%;
-    height: 3.4rem;
-    line-height: 3.4rem;
+    height: 1.7em;
+    line-height: 1.7rem;
     color: #333333;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
 }
 .chose-info .product-parameter span,
 .chose-info .chose-info-spec span{
-    width: 0.7rem;
-    height: 3.4rem;
+    width: 0.35rem;
+    height: 1.7rem;
     background: url("../image/choseInfoBtn.png") no-repeat;
-    background-size: 0.7rem 1.15rem;
+    background-size: 0.35rem 0.55rem;
     background-position: center;
     display: inline-block;
     position: absolute;
     top: 0;
-    right: 1.75rem;
+    right: 0.875rem;
+}
+.preferential-collocation{
+    background-color: #fff;
+    margin-top: 0.4rem;
+    padding: 0 0.875rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.preferential-collocation .collocation-title{
+    font-size: 0.55rem;
+    color: #333333;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.preferential-collocation .collocation-list{
+    overflow: hidden;
+}
+.preferential-collocation .collocation-list span{
+    width: 1.5rem;
+    height: 3.75rem;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 3.75rem;
+    float: left;
+}
+.preferential-collocation .collocation-list .collocation-commodity{
+    width: 3.75rem;
+    height: 3.75rem;
+    float: left;
+    overflow: hidden;
+}
+.preferential-collocation .collocation-list .collocation-commodity img{
+    width: 100%;
+    height: 100%;
 }

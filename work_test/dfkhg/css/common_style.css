@@ -1,3 +1,6 @@
+html{
+	min-width:1200px;
+}
 /*顶部*/
 .east-header{
     width: 1200px;
@@ -205,6 +208,7 @@
 }
 
 .east-footer .footer-nav ul{
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
     overflow: hidden;

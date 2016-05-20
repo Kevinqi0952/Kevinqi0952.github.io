@@ -61,3 +61,8 @@ $('.link-me').click(function(){
         $('.give-message').hide(100);
     }
 })
+$('.east-nav li').click(function(){
+	if (!$(this).hasClass('nav-chose')) {
+		
+	}
+})

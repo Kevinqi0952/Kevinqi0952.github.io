@@ -55,7 +55,45 @@
         </div>
     </div>
 </div>
+<div class="preferential-collocation">
+    <div class="collocation-title">优惠搭配</div>
+    <div class="collocation-list">
+        <div class="collocation-commodity collocation-commodity01">
+            <img src="../image/commodityPicImg01.jpg"/>
+            <div class="collocation-price">
+                ￥490
+            </div>
+        </div>
+        <span>+</span>
+        <div class="collocation-commodity collocation-commodity02">
+            <img src="../image/commodityPicImg01.jpg"/>
+            <div class="collocation-price">
+                ￥490
+            </div>
+        </div>
+        <span>+</span>
+        <div class="collocation-commodity collocation-commodity03">
+            <img src="../image/commodityPicImg01.jpg"/>
+            <div class="collocation-price">
+                ￥490
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../js/common/jquery/1.11.1/jquery.js"></script>
+<script type="text/javascript" charset="UTF-8">
+    //    自适应start
+    function screenSizeSetting()
+    {
+        $('html').css("font-size",$(".mall-commodity").width()*125/320+"%");
+    }
+    $(function()
+    {
+        screenSizeSetting();
+        $(window).resize(screenSizeSetting);
+    });
+    //    自适应end
+</script>
 <!--<script src="../js/common/bootstrap.js"></script>-->
 </body>
 </html>

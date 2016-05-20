@@ -1,58 +1,27 @@
-html {
-    font-size: 62.5%;
-    font-family:Helvetica,"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
-    background-color: #eeeeee;
-}
 body{
     max-width: 640px;
-    min-width: 320px;
+    min-width: 300px;
     margin: 0 auto;
 }
-@media only screen and (min-width: 375px){
-    html {
-        font-size: 73%!important;
-    }
-}
-@media only screen and (min-width: 414px){
-    html {
-        font-size: 81%!important;
-    }
-}
-@media only screen and (min-width: 481px){
-    html {
-        font-size: 94%!important;
-    }
-}
-@media only screen and (min-width: 561px){
-    html {
-        font-size: 109%!important;
-    }
-}
-@media only screen and (min-width: 641px){
-    html {
-        font-size: 125%!important;
-    }
-}
-/*Í·²¿*/
 .common-header{
     width: 100%;
-    height: 3.4rem;
+    height: 1.7rem;
     background-color: #fff;
     overflow: hidden;
 }
 .common-header .header-left-btn{
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
     background: url("../image/common/leftBtnImg.png") no-repeat;
-    background-size: 0.9rem 1.6rem;
+    background-size: 0.45rem 0.8rem;
     background-position: center;
     float: left;
 }
 .common-header .header-right-btn{
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
     background: url("../image/common/rightBtnImg.png") no-repeat;
-    background-size: 1.25rem 1.45rem;
+    background-size: 0.625rem 0.725rem;
     background-position: center;
     float: right;
 }
@@ -64,9 +33,9 @@ body{
 }
 .common-header h1{
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     color: #333333;
     font-weight: normal;
-    line-height: 3.4rem;
+    line-height: 1.7rem;
     text-align: center;
 }
