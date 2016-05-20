@@ -6,6 +6,7 @@ html {
 .commodity-price{
     background-color: #fff;
     border-bottom: 1px solid #dcdcdc;
+    /*margin-top: 1.7rem;*/
 }
 .commodity-price .commodity-img-box{
     width: 100%;
@@ -57,7 +58,7 @@ html {
     background-color: #fe5380;
     color: #fff;
     font-size: 0.425rem;
-    text-align: center;
+     text-align: center;
     line-height: 0.65rem;
     float: left;
 }.commodity-price .commodity-text-box .commodity-tag-box p{
@@ -70,7 +71,7 @@ html {
     width: 100%;
     overflow: hidden;
     background-color: #fff;
-    margin-top: 0.4rem;
+    border-top: 0.4rem solid #eeeeee;
 }
 .chose-info .chose-info-spec,
 .chose-info .product-parameter{
@@ -105,11 +106,12 @@ html {
 }
 .preferential-collocation{
     background-color: #fff;
-    margin-top: 0.4rem;
-    padding: 0 0.875rem;
+    border-top: 0.4rem solid #eeeeee;
+    padding: 0 0.875rem 0.6rem 0.875rem;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
 }
 .preferential-collocation .collocation-title{
     font-size: 0.55rem;
@@ -138,3 +140,103 @@ html {
     width: 100%;
     height: 100%;
 }
+.commodity-details-content{
+    width: 100%;
+    border-top: 0.4rem solid #eeeeee;
+    overflow: hidden;
+}
+.commodity-details-content img{
+    width: 100%;
+    display: block;
+}
+/*mall-commodity-alert*/
+.mall-commodity-alert{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.alert-header{
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
+    height: 1.7rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+.alert-header .header-left-btn{
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url("../image/common/leftBtnImg.png") no-repeat;
+    background-size: 0.45rem 0.8rem;
+    background-position: center;
+    float: left;
+}
+.mall-commodity-alert .alert-content{
+    padding: 0.6rem 0.875rem 0.6rem 0.875rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.mall-commodity-alert .alert-content .commodity-alert-list{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 0.6rem;
+    overflow: hidden;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-img-box{
+    width: 3.9rem;
+    height: 3.9rem;
+    overflow: hidden;
+    float: left;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-img-box img{
+    width: 100%;
+    height: 100%;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-text-box{
+    width: 10rem;
+    float: right;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-text-box .text-title{
+    font-size: 0.55rem;
+    height: 1.6rem;
+    line-height: 0.8rem;
+    word-break: break-all;
+    overflow: hidden;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-text-box p{
+    font-size: 0.65rem;
+    color: #fe5380;
+}
+.mall-commodity-alert .alert-content .commodity-alert-list .list-text-box i,
+.mall-commodity-alert .alert-content .commodity-alert-list .list-text-box em{
+    font-size: 0.6rem;
+    color: #999999;
+}
+.mall-commodity-alert .alert-content .list-attribute{
+    border-bottom: 1px solid #eeeeee;
+}
+.mall-commodity-alert .alert-content .list-attribute .attribute-info{
+    overflow: hidden;
+    margin-right: -0.85rem;
+}
+.mall-commodity-alert .alert-content .list-attribute .attribute-info .info-title{
+    font-size: 0.6rem;
+    line-height: 1.75rem;
+    color: #000000;
+}
+.mall-commodity-alert .alert-content .list-attribute .attribute-info li{
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 0.6rem;
+    margin-right: 0.7rem;
+    border-radius: 0.2rem;
+    font-size: 0.6rem;
+    display: inline-block;
+}
+.mall-commodity-alert .alert-content .list-attribute .attribute-info .info-active{
+    border: 1px solid #fe5380;
+    background-color: #fe5380;
+    color: #fff;
+}
+.purchase-number

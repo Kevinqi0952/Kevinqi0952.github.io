@@ -2,12 +2,17 @@ body{
     max-width: 640px;
     min-width: 300px;
     margin: 0 auto;
+    background-color: #fff;
 }
 .common-header{
+    max-width: 640px;
+    min-width: 300px;
     width: 100%;
     height: 1.7rem;
     background-color: #fff;
     overflow: hidden;
+    /*position: fixed;*/
+    top: 0;
 }
 .common-header .header-left-btn{
     width: 1.7rem;
@@ -39,3 +44,49 @@ body{
     line-height: 1.7rem;
     text-align: center;
 }
+.common-bottom{
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
+    height: 2rem;
+    border-top: 1px solid #dcdcdc;;
+    background-color: #fff;
+    overflow: hidden;
+    /*position: fixed;*/
+    bottom: 0;
+}
+.common-bottom  .bottom-left-btn{
+    width: 2rem;
+    height: 2rem;
+    background: url("../image/common/bottomLeftBtnImg.png") no-repeat;
+    background-position: center;
+    background-size: 1rem 0.95rem;
+    float: left;
+    position: relative;
+}
+.common-bottom  .bottom-left-btn .btn-info{
+    width: 0.6rem;
+    height: 0.6rem;
+    font-size: 0.425rem;
+    color: #fff;
+    line-height: 0.6rem;
+    text-align: center;
+    background-color: #fe5380;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+.common-bottom  button{
+    width: 4.7rem;
+    height: 2rem;
+    background-color: #fe5380;
+    float: right;
+}
+.common-bottom  button a{
+    width: 4.7rem;
+    height: 2rem;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
