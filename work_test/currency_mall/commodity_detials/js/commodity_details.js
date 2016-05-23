@@ -19,10 +19,10 @@ $(function(){
     //打开关闭弹出层
     $('.chose-info-spec').click(function(){
         $(".mall-commodity").hide();
-        $(".mall-commodity-alert").fadeIn(300);
+        $(".mall-commodity-alert").show();
     })
     $(".header-left-btn").click(function(){
-        $(".mall-commodity").fadeIn(300);
+        $(".mall-commodity").show();
         $(".mall-commodity-alert").hide();
     })
     //选择信息
@@ -32,7 +32,7 @@ $(function(){
             $(this).addClass('info-active');
         }
         $('#chose-info').text($(this).text());
-        
+
     })
     //增加减少数字
     $('.del-purchase-number').click(function(){
