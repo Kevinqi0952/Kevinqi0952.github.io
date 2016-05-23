@@ -11,8 +11,9 @@ body{
     height: 1.7rem;
     background-color: #fff;
     overflow: hidden;
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
+    z-index: 999;
 }
 .common-header .header-left-btn{
     width: 1.7rem;
@@ -52,8 +53,9 @@ body{
     border-top: 1px solid #dcdcdc;;
     background-color: #fff;
     overflow: hidden;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
+    z-index: 999;
 }
 .common-bottom  .bottom-left-btn{
     width: 2rem;
@@ -88,5 +90,16 @@ body{
     height: 2rem;
     color: #fff;
     font-size: 0.6rem;
+}
+.go-top{
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url("../image/go-top.png") no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    left: 50%;
+    margin-left: 5.5rem;
+    bottom: 3.5rem;
+    display: none;
 }
 

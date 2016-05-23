@@ -27,8 +27,25 @@
         <h1>商品详情</h1>
     </div>
     <div class="commodity-price">
-        <div class="commodity-img-box">
-            <img src="../image/commodityPriceImg.jpg"/>
+        <div id="leftTabBox" class="tabBox commodity-img-box">
+            <div class="bd">
+                <ul>
+                    <li><img src="../image/commodityPriceImg.jpg"/></li>
+                </ul>
+                <ul>
+                    <li><img src="../image/commodityPriceImg.jpg"/></li>
+                </ul>
+                <ul>
+                    <li><img src="../image/commodityPriceImg.jpg"/></li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div class="commodity-text-box">
             <div class="commodity-title-box">
@@ -57,21 +74,21 @@
     <div class="preferential-collocation">
         <div class="collocation-title">优惠搭配</div>
         <div class="collocation-list">
-            <div class="collocation-commodity collocation-commodity01">
+            <div class="collocation-commodity">
                 <img src="../image/commodityPicImg01.jpg"/>
                 <div class="collocation-price">
                     ￥490
                 </div>
             </div>
             <span>+</span>
-            <div class="collocation-commodity collocation-commodity02">
+            <div class="collocation-commodity">
                 <img src="../image/commodityPicImg01.jpg"/>
                 <div class="collocation-price">
-                    ￥490
+                    ¥103~12258
                 </div>
             </div>
             <span>+</span>
-            <div class="collocation-commodity collocation-commodity03">
+            <div class="collocation-commodity">
                 <img src="../image/commodityPicImg01.jpg"/>
                 <div class="collocation-price">
                     ￥490
@@ -88,6 +105,7 @@
         </div>
         <button type="button"><a href="#">加入购物车</a></button>
     </div>
+    <div class="go-top" id="go-top"></div>
 </div>
 <div class="mall-commodity-alert">
     <div class="alert-header">
@@ -100,19 +118,19 @@
                 <div class="text-title">雅诗兰黛小棕瓶ANR面部精华液50ML特润修护肌透保湿紧致淡纹</div>
                 <p>￥499.00</p>
                 <em>已选：</em>
-                <i>30ml 红色</i>
+                <i id="chose-info"></i>
             </div>
         </div>
         <div class="list-attribute">
             <ul class="attribute-info">
                 <div class="info-title">颜色分类</div>
-                <li class="info-active">30ml</li>
-                <li>40ml</li>
-                <li>50ml</li>
-                <li>60ml</li>
-                <li>70ml</li>
-                <li>80ml</li>
-                <li>90ml</li>
+                <li class="info-active">白色</li>
+                <li>红色</li>
+                <li>黑色</li>
+                <li>蓝色</li>
+                <li>紫色</li>
+                <li>绿色</li>
+                <li>灰色</li>
             </ul>
         </div>
         <div class="list-attribute">
@@ -130,9 +148,9 @@
         <div class="purchase-number">
             <em>购买数量：</em>
             <div class="chose-purchase-number">
-                <div class="add-purchase-number">+</div>
-                <div class="purchase-number">2</div>
                 <div class="del-purchase-number">-</div>
+                <div class="add-purchase-number">+</div>
+                <div class="purchase-number" id="pNum">1</div>
             </div>
         </div>
     </div>
@@ -141,6 +159,9 @@
     </div>
 </div>
 <script src="../js/common/jquery/1.11.1/jquery.js"></script>
+<!--<script src="../js/common/bootstrap.js"></script>-->
+<script src="../js/common/TouchSlide.1.1.js"></script>
+<script src="../js/commodity_details.js"></script>
 <script type="text/javascript" charset="UTF-8">
     //    自适应start
     function screenSizeSetting()
@@ -154,6 +175,10 @@
     });
     //    自适应end
 </script>
-<!--<script src="../js/common/bootstrap.js"></script>-->
+<script type="text/javascript">
+    TouchSlide({
+        slideCell:"#leftTabBox"
+    });
+</script>
 </body>
 </html>
