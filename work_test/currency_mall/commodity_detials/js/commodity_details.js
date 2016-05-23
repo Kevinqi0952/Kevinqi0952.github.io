@@ -30,18 +30,9 @@ $(function(){
         if(!$(this).hasClass('info-active')){
             $(this).parents('.attribute-info').find('li').removeClass('info-active');
             $(this).addClass('info-active');
-
-            $('#chose-info').text($(this).text(getTextByJquery()));
-
-            function getTextByJquery() {
-                var str = "";
-
-                $('.info-active').each(function () {
-                    str += $(this).text()+ " ";
-                });
-                return str;
-            }
         }
+        $('#chose-info').text($(this).text());
+        
     })
     //增加减少数字
     $('.del-purchase-number').click(function(){
