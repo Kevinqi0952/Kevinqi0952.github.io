@@ -1,0 +1,194 @@
+.h3y-main{
+    min-width: 1100px;
+}
+.h3y-top{
+    background: url("../image/topBg.jpg");
+    background-size:  1920px 1782px;
+    background-position: top;
+    height: 1782px;
+}
+.h3y-top .h3y-top-title{
+    width: 993px;
+    height: 603px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+.h3y-top .h3y-logo{
+    width: 161px;
+    height: 111px;
+    padding-top: 28px;
+    margin: 0 auto;
+}
+.h3y-top .top-text-content{
+    margin-top: 66px;
+    text-align: center;
+}
+.h3y-top .top-text-content p{
+    color: #231816;
+    font-size: 28px;
+    font-family: "Microsoft YaHei";
+    line-height: 48px;
+}
+.h3y-top  .how-to-play{
+    width: 139px;
+    height: 48px;
+    margin: 52px auto 70px auto;
+}
+.h3y-top .to-up{
+    width: 25px;
+    height: 22px;
+    margin: 0 auto;
+}
+.h3y-step{
+    background: url("../image/module2Bg.jpg");
+    background-position: top;
+    height: 2274px;
+    overflow: hidden;
+}
+.h3y-step .step-content{
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 118px;
+}
+.h3y-step .step-content .step-module-one,
+.h3y-step .step-content .step-module-two,
+.h3y-step .step-content .step-module-three{
+    width: 100%;
+    overflow: hidden;
+}
+.h3y-step .step-content .step-module-one .one-img-box,
+.h3y-step .step-content .step-module-three .three-img-box{
+    width: 50%;
+    float: left;
+}
+.h3y-step .step-content .step-module-one .one-img-box img,
+.h3y-step .step-content .step-module-three .three-img-box img{
+    display: block;
+    margin-left: 30px;
+}
+.h3y-step .step-content .step-module-one  .one-text-box,
+.h3y-step .step-content .step-module-three .three-text-box{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.h3y-step .step-content .step-module-one .one-text-box img,
+.h3y-step .step-content .step-module-two .two-text-box img,
+.h3y-step .step-content .step-module-three .three-text-box img{
+    margin-top: 144px;
+    margin-bottom: 30px;
+}
+.h3y-step .step-content .step-module-one .one-text-box p,
+.h3y-step .step-content .step-module-two .two-text-box p,
+.h3y-step .step-content .step-module-three .three-text-box p{
+    color: #231816;
+    font-size: 28px;
+    font-family: "Microsoft YaHei";
+    line-height: 46px;
+}
+.h3y-step .step-content .step-module-two .two-text-box{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.h3y-step .step-content .step-module-two .two-img-box{
+    width: 50%;
+    float: right;
+}
+.h3y-step .step-content .step-module-two .two-img-box img{
+    display: block;
+    margin-right: 30px;
+}
+.h3y-step  .air-ship{
+    width: 297px;
+    margin: 40px auto 0 auto;
+}
+.h3y-prize{
+    height: 1562px;
+    background: url("../image/prize.jpg") no-repeat;
+    background-position: top;
+    background-size: 1920px 1562px;
+}
+.h3y-prize-details{
+    width: 100%;
+    height: 1456px;
+    overflow: hidden;
+}
+.h3y-prize-details .prize-content{
+    width: 1100px;
+    margin: 0 auto;
+}
+.h3y-prize-details .prize-content .content-details{
+    width: 100%;
+    height: 384px;
+    overflow: hidden;
+}
+.h3y-prize-details .prize-content .content-details .details-img-box{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.h3y-prize-details .prize-content .content-details .details-img-box img{
+    margin-top: 120px;
+}
+.h3y-prize-details .prize-content .content-details .details-text-box{
+    height: 384px;
+    text-align: center;
+}
+.h3y-prize-details .prize-content .content-details .details-text-box p{
+    color: #86705c;
+    font-size: 28px;
+    font-family: "Microsoft YaHei";
+    line-height: 40px;
+}
+#text-one{
+    margin-top: 134px;
+}
+#text-two{
+    margin-top: 95px;
+}
+#text-three{
+    margin-top: 70px;
+}
+.h3y-prize-details .prize-logo{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.h3y-prize-details .prize-logo img{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.h3y-prize-details .prize-logo p{
+    font-size: 24px;
+    color: #47392c;
+    font-family: "Microsoft YaHei";
+    line-height: 40px;
+}
+.h3y-bottom{
+    height: 928px;
+    background: url("../image/bottomBg.jpg");
+    background-position: top;
+    background-size: 1920px 928px;
+    text-align: center;
+    overflow: hidden;
+}
+.h3y-bottom .bottom-logo{
+    padding-top: 140px;
+}
+.h3y-bottom .bottom-download{
+    margin-top: 80px;
+}
+.h3y-bottom  i{
+    font-size: 24px;
+    color: #d8cfc6;
+    font-family: "Microsoft YaHei";
+    margin-top: 30px;
+    display: block;
+}
+.h3y-bottom p{
+    margin-top: 178px;
+    color: #8a7f74;
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+}

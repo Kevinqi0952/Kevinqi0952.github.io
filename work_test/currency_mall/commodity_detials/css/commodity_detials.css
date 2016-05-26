@@ -114,6 +114,9 @@ html {
     color: #333333;
     font-size: 0.6rem;
 }
+.chose-info .chose-info-spec .info-spec-text p{
+    display: inline-block;
+}
 .chose-info .product-parameter span,
 .chose-info .chose-info-spec span{
     width: 0.35rem;

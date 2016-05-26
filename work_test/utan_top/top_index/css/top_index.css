@@ -1,0 +1,194 @@
+html{
+    font-size: 125%;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+p, a, button{
+    font-family:"Microsoft YaHei";
+    margin: 0;
+}
+a:link{
+    text-decoration: none;
+}
+/*pageTop*/
+.pageTop{
+    width: 100%;
+    height: 100%;
+    background: url("../image/pageNew-bg.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-right:0!important;
+    margin-left:0!important;
+}
+.pageTop .page-top-title{
+    width: 12rem;
+    margin: 0 auto 2rem auto;
+    padding-top: 1.15rem;
+    overflow: hidden;
+}
+.pageTop .page-top-title .title-logo{
+    width: 2.05rem;
+    height:2.05rem;
+    background: url("../image/topLogo.png");
+    background-size:100% 100%;
+    float: left;
+    margin-right: 0.5rem;
+    overflow: hidden;
+}
+.pageTop .page-top-title .title-text{
+    width: 8.9rem;
+    float: left;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    border-left:1px solid #ffffff;
+}
+.pageTop .page-top-title .title-text p{
+    margin-top: 0.2rem;
+    font-size: 0.725rem;
+    color: #ffffff;
+    line-height: 0.725rem;
+}
+.pageTop .page-top-title .title-text img{
+    width: 8.15rem;
+    height: 0.9rem;
+    margin-top: -0.3rem;
+}
+.pageTop .page-top-phone{
+    width: 100%;
+    position:relative;
+    margin-top: -1rem;
+}
+.pageTop .page-top-phone .phone img{
+    width: 100%;
+}
+.pageTop .page-top-phone .phone1{
+    width: 7.625rem;
+    position: absolute;
+    top: 0;
+    left: 4.2rem;
+    z-index: 3;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.pageTop .page-top-phone .phone2{
+    width: 5.875rem;
+    position: absolute;
+    top: 2rem;
+    left: 3.3rem;
+    z-index: 2;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.pageTop .page-top-phone .phone3{
+    width: 5.825rem;
+    position:absolute;
+    top: 2.55rem;
+    left: 2.8rem;
+    z-index: 1;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.pageTop .bottomBox{
+    width: 100%;
+    background: url("../image/topBottom-Bg.png");
+    background-size: 100% auto;
+    height: 8.25rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 4;
+}
+.pageTop .bottomBox .page-top-person{
+    width: 2.275rem;
+    position: absolute;
+    top: -4.5rem;
+    right: 1rem;
+
+}
+.pageTop .bottomBox .page-top-person img{
+    width: 100%;
+}
+.pageTop .bottomBox.bottomContent{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.pageTop .bottomBox .bottomContent .page-top-para{
+    color: #a9a9a9;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+.pageTop .bottomBox .bottomContent .buttonCommon
+{
+    color: #e63a73;
+    border: 2px solid #e63a73;
+    width: 6.85rem;
+    height: 1.5rem;
+    line-height: 1.4rem;
+    text-align: center;
+    display: block;
+    border-radius: .75rem;
+    -webkit-border-radius:.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    font-size: .75rem;
+    box-sizing:border-box;
+    position: relative;
+    overflow: hidden;
+}
+.pageTop .bottomBox .buttonCommon .bgColor
+{   width: 6.85rem;
+    height:6.85rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -2.675rem;
+    -webkit-transform:scale(0);
+    z-index: 1;
+    background-color: #e63a73;
+}
+.pageTop .bottomBox .buttonCommon:hover .bgColor{
+    -webkit-transform:scale(1);
+    -webkit-transition:-webkit-transform 1s ease-in;
+}
+.pageTop .bottomBox .buttonCommon:hover span
+{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.pageTop .bottomBox .bottomContent .relationBox{
+    text-align: center;
+}
+.pageTop .bottomBox .bottomContent .relationBox a{
+    display: inline-block;
+    height: .55rem;
+    line-height: .55rem;
+    color: #999999;
+    font-size: .55rem;
+}
+.pageTop .bottomBox .bottomContent .relationBox a:first-child{
+    padding-right: .45rem;
+    padding-left: 1rem;
+    background: url("../image/weixin.png") no-repeat left center;
+    background-size: .675rem auto;
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-height: 480px)
+and (-webkit-device-pixel-ratio: 2)
+and (device-aspect-ratio: 2/3)
+and (orientation:portrait)  {
+    .pageTop .page-top-title{
+        padding-top: 0.5rem;
+    }
+    .pageTop .page-top-phone{
+        margin-top: -1.5rem;
+    }
+    .pageTop .bottomBox .bottomContent .page-top-para{
+        margin-top: 3.5rem;
+    }
+}

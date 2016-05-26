@@ -24,15 +24,21 @@ $(function(){
     $(".header-left-btn").click(function(){
         $(".mall-commodity").show();
         $(".mall-commodity-alert").hide();
+        $('.info-spec-text').find('p').text($('#chose-info').text() + " " +$('#pNum').text());
     })
     //选择信息
+    $('.info-active').each(function(){
+        $('#chose-info').text($('.info-active').text());
+    })
     $('.attribute-info').find('li').click(function(){
         if(!$(this).hasClass('info-active')){
             $(this).parents('.attribute-info').find('li').removeClass('info-active');
             $(this).addClass('info-active');
-        }
-        $('#chose-info').text($(this).text());
 
+           $('.info-active').each(function(){
+                $('#chose-info').text($('.info-active').text());
+            })
+        }
     })
     //增加减少数字
     $('.del-purchase-number').click(function(){
@@ -46,6 +52,4 @@ $(function(){
         var pNum = parseInt($('#pNum').text());
         $('#pNum').html(pNum + 1);
     })
-    //拼接字符串
-
 })
