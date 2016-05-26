@@ -7,7 +7,9 @@ html{
 .square-main{
     max-width: 640px;
     min-width: 300px;
-    padding: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    padding-bottom: 3rem;
 }
 .square-header {
     width: 100%;
@@ -16,6 +18,7 @@ html{
 }
 .square-header .header-back{
     overflow: hidden;
+    padding-left: 0.5rem!important;
 }
 .square-header .header-back a{
     height: 1.85rem;
@@ -49,6 +52,12 @@ html{
 }
 .square-header .header-share{
     overflow: hidden;
+    padding-right: 0.5rem!important;
+}
+.square-header .header-share a{
+    width: 0.75rem;
+    height: 1.85rem;
+    display: block;
 }
 .square-header .header-share span{
     width: 0.75rem;
@@ -58,4 +67,253 @@ html{
     background-position: center;
     float: right;
     display: block;
+}
+.square-content .square-portrait{
+    overflow: hidden;
+}
+.square-content .square-portrait .portrait-details{
+    padding-left: 0.5rem;!important;
+}
+.square-content .square-portrait .portrait-details .portrait-box{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0.55rem;
+}
+.square-content .square-portrait .portrait-details .portrait-box img{
+    width: 100%;
+}
+.square-content .square-portrait .portrait-info{
+    padding-left: 0.5rem;!important;
+}
+.square-content .square-portrait .portrait-info .info-name{
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    font-family: "Microsoft YaHei";
+}
+.square-content .square-portrait .portrait-info .info-name .info-sex{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../image/portrait-sex-info.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+}
+.square-content .square-portrait .portrait-info .info-name .info-role{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../image/portrait-role-info.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+}
+.square-content .square-portrait .portrait-info .info-time{
+    font-size: 0.5rem;
+    color: #c1c1c1;
+}
+.square-content .square-portrait .watch-info{
+    overflow: hidden;
+    padding-right: 0.5rem!important;
+}
+.square-content .square-portrait .watch-info .watch-box{
+    float: right;
+}
+.square-content .square-portrait .watch-info .watch-box span{
+    width: 0.85rem;
+    height: 0.55rem;
+    background: url("../image/watch-info.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    float: right;
+    margin-top: 0.9rem;
+    margin-bottom: 0.1rem;
+}
+.square-content .square-portrait .watch-info .watch-box p{
+    font-size: 0.45rem;
+    color: #76dbd8;
+    text-align: center;
+}
+.square-content .square-text-content{
+    margin-top: 0.4rem!important;
+    overflow: hidden;
+}
+.square-content .square-text-content .text-content{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 0.5rem;
+}
+.square-content .square-text-content .text-content img{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.square-content .square-text-content .text-content p{
+    padding: 0 0.5rem;
+    font-size: 0.55rem;
+    font-family: "Microsoft YaHei";
+    color: #333333;
+    line-height: 1rem;
+    word-break: break-all;
+}
+.square-content .square-text-content .text-content p>span{
+    color: #76dbd8;
+}
+.square-content .square-comment-info{
+    height: 1.8rem;
+}
+.square-content .square-comment-info .text-comment,
+.square-content .square-comment-info .text-like{
+    overflow: hidden;
+    padding: 0 0 0 0.5rem!important;
+}
+.square-content .square-comment-info .text-comment span{
+    width: 0.5rem;
+    height: 1.8rem;
+    background: url("../image/text-comment.png") no-repeat;
+    background-size: 0.5rem 0.5rem;
+    background-position: center;
+    display: block;
+    float: left;
+}
+.square-content .square-comment-info .text-like span{
+    width: 0.5rem;
+    height: 1.8rem;
+    background: url("../image/text-good.png") no-repeat;
+    background-size: 0.5rem 0.5rem;
+    background-position: center;
+    display: block;
+    float: left;
+}
+.square-content .square-comment-info .text-comment p,
+.square-content .square-comment-info .text-like p{
+    font-size: 0.5rem;
+    line-height: 1.9rem;
+    color: #c6c6c6;
+    margin-left: 0.3rem;
+    float: left;
+}
+.square-comment-content{
+    border-top: 0.45rem solid #f0eff4;
+}
+.square-comment-content .comment-title{
+    margin-top: 0.75rem;
+    padding: 0 0.5rem!important;
+    font-size: 0.5rem;
+    color: #aaaaaa;
+    font-family: "Microsoft YaHei";
+}
+.square-comment-content .comment-list{
+    overflow: hidden;
+    padding: 0 0.5rem!important;
+}
+.square-comment-content .comment-list li{
+    padding-top: 1rem;
+    border-bottom: 1px solid #f4f4f4;
+}
+.square-comment-content .comment-list .comment-portrait{
+    overflow: hidden;
+}
+.square-comment-content .comment-list .comment-portrait .comment-portrait-box{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 0.2rem;
+}
+.square-comment-content .comment-list .comment-portrait .comment-portrait-box img{
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.square-comment-content .comment-list .comment-portrait .comment-portrait-name{
+    color: #333333;
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+}
+.square-comment-content .comment-list .comment-portrait .comment-portrait-name .dietitian{
+    width: 1.65rem;
+    height: 1rem;
+    background: url("../image/dietitian-logo.png") no-repeat;
+    background-size: 1.65rem 0.55rem;
+    background-position: center;
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 0.2rem;
+}
+.square-comment-content .comment-list .comment-portrait .comment-portrait-name .comment-time{
+    float: right;
+    color: #c9c9c9;
+    font-size: 0.4rem;
+}
+.square-comment-content .comment-list .comment-details{
+    padding: 0.1rem 0rem 0.5rem 1.2rem;
+}
+.square-comment-content .comment-list .comment-details p{
+    color: #959595;
+    font-size: 0.6rem;
+    word-break: break-all;
+    font-family: "Microsoft YaHei";
+}
+.square-comment-content .comment-list .comment-details p>span{
+    color: #76dbd8;
+}
+.bottom-fixed{
+    width: 100%;
+    min-width: 300px;
+    max-width: 640px;
+    height: 3rem;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+}
+.bottom-fixed .bottom-fixed-content{
+    padding: 0 0.25rem 0 0.75rem;
+    overflow: hidden;
+}
+.bottom-fixed .bottom-fixed-content .ryx-logo{
+    width: 2.25rem;
+    height: 3rem;
+    background: url("../image/bottom-ryx-logo.png") no-repeat;
+    background-size: 2.25rem 2.25rem;
+    background-position: center;
+    float: left;
+}
+.bottom-fixed .bottom-fixed-content .ryx-title{
+    width: 6.8rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    overflow: hidden;
+    float: left;
+}
+.bottom-fixed .bottom-fixed-content .ryx-title p{
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+}
+.bottom-fixed .bottom-fixed-content .ryx-button{
+    width: 4rem;
+    height: 1.3rem;
+    float: left;
+    border: 2px solid #00bab6;
+    border-radius: 7px;
+    font-size: 0.65rem;
+    text-align: center;
+    line-height: 1.2rem;
+    font-family: "Microsoft YaHei";
+    color: #00bab6;
+    margin-top: 0.75rem;
+}
+.bottom-fixed .bottom-fixed-content .bottom-close{
+    width: 0.85rem;
+    height: 3rem;
+    float: right;
+    background: url("../image/bottom-close-btn.png") no-repeat;
+    background-position: 0 0.2rem;
+    background-size: 0.85rem 0.85rem;
 }

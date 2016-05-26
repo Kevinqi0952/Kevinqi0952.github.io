@@ -24,15 +24,121 @@
     <div class="row square-header">
         <div class="col-xs-3 header-back"><a href="#"><span></span><p>返回</p></a></div>
         <h1 class="col-xs-6 header-title">详情</h1>
-        <div class="col-xs-3 header-share"><span></span></div>
+        <div class="col-xs-3 header-share"><span><a href="#"></a></span></div>
     </div>
     <div class="row square-content">
         <div class="row square-portrait">
-            <div class="col-xs-2 portrait-details"></div>
-            <div class="col-xs-8 portrait-info"></div>
-            <div class="col-xs-2 watch-info"></div>
+            <div class="col-xs-2 portrait-details">
+                <div class="portrait-box">
+                    <img src="../image/tem/lingshi_touxiang.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-7 portrait-info">
+                <div class="info-name">容容<span class="info-sex"></span><span class="info-role"></span></div>
+                <div class="info-time">10:20</div>
+            </div>
+            <div class="col-xs-3 watch-info">
+                <div class="watch-box">
+                    <span></span>
+                    <p>242</p>
+                </div>
+            </div>
+        </div>
+        <div class="row square-text-content">
+            <div class="col-xs-12 text-content">
+                <img src="../image/tem/content-img.jpg"/>
+                <p><span>#健康午餐#</span>真的好饿啊，终于吃饭了，还不错，很健康的搭配,我
+                    现在已经不吃主食了，就弄点了蔬菜色拉吃吃。总之，每天摄入
+                    热量不少于900～1800Kcal为宜，避免极低能量膳食(即每天少于
+                    700～800Kcal)。如有需要，应在医务或教练的监督下进行。</p>
+                <p>在低能量膳食基础上，摄入低脂肪，适量优质蛋白质，含复杂糖
+                    类(如谷类)和较高比重新鲜蔬菜、水果的膳食。即在满足人体各种
+                    营养素需要并使之平衡的基础上，减少总热量的摄入，让身体中
+                    的部分脂肪氧化以供机体能量消耗。</p>
+                <p>教练推荐：减脂增肌必备食材TOP10</p>
+                <p>牛肉、鸡胸肉、三文鱼、煮鸡蛋、西兰花、芦笋、西芹、牛油果、
+                    糙米</p>
+                <p>进餐要有规律，可以一日三餐，也可以少食多餐，必要时还可以
+                    增加进食次数，但千万不要漏餐!</p>
+                <p>进餐速度要慢</p>
+                <p>放慢进餐速度，细嚼慢咽可以增加饱腹感，减少进食量。进餐速
+                    度过快容易造成多吃，所以暴饮暴食是减肥的一大忌。</p>
+                <p>需要注意的是，饮食减肥法是所有减肥法的基础，饮食减肥与运
+                    动减肥应当结合使用，这是最常用，也是最科学有效的方法。</p>
+            </div>
+        </div>
+        <div class="row square-comment-info">
+            <div class="col-xs-2 text-like"><span></span><p>20</p></div>
+            <div class="col-xs-2 text-comment"><span></span><p>68</p></div>
+        </div>
+    </div>
+    <div class="row square-comment-content">
+        <div class="col-xs-12 comment-title">评论68</div>
+        <div class="col-xs-12 comment-list">
+            <ul>
+                <li>
+                    <div class="comment-portrait">
+                        <div class="comment-portrait-box">
+                            <img src="../image/tem/lingshi_touxiang2.jpg"/>
+                        </div>
+                        <div class="comment-portrait-name">营养专家 Anna<span class="dietitian"></span><span class="comment-time">1天前</span></div>
+                    </div>
+                    <div class="comment-details">
+                        <p><span>@营养专家Anna</span>营养满分人鱼餐,最好加上鸡蛋牛奶</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-portrait">
+                        <div class="comment-portrait-box">
+                            <img src="../image/tem/lingshi_touxiang.jpg"/>
+                        </div>
+                        <div class="comment-portrait-name">营养专家 Anna<span class="dietitian"></span><span class="comment-time">1天前</span></div>
+                    </div>
+                    <div class="comment-details">
+                        <p>营养专家Anna营养满分人鱼餐,最营养专家Anna营养满分人鱼餐,最营养专家Anna营养满分人鱼餐,最好加上鸡蛋牛奶</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row bottom-fixed">
+        <div class="col-xs-12 bottom-fixed-content">
+            <div class="ryx-logo"></div>
+            <div class="ryx-title">
+                <p>人鱼线－瘦身神器</p>
+                <p>杜海涛倾情推荐</p>
+            </div>
+            <div class="ryx-button">我要瘦身</div>
+            <div class="bottom-close"></div>
         </div>
     </div>
 </div>
+<script src="../js/common/jquery/1.11.1/jquery.js"></script>
+<script>
+    $(function()
+    {
+        function screenSizeSetting()
+        {
+            if($(window).width()<=640){
+                $('html').css("font-size",$(window).width()*125/320+"%");
+            }else{
+                $('html').css("font-size",640*125/320+"%");
+            }
+        }
+        $(function()
+        {
+            screenSizeSetting();
+            $(window).resize(screenSizeSetting);
+        });
+    });
+</script>
+<script>
+    $(function(){
+        $('.bottom-close').click(function(){
+            $('.bottom-fixed').slideUp();
+            $('.square-main').css("padding-bottom","0");
+        })
+    })
+</script>
 </body>
 </html>
