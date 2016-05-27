@@ -140,5 +140,20 @@
         })
     })
 </script>
+<script>
+    $(function(){
+        $(".text-like").click(function(){
+            var goodNum =  parseInt($(this).find("p").html());
+
+            if(!$(this).find("span").hasClass("like-active")){
+                $(this).find("span").addClass("like-active");
+                $(this).find("p").html(goodNum + 1);
+            }else{
+                $(this).find("span").removeClass("like-active");
+                $(this).find("p").html(goodNum - 1);
+            }
+        })
+    })
+</script>
 </body>
 </html>

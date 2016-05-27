@@ -187,6 +187,15 @@ html{
     display: block;
     float: left;
 }
+.square-content .square-comment-info .text-like .like-active{
+    width: 0.5rem;
+    height: 1.8rem;
+    background: url("../image/text-goodActive.png") no-repeat;
+    background-size: 0.5rem 0.5rem;
+    background-position: center;
+    display: block;
+    float: left;
+}
 .square-content .square-comment-info .text-comment p,
 .square-content .square-comment-info .text-like p{
     font-size: 0.5rem;
