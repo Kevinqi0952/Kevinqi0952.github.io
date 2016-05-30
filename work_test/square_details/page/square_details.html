@@ -24,7 +24,7 @@
     <div class="row square-header">
         <div class="col-xs-3 header-back"><a href="#"><span></span><p>返回</p></a></div>
         <h1 class="col-xs-6 header-title">详情</h1>
-        <div class="col-xs-3 header-share"><span><a href="#"></a></span></div>
+        <div class="col-xs-3 header-share"><span><a href="#" id="click-share"></a></span></div>
     </div>
     <div class="row square-content">
         <div class="row square-portrait">
@@ -164,6 +164,13 @@
         </div>
     </div>
 </div>
+
+<!--新加 start-->
+<div class="mask"></div>
+<div class="share-arrow">
+    <img src="../image/share_arrow.png"/>
+</div>
+<!--新加end-->
 <script src="../js/common/jquery/1.11.1/jquery.js"></script>
 <script>
     $(function()
@@ -206,5 +213,24 @@
         })
     })
 </script>
+<!--新加 start-->
+<script>
+    $(function(){
+        $('#click-share').click(function(){
+            $('.share-arrow').show();
+            $(".mask").css("height",$(document).height());
+            $(".mask").css("width",$(document).width());
+            $(".mask").show();
+            $("body,html").css({"overflow":"hidden"});
+        })
+
+        $('.mask').click(function(){
+            $('.share-arrow').css("display","none");
+            $(".mask").hide();
+            $("body,html").css({"overflow":"visible"});
+        })
+    })
+</script>
+<!--新加end-->
 </body>
 </html>

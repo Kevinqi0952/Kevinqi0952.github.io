@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="square_details.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="square_details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/square_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.607142">
-              <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.037444934">
+              <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="square_details.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="square_details.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/square_details.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5940171">
-              <caret line="240" column="90" selection-start-line="240" selection-start-column="90" selection-end-line="240" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="345" column="16" selection-start-line="345" selection-start-column="16" selection-end-line="345" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -368,18 +368,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/square_details.html">
+    <entry file="file://$PROJECT_DIR$/css/square_details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.607142">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="345" column="16" selection-start-line="345" selection-start-column="16" selection-end-line="345" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/square_details.css">
+    <entry file="file://$PROJECT_DIR$/page/square_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5940171">
-          <caret line="240" column="90" selection-start-line="240" selection-start-column="90" selection-end-line="240" selection-end-column="90" />
+        <state vertical-scroll-proportion="0.037444934">
+          <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
           <folding />
         </state>
       </provider>
