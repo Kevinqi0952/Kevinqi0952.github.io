@@ -92,25 +92,18 @@ html{
     margin-top: 0.8rem;
     font-family: "Microsoft YaHei";
 }
+.square-content .square-portrait .portrait-info .info-name .info-role,
 .square-content .square-portrait .portrait-info .info-name .info-sex{
     width: 0.65rem;
     height: 0.65rem;
     display: inline-block;
     margin-left: 0.1rem;
 }
+.square-content .square-portrait .portrait-info .info-name .info-role img,
 .square-content .square-portrait .portrait-info .info-name .info-sex img{
     width: 100%;
     height: 100%;
-}
-.square-content .square-portrait .portrait-info .info-name .info-role{
-    width: 0.65rem;
-    height: 0.65rem;
-    display: inline-block;
-    margin-left: 0.1rem;
-}
-.square-content .square-portrait .portrait-info .info-name .info-role img{
-    width: 100%;
-    height: 100%;
+    margin-top: -0.1rem;
 }
 .square-content .square-portrait .portrait-info .info-time{
     font-size: 0.5rem;
@@ -254,6 +247,7 @@ html{
 .square-comment-content .comment-list .comment-portrait .comment-portrait-name .dietitian img{
     width: 100%;
     height: 100%;
+    margin-top: -0.1rem;
 }
 .square-comment-content .comment-list .comment-portrait .comment-portrait-name .comment-time{
     float: right;
