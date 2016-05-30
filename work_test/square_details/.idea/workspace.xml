@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="square_details.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="square_details.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/square_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48127753">
+            <state vertical-scroll-proportion="-15.607142">
               <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="square_details.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="square_details.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/square_details.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="247" column="94" selection-start-line="247" selection-start-column="94" selection-end-line="247" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.5940171">
+              <caret line="240" column="90" selection-start-line="240" selection-start-column="90" selection-end-line="240" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -56,10 +56,10 @@
       <list>
         <option value="$PROJECT_DIR$/../suqare_details/page/square_details.html" />
         <option value="$PROJECT_DIR$/../suqare_details/css/square_details.css" />
-        <option value="$PROJECT_DIR$/css/square_details.css" />
-        <option value="$PROJECT_DIR$/css/square_details.css" />
         <option value="$PROJECT_DIR$/page/square_details.html" />
         <option value="$PROJECT_DIR$/page/square_details.html" />
+        <option value="$PROJECT_DIR$/css/square_details.css" />
+        <option value="$PROJECT_DIR$/css/square_details.css" />
       </list>
     </option>
   </component>
@@ -368,18 +368,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/square_details.css">
+    <entry file="file://$PROJECT_DIR$/page/square_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="247" column="94" selection-start-line="247" selection-start-column="94" selection-end-line="247" selection-end-column="94" />
+        <state vertical-scroll-proportion="-15.607142">
+          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/square_details.html">
+    <entry file="file://$PROJECT_DIR$/css/square_details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48127753">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.5940171">
+          <caret line="240" column="90" selection-start-line="240" selection-start-column="90" selection-end-line="240" selection-end-column="90" />
           <folding />
         </state>
       </provider>
