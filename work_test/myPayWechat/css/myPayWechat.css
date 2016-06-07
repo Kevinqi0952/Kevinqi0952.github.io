@@ -8,8 +8,8 @@
 }
 .wechat-content{
     width: 100%;
-    /*padding-bottom: 100%;*/
     overflow: hidden;
+    position: relative;
 }
 .wechat-content{
     background: url("../image/temp/content-bg.jpg");
@@ -84,6 +84,13 @@
     margin-left: -0.9rem;
     z-index: 0;
 }
+.wechat-content .chat-details  .chat-man .chat-video-box{
+    width: 10.5rem;
+    float: left;
+}
+.wechat-content .chat-details  .chat-man .chat-video-box img{
+    width: 100%;
+}
 .wechat-content .chat-details .chat-woman{
     width: 100%;
     overflow: hidden;
@@ -124,6 +131,9 @@
     right: 2.2rem;
     z-index: 0;
 }
+.wechat-content .chat-details .chat-woman .woman-chat-details img{
+    width: 6.25rem;
+}
 .wechat-content .chat-details .chat-woman .chat-img-box{
     width: 6rem;
     float: right;
@@ -132,7 +142,8 @@
     width: 100%;
 }
 .wechat-content .content-bottom-fixed{
-    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
     position: fixed;
     bottom: 0;
 }
