@@ -1,7 +1,9 @@
 /**
  * Created by yurong on 2016/6/8.
  */
-$(function(){
+
+window.onload = $(function(){
+    
     var audioEle = $("#audio")[0];
 
     setTimeout(fadeIn01,1000);
