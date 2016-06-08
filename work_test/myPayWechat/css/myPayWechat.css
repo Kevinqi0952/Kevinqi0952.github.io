@@ -19,6 +19,9 @@
     overflow: hidden;
 }
 .wechat-content:before {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
     content: ' ';
     position: fixed;
     z-index: -1;
@@ -39,12 +42,13 @@
     width: 100%;
 }
 .wechat-content .chat-details{
-    padding-top: 2.1rem;
+    /*padding-top: 2.1rem;*/
     padding-bottom: 2.05rem;
 }
 .wechat-content .chat-details .chat-info{
     text-align: center;
     padding: 0.5rem 0;
+    display: none;
 }
 .wechat-content .chat-details .chat-info span{
     padding: 0.1rem 0.3rem;
@@ -62,6 +66,7 @@
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
+    display: none;
 }
 .wechat-content .chat-details  .chat-man .man-portrait{
     width: 1.7rem;
@@ -110,6 +115,7 @@
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
+    display: none;
 }
 .wechat-content .chat-details .chat-woman .woman-portrait{
     width: 1.7rem;

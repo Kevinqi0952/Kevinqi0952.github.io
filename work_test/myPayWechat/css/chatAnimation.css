@@ -1,0 +1,31 @@
+/*#chat-info01{*/
+    /*animation: chatA011 1s;*/
+    /*-moz-animation: chatA01 1s;	/!* Firefox *!/*/
+    /*-webkit-animation: chatA01 1s;	/!* Safari ºÍ Chrome *!/*/
+    /*-o-animation: chatA01 1s;	/!* Opera *!/*/
+    /*/!*display: block;*!/*/
+/*}*/
+
+/*@keyframes chatA01*/
+/*{*/
+    /*from {display: none;}*/
+    /*to {display: block;}*/
+/*}*/
+
+/*@-moz-keyframes chatA01/!* Firefox *!/*/
+/*{*/
+    /*from {display: none;}*/
+    /*to {display: block;}*/
+/*}*/
+
+/*@-webkit-keyframes chatA01 /!* Safari ºÍ Chrome *!/*/
+/*{*/
+    /*from {display: none;}*/
+    /*to {display: block;}*/
+/*}*/
+
+/*@-o-keyframes chatA01 /!* Opera *!/*/
+/*{*/
+    /*from {display: none;}*/
+    /*to {display: block;}*/
+/*}*/
