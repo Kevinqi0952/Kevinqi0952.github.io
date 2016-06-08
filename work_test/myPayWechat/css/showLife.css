@@ -1,0 +1,8 @@
+.fp-tableCell{
+    display: block;
+}
+.show-life{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
