@@ -24,10 +24,10 @@
 <div id="show-life">
     <div class="section page-new-food">
         <div class="food-title">
-            <img src="../image/show_life/page1Title.png" class="animated fadeInRight"/>
+            <img src="../image/show_life/page1Title.png" class="title-img animated fadeInDown"/>
         </div>
         <div class="food-details">
-            <img src="../image/show_life/page1CaiPing.png" class="animated fadeIn"/>
+            <img src="../image/show_life/page1CaiPing.png"/>
         </div>
         <div class="food-text">
             <img src="../image/show_life/page1Text.png"/>
@@ -38,7 +38,7 @@
     </div>
     <div class="section eat-show">
         <div class="eat-title">
-            <img src="../image/show_life/page2Title.png"/>
+            <img src="../image/show_life/page2Title.png" class="title-img animated"/>
         </div>
         <div class="eat-text">
             <img src="../image/show_life/page2Text.png"/>
@@ -50,7 +50,9 @@
             <img src="../image/show_life/page2Text2.png"/>
         </div>
         <div class="eat-button">
-            <img src="../image/show_life/page2Button.png"/>
+            <a href="#">
+                <img src="../image/show_life/page2Button.png"/>
+            </a>
         </div>
         <div class="page-bottom">
             <img src="../image/show_life/page1Bottom.png"/>
@@ -80,7 +82,33 @@
 <script>
         $(function(){
             $('#show-life').fullpage({
-            });
+                afterLoad: function (anchorLink, index) {
+                    var page1 = $('.page-new-food');
+                    var page2 = $('.eat-show');
+
+                    if (index = 1) {
+                        page1.find('.title-img').addClass('fadeInDown');
+                        page1.find('.title-img').show();
+                    }
+                    if (index = 2) {
+                        page2.find('.title-img').show();
+                        page2.find('.title-img').addClass('fadeInLeft');
+                    }
+                },
+                onLeave:function(index,nextIndex,direction) {
+                    var page1 = $('.page-new-food');
+                    var page2 = $('.eat-show');
+
+                    if (index = 1) {
+                        page1.find('.title-img').hide();
+                        page2.find('.title-img').removeClass('fadeInLeft');
+                    }
+                    if (index = 2) {
+                        page1.find('.title-img').removeClass('fadeInDown');
+                        page2.find('.title-img').hide();
+                    }
+                }
+            })
         });
 </script>
 </body>

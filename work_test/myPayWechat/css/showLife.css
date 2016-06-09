@@ -21,13 +21,17 @@
     display: block;
     margin: 0 auto;
 }
+.page-new-food .food-title  .title-img{
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
 .page-new-food .food-details{
     width: 12.3rem;
     height: 14.7rem;
-    margin: -2rem auto 0 auto;
+    margin: -2.5rem auto 0 auto;
 }
 .page-new-food .food-details img{
-    width: 12.3rem;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -57,7 +61,13 @@
 }
 .eat-show .eat-title {
     width: 13.75rem;
+    height: 4rem;
     margin: 0.75rem auto 0 auto;
+}
+.eat-show .eat-title .title-img{
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    display: none;
 }
 .eat-show .eat-text{
     width: 12.1rem;
@@ -94,4 +104,32 @@
 .rubberBand{
     animation:rubberBand 1.5s infinite;
     -webkit-animation:rubberBand 1.5s infinite;
+}
+/**
+ *  iPhone 4/4s portrait
+ */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-height: 480px)
+and (-webkit-device-pixel-ratio: 2)
+and (device-aspect-ratio: 2/3)
+and (orientation:portrait)  {
+    .page-new-food .food-details{
+        margin-top: -3rem;
+    }
+    .page-new-food .food-details{
+        width: 9rem;
+        height: 11.5rem;
+    }
+    .eat-show .eat-title{
+        width: 12rem;
+        height: 3.5rem;
+    }
+    .eat-show .eat-text{
+        width: 10rem;
+        margin-left: 4rem;
+    }
+    .eat-show .eat-code{
+        width: 6.5rem;
+    }
 }
