@@ -92,7 +92,24 @@ window.onload = $(function(){
         if(($('#chat-details').height()+$('.content-bottom-fixed').height()) >= $(window).height()){
             $('.chat-details').animate({marginTop:'-'+( $('#chat-details').height() - $(window).height())-$('.content-bottom-fixed').height()})
         }
-        setTimeout(fadeIn13,1800)
+        setTimeout(videoPlay,1800)
+    }
+    function videoPlay(){
+        var myVideo =  $("#video")[0];
+
+        var eventTester = function(e){
+            myVideo.addEventListener(e,function(){
+                if(e = "ended"){
+                    fadeIn13();
+                }
+                console.log((new Date()).getTime(),e);
+            },false);
+        }
+
+        $('.chat-video-box').find("img").css('display','none');
+        $('#video').css('display','block');
+        myVideo.play();
+        eventTester('ended');
     }
     function fadeIn13(){
         $('#chat-woman05').css('display','block');

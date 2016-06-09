@@ -107,7 +107,14 @@ html{
 }
 .wechat-content .chat-details  .chat-man .chat-video-box{
     width: 10.5rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
     float: left;
+}
+.wechat-content .chat-details  .chat-man .chat-video-box video{
+    width: 10.5rem;
+    border-radius: 0.3rem;
+    display: none;
 }
 .wechat-content .chat-details  .chat-man .chat-video-box img{
     width: 100%;
