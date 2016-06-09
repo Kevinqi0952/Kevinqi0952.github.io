@@ -179,3 +179,9 @@ html{
 .wechat-content .content-bottom-fixed img{
     width: 100%;
 }
+/*ÐÂ¼Ó*/
+.chat-man .chat-video-box .click-btn{
+    width: 4.35rem!important;
+    display: block;
+    margin: 0.5rem auto;
+}

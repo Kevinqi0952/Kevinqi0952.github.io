@@ -11,7 +11,7 @@
 }
 .page-new-food .food-title{
     width: 100%;
-    height: 7.5rem;
+    height: 7rem;
     background: url("../image/show_life/page1TitleBg.png");
     background-size: 100% 100%;
     padding-top: 0.75rem;
@@ -26,20 +26,21 @@
     animation-delay: 0.5s;
 }
 .page-new-food .food-details{
-    width: 12.3rem;
+    width: 11.5rem;
     height: 14.7rem;
-    margin: -2.5rem auto 0 auto;
+    margin: -3rem auto 0 auto;
 }
 .page-new-food .food-details img{
     width: 100%;
     display: block;
     margin: 0 auto;
 }
-.page-new-food  .food-text{
+.page-new-food .food-text{
     width: 100%;
     background: url("../image/show_life/page1TextBg.png") no-repeat;
     background-size: 100% auto;
     padding-top: 0.5rem;
+    margin-top: -1rem;
 }
 .page-new-food  .food-text img{
     width: 9.7rem;
@@ -128,6 +129,24 @@
 }
 @media only screen and (width: 360px) and (min-height:560px)
 {
+    .page-new-food .food-details{
+        margin-top: -3.5rem;
+    }
+    .page-new-food .food-details{
+        width: 8rem;
+        height: 10.5rem;
+    }
+    .eat-show .eat-title{
+        width: 12rem;
+        height: 3.5rem;
+    }
+    .eat-show .eat-text{
+        width: 9rem;
+        margin-left: 4rem;
+    }
+    .eat-show .eat-code{
+        width: 5.5rem;
+    }
 }
 /**
  *  iPhone 4/4s portrait

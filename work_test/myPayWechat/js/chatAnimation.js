@@ -101,14 +101,16 @@ window.onload = $(function(){
             myVideo.addEventListener(e,function(){
                 if(e = "ended"){
                     fadeIn13();
+                    $('#videoImg').css('display','block');
                 }
-                console.log((new Date()).getTime(),e);
             },false);
         }
 
-        $('.chat-video-box').find("img").css('display','none');
-        $('#video').css('display','block');
-        myVideo.play();
+        $('#videoImg').click(function(){
+            $('#videoImg').css('display','none');
+            $('#video').css('display','block');
+            myVideo.play();
+        })
         eventTester('ended');
     }
     function fadeIn13(){
