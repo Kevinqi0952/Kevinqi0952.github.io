@@ -105,6 +105,30 @@
     animation:rubberBand 1.5s infinite;
     -webkit-animation:rubberBand 1.5s infinite;
 }
+@media only screen and (width: 360px) and (max-height:500px)
+{
+    .page-new-food .food-details{
+        margin-top: -3.5rem;
+    }
+    .page-new-food .food-details{
+        width: 8rem;
+        height: 10.5rem;
+    }
+    .eat-show .eat-title{
+        width: 12rem;
+        height: 3.5rem;
+    }
+    .eat-show .eat-text{
+        width: 9rem;
+        margin-left: 4rem;
+    }
+    .eat-show .eat-code{
+        width: 5.5rem;
+    }
+}
+@media only screen and (width: 360px) and (min-height:560px)
+{
+}
 /**
  *  iPhone 4/4s portrait
  */
