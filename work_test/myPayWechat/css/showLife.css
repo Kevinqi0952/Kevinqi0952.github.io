@@ -175,3 +175,18 @@ and (orientation:portrait)  {
         width: 6.5rem;
     }
 }
+
+/*ÐÂ¼Ó*/
+.page-new-food .up-btn{
+    width: 2.2rem;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    animation:pulse 1.5s infinite;
+    -webkit-animation:pulse 1.5s infinite;
+}
+.page-new-food .up-btn img{
+    width: 100%;
+}
