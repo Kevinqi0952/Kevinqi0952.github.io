@@ -40,6 +40,7 @@
     background: url("../image/show_life/page1TextBg.png") no-repeat;
     background-size: 100% auto;
     padding-top: 0.5rem;
+    margin-top: -0.5rem;
 }
 .page-new-food  .food-text img{
     width: 9.7rem;
@@ -181,7 +182,7 @@ and (orientation:portrait)  {
     width: 2.2rem;
     margin: 0 auto;
     position: fixed;
-    bottom: 2.5rem;
+    bottom: 3rem;
     left: 0;
     right: 0;
     animation:water 1.5s infinite;
