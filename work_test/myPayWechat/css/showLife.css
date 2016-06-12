@@ -71,7 +71,6 @@
 }
 .eat-show .eat-text{
     width: 11.5rem;
-    margin-top: 0.5rem;
     margin-left: 3rem;
 }
 .eat-show .eat-code{
@@ -85,6 +84,7 @@
 .eat-show .eat-button{
     width: 7.25rem;
     margin: 0.25rem auto 0 auto;
+    position: relative;
 }
 .eat-show .page-bottom{
     width: 100%;
@@ -181,7 +181,7 @@ and (orientation:portrait)  {
     width: 2.2rem;
     margin: 0 auto;
     position: fixed;
-    bottom: 2rem;
+    bottom: 2.5rem;
     left: 0;
     right: 0;
     animation:water 1.5s infinite;
@@ -224,4 +224,11 @@ and (orientation:portrait)  {
     50%  {bottom: 1.7rem;}
     /*75% ??bottom: 1.5rem;??*/
     100% {bottom: 1.4rem;}
+}
+.eat-show  .bottom-bg{
+    width: 100%;
+    margin-top: -2rem;
+}
+.eat-show  .bottom-bg img{
+    width: 100%;
 }
