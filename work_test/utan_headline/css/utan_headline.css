@@ -378,3 +378,26 @@ html{
 .dayima-app-content .app-content-img img{
     max-height: 3.5rem;
 }
+/*广告新加*/
+.news-advertisement{
+    border-top: 0.5rem solid #efeff5; /*修改边框颜色*/
+    padding: 1.2rem 0.5rem;
+}
+.news-advertisement .new-content{
+    border: 1px solid #dddddd;
+}
+.news-advertisement .new-content .advertisement-img-box{
+    width: 100%;
+}
+.news-advertisement .new-content .advertisement-img-box img{
+    width: 100%;
+    display: block;
+}
+.news-advertisement .new-content .advertisement-text-box{
+    padding: 0.5rem;
+}
+.news-advertisement .new-content .advertisement-text-box p{
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+}
