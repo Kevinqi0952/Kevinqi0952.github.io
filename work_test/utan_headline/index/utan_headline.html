@@ -159,6 +159,11 @@
             <li></li>
         </ul>
     </div>
+    <!--新加点赞-->
+    <div class="top-zan">
+        <span class="top-zan-before" id="zan-btn"></span>
+        <span class="top-zan-text"></span>
+    </div>
     <!--<div class="bottom-fixed">-->
         <!--<img src="../images/pic_bottomfixed.png"/>-->
         <!--<h1>致力于做最懂女人的APP</h1>-->
@@ -198,6 +203,17 @@
             $('.app-content-img img').jqthumb();
         })
     });
+</script>
+<script>
+    $('.top-zan').click(function(){
+        if($('#zan-btn').hasClass('top-zan-before')){
+            $('#zan-btn').removeClass('top-zan-before');
+            $('#zan-btn').addClass('top-zan-after');
+        }else{
+            $('#zan-btn').removeClass('top-zan-after');
+            $('#zan-btn').addClass('top-zan-before');
+        }
+    })
 </script>
 </body>
 </html>

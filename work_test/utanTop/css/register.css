@@ -1,0 +1,118 @@
+html{
+    font-size: 125%;
+}
+.top-content{
+    margin: 0;
+    padding: 0;
+}
+.top-content .top-register{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.top-content .top-register:before {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../image/signIn/s-Bg.jpg") center 0 no-repeat;
+    background-size: cover;
+}
+.top-content .top-register .top-logo{
+    width: 2.55rem;
+    height: 2.55rem;
+    margin: 1.9rem auto 2.425rem auto;
+}
+.top-content .top-register .top-logo img{
+    width: 100%;
+}
+.top-content .top-register .top-input{
+    overflow: hidden;
+}
+.top-content .top-register .top-input .input-phone,
+.top-content .top-register .top-input .top-password,
+.top-content .top-register .top-input .input-code{
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 1.2rem;
+    overflow: hidden;
+}
+.top-content .top-register .top-input .input-phone input,
+.top-content .top-register .top-input .top-password input,
+.top-content .top-register .top-input .input-code input{
+    border: none;
+    background: none;
+    font-size: 0.6rem;
+    color: #999;
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+}
+
+.top-content .top-register .top-input .input-code .get-code{
+    width: 4rem;
+    height: 1.2rem;
+    text-align: center;
+    line-height: 1.2rem;
+    border: 1px solid #e63a73;
+    color: #e63a73;
+    font-size: 0.65rem;
+    border-radius: 1.2rem;
+    margin-top: -0.2rem;
+    display: inline-block;
+    float: right;
+}
+.top-content .top-register .top-input .top-checked{
+    margin-top: 1rem;
+}
+.top-content .top-register .top-input .top-checked .checked-btn{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #333333;
+    display: inline-block;
+    vertical-align: middle;
+}
+.top-content .top-register .top-input .top-checked .checked-click{
+    background: url("../image/register/checked.png") center no-repeat;
+    background-size: 0.5rem 0.3rem;
+}
+.top-content .top-register .top-input .top-checked p{
+    font-size: 0.55rem;
+    color: #333333;
+    display: inline-block;
+    vertical-align: middle;
+}
+.top-content .top-register .top-button{
+    width: 100%;
+    height: 1.7rem;
+    background: #e63a73;
+    color: #fff;
+    font-size: 0.65rem;
+    letter-spacing: 0.3rem;
+    border-radius: 1.7rem;
+    box-shadow: 0 0.2rem 1rem rgba(230,58,115,0.5);
+    margin-top: 2.55rem;
+    display: block;
+}
+.top-content .top-register  .no-user{
+    font-size: 0.55rem;
+    color: #333333;
+    margin-top: 5.2rem;
+    text-align: center;
+}
+.top-content .top-register  .no-user a{
+    color: #e63a73;
+    text-decoration: underline;
+}

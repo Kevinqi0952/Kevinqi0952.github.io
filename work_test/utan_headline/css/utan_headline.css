@@ -86,7 +86,7 @@ html{
 
 /*utan-comment start*/
 .utan-comment{
-    border-top: 0.5rem solid #efeff5; /*ĞŞ¸Ä±ß¿òÑÕÉ«*/
+    border-top: 0.5rem solid #efeff5; /*ï¿½Ş¸Ä±ß¿ï¿½ï¿½ï¿½É«*/
     padding: 0.5rem 0.5rem 3rem 0.5rem;
 }
 .utan-comment li{
@@ -176,7 +176,7 @@ html{
     color: #f15f9d;
 }
 /*utan-comment end*/
-/*ĞÂ¼Ó*/
+/*ï¿½Â¼ï¿½*/
 .utan-main .utan-content .utan-banner{
     width: 15rem;
     height: 10.4rem;
@@ -199,7 +199,7 @@ html{
 .utan-main .like-people{
     width: 100%;
     background-color: #fff;
-    border-top: 0.5rem solid #efeff5; /*ĞŞ¸Ä±ß¿òÑÕÉ«*/
+    border-top: 0.5rem solid #efeff5; /*ï¿½Ş¸Ä±ß¿ï¿½ï¿½ï¿½É«*/
     padding: 1rem 0;
 }
 .utan-main .like-people ul{
@@ -276,7 +276,7 @@ html{
     display: block;
 }
 
-/*ÈËÓãÏßĞÂ¼Ó*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½*/
 .renyuxian-banner img{
     width: 100%;
 }
@@ -378,9 +378,8 @@ html{
 .dayima-app-content .app-content-img img{
     max-height: 3.5rem;
 }
-/*¹ã¸æĞÂ¼Ó*/
 .news-advertisement{
-    border-top: 0.5rem solid #efeff5; /*ĞŞ¸Ä±ß¿òÑÕÉ«*/
+    border-top: 0.5rem solid #efeff5;
     padding: 1.2rem 0.5rem;
 }
 .news-advertisement .new-content{
@@ -400,4 +399,45 @@ html{
     font-size: 0.5rem;
     font-family: "Microsoft YaHei";
     color: #9a9a9a;
+}
+/*å¤´æ¡åˆ†äº«ç‚¹èµæ–°åŠ */
+.top-zan{
+    width: 3.5rem;
+    height: 1.7rem;
+    border-radius: 1.7rem 0 0 1.7rem;
+    box-shadow: 0px 0px 10px rgba(184,184,184,0.3);
+    position: absolute;
+    top: 3.4rem;
+    right: 0;
+    overflow: hidden;
+}
+.top-zan .top-zan-before{
+    width: 0.8rem;
+    height: 1.7rem;
+    background: url("../images/top-zanBefore.png") no-repeat;
+    background-size: 0.8rem 0.7rem;
+    background-position: center;
+    margin-left: 0.6rem;
+    float: left;
+    display: block;
+}
+.top-zan .top-zan-after{
+    width: 0.8rem;
+    height: 1.7rem;
+    background: url("../images/top-zanAfter.png") no-repeat;
+    background-size: 0.8rem 0.7rem;
+    background-position: center;
+    margin-left: 0.6rem;
+    float: left;
+    display: block;
+}
+.top-zan .top-zan-text{
+    width: 1.3rem;
+    height: 1.7rem;
+    background: url("../images/top-zanText.png") no-repeat;
+    background-size: 1.3rem 0.65rem;
+    background-position: center;
+    margin-left: 0.3rem;
+    float: left;
+    display: block;
 }
