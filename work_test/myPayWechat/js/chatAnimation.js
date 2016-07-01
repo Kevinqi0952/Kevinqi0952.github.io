@@ -102,6 +102,7 @@ window.onload = $(function(){
                 if(e = "ended"){
                     fadeIn13();
                     $('#videoImg').css('display','block');
+					$('#video').css('display','none');
                 }
             },false);
         }
