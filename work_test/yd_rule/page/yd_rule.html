@@ -206,7 +206,11 @@
 //    弹层
     $(function(){
         $('.num-click').click(function(){
-            $('.alert-content').css('left',($(window).width() - $('.alert-content').outerWidth())/2);
+            if($(window).width()<=640){
+                $('.alert-content').css('left',($(window).width() - $('.alert-content').outerWidth())/2 + $(window).width()/30);
+            }else{
+                $('.alert-content').css('left',($(window).width() - $('.alert-content').outerWidth())/2 + 640/30);
+            }
             $('.alert-content').css('top',($(window).height() - $('.alert-content').outerHeight())/2+$(window).scrollTop());
             $('.alert-content').fadeIn(200);
             $(".mask").css("height",$(document).height());
