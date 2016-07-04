@@ -55,9 +55,10 @@ html{
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
 }
+/*修改*/
 .yd-rule .rule-content .content-num{
     width: 14.35rem;
-    height: 12.225rem;
+    height: 9.625em;
     background: url("../image/numBg.png") no-repeat;
     background-size: 14.35rem 100%;
     margin-top: -3.6rem;
@@ -65,7 +66,7 @@ html{
     position: relative;
     padding-top: 4.4rem;
 }
-.yd-rule .rule-content .content-num p{
+.yd-rule .rule-content .content-num  .num-content p{
     width: 12.4rem;
     text-align: center;
     font-size: 2rem;
@@ -73,18 +74,57 @@ html{
     color: #d97000;
     margin-left: 0.6rem;
 }
-.yd-rule .rule-content .content-num .num-click{
-    width: 7.125rem;
-    position: absolute;
-    top: 9.15rem;
-    left: 1.1rem;
+/*新加 start*/
+.yd-rule .rule-content .yd-num{
+    margin-top: 0.4rem;
+    text-align: center;
 }
-.yd-rule .rule-content .content-num .num-click a{
+.yd-rule .rule-content .yd-num p{
+    font-family: "Microsoft YaHei";
+    font-size: 0.85rem;
+    color: #f65159;
+}
+.yd-rule .rule-content .yd-num p>span{
+    width: 0.85rem;
+    height: 0.85rem;
+    background: url("../image/howMuchDou.png") no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+.yd-rule .rule-content .yd-num p>em{
+    font-size: 1.45rem;
+    font-weight: bold;
+    vertical-align: sub;
+}
+.yd-rule .rule-content .yd-num .now-click,
+.yd-rule .rule-content .yd-num .yd-click{
+    width: 10.6rem;
+    height: 2.8rem;
+    margin: 0.5rem auto 0 auto;
+}
+.yd-rule .rule-content .yd-num .now-click a,
+.yd-rule .rule-content .yd-num .yd-click a{
     display: block;
 }
-.yd-rule .rule-content .content-num .num-click img{
+.yd-rule .rule-content .yd-num .now-click img,
+.yd-rule .rule-content .yd-num .yd-click img{
     width: 100%;
 }
+/*新加 end*/
+
+/*.yd-rule .rule-content .content-num .num-click{*/
+    /*width: 7.125rem;*/
+    /*position: absolute;*/
+    /*top: 9.15rem;*/
+    /*left: 1.1rem;*/
+/*}*/
+/*.yd-rule .rule-content .content-num .num-click a{*/
+    /*display: block;*/
+/*}*/
+/*.yd-rule .rule-content .content-num .num-click img{*/
+    /*width: 100%;*/
+/*}*/
 .yd-rule .rule-content .content-introduce{
     width: 100%;
     padding: 1.5rem 0.6rem 0 0.6rem;
@@ -205,7 +245,7 @@ html{
 }
 #you-dou{
     background: url("../image/douBtn.png") no-repeat;
-    background-size: 0.8rem 1.05rem;
+    background-size: 0.8rem 1rem;
 }
 .yd-rule .rule-content .rules-details{
     padding: 0 0.6rem 0.85rem 0.6rem;
