@@ -96,6 +96,7 @@ html{
     font-size: 1.45rem;
     font-weight: bold;
     vertical-align: sub;
+    font-family: Arial;
 }
 .yd-rule .rule-content .yd-num .now-click,
 .yd-rule .rule-content .yd-num .yd-click{
