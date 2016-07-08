@@ -1,0 +1,236 @@
+html{
+    font-size: 125%;
+}
+body{
+    background-color: #f5f5f5;
+}
+.article-main{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+}
+.article-main .article-header{
+    width: 100%;
+    height: 9rem;
+    padding-top: 2rem;
+    background: url("../image/headerBg.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.article-main .article-header .h3y-logo{
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url("../image/h3yLogo.png") no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto;
+    display: block;
+}
+.article-main .article-header h1{
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.35rem;
+}
+.article-main .article-header p{
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.35rem;
+}
+.article-main .article-content .article-list .article-details{
+    width: 100%;
+    background-color: #fff;
+    padding: 0.75rem 0.75rem 1.75rem 0.75rem;
+    overflow: hidden;
+    -webkit-box-shadow:0 10px 10px rgba(27,27,27,.17);
+    -moz-box-shadow:0 0 10px rgba(27,27,27,.17);
+    box-shadow:0 2px 6px rgba(27,27,27,.17);
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    margin-bottom: 0.25rem;
+}
+.article-main .article-content .article-list .article-details .details-header{
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-header  .header-portrait{
+    margin-right: 0.75rem;
+    float: left;
+}
+.article-main .article-content .article-list .article-details .details-header  .header-portrait .portrait-img-box{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-header  .header-portrait .portrait-img-box img{
+    width: 100%;
+}
+.article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #39bfa6;
+    margin-top: -0.7rem;
+    margin-left: 1.2rem;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-null{
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url("../image/sexNull.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-woman{
+    width: 0.4rem;
+    height: 0.5rem;
+    background: url("../image/sexWoman.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-man{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../image/sexMan.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.article-main .article-content .article-list .article-details .details-header .header-info{
+    float: left;
+}
+.article-main .article-content .article-list .article-details .details-header .header-info p{
+    color: #1b1b1b;
+    font-family: "Microsoft YaHei";
+    font-size: 0.65rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+.article-main .article-content .article-list .article-details .details-header .header-info i{
+    color: #969696;
+    font-family: "Microsoft YaHei";
+    font-size: 0.5rem;
+}
+.article-main .article-content .article-list .content-ps{
+    text-align: center;
+    font-size: 0.55rem;
+    font-family: "Microsoft YaHei";
+    color: #8a8a8a;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+.article-main .article-content .article-list .article-details .details-content{
+    margin-top: 0.75rem;
+}
+.article-main .article-content .article-list .article-details .details-content p{
+    color: #6b6b6b;
+    font-size: 0.7rem;
+    font-family: "Microsoft YaHei";
+    text-align: justify;
+}
+.article-main .article-content .article-list .article-details .details-content .img-three-box{
+    margin-top: 0.75rem;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article-main .article-content .article-list .article-details .details-content .img-two-box{
+    margin-top: 0.75rem;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-content .img-one-box{
+    margin-top: 0.75rem;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-content .img-video-box{
+    width: 100%;
+    margin-top: 0.75rem;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-content .img-video-box li{
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.article-main .article-content .article-list .article-details .details-content .img-three-box li{
+    width: 4.65rem;
+    height: 4.65rem;
+    margin-bottom: 0.2rem;
+}
+.article-main .article-content .article-list .article-details .details-content .img-two-box li{
+    width: 4.65rem;
+    height: 4.65rem;
+    margin-right: 0.2rem;
+    float: left;
+    overflow: hidden;
+}
+.article-main .article-content .article-list .article-details .details-content .img-one-box li{
+    width: 9.5rem;
+    height: 9.5rem;
+}
+.article-main .article-content .article-list .article-details .details-content .img-one-box li>img,
+.article-main .article-content .article-list .article-details .details-content .img-two-box li>img,
+.article-main .article-content .article-list .article-details .details-content .img-three-box li>img{
+    width: 100%;
+    height: 100%;
+}
+.article-main .article-content .article-list .article-details .details-content .img-video-box li>img{
+    width: 100%;
+}
+.article-main  .article-bottom{
+    padding-top: 1.5rem;
+    padding-bottom: 2.75rem;
+}
+.article-main  .article-bottom img{
+    width: 12.25rem;
+    display: block;
+    margin: 0 auto;
+}
+.article-main .article-bottom-fixed{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.article-main .article-bottom-fixed a{
+    display: block;
+}
+.article-main .article-bottom-fixed  img{
+    width: 100%;
+    display: block;
+}
