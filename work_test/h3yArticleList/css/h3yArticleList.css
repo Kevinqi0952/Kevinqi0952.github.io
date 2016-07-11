@@ -13,17 +13,23 @@ body{
     -webkit-box-sizing:border-box; /* Safari */
     overflow: hidden;
 }
+/*修改*/
 .article-main .article-header{
     width: 100%;
     height: 9rem;
-    padding-top: 2rem;
     background: url("../image/headerBg.jpg") no-repeat;
     background-size: 100% 100%;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
 }
-.article-main .article-header .h3y-logo{
+.article-main .article-header .header-bg {
+    width: 100%;
+    height: 9rem;
+    background-color: rgba(27,27,27,0.3);
+    padding-top: 2rem;
+}
+.article-main .article-header .header-bg .h3y-logo{
     width: 1.75rem;
     height: 1.75rem;
     background: url("../image/h3yLogo.png") no-repeat;
@@ -31,7 +37,7 @@ body{
     margin:0 auto;
     display: block;
 }
-.article-main .article-header h1{
+.article-main .article-header .header-bg h1{
     font-size: 0.6rem;
     font-family: "Microsoft YaHei";
     font-weight: lighter;
@@ -39,7 +45,7 @@ body{
     text-align: center;
     margin-top: 0.35rem;
 }
-.article-main .article-header p{
+.article-main .article-header .header-bg p{
     font-size: 0.65rem;
     font-family: "Microsoft YaHei";
     font-weight: lighter;
@@ -47,6 +53,7 @@ body{
     text-align: center;
     margin-top: 0.35rem;
 }
+/*修改 end*/
 .article-main .article-content .article-list .article-details{
     width: 100%;
     background-color: #fff;
@@ -67,12 +74,15 @@ body{
     margin-right: 0.75rem;
     float: left;
 }
+/*修改*/
 .article-main .article-content .article-list .article-details .details-header  .header-portrait .portrait-img-box{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    border: 1px solid #cdcdcd;
     overflow: hidden;
 }
+/*修改 end*/
 .article-main .article-content .article-list .article-details .details-header  .header-portrait .portrait-img-box img{
     width: 100%;
 }
@@ -89,8 +99,8 @@ body{
     overflow: hidden;
 }
 .article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-null{
-    width: 0.45rem;
-    height: 0.45rem;
+    width: 0.4rem;
+    height: 0.4rem;
     background: url("../image/sexNull.png") no-repeat;
     background-size: 100% 100%;
     display: block;
@@ -103,7 +113,7 @@ body{
 }
 .article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-woman{
     width: 0.4rem;
-    height: 0.5rem;
+    height: 0.45rem;
     background: url("../image/sexWoman.png") no-repeat;
     background-size: 100% 100%;
     display: block;
@@ -115,8 +125,8 @@ body{
     bottom: 0;
 }
 .article-main .article-content .article-list .article-details .details-header .header-portrait .person-sex .sex-man{
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.4rem;
+    height: 0.4rem;
     background: url("../image/sexMan.png") no-repeat;
     background-size: 100% 100%;
     display: block;
@@ -147,6 +157,7 @@ body{
     font-size: 0.55rem;
     font-family: "Microsoft YaHei";
     color: #8a8a8a;
+    line-height: 1.5rem;
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
 }
@@ -159,17 +170,20 @@ body{
     font-family: "Microsoft YaHei";
     text-align: justify;
 }
+/*修改*/
 .article-main .article-content .article-list .article-details .details-content .img-three-box{
-    margin-top: 0.75rem;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.article-main .article-content .article-list .article-details .details-content .img-two-box{
+    width: 14.55rem;
     margin-top: 0.75rem;
     overflow: hidden;
+    /*display: -webkit-flex; !* Safari *!*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
 }
+/*.article-main .article-content .article-list .article-details .details-content .img-two-box{*/
+    /*margin-top: 0.75rem;*/
+    /*overflow: hidden;*/
+/*}*/
 .article-main .article-content .article-list .article-details .details-content .img-one-box{
     margin-top: 0.75rem;
     overflow: hidden;
@@ -177,6 +191,7 @@ body{
 .article-main .article-content .article-list .article-details .details-content .img-video-box{
     width: 100%;
     margin-top: 0.75rem;
+    position: relative;
     overflow: hidden;
 }
 .article-main .article-content .article-list .article-details .details-content .img-video-box li{
@@ -186,31 +201,34 @@ body{
 .article-main .article-content .article-list .article-details .details-content .img-three-box li{
     width: 4.65rem;
     height: 4.65rem;
+    float: left;
+    margin-right: 0.2rem;
     margin-bottom: 0.2rem;
 }
-.article-main .article-content .article-list .article-details .details-content .img-two-box li{
-    width: 4.65rem;
-    height: 4.65rem;
-    margin-right: 0.2rem;
-    float: left;
-    overflow: hidden;
-}
+/*.article-main .article-content .article-list .article-details .details-content .img-two-box li{*/
+    /*width: 4.65rem;*/
+    /*height: 4.65rem;*/
+    /*margin-right: 0.2rem;*/
+    /*float: left;*/
+    /*overflow: hidden;*/
+/*}*/
 .article-main .article-content .article-list .article-details .details-content .img-one-box li{
     width: 9.5rem;
     height: 9.5rem;
 }
 .article-main .article-content .article-list .article-details .details-content .img-one-box li>img,
-.article-main .article-content .article-list .article-details .details-content .img-two-box li>img,
+/*.article-main .article-content .article-list .article-details .details-content .img-two-box li>img,*/
 .article-main .article-content .article-list .article-details .details-content .img-three-box li>img{
     width: 100%;
     height: 100%;
 }
+/*修改end*/
 .article-main .article-content .article-list .article-details .details-content .img-video-box li>img{
     width: 100%;
 }
 .article-main  .article-bottom{
     padding-top: 1.5rem;
-    padding-bottom: 2.75rem;
+    padding-bottom: 3.2rem;
 }
 .article-main  .article-bottom img{
     width: 12.25rem;
@@ -233,4 +251,19 @@ body{
 .article-main .article-bottom-fixed  img{
     width: 100%;
     display: block;
+}
+/*新加*/
+.article-main .article-content .article-list .article-details .details-content .img-video-box .video-play{
+    width: 1.9rem;
+    height: 1.9rem;
+    background: url("../image/playBtn.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    margin: auto auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
