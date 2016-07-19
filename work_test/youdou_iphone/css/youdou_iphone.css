@@ -1,0 +1,389 @@
+html{
+    font-size: 125%;
+}
+.youdou-iphone{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: url("../image/youdouBg.png") center 0 no-repeat;
+    background-color: #310073;
+    background-size: 100% auto;
+}
+.youdou-iphone .youdou-header{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.youdou-iphone .youdou-header .youdou-title{
+    width: 12.175rem;
+    height: 7.075rem;
+    margin: 0 auto;
+    background: url("../image/youdouTitle.png") no-repeat;
+    background-size: 100% 100%;
+}
+.youdou-iphone .youdou-header p{
+    margin-top: 0.5rem;
+    color: #feed4d;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    padding: 0 0.75rem;
+}
+.youdou-iphone .youdou-content{
+    height: 14.75rem;
+}
+.youdou-iphone .youdu-rule{
+    margin-top: 0.25rem;
+    padding: 0.75rem;
+}
+.youdou-iphone .youdu-rule .rule-header{
+    overflow: hidden;
+}
+.youdou-iphone .youdu-rule .rule-header span{
+    width: 4.75rem;
+    height: 0.6rem;
+    border-bottom: 1px solid #ffed55;
+    display: block;
+    float: left;
+}
+.youdou-iphone .youdu-rule .rule-header .rule-title{
+    width: 5rem;
+    height: 1.2rem;
+    background-color: #ffed55;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #5f461f;
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    border-radius: 0.15rem;
+    float: left;
+}
+.youdou-iphone .youdu-rule .rule-content{
+    padding: 1.2rem 0.75rem;
+}
+.youdou-iphone .youdu-rule .rule-content li{
+    font-size: 12px;
+    color: #e1caff;
+    font-family: "Microsoft YaHei";
+    text-align: justify;
+    margin-bottom: 0.4rem;
+}
+/*扑克牌 start*/
+.card{
+    border: none!important;
+}
+.secondModule .pokerBox {
+    width: 14.4rem;
+    height: 14.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .4rem;
+    position: relative;
+    background-color: #d490ff;
+    overflow: hidden;
+    box-shadow: 0 .25rem #8845b3;
+}
+.secondModule .pokerBox .insideBox {
+    width: 13.15rem;
+    height: 13.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .55rem;
+    border-radius: .4rem;
+    background-color: #67139a;
+    position: relative;
+}
+.poker,
+.poker2
+{
+    width: 12.5rem;
+    position: absolute;
+    height:12.5rem;
+    top: .4rem;
+    left: .3rem;
+}
+.poker2
+{
+    z-index: 2;
+    display: none;
+}
+.poker .card,
+.poker .pointer,
+.poker2 .card2,
+.poker2 .pointer2
+{
+    width: 4rem;
+    height:4rem;
+    position: absolute;
+}
+.poker2 .pointer2 img
+{
+    width: 100%;
+    display: block;
+}
+.poker .pointer,
+.poker2 .pointer2
+{
+    z-index: 2;
+}
+.poker .pointer img
+{
+    width: 100%;
+    display: block;
+}
+.poker .card:nth-child(1)
+{
+    top: 0;
+    left: 0;
+}
+.poker .card:nth-child(2)
+{
+    top: 0;
+    left: 4.25rem;
+}
+.poker .card:nth-child(3)
+{
+    top: 0;
+    left: 8.5rem;
+}
+.poker .card:nth-child(4)
+{
+    top:4.25rem;
+    left: 0;
+}
+.poker .card:nth-child(6)
+{
+    top:4.25rem;
+    left: 8.5rem;
+}
+.poker .card:nth-child(7)
+{
+    top:8.5rem;
+    left: 0;
+}
+.poker .card:nth-child(8)
+{
+    top:8.5rem;
+    left: 4.25rem;
+}
+.poker .card:nth-child(9)
+{
+    top:8.5rem;
+    left: 8.5rem;
+}
+.poker .pointer,
+.poker2 .pointer2,
+.poker2 .card2
+{
+    top: 4.25rem;
+    left: 4.25rem;
+}
+.poker .card img,
+.poker2 .card2 img
+{
+    width: 100%;
+    display: block;
+}
+
+
+.front,
+.back
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+
+.in {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 350ms;
+    animation-timing-function: ease-out;
+    animation-duration: 350ms;
+}
+.out {
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 225ms;
+    animation-timing-function: ease-in;
+    animation-duration: 225ms;
+}
+.viewport-flip {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    position: absolute;
+}
+.flip {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
+    backface-visibility: hidden;
+    transform: translateX(0);
+}
+.flip.out {
+    -webkit-transform: rotateY(-90deg) scale(.9);
+    -webkit-animation-name: flipouttoleft;
+    -webkit-animation-duration: 175ms;
+    transform: rotateY(-90deg) scale(.9);
+    animation-name: flipouttoleft;
+    animation-duration: 175ms;
+}
+.flip.in {
+    -webkit-animation-name: flipintoright;
+    -webkit-animation-duration: 225ms;
+    animation-name: flipintoright;
+    animation-duration: 225ms;
+}
+.flip.out.reverse {
+    -webkit-transform: rotateY(90deg) scale(.9);
+    -webkit-animation-name: flipouttoright;
+    transform: rotateY(90deg) scale(.9);
+    animation-name: flipouttoright;
+}
+.flip.in.reverse {
+    -webkit-animation-name: flipintoleft;
+    animation-name: flipintoleft;
+}
+@-webkit-keyframes flipouttoleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-90deg) scale(.9); }
+}
+@keyframes flipouttoleft {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(-90deg) scale(.9); }
+}
+@-webkit-keyframes flipouttoright {
+    from { -webkit-transform: rotateY(0) ; }
+    to { -webkit-transform: rotateY(90deg) scale(.9); }
+}
+@keyframes flipouttoright {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(90deg) scale(.9); }
+}
+@-webkit-keyframes flipintoleft {
+    from { -webkit-transform: rotateY(-90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@keyframes flipintoleft {
+    from { transform: rotateY(-90deg) scale(.9); }
+    to { transform: rotateY(0); }
+}
+@-webkit-keyframes flipintoright {
+    from { -webkit-transform: rotateY(90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@keyframes flipintoright {
+    from { transform: rotateY(90deg) scale(.9); }
+    to { transform: rotateY(0); }
+}
+/*扑克牌 end*/
+
+/*弹层 start*/
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
+}
+.youdou-iphone .alert-content{
+    width: 11.5rem;
+    margin: 0 auto;
+    padding-bottom: 0.75rem;
+    position: absolute;
+}
+.youdou-iphone .alert-content .alert-close{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.youdou-iphone .alert-content .alert-close img{
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    float: right;
+}
+.youdou-iphone .alert-content .alert-text{
+    border-radius: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+#insufficient-text{
+    background-color: #8209c8;
+}
+#insufficient-text p{
+    padding: 4rem 1.25rem 3rem 1.25rem;
+    color: #ffed55;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+.youdou-iphone .alert-content .alert-text button{
+    width: 7.5rem;
+    height: 2rem;
+    background-color: #ffed55;
+    color: #6b4115;
+    font-size: 0.8rem;
+    font-family: "Microsoft YaHei";
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+}
+#coupon-text,
+#success-text{
+    background-color: #ee503f;
+}
+#success-text .success-text{
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+}
+#success-text .success-text img{
+    width: 8rem;
+    margin: 0 auto;
+    display: block;
+}
+.alert-content .alert-text .alert-bg{
+    width: 12.9rem;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+}
+.alert-content .alert-text .alert-bg img{
+    width: 100%;
+}
+#coupon-text .coupon-text .coupon-title{
+    padding-top: 0.5rem;
+}
+#coupon-text .coupon-text .coupon-title p{
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    text-align: center;
+}
+#coupon-text .coupon-text .coupon-details{
+    width: 9.25rem;
+    height: 3.85rem;
+    margin: 0.8rem auto 1.45rem auto;
+    background: url("../image/couponBg.png") no-repeat;
+    background-size: 100% 100%;
+}
+#coupon-text .coupon-text .coupon-details p{
+    color: #ee503f;
+    font-size: 2.4rem;
+    font-family: Arial;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 4.8rem;
+    margin-top: 0.4rem;
+}
+#insufficient-content,
+#success-content,
+#coupon-content{
+    z-index: 999;
+    display: none;
+}
+/*弹层 end*/
