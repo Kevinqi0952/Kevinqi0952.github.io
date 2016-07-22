@@ -2,26 +2,26 @@
  * Created by yurong on 2016/4/29.
  */
 $(function(){
-    //导航栏顶部吸附
-    var navTop = $('.mall-nav-fixed').offset().top;
-    var ua = navigator.userAgent.toLowerCase();
+    // //导航栏顶部吸附
+    // var navTop = $('.mall-nav-fixed').offset().top;
+    // var ua = navigator.userAgent.toLowerCase();
 
-    if (/iphone|ipad|ipod/.test(ua)) {
-        console.log("iphone");
-    } else if (/android/.test(ua)) {
-        $(window).scroll(function(){
-            if($(window).scrollTop() >= navTop){
-                $('.mall-nav-fixed').css({
-                    "position":"fixed",
-                    "top":"0",
-                });
-            } else{
-                $('.mall-nav-fixed').css({
-                    "position":"relative"
-                });
-            }
-        })
-    }
+    // if (/iphone|ipad|ipod/.test(ua)) {
+    //     console.log("iphone");
+    // } else if (/android/.test(ua)) {
+    //     $(window).scroll(function(){
+    //         if($(window).scrollTop() >= navTop){
+    //             $('.mall-nav-fixed').css({
+    //                 "position":"fixed",
+    //                 "top":"0",
+    //             });
+    //         } else{
+    //             $('.mall-nav-fixed').css({
+    //                 "position":"relative"
+    //             });
+    //         }
+    //     })
+    // }
     //出现弹层+遮罩
     $('#show-alert-nav').click(function(){
         $('.alert-nav').show();

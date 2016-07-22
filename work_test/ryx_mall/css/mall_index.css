@@ -27,7 +27,7 @@
 }
 .mall-content .mall-nav .mall-nav-fixed ul{
     height: 3rem;
-    overflow: hidden;
+    overflow:auto;
     overflow-x: scroll;
     -webkit-overflow-scrolling:touch;
     padding-right: 2.3rem;
