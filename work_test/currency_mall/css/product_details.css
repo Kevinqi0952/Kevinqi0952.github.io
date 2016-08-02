@@ -219,7 +219,9 @@ html{
 }
 .product-content .chose-style  .product-num .chose-num .num-info{
     width: 1.9rem;
+    height: 1.25rem;
     text-align: center;
+    line-height: 1.25rem;
     display: inline-block;
     font-size: 0.75rem;
     color: #414141;
@@ -283,7 +285,7 @@ html{
     margin-left: 0.75rem;
     float: left;
 }
-.product-details .product-bottom-fixed .bottom-shopping span{
+.product-details .product-bottom-fixed .bottom-shopping div{
     width: 0.65rem;
     height: 0.65rem;
     background-color: #fe5380;
@@ -295,7 +297,6 @@ html{
     color: #fff;
     margin-left: 1.4rem;
     margin-top: 0.2rem;
-    display: block;
 }
 .product-details .product-bottom-fixed  button{
     width: 5.5rem;

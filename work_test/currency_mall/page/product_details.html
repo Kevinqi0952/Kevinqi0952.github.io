@@ -128,7 +128,7 @@
     </div>
     <div class="product-bottom-fixed">
         <div class="bottom-shopping">
-            <span>12</span>
+            <div>12</div>
         </div>
         <button><a href="###">加入购物车</a></button>
     </div>
@@ -162,25 +162,25 @@
 
     //选择属性
 
-    $('.product-color').find('li').on('click',function () {
+    $('.product-color').find('li').on('touchstart',function () {
         if(!$(this).hasClass('style-chose')){
             $('.product-color').find('li').removeClass('style-chose');
             $(this).addClass('style-chose');
         }
     })
-    $('.product-size').find('li').on('click',function () {
+    $('.product-size').find('li').on('touchstart',function () {
         if(!$(this).hasClass('style-chose')){
             $('.product-size').find('li').removeClass('style-chose');
             $(this).addClass('style-chose');
         }
     })
-    $('.num-add').on('click',function () {
+    $('.num-add').on('touchstart',function () {
         var num = $('.num-info').text();
         num ++;
         $('.num-info').text(num) ;
 
     });
-    $('.num-delete').on('click',function () {
+    $('.num-delete').on('touchstart',function () {
         var num = $('.num-info').text();
         num --;
         if(num < 1){
