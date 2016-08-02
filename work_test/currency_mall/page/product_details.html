@@ -28,8 +28,40 @@
     </div>
     <div class="product-content">
         <div class="product-info">
-            <div class="product-img-box">
-                <img src="../image/product_details/pic_productImg.jpg"/>
+            <!--<div class="product-img-box">-->
+                <!--<img src="../image/product_details/pic_productImg.jpg"/>-->
+            <!--</div>-->
+            <div id="banner" class="banner">
+                <ul class="bannerList clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="../image/product_details/pic_productImg.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../image/product_details/pic_productImg.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../image/product_details/pic_productImg.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../image/product_details/pic_productImg.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="iconList">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
             <div class="product-name">
                 <p>雅诗兰黛小棕瓶ANR面部精华液50ML特润修护肌透保湿紧致淡纹</p>
@@ -88,19 +120,23 @@
                     <li><em>规格</em></li>
                 </ul>
             </div>
-            <div class="product-picture"></div>
+            <div class="product-picture">
+                <img src="../image/product_details/pic_productImg01.jpg" alt="product">
+            </div>
             <div class="product-spec"></div>
         </div>
     </div>
     <div class="product-bottom-fixed">
-        <div class="bottom-shopping"></div>
-        <button>加入购物车</button>
+        <div class="bottom-shopping">
+            <span>12</span>
+        </div>
+        <button><a href="###">加入购物车</a></button>
     </div>
 </div>
 <script src="../js/jquery/1.11.1/jquery.js"></script>
-<script src="../js/unslider.min.js"></script>
+<script src="../js/TouchSlide.1.1.js"></script>
 <script type="text/javascript">
-    //    自适应start
+    //    自适应
     function screenSizeSetting()
     {
         $('html').css("font-size",$(window).width()*125/320+"%");
@@ -111,7 +147,48 @@
         $(window).resize(screenSizeSetting);
     });
 
-    //    自适应end
+
+    /*
+     *banner轮播
+     */
+    TouchSlide({
+        slideCell:"#banner",
+        titCell:".iconList ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bannerList",
+        effect:"leftLoop",
+//        autoPlay:true,//自动播放
+        autoPage:true, //自动分页
+    });
+
+    //选择属性
+
+    $('.product-color').find('li').on('click',function () {
+        if(!$(this).hasClass('style-chose')){
+            $('.product-color').find('li').removeClass('style-chose');
+            $(this).addClass('style-chose');
+        }
+    })
+    $('.product-size').find('li').on('click',function () {
+        if(!$(this).hasClass('style-chose')){
+            $('.product-size').find('li').removeClass('style-chose');
+            $(this).addClass('style-chose');
+        }
+    })
+    $('.num-add').on('click',function () {
+        var num = $('.num-info').text();
+        num ++;
+        $('.num-info').text(num) ;
+
+    });
+    $('.num-delete').on('click',function () {
+        var num = $('.num-info').text();
+        num --;
+        if(num < 1){
+            num = 1;
+        }
+        $('.num-info').text(num) ;
+    });
+    $
 </script>
 </body>
 </html>
