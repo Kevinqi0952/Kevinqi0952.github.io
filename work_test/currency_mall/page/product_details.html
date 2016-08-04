@@ -116,14 +116,61 @@
         <div class="details-chose">
             <div class="chose-nav">
                 <ul>
-                    <li class=""><em>图文详情</em></li>
+                    <li class="chose-nav-active"><em>图文详情</em></li>
                     <li><em>规格</em></li>
                 </ul>
             </div>
             <div class="product-picture">
                 <img src="../image/product_details/pic_productImg01.jpg" alt="product">
             </div>
-            <div class="product-spec"></div>
+            <div class="product-spec">
+                <table width="100%" cellspacing="0">
+                    <tr>
+                        <td>产品名称:</td>
+                        <td>EsteeLauder/雅诗兰黛</td>
+                    </tr>
+                    <tr>
+                        <td>上市时间:</td>
+                        <td>2012年</td>
+                    </tr>
+                    <tr>
+                        <td>是否为特殊用途化妆品:</td>
+                        <td>是</td>
+                    </tr>
+                    <tr>
+                        <td>功效:</td>
+                        <td>保湿 抗皱 滋润 紧致肌肤</td>
+                    </tr>
+                    <tr>
+                        <td>规格类型:</td>
+                        <td>正常规格</td>
+                    </tr>
+                    <tr>
+                        <td>适合肤质:</td>
+                        <td>任何肤质</td>
+                    </tr>
+                    <tr>
+                        <td>化妆品净含量:</td>
+                        <td>50g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>品牌:</td>
+                        <td>Estee Lauder/雅诗兰黛</td>
+                    </tr>
+                    <tr>
+                        <td>雅诗兰黛单品:</td>
+                        <td>即时修护特润精华露</td>
+                    </tr>
+                    <tr>
+                        <td>产地:</td>
+                        <td>美国</td>
+                    </tr>
+                    <tr>
+                        <td>保质期:</td>
+                        <td>3年</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
     <div class="product-bottom-fixed">
@@ -188,7 +235,22 @@
         }
         $('.num-info').text(num) ;
     });
-    $
+    //选择规格
+    $('.chose-nav').find('li').on('click',function(){
+        var num = $(this).index();
+
+        if(num === 0 ){
+            $('.product-picture').show();
+            $('.product-spec').hide();
+            $('.chose-nav').find('li').removeClass('chose-nav-active');
+            $('.chose-nav').find('li').eq(num).addClass('chose-nav-active');
+        } else{
+            $('.product-picture').hide();
+            $('.product-spec').show();
+            $('.chose-nav').find('li').removeClass('chose-nav-active');
+            $('.chose-nav').find('li').eq(num).addClass('chose-nav-active');
+        };
+    })
 </script>
 </body>
 </html>
