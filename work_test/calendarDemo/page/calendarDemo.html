@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendarDemo</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/calendarDemo.css">
+</head>
+<body>
+<div class="calendar-demo">
+    <div class="calendar-content">
+        <table>
+            <div class="chose-year">
+                <div class="table-left-btn"><</div>
+                <i>2016</i>
+                <div class="table-right-btn">></div>
+            </div>
+            <div class="chose-month">
+                <ul>
+                    <li>一月</li>
+                    <li>二月</li>
+                    <li>三月</li>
+                    <li>四月</li>
+                    <li>五月</li>
+                    <li>六月</li>
+                    <li>七月</li>
+                    <li>八月</li>
+                    <li>九月</li>
+                    <li>十月</li>
+                    <li>十一月</li>
+                    <li>十二月</li>
+                </ul>
+            </div>
+            <tr id="table-title">
+                <td>MON</td>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+                <td>SAT</td>
+                <td>SUN</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="../js/1.11.1/jquery.js"></script>
+<script>
+    var myDate = new Date();
+    var nowYear = myDate.getFullYear();
+    var nowMonth = myDate.getMonth();
+    var nowDay = myDate.getDate();
+    var firstData=new Date(nowYear,nowMonth,1); //当月第一天Date资讯
+    var firstDay=firstData.getDay(); //当月第一天星期几
+    var m_days=new Array(31,28+is_leap(nowYear),31,30,31,30,31,31,30,31,30,31); //各月份的总天数
+    var tr_str=Math.ceil((m_days[nowMonth] + firstDay)/7);//表格所需要行数
+
+    //是否为闰年
+    function is_leap(year) {
+        return (year%100==0?res=(year%400==0?1:0):res=(year%4==0?1:0));
+    }
+
+    //渲染日期表格
+    for(var i = 0;i<tr_str;i++){
+        $('#table-title').after('<tr class="new-tr">');
+        for(var k = 0;k < 7;k++ ){
+            idx= m_days[nowMonth]-i*7+k-2; //单元格自然序列号
+            date_str=idx-firstDay+1;
+            (date_str<=0 || date_str>m_days[nowMonth]) ? date_str="&nbsp;" : date_str=idx-firstDay+1;//过滤无效日期（小于等于零的、大于月总天数的）
+            $('.new-tr').eq(0).append('<td class="new-td">' + date_str + '</td>');
+        }
+        $('#table-title').after('</tr>');
+    }
+
+
+    $('.chose-month').find('li').eq(nowMonth).addClass('month-active'); //为当前月份添加样式
+    $('.calendar-content').find('td').eq(nowDay+firstDay+5).addClass('today-active');//为当前天数添加样式
+
+    $('.chose-month').find('li').on('click',function(){
+
+        if(!$(this).hasClass('month-active')){
+            $('.chose-month').find('li').removeClass('month-active');
+            $(this).addClass('month-active');
+        }
+
+        if($(this).index() === nowMonth){
+            $('.calendar-content').find('td').eq(nowDay+firstDay+5).addClass('today-active');
+        }else{
+            $('.calendar-content').find('td').eq(nowDay+firstDay+5).removeClass('today-active');
+        }
+    })
+
+</script>
+</body>
+</html>

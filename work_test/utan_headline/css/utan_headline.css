@@ -176,26 +176,6 @@ html{
     color: #f15f9d;
 }
 /*utan-comment end*/
-/*�¼�*/
-.utan-main .utan-content .utan-banner{
-    width: 15rem;
-    height: 10.4rem;
-    background: url("../images/banner_utanHeadLine.jpg");
-    background-size: 100% 100%;
-    position: relative;
-}
-.utan-main .utan-content  .qr-code{
-    width: 4.32rem;
-    height: 4.32rem;
-    background-color: #fff;
-    position: absolute;
-    top: 1.76rem;
-    left: 8.66rem;
-    overflow: hidden;
-}
-.utan-main .utan-content  .qr-code img{
-    width: 100%;
-}
 .utan-main .like-people{
     width: 100%;
     background-color: #fff;
@@ -440,4 +420,61 @@ html{
     margin-left: 0.3rem;
     float: left;
     display: block;
+}
+/*新加相关文章样式*/
+.new-content-two .content-title{
+    color: #9a9a9a;
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    margin-top: 1.4rem;
+    background: url("../images/pic_textContentTitleBg.png") no-repeat;
+    background-size: 100% 0.1rem;
+    background-position: center;
+}
+.new-content-two li{
+    height: 2rem;
+    color: #505050;
+    font-size: 0.65rem;
+    font-family: "Microsoft YaHei";
+    line-height: 2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.new-content-two li:nth-last-child(1){
+    border-bottom: none;
+}
+.new-content-two li>a{
+    display: block;
+}
+.new-content-two li span{
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background-color: #505050;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+/*�¼�*/
+.news-advertisement .utan-banner{
+    width: 15rem;
+    height: 10.4rem;
+    background: url("../images/banner_utanHeadLine.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-advertisement .qr-code{
+    width: 4.32rem;
+    height: 4.32rem;
+    background-color: #fff;
+    position: absolute;
+    top: 1.76rem;
+    left: 8.66rem;
+    overflow: hidden;
+}
+.news-advertisement  .qr-code img{
+    width: 100%;
 }
