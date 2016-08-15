@@ -17,6 +17,11 @@ body{
 .calendar-demo .calendar-content .chose-year{
     text-align: center;
     color: #8c8c8c;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
 }
 .calendar-demo .calendar-content .chose-year i{
     color: #006e75;
@@ -40,6 +45,11 @@ body{
     overflow: hidden;
     white-space:nowrap;
     text-align: center;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
 }
 .calendar-demo .calendar-content .chose-month li{
     font-size: 20px;

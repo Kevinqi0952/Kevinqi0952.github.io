@@ -75,11 +75,28 @@
     $('.chose-month').find('li').eq(nowMonth).addClass('month-active'); //为当前月份添加样式
     $('.calendar-content').find('td').eq(nowDay+firstDay+5).addClass('today-active');//为当前天数添加样式
 
+    //选择月份
     $('.chose-month').find('li').on('click',function(){
 
         if(!$(this).hasClass('month-active')){
+            var newMonth = $(this).index();
+            var firstNewData=new Date(nowYear,newMonth,1); //当月第一天Date资讯
+            var firstNewDay=firstNewData.getDay(); //当月第一天星期几
+//            var tr_new_str=Math.ceil((m_days[newMonth] + firstNewDay)/7);//表格所需要行数
+
             $('.chose-month').find('li').removeClass('month-active');
             $(this).addClass('month-active');
+            $('.new-tr').remove();
+            for(var i = 0;i<tr_str;i++){
+                $('#table-title').after('<tr class="new-tr">');
+                for(var k = 0;k < 7;k++ ){
+                    var idx= m_days[newMonth]-i*7+k-2; //单元格自然序列号
+                    var date_str=idx-firstNewDay+1;
+                    (date_str<=0 || date_str>m_days[newMonth]) ? date_str="&nbsp;" : date_str=idx-firstNewDay+1;//过滤无效日期（小于等于零的、大于月总天数的）
+                    $('.new-tr').eq(0).append('<td class="new-td">' + date_str + '</td>');
+                }
+                $('#table-title').after('</tr>');
+            };
         }
 
         if($(this).index() === nowMonth){
@@ -89,6 +106,30 @@
         }
     })
 
+    //选择年份
+    $('.table-left-btn').on('click',function(){
+        nowYear--;
+        $('.chose-year').find('i').html(nowYear);
+        var newMonth = 7;
+        var firstNewData=new Date(nowYear,newMonth,1); //当月第一天Date资讯
+        var firstNewDay=firstNewData.getDay(); //当月第一天星期几
+
+        $('.new-tr').remove();
+        for(var i = 0;i<tr_str;i++){
+            $('#table-title').after('<tr class="new-tr">');
+            for(var k = 0;k < 7;k++ ){
+                var idx= m_days[newMonth]-i*7+k-2; //单元格自然序列号
+                var date_str=idx-firstNewDay+1;
+                (date_str<=0 || date_str>m_days[newMonth]) ? date_str="&nbsp;" : date_str=idx-firstNewDay+1;//过滤无效日期（小于等于零的、大于月总天数的）
+                $('.new-tr').eq(0).append('<td class="new-td">' + date_str + '</td>');
+            }
+            $('#table-title').after('</tr>');
+        };
+
+    })
+    $('.table-right-btn').on('click',function(){
+        $('.chose-year').find('i').html(nowYear++);
+    })
 </script>
 </body>
 </html>
