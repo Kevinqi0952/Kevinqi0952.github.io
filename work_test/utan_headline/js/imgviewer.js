@@ -11,14 +11,14 @@
 
 
      if($('#view-img-box').outerHeight()<$(window).height()){
-         $('.utan-main').hide();
          $('#view-img-box').css('top',($(window).height() - $('#view-img-box').outerHeight())/2+$(window).scrollTop());
-         $(".mask").css("height",$(window).height());
-         $(".mask").css("width",$(window).width());
+         $(".mask").css("height",$(document).height());
+         $(".mask").css("width",$(document).width());
          $(".mask").show();
          $("body,html").css({"overflow":"hidden","height":"100%"});
      } else{
          $('#view-img-box').css('top',0);
+         $('body,html').animate({ scrollTop: 0 }, 200);
          $('.utan-main').height($('#view-img-box').outerHeight());
          $('.utan-main').css({"overflow":"hidden"});
      }
