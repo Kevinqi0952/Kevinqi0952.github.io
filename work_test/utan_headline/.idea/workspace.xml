@@ -36,8 +36,8 @@
       <file leaf-file-name="imgviewer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/imgviewer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="25" selection-end-column="9" />
               <folding>
                 <element signature="e#1#43#0" expanded="false" />
               </folding>
@@ -295,12 +295,12 @@
       <workItem from="1467166758322" duration="3313000" />
       <workItem from="1470828174638" duration="3171000" />
       <workItem from="1471338072146" duration="4124000" />
-      <workItem from="1471397711790" duration="8477000" />
+      <workItem from="1471397711790" duration="8672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19085000" />
+    <option name="totallyTimeSpent" value="19280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1841" height="1096" extended-state="6" />
@@ -707,8 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/imgviewer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="e#1#43#0" expanded="false" />
           </folding>
