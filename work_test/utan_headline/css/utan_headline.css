@@ -478,3 +478,23 @@ html{
 .news-advertisement  .qr-code img{
     width: 100%;
 }
+/*图片查看*/
+.mask{
+    position: absolute; top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0;
+    /*opacity:0.95;*/
+    /*-moz-opacity:0.95;*/
+}
+#view-img-box{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    overflow: scroll;
+    /*top: 28%;*/
+}
+#view-img-box img{
+    width: 100%;
+}

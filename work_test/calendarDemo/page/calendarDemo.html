@@ -107,8 +107,7 @@
     })
 
     //选择年份
-    $('.table-left-btn').on('click',function(){
-        nowYear--;
+    function choseYear(){
         $('.chose-year').find('i').html(nowYear);
         var newMonth = 7;
         var firstNewData=new Date(nowYear,newMonth,1); //当月第一天Date资讯
@@ -125,10 +124,15 @@
             }
             $('#table-title').after('</tr>');
         };
+    }
 
+    $('.table-left-btn').on('click',function(){
+        nowYear--;
+        choseYear();
     })
     $('.table-right-btn').on('click',function(){
-        $('.chose-year').find('i').html(nowYear++);
+        nowYear++;
+        choseYear();
     })
 </script>
 </body>
