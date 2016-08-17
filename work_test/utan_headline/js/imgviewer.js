@@ -18,7 +18,6 @@
          $("body,html").css({"overflow":"hidden","height":"100%"});
      } else{
          $('#view-img-box').css('top',0);
-         $('body,html').animate({ scrollTop: 0 }, 200);
          $('.utan-main').height($('#view-img-box').outerHeight());
          $('.utan-main').css({"overflow":"hidden"});
      }
