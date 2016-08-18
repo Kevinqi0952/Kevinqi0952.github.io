@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
 
-    <title>HTML5仿微信朋友圈图片展示特效源码</title>
     <link rel="stylesheet" type="text/css" href="../css/commes.css" />
     <link rel="stylesheet" href="../css/photoswipe.css">
     <link rel="stylesheet" href="../css/default-skin/default-skin.css">
@@ -15,13 +14,40 @@
             margin: 0;
             padding: 0;
         }
+        .my-gallery{
+            height: 1px;
+            overflow: hidden;
+        }
         .my-gallery img{
-            width: 50%;
+            width: 1%;
         }
 
     </style>
 </head>
 <body>
+<div class="page-content">
+    <img src="../images/img3-1.jpg" />
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <p>132132</p>
+    <img src="../images/video-img.jpg" width="100%" />
+    <p>13213</p>
+    <img src="../images/headerBg.jpg" width="100%"/>
+</div>
 <div class="my-gallery">
     <figure>
         <a href="../images/img3-1.jpg" data-size="">
@@ -33,6 +59,7 @@
             <img src="../images/img3-1.jpg" />
         </a>
     </figure>
+
     <figure>
         <a href="../images/headerBg.jpg" data-size="">
             <img src="../images/headerBg.jpg" />
@@ -84,8 +111,15 @@
     $('.my-gallery').find('img').click(function(){
         var iWidth = $(window).width();
         var iHeight = Math.round( $(this).height()*($(window).width()/$(this).width()));
-        
+
         $(this).parent('a').attr('data-size',iWidth + "x" + iHeight);
+    })
+    $('.page-content img').on('click',function(){
+        var num = $(this).index('img');
+        $('.my-gallery').find('figure').eq(num).click();
+    })
+    $('.pswp__button--close').click(function(){
+        $('.my-gallery').hide();
     })
 </script>
 <script>
@@ -286,7 +320,7 @@
         // Parse URL and open gallery if it contains #&pid=3&gid=1
         var hashData = photoswipeParseHash();
         if (hashData.pid && hashData.gid) {
-            openPhotoSwipe(hashData.pid, galleryElements[ hashData.gid - 1 ], true, true);
+            openPhotoSwipe(hashData.pid, galleryElements[ hashData.gid - 1 ], true,  true);
         }
     };
 
