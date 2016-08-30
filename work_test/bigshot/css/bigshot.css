@@ -1,0 +1,140 @@
+html{
+    font-size: 125%;
+}
+.big-shot{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    overflow: hidden;
+}
+.big-shot .big-shot-header{
+    width: 100%;
+    height: 23.05rem;
+    padding-top: 2rem;
+    background: url("../image/shotHeaderBg.png") no-repeat;
+    background-size: 15.85rem 100%;
+    background-position: center;
+    background-color: #e63a73;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.big-shot .big-shot-header .shot-header-title{
+    width: 10rem;
+    height: 5.05rem;
+    margin: 0 auto 2rem auto;
+}
+.big-shot .big-shot-header .shot-header-title img{
+    width: 100%;
+}
+.big-shot .big-shot-header .shot-header-phone{
+    width: 11.625rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2.45rem;
+}
+.big-shot .big-shot-header .shot-header-phone img{
+    width: 100%;
+}
+.big-shot .big-shot-content{
+    width: 100%;
+    height: 28.25rem;
+    background:url("../image/shotContentBg.png") no-repeat;
+    background-size: 15.05rem 26.125rem;
+    background-position: center 2.125rem;
+    background-color: #eeeeee;
+    padding-top: 3.45rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.big-shot .big-shot-content .shot-content-text{
+
+}
+.big-shot .big-shot-content .shot-content-text p{
+    text-align: center;
+    font-size: 0.76rem;
+    color: #333;
+    line-height: 1.3rem;
+}
+.big-shot .big-shot-content .shot-content-input{
+    margin-top: 2.5rem;
+}
+.big-shot .big-shot-content .shot-content-input .input-phone,
+.big-shot .big-shot-content .shot-content-input .input-code,
+.big-shot .big-shot-content .shot-content-input .input-name,
+.big-shot .big-shot-content .shot-content-input .input-password{
+    width: 11.75rem;
+    height: 2.1rem;
+    overflow: hidden;
+    background: #fff;
+    margin: 0 auto 0.6rem auto;
+    border: 1px solid #dcdcdc;
+    border-radius: 1.05rem;
+}
+.big-shot .big-shot-content .shot-content-input .input-phone i,
+.big-shot .big-shot-content .shot-content-input .input-code i,
+.big-shot .big-shot-content .shot-content-input .input-name i,
+.big-shot .big-shot-content .shot-content-input .input-password i{
+    line-height: 2.1rem;
+    padding-left: 1.1rem;
+    color: #333333;
+    font-size: 0.65rem;
+}
+.big-shot .big-shot-content .shot-content-input .input-phone input
+{
+    width: 7.5rem;
+    height: 2.1rem;
+    color: #333333;
+    font-size: 0.65rem;
+    border: none;
+}
+.big-shot .big-shot-content .shot-content-input .input-code input{
+    width: 3.5rem;
+    height: 2.1rem;
+    color: #333333;
+    font-size: 0.65rem;
+    border: none;
+}
+.big-shot .big-shot-content .shot-content-input .input-name input,
+.big-shot .big-shot-content .shot-content-input .input-password input{
+    width: 7.5rem;
+    height: 2.1rem;
+    color: #333333;
+    font-size: 0.65rem;
+    margin-left: 0.6rem;
+    border: none;
+}
+.big-shot .big-shot-content .shot-content-input .input-code span{
+    width: 3.95rem;
+    color: #e63a73;
+    font-size: 0.65rem;
+    padding-left: 0.6rem;
+    height: 1.35rem;
+    border-left: 1px solid #333333;
+    text-align: center;
+    line-height: 1.35rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.big-shot .big-shot-content .shot-content-input button{
+    width: 5.45rem;
+    height: 2.125rem;
+    line-height: 2.125rem;
+    text-align: center;
+    background-color: #e63a73;
+    color: #fff;
+    font-size: 0.65rem;
+    border-radius: 1.055rem;
+    margin: 1rem auto 0 auto;
+    display: block;
+}
