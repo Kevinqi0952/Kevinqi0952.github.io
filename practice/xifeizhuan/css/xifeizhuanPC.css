@@ -1,0 +1,115 @@
+html{
+    background-color: #fff;
+}
+.xifeizhuan-pc{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+    overflow: hidden;
+}
+.xifeizhuan-pc .pc-header{
+    width: 100%;
+}
+.xifeizhuan-pc .pc-header img{
+    width: 100%;
+    display: block;
+}
+.xifeizhuan-pc  .pc-content{
+    padding: 0 40px;
+}
+.xifeizhuan-pc  .pc-content>p{
+    color: #000000;
+    font-size: 16px;
+    line-height: 80px;
+    font-weight: bold;
+}
+.xifeizhuan-pc  .pc-content .content-header{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-portrait{
+    width: 122px;
+    height: 122px;
+    float: left;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-text{
+    width: 490px;
+    margin-left: 22px;
+    float: left;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-text h1{
+    color: #010101;
+    font-size: 37px;
+    margin-bottom: 15px;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-text p{
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+    word-break: break-all;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-download{
+    width: 241px;
+    height: 64px;
+    margin-top: 26px;
+    float: right;
+}
+.xifeizhuan-pc  .pc-content .content-header .header-download img{
+    width: 100%;
+    display: block;
+}
+.xifeizhuan-pc  .pc-content .content-details{
+    margin-top: 24px;
+}
+.xifeizhuan-pc  .pc-content .content-details h2{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.xifeizhuan-pc  .pc-content .content-details .xifei-info{
+    margin-bottom: 30px;
+}
+.xifeizhuan-pc  .pc-content .content-details .xifei-info p{
+    color: #000000;
+    font-size: 18px;
+    text-indent:2em;
+    text-align: justify;
+    word-break: break-all;
+}
+.xifeizhuan-pc  .pc-content .content-details .xifei-info  strong{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 2em;
+    display: block;
+}
+.xifeizhuan-pc  .pc-content .content-details .base-info{
+    margin-bottom: 30px;
+}
+.xifeizhuan-pc  .pc-content .content-details .base-info table{
+    width: 960px;
+    margin-left: 40px;
+}
+.xifeizhuan-pc  .pc-content .content-details .base-info td{
+    color: #000000;
+    font-size: 18px;
+}
+.xifeizhuan-pc  .pc-content .content-details .update-info{
+    margin-bottom: 50px;
+}
+.xifeizhuan-pc  .pc-content .content-details .update-info p{
+    color: #000000;
+    font-size: 18px;
+    text-indent:2em;
+    text-align: justify;
+    word-break: break-all;
+}
+.xifeizhuan-pc  .pc-content .content-img-box{
+    width: 100%;
+}
+.xifeizhuan-pc  .pc-content .content-img-box img{
+    width: 100%;
+    display: block;
+}
