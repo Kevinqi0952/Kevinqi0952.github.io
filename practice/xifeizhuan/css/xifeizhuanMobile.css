@@ -132,11 +132,13 @@
     padding-top: 0.5rem;
     overflow: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .xifeizhuan-mobile .mobile-content .content-img-box .img-overflow ul{
     width: 53rem;
     overflow: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .xifeizhuan-mobile .mobile-content .content-img-box .img-overflow li{
     width: 9.8rem;
