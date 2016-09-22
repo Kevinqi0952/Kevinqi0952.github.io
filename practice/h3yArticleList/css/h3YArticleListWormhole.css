@@ -1,0 +1,191 @@
+.article-main .wormhole-article-header{
+    width: 100%;
+    height: 9rem;
+    background: url("../image/Wormhole/headerBgW.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details{
+    width: 7.1rem;
+    background: #fff;
+    border-radius: 0.25rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
+    -webkit-box-shadow:0 10px 10px rgba(27,27,27,.17);
+    -moz-box-shadow:0 0 10px rgba(27,27,27,.17);
+    box-shadow:0 2px 6px rgba(27,27,27,.17);
+    overflow: hidden;
+}
+.article-main .wormhole-main .wormhole-list:nth-child(odd){
+    padding: 0 0 0 0.75rem;
+    float: left;
+}
+.article-main .wormhole-main .wormhole-list:nth-child(even){
+    padding: 0 0.75rem 0 0;
+    float: right;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header{
+    position: relative;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .gif-icon,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .video-icon,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .img-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    position: absolute;
+    top: 0.35rem;
+    right: 0.35rem;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .img-icon{
+    background: url("../image/Wormhole/moreImg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .video-icon{
+    background: url("../image/Wormhole/videoIcon.png") no-repeat;
+    background-size: 100% 100%;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-header .gif-icon{
+    background: url("../image/Wormhole/gifIcon.png") no-repeat;
+    background-size: 100% 100%;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info{
+    margin-top: -0.8rem;
+    padding: 0 0.35rem 0 0.35rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info{
+    padding: 0 0.35rem 0 0.35rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: hidden;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info div,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info div{
+    float: left;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-portrait,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-portrait{
+    width: 1.65rem;
+    height: 1.65rem;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-portrait img,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-portrait img{
+    width: 100%;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-sex,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-sex{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #39bfa6;
+    position: relative;
+    margin-left: -0.6rem;
+    margin-top: 1rem;
+    float: left;
+    z-index: 2;
+    overflow: hidden;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-sex .sex-null,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-sex .sex-null{
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url("../image/sexNull.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-sex .sex-woman,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-sex .sex-woman{
+    width: 0.4rem;
+    height: 0.5rem;
+    background: url("../image/sexWoman.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.article-main .wormhole-main .wormhole-list  .wormhole-details-text .text-details-info .info-sex .sex-man,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-sex .sex-man{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../image/sexMan.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details-text .text-details-info .info-text{
+    padding-top: 0.55rem;
+    float: left;
+    overflow: hidden;
+}
+
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-text{
+    padding-top: 1.1em;
+    float: left;
+    overflow: hidden;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details-text .text-details-info .info-text p,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-text p{
+    width: 2.2rem;
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    color: #1b1b1b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0.2rem;
+    float: left;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details-text .text-details-info .info-text i,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-info .info-text i{
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    color: #969696;
+    float: right;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .text-details-content,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-content{
+    padding: 0.35rem;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-content .content-text{
+    padding-top: 0.3rem;
+    border-top: 1px solid #e5e5e5;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .text-details-content .text-content{
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.article-main .wormhole-main .wormhole-list .wormhole-details .text-details-content .text-content p,
+.article-main .wormhole-main .wormhole-list .wormhole-details .wormhole-details-content .content-text p{
+    text-align: justify;
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei";
+    color: #6b6b6b;
+}
