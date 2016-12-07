@@ -282,8 +282,14 @@ a:link{
     width: 5rem;
 }
 .bigv-check .bigv-content .footer-input .input-content .yzm-btn{
-    color: #e63a73;
+    width: 3.4rem;
+    font-size: 0.55rem;
+    text-align: center;
     border-left: 1px solid #333333;
+    display: inline-block;
+}
+.bigv-check .bigv-content .footer-input .input-content .yzm-active{
+    color: #e63a73;
 }
 .bigv-check .footer-input .input-content .input-title{
     width:5em;
@@ -355,7 +361,7 @@ a:link{
     background-position-y: -8.7rem;
 }
 .bigv-explain li:nth-child(5) span{
-    background-position-y: -11.6rem;
+    background-position-y: -11.5rem;
 }
 .bigv-explain .explain-close{
     width: 1.25rem;

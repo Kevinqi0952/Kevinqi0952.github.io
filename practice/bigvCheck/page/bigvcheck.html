@@ -96,7 +96,7 @@
                         <div class="input-content">
                             <span class="input-title">验证码</span>
                             <input type="tel">
-                            <span class="yzm-btn">获取验证码</span>
+                            <span class="yzm-btn yzm-active">获取验证码</span>
                         </div>
                     </li>
                     <li>
@@ -155,14 +155,43 @@
             screenSizeSetting();
             $(window).resize(screenSizeSetting);
         });
+        function inputCode(){
+            var validCode=true;
+
+            $(".yzm-btn").click (function() {
+                alert('123')
+                var time= 10;
+                var code=$(this);
+
+                code.css({'color':'#ccc'});
+
+                if (validCode) {
+                    validCode=false;
+                    var t = setInterval(function() {
+                        time--;
+                        code.html(time+ "S");
+                        code.addClass("yzm-active");
+                        if (time==0) {
+                            clearInterval(t);
+                            code.html("获取验证码");
+                            validCode=true;
+                            code.css({'color':'#e63a73'});
+                        }
+                    },1000)
+                }
+            })
+        }
+        inputCode();
         $('.two-text').on('click',function(){
-            $('.bigv-explain,.bigv-content').css({'height':$(window).height()});
+            $('.bigv-explain,.bigv-check').css({'height':$(window).height()});
+            $('.bigv-explain').css('top',$(window).scrollTop());
             $('.bigv-explain').animate({left:"0"});
+            $('.bigv-content').hide();
         });
         $('.explain-close').on('click',function(){
-            $('.bigv-explain,.bigv-content').css({'height':'auto'});
-            $('.bigv-explain').animate({left:"-1000px"});
             $('.bigv-content').fadeIn();
+            $('.bigv-content,.bigv-check').css({'height':'auto'});
+            $('.bigv-explain').animate({left:"-1000px"});
         });
     });
 </script>
