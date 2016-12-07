@@ -11,6 +11,7 @@ a:link{
     font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
     overflow: hidden;
     background-color: #eeeeee;
+    position: relative;
 }
 .bigv-check .bigv-content>header{
     width: 100%;
@@ -312,7 +313,7 @@ a:link{
     margin-right: 0;
 }
 .bigv-explain{
-    width: 100%;
+   width: 100%;
     background: url("../image/checkExplainBg.png") no-repeat;
     background-size: cover;
     background-color: #eeeeee;
@@ -321,7 +322,6 @@ a:link{
     left: -1000px;
     z-index: 99;
     padding: 2rem 1.25rem;
-
 }
 .bigv-explain h2{
     color: #e63a73;
