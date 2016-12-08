@@ -50,7 +50,7 @@ a:link{
     overflow: hidden;
 }
 .bigv-check .bigv-content .section-one .section-one-content .check-content-left{
-    width: 6.25rem;
+    width: 6.5rem;
     float: left;
 }
 .bigv-check .bigv-content .section-one .section-one-content .check-content-left .left-name{
@@ -78,19 +78,23 @@ a:link{
     text-align: right;
 }
 .bigv-check .bigv-content .section-one .section-one-content .left-text span{
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 0.9rem;
+    height: 0.9rem;
     display: inline-block;
 }
 .bigv-check .bigv-content .section-one .section-one-content .left-text span:nth-child(2){
     width: auto;
     color: #e63a73;
-    font-size: 1.2rem;
-    vertical-align: -0.2rem;
+    font-size: 1.1rem;
+    vertical-align: -0.1rem;
     font-weight: bold;
+    margin: 0 -0.2rem;
 }
-.bigv-check .bigv-content .section-one .section-one-content .left-text span:nth-child(4){
-    width: 5.9rem;
+.bigv-check .bigv-content .section-one .section-one-content .left-text .text-big-v{
+    width: 2.775rem;
+}
+.bigv-check .bigv-content .section-one .section-one-content .left-text .text-kol{
+    width: 2.575rem;
 }
 .bigv-check .bigv-content .section-one .section-one-content .check-content-left img{
     width: 100%;
@@ -233,7 +237,7 @@ a:link{
     background: url("../image/checkMoreBtn.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: -0.1rem;
 }
 .bigv-check .bigv-content  footer{
     background: url("../image/checkSectionFooterBg.png") no-repeat;
@@ -321,8 +325,9 @@ a:link{
 .bigv-explain{
    width: 100%;
     background: url("../image/checkExplainBg.png") no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-color: #eeeeee;
+    background-position-y: -1rem;
     position: absolute;
     top: 0;
     left: -1000px;
