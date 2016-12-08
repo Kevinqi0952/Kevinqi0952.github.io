@@ -54,7 +54,7 @@ a:link{
     float: left;
 }
 .bigv-check .bigv-content .section-one .section-one-content .check-content-left .left-name{
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     position: relative;
 }
 .bigv-check .bigv-content .section-one .section-one-content .check-content-left .left-name p{
@@ -74,7 +74,7 @@ a:link{
     right: 0;
 }
 .bigv-check .bigv-content .section-one .section-one-content .left-text{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: right;
 }
 .bigv-check .bigv-content .section-one .section-one-content .left-text span{
@@ -371,4 +371,15 @@ a:link{
     position: absolute;
     top: 0.8rem;
     right: 0.8rem;
+}
+.mask{
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #000;
+    z-index: 998;
+    left: 0px;
+    opacity:0.6;
+    -moz-opacity:0.6;
+    z-index: 98;
 }

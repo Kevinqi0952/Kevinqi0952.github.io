@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache" >
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>优谈TOP-第一女性媒体</title>
+    <link rel="stylesheet" type="text/css" href="../css/base/reset_mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/bootstrap-4.0.0.css">
+    <link rel="stylesheet" type="text/css" href="../css/bigvsuccess.css">
+</head>
+<body>
+<div class="bigv-success">
+    <header>
+        <div class="header-name-content">
+            <p class="header-name">某某某<span></span></p>
+            <img src="../image/successHeaderText.png" alt="已成功入驻优谈TOP">
+        </div>
+    </header>
+    <section>
+        <div class="success-content content-one">
+            <h2>STEP1</h2>
+            <p>下载优谈TOP</p>
+        </div>
+        <div class="success-content content-two">
+            <h2>STEP2</h2>
+            <p>登录您的优谈TOP账号</p>
+        </div>
+        <div class="success-content content-three">
+            <h2>STEP3</h2>
+            <p>每天一篇文章</p>
+        </div>
+        <div class="success-content content-four">
+            <h2>STEP4</h2>
+            <p>坐等广告收入</p>
+        </div>
+    </section>
+    <footer>
+        <div class="download-btn">
+            <a href="###">下载优谈TOP</a>
+        </div>
+        <p>开启女性新媒体模式</p>
+    </footer>
+</div>
+<script src="../js/common/jquery/1.11.1/jquery.js"></script>
+<script>
+    $(function()
+    {
+        function screenSizeSetting()
+        {
+            if($(window).width()<=640){
+                $('html').css("font-size",$(window).width()*125/320+"%");
+            }else{
+                $('html').css("font-size",640*125/320+"%");
+
+            }
+        }
+        $(function()
+        {
+            screenSizeSetting();
+            $(window).resize(screenSizeSetting);
+        });
+        function changeFontSize(){
+            var nameL = $('.header-name').text().length;
+
+            switch (nameL){
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    $('.header-name').css({'fontSize':'1.5rem'});
+                    break;
+                case 6:
+                    $('.header-name').css({'fontSize':'1.3rem'});
+                    break;
+                case 7:
+                    $('.header-name').css({'fontSize':'1.2rem'});
+                    break;
+                case 8:
+                    $('.header-name').css({'fontSize':'1rem'});
+                    break;
+                case 9:
+                    $('.header-name').css({'fontSize':'0.8rem'});
+                    break;
+                default:
+                    $('.header-name').css({'fontSize':'0.6rem'});
+                    break;
+            }
+        }
+        changeFontSize();
+    });
+</script>
+</body>
+</html>

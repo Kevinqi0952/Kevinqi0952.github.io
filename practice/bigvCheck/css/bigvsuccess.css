@@ -1,0 +1,144 @@
+.bigv-success{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+}
+.bigv-success:before{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../image/successBg.png") center 0 no-repeat;
+    background-size: 100% auto;
+    background-color: #eeeeee;
+}
+.bigv-success .header-name-content{
+    width: 12.5rem;
+    height: 5.25rem;
+    margin: 1.6rem auto 0 auto;
+    background: url("../image/successHeaderBg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.5rem;
+}
+.bigv-success .header-name-content p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+.bigv-success .header-name-content p>span{
+    width: 1rem;
+    height: 1rem;
+    background: url("../image/checkBigvBtn2.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.3rem;
+    display: inline-block;
+}
+.bigv-success .header-name-content>img{
+    width: 11.65rem;
+    display: block;
+    margin: 0.5rem auto 0 auto;
+}
+.bigv-success section{
+    margin-top: 0.3rem;
+}
+.bigv-success .success-content h2{
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+.bigv-success .success-content p{
+    font-size: 0.65rem;
+}
+.bigv-success .content-one{
+    width: 8.5rem;
+    height: 3.25rem;
+    background: url("../image/successContentTextBg1.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1.2rem;
+    color: #e63a73;
+    padding-top: 0.5rem;
+}
+.bigv-success .content-three h2,
+.bigv-success .content-one h2{
+    margin-left: 1rem;
+}
+.bigv-success .content-three p,
+.bigv-success .content-one p{
+    margin-left: 1rem;
+}
+.bigv-success .content-two{
+    width: 9.075rem;
+    height: 2.775rem;
+    background: url("../image/successContentTextBg2.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    color: #ffffff;
+    padding-top: 0.2rem;
+    margin-left: 4.95rem;
+    margin-top: 0.4rem;
+}
+.bigv-success .content-four h2,
+.bigv-success .content-two h2{
+    text-align: right;
+    margin-right: 0.5rem;
+}
+.bigv-success .content-four p,
+.bigv-success .content-two p{
+    text-align: right;
+    margin-right: 0.5rem;
+}
+.bigv-success .content-three{
+    width: 7.95rem;
+    height: 2.775rem;
+    background: url("../image/successContentTextBg3.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    color: #e63a73;
+    padding-top: 0.2rem;
+    margin-left: 1.2rem;
+    margin-top: 0.4rem;
+}
+.bigv-success .content-four{
+    width: 9.15rem;
+    height: 3.375rem;
+    background: url("../image/successContentTextBg4.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    color: #ffffff;
+    padding-top: 0.5rem;
+    margin-left: 3.85rem;
+    margin-top: 0.4rem;
+}
+.bigv-success .download-btn{
+    width: 12.8rem;
+    height: 1.7rem;
+    background-color: #e63a73;
+    border-radius: 0.85rem;
+    text-align: center;
+    line-height: 1.7rem;
+    margin: 1.2rem auto 0.5rem auto;
+}
+.bigv-success .download-btn a{
+    line-height: 1.7rem;
+    color: #ffffff;
+    font-size: 0.76rem;
+    display: block;
+}
+.bigv-success footer p{
+    color: #999999;
+    font-size: 0.6rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}

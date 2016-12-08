@@ -29,7 +29,7 @@
                     <div class="section-one-content">
                         <section class="check-content-left">
                             <div class="left-name">
-                                <p>杨澜</p>
+                                <p>杨澜杨澜杨澜</p>
                                 <span></span>
                             </div>
                             <div class="left-text">
@@ -136,6 +136,7 @@
         </ul>
         <div class="explain-close"></div>
     </div>
+    <div class="mask"></div>
 </div>
 <script src="../js/common/jquery/1.11.1/jquery.js"></script>
 <script>
@@ -155,11 +156,11 @@
             screenSizeSetting();
             $(window).resize(screenSizeSetting);
         });
+        //验证码
         function inputCode(){
             var validCode=true;
 
             $(".yzm-btn").click (function() {
-                alert('123')
                 var time= 10;
                 var code=$(this);
 
@@ -182,17 +183,56 @@
             })
         }
         inputCode();
+
+        //弹层
         $('.two-text').on('click',function(){
-            $('.bigv-explain,.bigv-check').css({'height':$(window).height()});
+            $('.bigv-explain').css({'height':$(window).height()});
             $('.bigv-explain').css('top',$(window).scrollTop());
+            $(".mask").css("height",$(document).height());
+            $(".mask").css("width",$(document).width());
+            $(".mask").show();
             $('.bigv-explain').animate({left:"0"});
-            $('.bigv-content').hide();
+            $(".bigv-explain").on('touchmove',function(event) { event.preventDefault(); }, false);
         });
         $('.explain-close').on('click',function(){
-            $('.bigv-content').fadeIn();
-            $('.bigv-content,.bigv-check').css({'height':'auto'});
             $('.bigv-explain').animate({left:"-1000px"});
+            $(".mask").hide();
+            $(".bigv-explain").unbind('touchmove');
         });
+        $('.mask').on('touchstart',function(){
+            $('.bigv-explain').animate({left:"-1000px"});
+            $(".mask").hide();
+        });
+
+        //名字缩放
+        function changeFontSize(){
+            var nameL = $('.left-name p').text().length;
+
+            switch (nameL){
+                case 1:
+                case 2:
+                case 3:
+                    $('.left-name p').css({'fontSize':'1.4rem'});
+                    break;
+                case 4:
+                    $('.left-name p').css({'fontSize':'1.2rem'});
+                    break;
+                case 5:
+                    $('.left-name p').css({'fontSize':'1rem'});
+                    break;
+                case 6:
+                    $('.left-name p').css({'fontSize':'0.8rem'});
+                    break;
+                case 7:
+                    $('.left-name p').css({'fontSize':'0.7rem'});
+                    break;
+                default:
+                    $('.left-name p').css({'fontSize':'0.6rem'});
+                    break;
+            }
+        }
+        changeFontSize();
+
     });
 </script>
 </body>
