@@ -68,6 +68,7 @@ html{
     margin-left: 0.5rem;
     line-height: 0.8rem;
     color: #1e1e1e;
+	border-radius:0;
 }
 .marketing-content-two .input-content button{
     font-size: 0.8rem;
