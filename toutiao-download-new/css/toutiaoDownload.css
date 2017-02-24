@@ -1,0 +1,194 @@
+html{
+    font-size: 125%;
+}
+.download-wrapper{
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+}
+.download-wrapper{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.download-wrapper:before{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../image/backgroundImg.jpg") center 0 no-repeat;
+    background-size: cover;
+}
+.download-wrapper .title-content{
+    width: 7.925rem;
+    margin: 1.65rem auto;
+}
+.download-wrapper .download-content{
+    width: 12.775rem;
+    margin: 0 auto;
+}
+.download-wrapper .title-content img,
+.download-wrapper .download-content img{
+    width: 100%;
+    display: block;
+}
+.download-wrapper .download-bottom{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 10.275rem;
+    background: url("../image/bottomBackgroundImg.png") no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.download-wrapper .download-bottom .button{
+    width: 6.45rem;
+    height: 1.6rem;
+    display: block;
+    background-color: #fceaf0;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+}
+.download-wrapper .download-bottom .ios-btn{
+    margin: 4.65rem auto 1.1rem auto;
+}
+.download-wrapper .download-bottom .button a{
+    width: 6.45rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 0;
+    display: block;
+}
+.download-wrapper .download-bottom .button a i{
+    color: #333333;
+    font-size: 0.6rem;
+}
+.download-wrapper .download-bottom .button span{
+    width: 0.625rem;
+    height: 0.775rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: -0.1rem;
+}
+.download-wrapper .download-bottom .ios-btn span{
+    background-image: url("../image/phoneIcon.png");
+    background-size: auto 100%;
+    background-position: 0 0;
+}
+.download-wrapper .download-bottom .android-btn span{
+    background-image: url("../image/phoneIcon.png");
+    background-size: auto 100%;
+    background-position: -1.1rem 0;
+}
+/*动画*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation:fadeIn 6s;
+    -webkit-animation:fadeIn 6s;
+}
+
+@-webkit-keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.bounceInDown {
+    -webkit-animation: bounceInDown 1s;
+    animation: bounceInDown 1s;
+}
