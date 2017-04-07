@@ -48,16 +48,48 @@
     <!--弹层-->
     <div class="mood-alert">
         <div class="alert-close-btn"></div>
-        <h2>推荐文章</h2>
         <div class="alert-list">
             <ul>
-                <li><a href="###">新兴轻奢女鞋品牌更有机会？“高跟73小时”获数千万人民币A+轮融资</a></li>
-                <li><a href="###">新兴轻奢女鞋品牌更有机会？“高跟73小时”获数千万人民币A+轮融资</a></li>
-                <li><a href="###">新兴轻奢女鞋品牌更有机会？“高跟73小时”获数千万人民币A+轮融资</a></li>
+                <li>
+                    <a href="###">
+                        <div class="list-img-box">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491560622424&di=81b739abd7576a36b3428971b38a84d7&imgtype=0&src=http%3A%2F%2Fimg27.51tietu.net%2Fpic%2F2017-011500%2F20170115001256mo4qcbhixee164299.jpg" alt="新闻图片">
+                            <span></span>
+                        </div>
+                        <div class="list-text-box">
+                            <div class="text-details">轻奢女鞋拥有更多机会？高跟73小时获万融资</div>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <div class="list-img-box">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491560622424&di=81b739abd7576a36b3428971b38a84d7&imgtype=0&src=http%3A%2F%2Fimg27.51tietu.net%2Fpic%2F2017-011500%2F20170115001256mo4qcbhixee164299.jpg" alt="新闻图片">
+                            <span></span>
+                        </div>
+                        <div class="list-text-box">
+                            <div class="text-details">轻奢女鞋拥有更多机会？高跟73小时获万融资</div>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <div class="list-img-box">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491560622424&di=81b739abd7576a36b3428971b38a84d7&imgtype=0&src=http%3A%2F%2Fimg27.51tietu.net%2Fpic%2F2017-011500%2F20170115001256mo4qcbhixee164299.jpg" alt="新闻图片">
+                            <span></span>
+                        </div>
+                        <div class="list-text-box">
+                            <div class="text-details">轻奢女鞋拥有更多机会？高跟73小时获万融资</div>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
         <!--<div class="more-content"></div>-->
-        <div class="alert-button"><a href="###">打开优谈TOP客户端</a></div>
+        <div class="alert-bottom"><a href="###">打开优谈TOP客户端</a></div>
     </div>
     <!--遮罩层-->
     <div class="mask"></div>
@@ -89,7 +121,7 @@
         var alertFnc = {
             showAlert:function(element,mask){
                 element.css('left',($(window).width() - element.outerWidth())/2);
-                element.css('top','4rem');
+                element.css('top',($(window).height() - element.outerHeight())/2+$(window).scrollTop());
                 element.show();
                 mask.css("height",$(document).height());
                 mask.css("width",$(document).width());
