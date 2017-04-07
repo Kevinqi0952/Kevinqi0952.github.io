@@ -89,7 +89,7 @@
         var alertFnc = {
             showAlert:function(element,mask){
                 element.css('left',($(window).width() - element.outerWidth())/2);
-                element.css('top',($(window).height() - element.outerHeight())/2+$(window).scrollTop());
+                element.css('top','1rem');
                 element.show();
                 mask.css("height",$(document).height());
                 mask.css("width",$(document).width());
