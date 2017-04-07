@@ -58,7 +58,7 @@
             top: '150'
           },
           yAxis: {
-            data: [1, 2, 3, 4],
+            data: [0, 1, 2, 3],
             position: 'right',
             inverse: true,
             splitArea: {
