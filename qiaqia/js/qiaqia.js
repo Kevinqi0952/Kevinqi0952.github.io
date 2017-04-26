@@ -41,11 +41,10 @@ window.onload = function () {
                 //页面显示
                 var _this = this;
                 var winHeight = window.innerHeight;
-
                 setTimeout(function () {
+                    _this.eventState.isShow = true;
                     _this.eventState.loading = false;
-                }, 1000);
-                _this.eventState.isShow = true;
+                }, 1500);
                 _this.winInfo._height = winHeight;
             },
             validatemobile: function (event) {
@@ -114,7 +113,6 @@ window.onload = function () {
         mounted: function () {
             // 已经挂载到模板上:msg变量渲染到模板
             var _this = this;
-
             // rem适配
             _this.screenSizeSetting();
             window.addEventListener('resize', function () {
