@@ -1,5 +1,5 @@
 <template>
-  <div id="chart">{{ name }}</div>
+ <div id="chart"></div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -35,10 +35,9 @@
   };
 </script>
 
-<style>
-  #chart{
-    width: 1000px;
-    height: 500px;
-    margin: 20px auto 100px auto;
-  }
+<style scoped>
+#chart {
+  width: 100%;
+  height: 600px;
+}
 </style>
