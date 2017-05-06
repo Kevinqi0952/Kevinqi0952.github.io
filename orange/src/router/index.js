@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Start from '@/page/start/start'
 import Begin from '@/page/begin/begin'
 import Personal from '@/page/personal/personal'
+import Details from '@/page/details/details'
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
             name: 'Personal',
             component: Personal
         },
-
+        //详情页
+        {
+            path: '/details',
+            name: 'Details',
+            component: Details
+        },
     ]
 })

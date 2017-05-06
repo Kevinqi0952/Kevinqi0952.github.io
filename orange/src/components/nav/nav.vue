@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-content">
+    <div class="components-nav">
         <div class="start-btn" v-bind:class="{ 'active-btn' : nav.active == 'start'}">
             <router-link to="/">正在拍卖</router-link>
         </div>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-.nav-content
+.components-nav
   width:100%;
   height:20px;
   display:flex;

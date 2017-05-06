@@ -27,7 +27,7 @@ export default {
     }
   },
   created() {
-    
+
   },
   methods: {
     goBack(event) {
@@ -46,6 +46,7 @@ export default {
   height:38px;
   display:flex;
   .header-left
+    flex:0 0 55px;
     width:55px;
     height:38px;
     & > span
@@ -62,6 +63,7 @@ export default {
       font-size:16px;
       color:#000000;
   .header-right
+    flex:0 0 55px;
     width:55px;
     height:38px;
     & > span
