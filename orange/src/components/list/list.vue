@@ -7,11 +7,9 @@
               <div class="name-content">{{item.title}}</div>
               <div class="info-content">
                 <div class="content-left">
-                  <p class="info-text">当前<span class="text-red">¥{{item.price}}</span></p>
-                  <p class="info-text" v-if="type == 'bidding'">竞拍数<span>{{item.num}}</span></p>
-                  <p class="info-text" v-if="type == 'upcoming'">围观数<span>{{item.num}}</span></p>
-                  <p class="end-time" v-if="type == 'bidding'">{{item.endTime}}后结束</p>
-                  <p class="end-time" v-if="type == 'upcoming'">{{item.endTime}}开始</p>
+                  <p class="info-text">{{ type == 'bidding' ? '当前':'起拍价' }}<span class="text-red">¥{{item.price}}</span></p>
+                  <p class="info-text">{{ type == 'bidding' ? '竞拍数':'围观数' }}<span>{{item.num}}</span></p>
+                  <p class="end-time">{{item.endTime}} {{ type == 'bidding' ? '后结束':'开始'}}</p>
                 </div>
                 <div class="content-right" v-if="type == 'bidding'">
                     <span class="icon-content"></span>
@@ -74,6 +72,10 @@ export default {
           font-size:12.5px;
           line-height:1.5;
           flex:1;
+          & > p
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            overflow:hidden;
           .info-text
             color:#a0a0a0;
             & > span

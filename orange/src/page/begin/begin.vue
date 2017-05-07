@@ -10,7 +10,7 @@
 import header from '../../components/header/header.vue';
 import nav from '../../components/nav/nav.vue';
 import list from '../../components/list/list.vue';
-// 正在拍卖
+// 即将开始
 export default {
   name: 'under-auction',
   data() {
@@ -38,9 +38,9 @@ export default {
     }
   },
   created() {
-    var _this = this;
+    const _this = this;
 
-    //请求正在拍卖列表数据
+    //请求即将开始列表数据
     this.$http.post(_this.request.url, _this.request.params, {
       emulateJSON: true,
       headers: {

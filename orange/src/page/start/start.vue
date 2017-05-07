@@ -39,13 +39,14 @@ export default {
     }
   },
   created() {
-    var _this = this;
+    const _this = this;
 
     //请求正在拍卖列表数据
     this.$http.post(_this.request.url,_this.request.params,
       {
         emulateJSON:true,
-        headers:{Accept:'application/hst-h5'}
+        headers:{Accept:'application/hst-h5'},
+        credientials:true
       }
     ).then((response) => {
       response = response.body.data.localData

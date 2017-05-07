@@ -13,7 +13,14 @@
           <li>
             <div class="list-details">
               <div class="details-left"><span class="order-btn"></span></div>
-              <div class="details-name">拍卖订单</div>
+              <div class="details-name">发布的拍卖</div>
+              <div class="details-right"><span></span></div>
+            </div>
+          </li>
+          <li>
+            <div class="list-details">
+              <div class="details-left"><span class="order-btn"></span></div>
+              <div class="details-name">已排到的订单</div>
               <div class="details-right"><span></span></div>
             </div>
           </li>
@@ -25,11 +32,13 @@
             </div>
           </li>
           <li>
-            <div class="list-details">
-              <div class="details-left"><span class="rules-btn"></span></div>
-              <div class="details-name">拍卖规则</div>
-              <div class="details-right"><span></span></div>
-            </div>
+            <router-link to="/rules">
+              <div class="list-details">
+                <div class="details-left"><span class="rules-btn"></span></div>
+                <div class="details-name">拍卖规则</div>
+                <div class="details-right"><span></span></div>
+              </div>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -120,6 +129,7 @@ export default {
               height:48px;
               line-height:48px;
               font-size:17px;
+              color:#000000;
               flex:1;
             .details-right
               width:48px;
@@ -128,5 +138,5 @@ export default {
                 width:48px;
                 height:48px;
                 display:block;
-                background-center('../../image/personal/nextBtn.png',8px,14px);
+                background-center('../../image/public/nextBtn.png',8px,14px);
 </style>

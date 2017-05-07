@@ -1,10 +1,10 @@
 <template>
   <div class="components-header" v-bind:style="{ backgroundColor:header.color }">
     <div class="header-left">
-      <span class="left-back" v-if="header.left" v-on:click="goBack()"></span>
+      <span :class="[ header.whiteIcon ? 'left-back-white':'left-back']" v-if="header.left" v-on:click="goBack()"></span>
     </div>
     <div class="header-content">
-      <p>{{header.title}}</p>
+      <p v-bind:style="{ color:header.textColor }">{{header.title}}</p>
     </div>
     <div class="header-right">
       <span class="right-info" v-if="header.rightType == 'info'"><router-link to="/personal"></router-link></span>
@@ -19,7 +19,8 @@ export default {
   props: {
     header: {
       type: Object
-    }
+    },
+    textColor:{}
   },
   data() {
     return {
@@ -55,6 +56,8 @@ export default {
       height:38px;
     .left-back
       background-center('./headerLeftBtn.png',12px,18px);
+    .left-back-white
+        background-center('./headerLeftBtnWhite.png',12px,18px);
   .header-content
     flex:1;
     text-align:center;
