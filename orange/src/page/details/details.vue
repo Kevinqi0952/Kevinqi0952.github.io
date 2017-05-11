@@ -27,12 +27,12 @@
         <span class="nextBtn"></span>
       </router-link>
     </div>
-    <div class="record-content" v-if="detailsData.isStart == 1">
+    <div class="record-content">
       <p class="record-title">出价记录({{recordData.total}})</p>
       <div class="record-list">
         <div class="list-details" v-for="(item,index) in recordData.list">
             <div class="name">
-              {{item.realname}}
+              {{item.userInfo.realname}}
             </div>
             <div class="price" v-if="index == 0">
               <span class="text-icon">领先</span><span class="text-red">¥{{item.price}}</span>
@@ -42,7 +42,7 @@
             </div>
         </div>
       </div>
-      <div class="record-more">更多出价</div>
+      <div class="record-more"><router-link to="/details/:id/morerecord">更多出价</router-link></div>
     </div>
   </div>
   <div class="more-content"></div>
@@ -68,12 +68,12 @@ export default {
         rightType: 'share', //右侧类型 不赋值为不显示，share为显示分享btn，info为显示个人中心btn
       },
       request: {
-        url: 'http://oa.bxshare.cn/api/paimai/getDetailV1', //请求地址
+        url: '/api/getDetailV1', //请求地址
         params: {
           //请求参数
           id: this.$route.params.id
         },
-        recordUrl: 'http://oa.bxshare.cn/api/paimai/getBidListV1', //出价列表请求地址
+        recordUrl: '/api/getBidTopListV1', //出价列表请求地址
         recordParams: {
           //出价列表请求参数
           action: 'top',
@@ -89,13 +89,13 @@ export default {
       const _this = this;
 
       //创建时请求详情页数据
-      this.$http.post(_this.request.url, _this.request.params, {
+      this.$http.get(_this.request.url, _this.request.params, {
         emulateJSON: true,
         headers: {
           Accept: 'application/hst-h5'
         }
       }).then((response) => {
-        response = response.body.data;
+        response = response.body.data.data;
         _this.detailsData = response.localData;
       })
     },
@@ -103,14 +103,16 @@ export default {
       const _this = this;
 
       //出价记录数据
-      this.$http.post(_this.request.recordUrl, _this.request.recordParams, {
+      this.$http.get(_this.request.recordUrl, _this.request.recordParams, {
         emulateJSON: true,
         headers: {
           Accept: 'application/hst-h5'
         }
       }).then((response) => {
-        response = response.body.data;
+        console.log(response)
+        response = response.body.data.data;
         _this.recordData = response.localData;
+        console.log(response)
       })
     }
   },
@@ -230,6 +232,8 @@ export default {
         text-align:center;
         font-size:14px;
         color:#000000;
+        & > a
+          color:#000000;
   .more-content
     width:100%;
     height:77.5px;

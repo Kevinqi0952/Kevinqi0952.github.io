@@ -1,49 +1,55 @@
 <template>
-  <div class="page-personal">
-    <v-header :header="header"></v-header>
-    <div class="personal-content">
-      <div class="content-header">
-        <div class="avatar">
-          <img v-bind:src="userinfo.avatar" alt="头像">
-        </div>
-        <div class="name">{{ userinfo.name }}</div>
+<div class="page-personal">
+  <v-header :header="header"></v-header>
+  <div class="personal-content">
+    <div class="content-header">
+      <div class="avatar">
+        <img v-bind:src="userinfo.avatar" alt="头像">
       </div>
-      <div class="content-list">
-        <ul>
-          <li>
+      <div class="name">{{ userinfo.name }}</div>
+    </div>
+    <div class="content-list">
+      <ul>
+        <li>
+          <router-link to="/releaselist">
             <div class="list-details">
               <div class="details-left"><span class="order-btn"></span></div>
-              <div class="details-name">发布的拍卖</div>
+              <div class="details-name">已发布的拍卖</div>
               <div class="details-right"><span></span></div>
             </div>
-          </li>
-          <li>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/myorderlist">
             <div class="list-details">
               <div class="details-left"><span class="order-btn"></span></div>
-              <div class="details-name">已排到的订单</div>
+              <div class="details-name">已拍到的订单</div>
               <div class="details-right"><span></span></div>
             </div>
-          </li>
-          <li>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/address">
             <div class="list-details">
               <div class="details-left"><span class="address-btn"></span></div>
               <div class="details-name">收货地址管理</div>
               <div class="details-right"><span></span></div>
             </div>
-          </li>
-          <li>
-            <router-link to="/rules">
-              <div class="list-details">
-                <div class="details-left"><span class="rules-btn"></span></div>
-                <div class="details-name">拍卖规则</div>
-                <div class="details-right"><span></span></div>
-              </div>
-            </router-link>
-          </li>
-        </ul>
-      </div>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/rules">
+            <div class="list-details">
+              <div class="details-left"><span class="rules-btn"></span></div>
+              <div class="details-name">拍卖规则</div>
+              <div class="details-right"><span></span></div>
+            </div>
+          </router-link>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 </template>
 
 <script type="text/ecmascript-6">
@@ -55,10 +61,10 @@ export default {
   data() {
     return {
       header: {
-        title: "我的拍卖",//header题目
-        color: "#eeeeee",//导航颜色
-        left: true,//左边返回是否显示
-        rightType: '',//右侧类型 不赋值为不显示，share为显示分享btn，info为显示个人中心btn
+        title: "我的拍卖", //header题目
+        color: "#eeeeee", //导航颜色
+        left: true, //左边返回是否显示
+        rightType: '', //右侧类型 不赋值为不显示，share为显示分享btn，info为显示个人中心btn
       },
       userinfo: {
         avatar: 'http://img0.imgtn.bdimg.com/it/u=2609553881,3298543509&fm=214&gp=0.jpg',

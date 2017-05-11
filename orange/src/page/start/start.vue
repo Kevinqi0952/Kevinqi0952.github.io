@@ -26,7 +26,7 @@ export default {
         active: "start" //当前页面
       },
       request: {
-        url: 'http://oa.bxshare.cn/api/paimai/getListV1',//请求地址
+        url: '/api/getListOfBiddingV1',//请求地址
         params: {
           //请求参数
           action: 'bidding',
@@ -42,14 +42,14 @@ export default {
     const _this = this;
 
     //请求正在拍卖列表数据
-    this.$http.post(_this.request.url,_this.request.params,
+    this.$http.get(_this.request.url,_this.request.params,
       {
         emulateJSON:true,
         headers:{Accept:'application/hst-h5'},
         credientials:true
       }
     ).then((response) => {
-      response = response.body.data.localData
+      response = response.body.data.data.localData
       _this.listData = response.list
     })
   },

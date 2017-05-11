@@ -21,6 +21,55 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+
+var appData = require('../data.json');
+var budding = appData.getListOfBiddingV1;
+var upcomming = appData.getListOfUpcommingV1;
+var details = appData.getDetailV1;
+var toplist = appData.getBidTopListV1;
+var orderlist = appData.getMyOrderListV1;
+var historylist = appData.getBidHistoryListV1;
+
+var apiRouters = express.Router()
+
+apiRouters.get('/getListOfBiddingV1',function(req,res){
+  res.json({
+    data:budding
+  })
+});
+
+apiRouters.get('/getListOfUpcommingV1',function(req,res){
+  res.json({
+    data:upcomming
+  })
+});
+
+apiRouters.get('/getDetailV1',function(req,res){
+  res.json({
+    data:details
+  })
+});
+
+apiRouters.get('/getBidTopListV1',function(req,res){
+  res.json({
+    data:toplist
+  })
+});
+
+apiRouters.get('/getMyOrderListV1',function(req,res){
+  res.json({
+    data:orderlist
+  })
+});
+
+apiRouters.get('/getBidHistoryListV1',function(req,res){
+  res.json({
+    data:historylist
+  })
+});
+
+app.use('/api',apiRouters)
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

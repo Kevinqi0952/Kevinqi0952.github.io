@@ -6,6 +6,13 @@ const Begin = r => require.ensure([], () => r(require('@/page/begin/begin')), 'b
 const Personal = r => require.ensure([], () => r(require('@/page/personal/personal')), 'personal')
 const Details = r => require.ensure([], () => r(require('@/page/details/details')), 'details')
 const Rules = r => require.ensure([], () => r(require('@/page/rules/rules')), 'start')
+const Address = r => require.ensure([], () => r(require('@/page/address/address')), 'address')
+const Addaddress = r => require.ensure([], () => r(require('@/page/addaddress/addaddress')), 'addaddress')
+const Releaselist = r => require.ensure([], () => r(require('@/page/releaselist/releaselist')), 'releaselist')
+const Release = r => require.ensure([], () => r(require('@/page/release/release')), 'release')
+const Myorderlist = r => require.ensure([], () => r(require('@/page/myorderlist/myorderlist')), 'myorderlist')
+const Morerecord= r => require.ensure([], () => r(require('@/page/morerecord/morerecord')), 'morerecord')
+
 
 Vue.use(Router)
 
@@ -35,11 +42,47 @@ export default new Router({
       name: 'Details',
       component: Details
     },
+    //更多出价
+    {
+      path: '/details/:id/morerecord',
+      name: 'Morerecord',
+      component: Morerecord
+    },
     //规则页
     {
       path: '/rules',
       name: 'Rules',
       component: Rules
+    },
+    // 我的地址
+    {
+      path: '/address',
+      name: 'Address',
+      component: Address
+    },
+    //新增地址
+    {
+      path: '/address/addaddress',
+      name: 'Addaddress',
+      component: Addaddress
+    },
+    //已发布的拍卖
+    {
+      path: '/releaselist',
+      name: 'Releaselist',
+      component: Releaselist
+    },
+    //发布拍卖
+    {
+      path: '/releaselist/release',
+      name: 'Release',
+      component: Release
+    },
+    //我的订单
+    {
+      path: '/myorderlist',
+      name: 'Myorderlist',
+      component: Myorderlist
     }
   ]
 })
