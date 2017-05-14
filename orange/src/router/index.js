@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const Login = r => require.ensure([], () => r(require('@/page/login/login')), 'login')
 const Start = r => require.ensure([], () => r(require('@/page/start/start')), 'start')
 const Begin = r => require.ensure([], () => r(require('@/page/begin/begin')), 'begin')
 const Personal = r => require.ensure([], () => r(require('@/page/personal/personal')), 'personal')
@@ -18,6 +19,12 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    // 登陆
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
     // 正在拍卖
     {
       path: '/',

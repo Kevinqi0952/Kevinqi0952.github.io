@@ -67,9 +67,13 @@ export default {
 .address-wraper
   padding:0 8px;
   box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
   .address-content
     width:100%;
     box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     border:1px solid #c0c0c0;
     background-color:#ffffff;
     margin-top:14px;

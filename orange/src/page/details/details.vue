@@ -44,6 +44,20 @@
       </div>
       <div class="record-more"><router-link to="/details/:id/morerecord">更多出价</router-link></div>
     </div>
+    <div class="bid-content">
+      <div class="bid-title">当前价格¥100</div>
+      <div class="bid-details">
+        <div class="bid-left">
+          <div class="bid-btn-one bid-btn">50</div>
+          <div class="bid-btn-two bid-btn">100</div>
+        </div>
+        <div class="bid-btn-center"></div>
+        <div class="bid-right">
+          <div class="bid-btn-one bid-btn">150</div>
+          <div class="bid-btn-two bid-btn">200</div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="more-content"></div>
   <div class="bottom-button">
@@ -250,6 +264,8 @@ export default {
     display:flex;
     .button-info
       box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+      -webkit-box-sizing:border-box; /* Safari */
       padding-left:11px;
       line-height:37px;
       color:#707070;

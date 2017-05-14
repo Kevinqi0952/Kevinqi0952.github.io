@@ -81,6 +81,8 @@ export default {
     padding:10px 16px;
     background-color:#ffffff;
     box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     & > table
       width:100%;
       & td
@@ -128,6 +130,7 @@ export default {
             width:7em;
           & > input
             width:100%;
+
   .release-bottom-btn
     width:100%;
     height:46px;

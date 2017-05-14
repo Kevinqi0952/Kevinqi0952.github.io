@@ -48,6 +48,8 @@ export default {
     display:inline-block;
     padding:0 7px;
     box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     .img-box
       width:100%;
       overflow:hidden;

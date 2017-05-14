@@ -78,16 +78,22 @@ export default {
   padding:10px 8px;
   overflow:hidden;
   box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
   .list-details
     border:1px solid #707070;
     margin-top:10px;
     box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
     background-color:#ffffff;
     .details-info
       padding:10px 8px;
       display:flex;
       align-items:center;
       box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+      -webkit-box-sizing:border-box; /* Safari */
       border-bottom:1px solid #707070;
       color:#000000;
       .list-img-content
