@@ -28,7 +28,7 @@
       </router-link>
     </div>
     <div class="record-content">
-      <p class="record-title">出价记录({{recordData.total}})</p>
+      <p class="record-title">出价记录()</p>
       <div class="record-list">
         <div class="list-details" v-for="(item,index) in recordData.list">
             <div class="name">
@@ -42,7 +42,7 @@
             </div>
         </div>
       </div>
-      <div class="record-more"><router-link to="/details/:id/morerecord">更多出价</router-link></div>
+      <div class="record-more"><router-link :to="{ name: 'Morerecord', params: { id: $route.params.id } }">更多出价</router-link></div>
     </div>
     <div class="bid-content">
       <div class="bid-title">当前价格¥100</div>
@@ -123,10 +123,9 @@ export default {
           Accept: 'application/hst-h5'
         }
       }).then((response) => {
-        console.log(response)
         response = response.body.data.data;
         _this.recordData = response.localData;
-        console.log(response)
+        console.log(_this.recordData)
       })
     }
   },

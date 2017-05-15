@@ -47,13 +47,21 @@ export default {
   flex-direction:column;
   justify-content:top;
   align-items:center;
-  background-image:url('../../image/login/loginBg.jpg');
-  background-size:auto 100%;
-  background-repeat:repeat-x;
   padding:0 20px;
   box-sizing:border-box;
   -moz-box-sizing:border-box; /* Firefox */
   -webkit-box-sizing:border-box; /* Safari */
+  &:before
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../image/login/loginBg.jpg') center 0 repeat-x;
+    background-size: auto 100%;
+    background-color: #eeeeee;
   .login-header
     margin-bottom:10%;
     .header-logo
@@ -87,6 +95,7 @@ export default {
         background-center('../../image/login/phoneBtn.png',15.5px,16.5px);
       & > input
         flex:1;
+        width:100%;
         height:20px;
         line-height:20px;
         background-color:initial;
@@ -108,6 +117,7 @@ export default {
           background-center('../../image/login/passwordBtn.png',15.5px,16.5px);
         & > input
           flex:1;
+          width:100%;
           height:20px;
           line-height:20px;
           background-color:initial;
@@ -127,4 +137,5 @@ export default {
     line-height:42px;
     border-radius:6px;
     background-color:#357de6;
+    margin-bottom:20px;
 </style>

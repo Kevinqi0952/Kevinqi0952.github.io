@@ -2,7 +2,7 @@
 <div class="page-address">
   <v-header :header="header"></v-header>
   <div class="address-wraper">
-    <div class="address-content" v-for="item in adinfos">
+    <div class="address-content" v-for="item in adinfos" v-model="adinfo">
       <div class="content-header">
         <div class="info-content">
           <p>姓名:{{item.name}}</p>

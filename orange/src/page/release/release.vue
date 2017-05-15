@@ -9,12 +9,13 @@
       </tr>
     </table>
     <textarea name="name" rows="4" placeholder="描述一下发布的产品..."></textarea>
-    <div class="add-pic">
+    <div class="add-pic" for="input-btn">
         <div class="add-pic-icon">
           <p>+</p>
           <p>添加图片</p>
         </div>
     </div>
+    <input type="file" id="input-btn">
   </div>
   <div class="release-input-content">
     <table>
@@ -98,6 +99,7 @@ export default {
       width:100%;
       font-size:14px;
       margin-top:4px;
+      border:none;
     .add-pic
       display:flex;
       .add-pic-icon
@@ -130,7 +132,6 @@ export default {
             width:7em;
           & > input
             width:100%;
-
   .release-bottom-btn
     width:100%;
     height:46px;
