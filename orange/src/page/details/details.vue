@@ -27,7 +27,7 @@
         <span class="nextBtn"></span>
       </router-link>
     </div>
-    <div class="record-content">
+    <div class="record-content" v-show="recordList">
       <p class="record-title">出价记录()</p>
       <div class="record-list">
         <div class="list-details" v-for="(item,index) in recordData.list">
@@ -44,25 +44,25 @@
       </div>
       <div class="record-more"><router-link :to="{ name: 'Morerecord', params: { id: $route.params.id } }">更多出价</router-link></div>
     </div>
-    <div class="bid-content">
-      <div class="bid-title">当前价格¥100</div>
+    <div class="bid-content" v-show="offer">
+      <div class="bid-title">当前价格¥{{detailsData.price}}</div>
       <div class="bid-details">
         <div class="bid-left">
-          <div class="bid-btn-one bid-btn">50</div>
-          <div class="bid-btn-two bid-btn">100</div>
+          <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.one">+{{biddingRange.one}}</div>
+          <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.two">+{{biddingRange.two}}</div>
         </div>
-        <div class="bid-btn-center"></div>
+        <div class="bid-btn-center">¥{{newPrice}}</div>
         <div class="bid-right">
-          <div class="bid-btn-one bid-btn">150</div>
-          <div class="bid-btn-two bid-btn">200</div>
+          <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.three">+{{biddingRange.three}}</div>
+          <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.four">+{{biddingRange.four}}</div>
         </div>
       </div>
     </div>
   </div>
   <div class="more-content"></div>
   <div class="bottom-button">
-    <div class="button-info">当前:<span>¥{{detailsData.price}}</span></div>
-    <div class="button-content">出价</div>
+      <div class="button-info">当前:<span>¥{{detailsData.price}}</span></div>
+      <div class="button-content"><router-link :to="{ name: 'Ketubbah', params: { id: $route.params.id } }">出价</router-link></div>
   </div>
 </div>
 </template>
@@ -95,7 +95,16 @@ export default {
         }
       },
       detailsData: {},
-      recordData: {}
+      recordData: {},
+      biddingRange:{
+        one:'',
+        two:'',
+        three:'',
+        four:''
+      },
+      newPrice:{},
+      offer:false, //是否显示出价
+      recordList:true//是否显示出价列表
     }
   },
   methods: {
@@ -110,7 +119,12 @@ export default {
         }
       }).then((response) => {
         response = response.body.data.data;
-        _this.detailsData = response.localData;
+        _this.detailsData = response.localData;;
+        _this.biddingRange.one = response.localData.biddingRange[0];
+        _this.biddingRange.two = response.localData.biddingRange[1];
+        _this.biddingRange.three = response.localData.biddingRange[2];
+        _this.biddingRange.four = response.localData.biddingRange[3];
+        _this.newPrice = response.localData.price;
       })
     },
     getRecord() {
@@ -125,14 +139,28 @@ export default {
       }).then((response) => {
         response = response.body.data.data;
         _this.recordData = response.localData;
-        console.log(_this.recordData)
       })
+
+      console.log(this.$route.params.offer)
+    },
+    addPrice(){
+
     }
   },
   created() {
     const _this = this;
+    let offerShow = _this.$route.params.offer
     _this.getDetailsData();
     _this.getRecord();
+
+    if(_this.$route.params.offer){
+
+      _this.offer = true;
+      _this.recordList = false;
+    } else{
+      _this.offer = false;
+      _this.recordList = true;
+    }
   },
   components: {
     'v-header': header
@@ -247,11 +275,58 @@ export default {
         color:#000000;
         & > a
           color:#000000;
+    .bid-content
+      padding-top:10px;
+      padding-bottom:20px;
+      .bid-title
+        text-align:center;
+        font-size:16.5px;
+        color:#707070;
+      .bid-details
+        margin-top:15px;
+        display:flex;
+        .bid-left
+          flex:1;
+          .bid-btn
+            width:80px;
+            height:25px;
+            color:#ffffff;
+            background-color:#f4523d;
+            border-radius:12.5px;
+            margin:10px auto 0 auto;
+            text-align:center;
+            line-height:25px;
+            &:nth-child(1)
+              margin-bottom:20px;
+        .bid-right
+          flex:1;
+          .bid-btn
+            width:80px;
+            height:25px;
+            color:#ffffff;
+            background-color:#f4523d;
+            border-radius:12.5px;
+            margin:10px auto 0 auto;
+            text-align:center;
+            line-height:25px;
+            &:nth-child(1)
+              margin-bottom:20px;
+        .bid-btn-center
+          flex: 0 0 86px;
+          widht:86px;
+          height:86px;
+          border-radius:50%;
+          border:1px solid #f4523d;
+          font-size:22px;
+          color:#f4523d;
+          text-align:center;
+          line-height:86px;
   .more-content
     width:100%;
     height:77.5px;
     background-color:#ffffff;
     margin-top:5px;
+
   .bottom-button
     width:100%;
     height:37px;
@@ -280,6 +355,11 @@ export default {
       font-size:17px;
       text-align:center;
       line-height:37px;
+      & > a
+        width:100%;
+        height:37px;
+        display:block;
+        color:#ffffff;
 
 
 </style>

@@ -13,6 +13,7 @@ const Releaselist = r => require.ensure([], () => r(require('@/page/releaselist/
 const Release = r => require.ensure([], () => r(require('@/page/release/release')), 'release')
 const Myorderlist = r => require.ensure([], () => r(require('@/page/myorderlist/myorderlist')), 'myorderlist')
 const Morerecord= r => require.ensure([], () => r(require('@/page/morerecord/morerecord')), 'morerecord')
+const Ketubbah = r => require.ensure([], () => r(require('@/page/ketubbah/ketubbah')), 'ketubbah')
 
 
 Vue.use(Router)
@@ -54,6 +55,12 @@ export default new Router({
       path: '/details/:id/morerecord',
       name: 'Morerecord',
       component: Morerecord
+    },
+    //保证金
+    {
+      path: '/details/:id/ketubbah',
+      name: 'Ketubbah',
+      component: Ketubbah
     },
     //规则页
     {

@@ -2,7 +2,7 @@
 <div class="page-address">
   <v-header :header="header"></v-header>
   <div class="address-wraper">
-    <div class="address-content" v-for="item in adinfos" v-model="adinfo">
+    <div class="address-content" v-for="(item,index) in adinfos" @click="handler(index)" :class="{activeClass:activeIndex == index}">
       <div class="content-header">
         <div class="info-content">
           <p>姓名:{{item.name}}</p>
@@ -10,7 +10,7 @@
           <p>地址:{{item.address}}</p>
           <p>邮编:{{item.adnum}}</p>
         </div>
-        <div class="chose-content">
+        <div class='chose-content'>
 
         </div>
       </div>
@@ -52,7 +52,14 @@ export default {
         phone: '13322445533',
         address: "上海市长宁区中山西路999号",
         adnum: "200010"
-      }]
+      }],
+      classItem:'',
+      activeIndex:'0'
+    }
+  },
+  methods:{
+    handler(index){
+      this.activeIndex = index;
     }
   },
   components: {
@@ -87,11 +94,6 @@ export default {
         & > p
           font-size:14px;
           line-height:1.6;
-      .chose-content
-        flex:0 0 60px;
-        width:60px;
-        height:32px;
-        background-center('../../image/address/choseBtn.png',32px,32px);
     .content-bottom
       height:44px;
       line-height:44px;
@@ -105,6 +107,13 @@ export default {
         line-height:27px;
         border:1px solid #707070;
         font-size:14px;
+  .activeClass
+    background-color:#d5e6ff;
+    .chose-content
+      flex:0 0 60px;
+      width:60px;
+      height:32px;
+      background-center('../../image/address/choseBtn.png',32px,32px);
   .add-address-btn
     width:55px;
     height:55px;
@@ -118,7 +127,4 @@ export default {
     .btn-text
       font-size:10px;
       text-align:center;
-
-
-
 </style>
