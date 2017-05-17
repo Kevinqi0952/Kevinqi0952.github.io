@@ -50,6 +50,7 @@
 
 <script type="text/ecmascript-6">
 import header from '../../components/header/header.vue'
+import uploadImg from '../../components/inputfile/inputfile'
 
 // 发布拍卖
 export default {
@@ -65,7 +66,8 @@ export default {
     }
   },
   components: {
-    'v-header': header
+    'v-header': header,
+    'v-upload': uploadImg
   }
 }
 </script>
