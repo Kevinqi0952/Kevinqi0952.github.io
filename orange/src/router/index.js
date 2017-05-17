@@ -14,18 +14,13 @@ const Release = r => require.ensure([], () => r(require('@/page/release/release'
 const Myorderlist = r => require.ensure([], () => r(require('@/page/myorderlist/myorderlist')), 'myorderlist')
 const Morerecord= r => require.ensure([], () => r(require('@/page/morerecord/morerecord')), 'morerecord')
 const Ketubbah = r => require.ensure([], () => r(require('@/page/ketubbah/ketubbah')), 'ketubbah')
-const Inputfile = r => require.ensure([], () => r(require('@/components/inputfile/inputfile')), 'inputfile')
+const Paysuccess = r => require.ensure([], () => r(require('@/page/paysuccess/paysuccess')), 'paysuccess')
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-     // 登陆
-    {
-      path: '/',
-      name: 'Inputfile',
-      component: Inputfile
-    },
+
     // 登陆
     {
       path: '/login',
@@ -34,7 +29,7 @@ export default new Router({
     },
     // 正在拍卖
     {
-      path: '/start',
+      path: '/',
       name: 'Start',
       component: Start
     },
@@ -103,6 +98,12 @@ export default new Router({
       path: '/myorderlist',
       name: 'Myorderlist',
       component: Myorderlist
+    },
+    //付款成功
+    {
+      path: '/paysuccess',
+      name: 'Paysuccess',
+      component: Paysuccess
     }
   ]
 })

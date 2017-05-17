@@ -1,52 +1,42 @@
 <template>
-  <div class="vue-upload-img-multiple">
-    <div v-if="images.length >0">
-      <ul>
-        <li v-for="image in images">
-          <img :src="image" @click='delImage($index)' />
-          <a href="#" style="position: absolute;" @click='delImage($index)'>
-            <span class="glyphicon glyphicon-remove"></span>
-          </a>
-        </li>
-      </ul>
-      <button @click="removeImage">移除全部图片</button>
-      <button @click='addPic'>上传</button>
-    </div>
-  
-    <div>
-      <div v-if="!image">
-        <h2>Select an image</h2>
-        <input type="file" @change="onFileChange">
-      </div>
-      <div v-else>
+<div class="upload-img-components">
+  <div class="img-list">
+    <ul>
+      <li v-for="(image,index) in images" class="img-box">
         <img :src="image" />
-        <button @click="removeImage">Remove image</button>
-      </div>
+        <div class="delete-btn" @click='delImage(index)'> - </div>
+      </li>
+    </ul>
+    <div class="add-pic-btn" @click="addPic" v-show="images.length < 5">
+      <p>{{loading ? '...':'+'}}</p>
+      <p>{{ loading ? '正在上传':'上传图片'}}</p>
     </div>
   </div>
+  <input type="file" @change="onFileChange" style="display:none">
+</div>
 </template>
 
 <script>
-import $ from 'jquery'
 export default {
   name: 'Upload',
-  data: function () {
+  data: function() {
     return {
-      image:'',
-      images: []
+      image: '',
+      images: [],
+      loading: false
     }
   },
   methods: {
-    test() {
-      var vm = this
-      console.log(vm.message)
-    },
+    test(){ console.log(this.images) },
     addPic() {
-      $('input[type=file]').trigger('click')
+      const inputBtn = document.querySelector('input[type=file]')
+      inputBtn.click();
+      this.loading = true;
       return false
     },
     onFileChange(e) {
       var files = e.target.files || e.dataTransfer.files
+
       if (!files.length) return
       this.createImage(files)
     },
@@ -57,42 +47,69 @@ export default {
       for (var i = 0; i < leng; i++) {
         reader = new window.FileReader()
         reader.readAsDataURL(file[i])
-        reader.onload = function (e) {
+        reader.onload = function(e) {
           vm.images.push(e.target.result)
         }
       }
+      this.loading = false;
     },
-    removeImage: function (e) {
+    removeImage: function(e) {
       this.images = []
     },
-    delImage: function (index) {
-      this.images.shift(index)
+    delImage: function(index) {
+      if (confirm("确定要删除这张图片吗？")) {
+        console.log(index)
+        this.images.splice(index,1)
+      }
     }
   }
 }
 </script>
 
-<style >
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-
-.vue-upload-img-multiple {
-  border: 1px red solid;
-}
+<style lang="stylus" rel="stylesheet/stylus">
+.upload-img-components
+  overflow:hidden;
+  .img-list
+    overflow:hidden;
+    & > ul
+      float:left;
+      .img-box
+        width:60px;
+        height:60px;
+        margin:10px 10px 10px 0;
+        display:inline-block;
+        position:relative;
+        &:last-child
+          margin:10px 0;
+        &>img
+          width:100%;
+          height:100%;
+        .delete-btn
+          width:15px;
+          height:15px;
+          border-radius:50%;
+          border:1px solid #f22673;
+          font-size:12px;
+          text-align:center;
+          line-height:15px;
+          position:absolute;
+          top:-5px;
+          right:-5px;
+          z-index:99;
+          color:#f22673;
+          font-weight:bold;
+    .add-pic-btn
+      width:60px;
+      height:60px;
+      margin:10px 0 10px 10px;
+      text-align:center;
+      background-color:#d5e6ff;
+      float:left;
+      &>p
+        color:#000;
+        &:nth-child(1)
+          font-size:30px;
+        &:nth-child(2)
+          font-size:12px;
+          margin-top:4px;
 </style>

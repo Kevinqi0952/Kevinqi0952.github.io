@@ -9,12 +9,7 @@
       </tr>
     </table>
     <textarea name="name" rows="4" placeholder="描述一下发布的产品..."></textarea>
-    <div class="add-pic">
-        <div class="add-pic-icon">
-          <p>+</p>
-          <p>添加图片</p>
-        </div>
-    </div>
+    <v-upload></v-upload>
   </div>
   <div class="release-input-content">
     <table>
