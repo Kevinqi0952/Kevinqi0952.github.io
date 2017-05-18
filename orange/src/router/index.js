@@ -12,98 +12,99 @@ const Addaddress = r => require.ensure([], () => r(require('@/page/addaddress/ad
 const Releaselist = r => require.ensure([], () => r(require('@/page/releaselist/releaselist')), 'releaselist')
 const Release = r => require.ensure([], () => r(require('@/page/release/release')), 'release')
 const Myorderlist = r => require.ensure([], () => r(require('@/page/myorderlist/myorderlist')), 'myorderlist')
-const Morerecord= r => require.ensure([], () => r(require('@/page/morerecord/morerecord')), 'morerecord')
+const Morerecord = r => require.ensure([], () => r(require('@/page/morerecord/morerecord')), 'morerecord')
 const Ketubbah = r => require.ensure([], () => r(require('@/page/ketubbah/ketubbah')), 'ketubbah')
 const Paysuccess = r => require.ensure([], () => r(require('@/page/paysuccess/paysuccess')), 'paysuccess')
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+    mode: 'hash',
+    routes: [
 
-    // 登陆
-    {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    // 正在拍卖
-    {
-      path: '/',
-      name: 'Start',
-      component: Start
-    },
-    // 即将开始
-    {
-      path: '/begin',
-      name: 'Begin',
-      component: Begin
-    },
-    // 我的拍卖
-    {
-      path: '/personal',
-      name: 'Personal',
-      component: Personal
-    },
-    //详情页
-    {
-      path: '/details/:id',
-      name: 'Details',
-      component: Details
-    },
-    //更多出价
-    {
-      path: '/details/:id/morerecord',
-      name: 'Morerecord',
-      component: Morerecord
-    },
-    //保证金
-    {
-      path: '/details/:id/ketubbah',
-      name: 'Ketubbah',
-      component: Ketubbah
-    },
-    //规则页
-    {
-      path: '/rules',
-      name: 'Rules',
-      component: Rules
-    },
-    // 我的地址
-    {
-      path: '/address',
-      name: 'Address',
-      component: Address
-    },
-    //新增地址
-    {
-      path: '/address/addaddress',
-      name: 'Addaddress',
-      component: Addaddress
-    },
-    //已发布的拍卖
-    {
-      path: '/releaselist',
-      name: 'Releaselist',
-      component: Releaselist
-    },
-    //发布拍卖
-    {
-      path: '/releaselist/release',
-      name: 'Release',
-      component: Release
-    },
-    //我的订单
-    {
-      path: '/myorderlist',
-      name: 'Myorderlist',
-      component: Myorderlist
-    },
-    //付款成功
-    {
-      path: '/paysuccess',
-      name: 'Paysuccess',
-      component: Paysuccess
-    }
-  ]
+        // 登陆
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
+        },
+        // 正在拍卖
+        {
+            path: '/',
+            name: 'Start',
+            component: Start
+        },
+        // 即将开始
+        {
+            path: '/begin',
+            name: 'Begin',
+            component: Begin
+        },
+        // 我的拍卖
+        {
+            path: '/personal',
+            name: 'Personal',
+            component: Personal
+        },
+        //详情页
+        {
+            path: '/details/:id',
+            name: 'Details',
+            component: Details
+        },
+        //更多出价
+        {
+            path: '/details/:id/morerecord',
+            name: 'Morerecord',
+            component: Morerecord
+        },
+        //保证金
+        {
+            path: '/details/:id/ketubbah',
+            name: 'Ketubbah',
+            component: Ketubbah
+        },
+        //规则页
+        {
+            path: '/rules',
+            name: 'Rules',
+            component: Rules
+        },
+        // 我的地址
+        {
+            path: '/address',
+            name: 'Address',
+            component: Address
+        },
+        //新增地址
+        {
+            path: '/address/addaddress',
+            name: 'Addaddress',
+            component: Addaddress
+        },
+        //已发布的拍卖
+        {
+            path: '/releaselist',
+            name: 'Releaselist',
+            component: Releaselist
+        },
+        //发布拍卖
+        {
+            path: '/releaselist/release',
+            name: 'Release',
+            component: Release
+        },
+        //我的订单
+        {
+            path: '/myorderlist',
+            name: 'Myorderlist',
+            component: Myorderlist
+        },
+        //付款成功
+        {
+            path: '/paysuccess',
+            name: 'Paysuccess',
+            component: Paysuccess
+        }
+    ]
 })

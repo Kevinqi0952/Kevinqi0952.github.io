@@ -1,36 +1,38 @@
 <template>
-<div class="page-details">
-  <v-header :header="header"></v-header>
-  <div class="details-header">
-    <div class="header-info">
-      <p>{{detailsData.isStart == 1 ? '距离拍卖结束时间 ':'距离拍卖开始时间'}} {{detailsData.endTime}}</p>
-    </div>
-    <div class="swiper-content">
-      <img src="http://oa.bxshare.cn/asset/img/paimai/detail.png" alt="轮播图片">
-    </div>
-    <div class="info-content">
-      <div class="info-text">
-        <p class="title">产品描述:</p>
-        <p>{{detailsData.desc}}</p>
+  <div class="page-details">
+    <v-header :header="header"></v-header>
+    <div class="details-header">
+      <div class="header-info">
+        <p>{{detailsData.isStart == 1 ? '距离拍卖结束时间 ':'距离拍卖开始时间'}} {{detailsData.endTime}}</p>
       </div>
-      <div class="info-text">
-        <p class="title">预计到港时间:</p>
-        <p>{{detailsData.arrivalTime}}</p>
+      <div class="swiper-content">
+        <swipe class="my-swipe">
+          <swipe-item class="slide" v-for="item in detailsData.imgList"  v-bind:style="{ 'background-image':'url('+item+')' }"></swipe-item>
+        </swipe>
+      </div>
+      <div class="info-content">
+        <div class="info-text">
+          <p class="title">产品描述:</p>
+          <p>{{detailsData.desc}}</p>
+        </div>
+        <div class="info-text">
+          <p class="title">预计到港时间:</p>
+          <p>{{detailsData.arrivalTime}}</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="details-content">
-    <div class="rules-btn">
-      <router-link to="/rules">
-        <span class="rules-icon"></span>
-        <p>拍卖规则</p>
-        <span class="nextBtn"></span>
-      </router-link>
-    </div>
-    <div class="record-content" v-show="recordList">
-      <p class="record-title">出价记录()</p>
-      <div class="record-list">
-        <div class="list-details" v-for="(item,index) in recordData.list">
+    <div class="details-content">
+      <div class="rules-btn">
+        <router-link to="/rules">
+          <span class="rules-icon"></span>
+          <p>拍卖规则</p>
+          <span class="nextBtn"></span>
+        </router-link>
+      </div>
+      <div class="record-content" v-show="recordList">
+        <p class="record-title">出价记录()</p>
+        <div class="record-list">
+          <div class="list-details" v-for="(item,index) in recordData.list">
             <div class="name">
               {{item.userInfo.realname}}
             </div>
@@ -38,37 +40,43 @@
               <span class="text-icon">领先</span><span class="text-red">¥{{item.price}}</span>
             </div>
             <div class="price" v-else>
-               ¥{{item.price}}
+              ¥{{item.price}}
             </div>
+          </div>
+        </div>
+        <div class="record-more">
+          <router-link :to="{ name: 'Morerecord', params: { id: $route.params.id } }">更多出价</router-link>
         </div>
       </div>
-      <div class="record-more"><router-link :to="{ name: 'Morerecord', params: { id: $route.params.id } }">更多出价</router-link></div>
-    </div>
-    <div class="bid-content" v-show="offer">
-      <div class="bid-title">当前价格¥{{detailsData.price}}</div>
-      <div class="bid-details">
-        <div class="bid-left">
-          <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.one">+{{biddingRange.one}}</div>
-          <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.two">+{{biddingRange.two}}</div>
-        </div>
-        <div class="bid-btn-center">¥{{newPrice}}</div>
-        <div class="bid-right">
-          <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.three">+{{biddingRange.three}}</div>
-          <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.four">+{{biddingRange.four}}</div>
+      <div class="bid-content" v-show="offer">
+        <div class="bid-title">当前价格¥{{detailsData.price}}</div>
+        <div class="bid-details">
+          <div class="bid-left">
+            <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.one">+{{biddingRange.one}}</div>
+            <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.two">+{{biddingRange.two}}</div>
+          </div>
+          <div class="bid-btn-center">¥{{newPrice}}</div>
+          <div class="bid-right">
+            <div class="bid-btn-one bid-btn" @click="newPrice += biddingRange.three">+{{biddingRange.three}}</div>
+            <div class="bid-btn-two bid-btn" @click="newPrice += biddingRange.four">+{{biddingRange.four}}</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="more-content"></div>
-  <div class="bottom-button">
+    <div class="more-content"></div>
+    <div class="bottom-button">
       <div class="button-info">当前:<span>¥{{detailsData.price}}</span></div>
-      <div class="button-content"><router-link :to="{ name: 'Ketubbah', params: { id: $route.params.id } }">出价</router-link></div>
+      <div class="button-content">
+        <router-link :to="{ name: 'Ketubbah', params: { id: $route.params.id } }">出价</router-link>
+      </div>
+    </div>
   </div>
-</div>
 </template>
 
 <script type="text/ecmascript-6">
 import header from '../../components/header/header.vue'
+import swipe from '../../components/swipe/swipe'
+import swipItem from '../../components/swipe/swipe-item'
 
 // 详情页
 export default {
@@ -96,15 +104,15 @@ export default {
       },
       detailsData: {},
       recordData: {},
-      biddingRange:{
-        one:'',
-        two:'',
-        three:'',
-        four:''
+      biddingRange: {
+        one: '',
+        two: '',
+        three: '',
+        four: ''
       },
-      newPrice:{},
-      offer:false, //是否显示出价
-      recordList:true//是否显示出价列表
+      newPrice: {},
+      offer: false, //是否显示出价
+      recordList: true//是否显示出价列表
     }
   },
   methods: {
@@ -143,7 +151,7 @@ export default {
 
       console.log(this.$route.params.offer)
     },
-    addPrice(){
+    addPrice() {
 
     }
   },
@@ -153,17 +161,19 @@ export default {
     _this.getDetailsData();
     _this.getRecord();
 
-    if(_this.$route.params.offer){
+    if (_this.$route.params.offer) {
 
       _this.offer = true;
       _this.recordList = false;
-    } else{
+    } else {
       _this.offer = false;
       _this.recordList = true;
     }
   },
   components: {
-    'v-header': header
+    'v-header': header,
+    'swipe': swipe,
+    'swipe-item': swipItem
   }
 }
 </script>
@@ -183,11 +193,24 @@ export default {
         text-align:center;
         font-size:10px;
         line-height:26px;
+    // 轮播图样式
     .swiper-content
       width:100%;
+      height:240px;
       overflow:hidden;
-      & > img
+      .my-swipe
         width:100%;
+        height:240px;
+        .slide
+          background-size:cover;
+          background-position:center;
+        .mint-swipe-indicators
+          .mint-swipe-indicator
+            background-color:#ffffff;
+            opacity:0.6;
+          .is-active
+            background-color:#3b85f3;
+     //  轮播图样式结束
     .info-content
       padding:0 11px;
       .info-text

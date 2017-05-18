@@ -34,7 +34,7 @@ export default {
         }
       },
       listType:'bidding',//列表类型
-      listData:{}//列表数据
+      listData:{},//列表数据
 
     }
   },
