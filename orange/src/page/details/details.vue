@@ -205,9 +205,13 @@ export default {
           background-size:cover;
           background-position:center;
         .mint-swipe-indicators
+          right:0;
+          left:auto;
           .mint-swipe-indicator
+            width:12px;
+            height:12px;
             background-color:#ffffff;
-            opacity:0.6;
+            opacity:1;
           .is-active
             background-color:#3b85f3;
      //  轮播图样式结束
