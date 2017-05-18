@@ -5,11 +5,13 @@
       <div class="header-info">
         <p>{{detailsData.isStart == 1 ? '距离拍卖结束时间 ':'距离拍卖开始时间'}} {{detailsData.endTime}}</p>
       </div>
+      <!--轮播开始-->
       <div class="swiper-content">
         <swipe class="my-swipe">
           <swipe-item class="slide" v-for="item in detailsData.imgList"  v-bind:style="{ 'background-image':'url('+item+')' }"></swipe-item>
         </swipe>
       </div>
+      <!--轮播结束-->
       <div class="info-content">
         <div class="info-text">
           <p class="title">产品描述:</p>
