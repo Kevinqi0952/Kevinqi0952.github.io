@@ -8,7 +8,7 @@
       <!--轮播开始-->
       <div class="swiper-content">
         <swipe class="my-swipe">
-          <swipe-item class="slide" v-for="item in detailsData.imgList"  v-bind:style="{ 'background-image':'url('+item+')' }"></swipe-item>
+          <swipe-item class="slide" v-for="(item,index) in imgList" key="index" v-bind:style="{ 'background-image':'url('+item+')' }"></swipe-item>
         </swipe>
       </div>
       <!--轮播结束-->
@@ -112,9 +112,10 @@ export default {
         three: '',
         four: ''
       },
+      imgList:{},
       newPrice: {},
       offer: false, //是否显示出价
-      recordList: true//是否显示出价列表
+      recordList: true,//是否显示出价列表
     }
   },
   methods: {
@@ -135,6 +136,7 @@ export default {
         _this.biddingRange.three = response.localData.biddingRange[2];
         _this.biddingRange.four = response.localData.biddingRange[3];
         _this.newPrice = response.localData.price;
+        _this.imgList = response.localData.imgList;
       })
     },
     getRecord() {
@@ -389,6 +391,4 @@ export default {
         height:37px;
         display:block;
         color:#ffffff;
-
-
 </style>

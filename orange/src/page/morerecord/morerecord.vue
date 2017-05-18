@@ -51,7 +51,6 @@ export default {
         Accept: 'application/hst-h5'
       }
     }).then((response) => {
-      console.log(_this.request.params.productId)
       response = response.body.data.data.localData
       _this.historyListData = response.list
       
