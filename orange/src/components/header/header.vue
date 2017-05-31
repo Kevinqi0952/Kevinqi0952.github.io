@@ -57,6 +57,9 @@ export default {
   width:100%;
   height:38px;
   display:flex;
+  position:fixed;
+  left:0;
+  top:0;
   .header-left
     flex:0 0 55px;
     width:55px;

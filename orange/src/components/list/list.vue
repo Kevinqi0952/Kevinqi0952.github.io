@@ -1,7 +1,7 @@
 <template>
     <div class="components-list">
       <div class="list-details" v-for="item in list">
-          <router-link :to="{ name: 'Details', params: { id: item.id }}">
+          <router-link :to="{ name: 'Details', params: { id: item.id },query:{test:'123'}}">
             <div class="img-box" v-bind:style="{ 'background-image':'url('+item.imgUrl+')' }"></div>
             <div class="text-box">
               <div class="name-content">{{item.title}}</div>
@@ -27,7 +27,8 @@ export default {
     name: 'list',
     props: {
         list: {},
-        type:{}
+        type:{},
+        test:'test'
     },
     created() {
     },

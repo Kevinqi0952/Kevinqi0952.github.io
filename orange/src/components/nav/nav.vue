@@ -30,7 +30,8 @@ export default {
   width:100%;
   height:20px;
   display:flex;
-  margin:15px 0 10px 0;
+  margin:0 0 10px 0;
+  padding-top:15px;
   & > div
     font-size:17px;
     flex:1;
