@@ -78,6 +78,8 @@ export default {
   position:fixed;
   left:0;
   bottom:0;
+  &:active
+    background-color:#a10202;
   & > a
     color:#ffffff;
     width:100%;

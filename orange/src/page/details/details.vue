@@ -173,6 +173,10 @@ export default {
       _this.offer = false;
       _this.recordList = true;
     }
+
+    document.body.addEventListener('touchstart',function(){ 
+      // 解决IOS下active伪类不生效。
+     });
   },
   components: {
     'v-header': header,
@@ -327,6 +331,8 @@ export default {
             margin:10px auto 0 auto;
             text-align:center;
             line-height:25px;
+            &:active
+              background-color:#ae392a;  
             &:nth-child(1)
               margin-bottom:20px;
         .bid-right
@@ -340,6 +346,8 @@ export default {
             margin:10px auto 0 auto;
             text-align:center;
             line-height:25px;
+            &:active
+              background-color:#ae392a;  
             &:nth-child(1)
               margin-bottom:20px;
         .bid-btn-center
@@ -386,6 +394,8 @@ export default {
       font-size:17px;
       text-align:center;
       line-height:37px;
+      &:active
+        background-color:#a10202;
       & > a
         width:100%;
         height:37px;

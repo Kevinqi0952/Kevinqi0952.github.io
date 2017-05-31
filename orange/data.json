@@ -1,223 +1,303 @@
 {
-  "getListOfBiddingV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
-    },
-    "data": {
-      "localData": {
-        "isEnd": 0,
-        "list": [{
-            "id": 20,
-            "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
-            "title": "标题20",
-            "price": "50",
-            "num": "1000000",
-            "endTime": "9987987"
-          },
-          {
-            "id": 19,
-            "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
-            "title": "标题19",
-            "price": "50",
-            "num": "1000000",
-            "endTime": "9987987"
-          }
-        ]
-      },
-      "globalData": {}
-    },
-    "cookies": {}
-  },
-  "getListOfUpcommingV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
-    },
-    "data": {
-      "localData": {
-        "isEnd": 0,
-        "list": [{
-            "id": 20,
-            "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
-            "title": "标题20",
-            "price": "50",
-            "num": "1000000",
-            "endTime": "9987987"
-          },
-          {
-            "id": 19,
-            "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
-            "title": "标题19",
-            "price": "50",
-            "num": "1000000",
-            "endTime": "9987987"
-          }
-        ]
-      },
-      "globalData": {}
-    },
-    "cookies": {}
-  },
-  "getDetailV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
-    },
-    "data": {
-      "localData": {
-        "desc": "测试1",
-        "imgList": [
-          "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
-          "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407"
-        ],
-        "price": 0,
-        "arrivalTime": "2017年05月12",
-        "endTime": 89948,
-        "productStep": 0,
-        "lowestBidding": 10,
-        "biddingRange": [
-          10,
-          50,
-          100,
-          200
-        ]
-      },
-      "globalData": {}
-    },
-    "cookies": {}
-  },
-  "getBidTopListV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
-    },
-    "data": {
-      "localData": {
-        "list": [{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        }]
-      },
-      "globalData": {}
-    },
-    "cookies": {}
-  },
-  "getMyOrderListV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
-    },
-    "data": {
-      "localData": {
-        "isEnd": 0,
-        "list": [{
-            "id": 20,
-            "productInfo": {
-              "id": 3,
-              "title": "测试3",
-              "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
-              "price": 100,
-              "endTime": "12:00:34"
+    "getListOfBiddingV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "isEnd": 0,
+                "list": [{
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    }
+                ]
             },
-            "paimaiStarus": 1,
-            "userStatus": 0
-          },
-          {
-            "id": 19,
-            "productInfo": {
-              "id": 3,
-              "title": "测试3",
-              "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
-              "price": 100,
-              "endTime": "12:00:34"
+            "globalData": {}
+        },
+        "cookies": {}
+    },
+    "getListOfUpcommingV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "isEnd": 0,
+                "list": [{
+                        "id": 20,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题20",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    },
+                    {
+                        "id": 19,
+                        "imgUrl": "http://oa.bxshare.cn/asset/img/paimai/detail.png",
+                        "title": "标题19",
+                        "price": "50",
+                        "num": "1000000",
+                        "endTime": "9987987"
+                    }
+                ]
             },
-            "paimaiStarus": 1,
-            "userStatus": 1
-          },
-          {
-            "id": 19,
-            "productInfo": {
-              "id": 3,
-              "title": "测试3",
-              "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
-              "price": 100,
-              "endTime": "12:00:34"
+            "globalData": {}
+        },
+        "cookies": {}
+    },
+    "getDetailV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "desc": "测试1",
+                "imgList": [
+                    "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
+                    "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407"
+                ],
+                "price": 0,
+                "arrivalTime": "2017年05月12",
+                "endTime": 89948,
+                "productStep": 0,
+                "lowestBidding": 10,
+                "biddingRange": [
+                    10,
+                    50,
+                    100,
+                    200
+                ]
             },
-            "paimaiStarus": 1,
-            "userStatus": 2
-          }
-        ]
-      },
-      "globalData": {}
+            "globalData": {}
+        },
+        "cookies": {}
     },
-    "cookies": {}
-  },
-  "getBidHistoryListV1": {
-    "state": {
-      "code": 0,
-      "msg": ""
+    "getBidTopListV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "list": [{
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }]
+            },
+            "globalData": {}
+        },
+        "cookies": {}
     },
-    "data": {
-      "localData": {
-        "isEnd": 1,
-        "list": [{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        },{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        },{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        },{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        },{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        },{
-          "id": 1,
-          "userInfo": {
-            "userid": 1359,
-            "realname": "李敏"
-          },
-          "price": 2,
-          "status": 1
-        }]
-      },
-      "globalData": {}
+    "getMyOrderListV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "isEnd": 0,
+                "list": [{
+                        "id": 20,
+                        "productInfo": {
+                            "id": 3,
+                            "title": "测试3",
+                            "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
+                            "price": 100,
+                            "endTime": "12:00:34"
+                        },
+                        "paimaiStarus": 1,
+                        "userStatus": 0
+                    },
+                    {
+                        "id": 19,
+                        "productInfo": {
+                            "id": 3,
+                            "title": "测试3",
+                            "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
+                            "price": 100,
+                            "endTime": "12:00:34"
+                        },
+                        "paimaiStarus": 1,
+                        "userStatus": 1
+                    },
+                    {
+                        "id": 19,
+                        "productInfo": {
+                            "id": 3,
+                            "title": "测试3",
+                            "imgUrl": "http://upload1.bxshare.cn/paimai_product/2017/05/08/paimai_product_8900e69879936df05f8f7fc65f3464380e9c.gif?v=1494242407",
+                            "price": 100,
+                            "endTime": "12:00:34"
+                        },
+                        "paimaiStarus": 1,
+                        "userStatus": 2
+                    }
+                ]
+            },
+            "globalData": {}
+        },
+        "cookies": {}
     },
-    "cookies": {}
-  }
+    "getBidHistoryListV1": {
+        "state": {
+            "code": 0,
+            "msg": ""
+        },
+        "data": {
+            "localData": {
+                "isEnd": 1,
+                "list": [{
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }, {
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }, {
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }, {
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }, {
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }, {
+                    "id": 1,
+                    "userInfo": {
+                        "userid": 1359,
+                        "realname": "李敏"
+                    },
+                    "price": 2,
+                    "status": 1
+                }]
+            },
+            "globalData": {}
+        },
+        "cookies": {}
+    }
 }
