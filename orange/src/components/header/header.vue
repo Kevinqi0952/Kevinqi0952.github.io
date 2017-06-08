@@ -60,6 +60,7 @@ export default {
   position:fixed;
   left:0;
   top:0;
+  z-index:99;
   .header-left
     flex:0 0 55px;
     width:55px;
