@@ -1,0 +1,790 @@
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.hst-index .fixed-header .header-logo {
+    width: 194px;
+    height: 54px;
+    margin: 29px 0 0 42px;
+    float: left;
+}
+
+.hst-index .fixed-header .header-nav {
+    float: right;
+    overflow: hidden;
+}
+
+.hst-index .fixed-header .header-nav {
+    padding-top: 45px;
+    margin-right: 70px;
+}
+
+.hst-index .fixed-header .header-nav li {
+    float: left;
+    margin-right: 14px;
+}
+
+.hst-index .fixed-header .header-nav li a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.hst-index .fixed-header .header-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.hst-index .fixed-right{
+  position: fixed;
+  top: 38%;
+  right: 1%;
+  z-index: 99;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.hst-index .fixed-right li{
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  border:1px solid #ffffff;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.hst-index .fixed-right .active{
+  background-color: #ffffff;
+  transition: background-color 2s;
+  -moz-transition: background-color 2s;	/* Firefox 4 */
+  -webkit-transition: background-color 2s;	/* Safari 和 Chrome */
+  -o-transition: background-color 2s;	/* Opera */
+}
+.section {
+    overflow: hidden;
+}
+
+.button-content {
+    margin-top: 20px;
+}
+
+.button-content .button {
+    width: 40%;
+    min-width: 150px;
+    height: 58px;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: inherit;
+    color: #ffffff;
+    background: url('../image/buttonBg.png') no-repeat;
+    background-size: 100% 100%;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.button-content .button:nth-child(1) {
+    margin-left: 0;
+}
+
+.button-content .button .ios-icon {
+    width: 28px;
+    height: 58px;
+    background: url('../image/iosIcon.png') no-repeat;
+    background-size: 100% 33px;
+    background-position: center;
+    display: inline-block;
+    vertical-align: -20px;
+    margin-right: 18px;
+}
+
+.button-content .button .android-icon {
+    width: 28px;
+    height: 58px;
+    background: url('../image/androidIcon.png') no-repeat;
+    background-size: 100% 33px;
+    background-position: center;
+    display: inline-block;
+    vertical-align: -20px;
+    margin-right: 18px;
+}
+.button-content .button a{
+  color: #ffffff;
+  display:block;
+  text-align: center;
+  line-height: 58px;
+  width:100%;
+}
+
+.animate-delay1 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.animate-delay2 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.animate-delay3 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.animate-delay4 {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+.animate-delay5 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animate-delay6 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.animate-delay7 {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.animate-delay8 {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+.animate-delay9 {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+.animate-duration{
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.animate-duration1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.animate-duration2 {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+.animate-duration3 {
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+.animate-duration4 {
+    -webkit-animation-duration: 25s;
+    animation-duration: 25s;
+}
+.animate-infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animate-alternate {
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+
+/* page1 style
+* --------------------------------------- */
+
+.hst-index-page1 {
+    background-color: #064dd9;
+    position: relative;
+    overflow: hidden;
+}
+
+.hst-index-page1 .page1-content-bg {
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hst-index-page1 .left-content {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 12% 0 0 6%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page1 .left-content img {
+    max-width: 94%;
+    position: absolute;
+    display: block;
+}
+
+.hst-index-page1 .title-content {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.hst-index-page1 .title-content img {
+    max-width: 60%;
+    margin: 55% auto 0 auto;
+    display: block;
+}
+
+.hst-index-page1 .right-content {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 19% 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.hst-index-page1 .right-content .right-text-content {
+    max-width: 500px;
+    min-width: 400px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-right: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page1 .right-content .right-text-content h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hst-index-page1 .right-content .right-text-content h2 span {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: -40px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hst-index-page1 .right-content .right-text-content p {
+    font-size: 16px;
+    line-height: 3;
+}
+
+.hst-index-page1 .bottom-content {
+    position: absolute;
+    height: 26%;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* page2 style
+* --------------------------------------- */
+
+.hst-index-page2 {
+    background-color: #f5a623;
+    position: relative;
+    overflow: hidden;
+}
+
+.hst-index-page2 .page2-content-bg {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 6%;
+}
+
+.hst-index-page2 .left-content {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 8% 0 0 6%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page2 .left-content .page2-left-content-img1 {
+    margin: 0 auto;
+    width: 74%;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+}
+
+.hst-index-page2 .left-content .page2-left-content-img2 {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    right: -6%;
+}
+
+.hst-index-page2 .title-content {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.hst-index-page2 .title-content img {
+    max-width: 60%;
+    margin: 55% auto 0 auto;
+    display: block;
+}
+
+.hst-index-page2 .right-content {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 19% 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.hst-index-page2 .right-content .right-text-content {
+    max-width: 500px;
+    min-width: 400px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-right: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page2 .right-content .right-text-content h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hst-index-page2 .right-content .right-text-content h2 span {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: -40px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hst-index-page2 .right-content .right-text-content p {
+    font-size: 16px;
+    line-height: 3;
+}
+
+
+/* page3 style
+* --------------------------------------- */
+
+.hst-index-page3 {
+    background-color: #6146c7;
+    position: relative;
+    overflow: hidden;
+}
+
+.hst-index-page3 .page3-content-bg {
+    width: 70%;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+.hst-index-page3 .page3-content-start{
+  position: absolute;
+  top: 28%;
+  left: 20%;
+}
+.hst-index-page3  .page3-content-start2{
+  width: 6px;
+  position: absolute;
+  top: 18%;
+  left: 39%;
+}
+.hst-index-page3  .page3-content-start3{
+  width:8px;
+  position: absolute;
+  top: 36%;
+  left: 34%;
+}
+.hst-index-page3 .left-content {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-top: 8%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page3 .left-content .page3-left-content-img1 {
+    margin: 0 auto;
+    width: 170%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 7;
+}
+.hst-index-page3 .left-content .page3-left-content-img2 {
+    margin: 0 auto;
+    width: 170%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 6;
+}
+.hst-index-page3 .left-content .page3-left-content-img3 {
+    margin: 0 auto;
+    width: 170%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 8;
+}
+.hst-index-page3 .title-content {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.hst-index-page3 .title-content img {
+    max-width: 60%;
+    margin: 55% auto 0 auto;
+    display: block;
+}
+
+.hst-index-page3 .right-content {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 19% 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.hst-index-page3 .right-content .right-text-content {
+    max-width: 500px;
+    min-width: 400px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-right: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page3 .right-content .right-text-content h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hst-index-page3 .right-content .right-text-content h2 span {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: -40px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hst-index-page3 .right-content .right-text-content p {
+    font-size: 16px;
+    line-height: 3;
+}
+
+
+/* page4 style
+* --------------------------------------- */
+
+.hst-index-page4 {
+    background-color: #ef5c3b;
+    position: relative;
+    overflow: hidden;
+}
+
+.hst-index-page4 .page4-content-bg {
+    width: 70%;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+
+.hst-index-page4 .left-content {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-top: 8%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hst-index-page4 .left-content .page4-left-content-img1,
+.hst-index-page4 .left-content .page4-left-content-img2,
+.hst-index-page4 .left-content .page4-left-content-img3,
+.hst-index-page4 .left-content .page4-left-content-img4,
+.hst-index-page4 .left-content .page4-left-content-img5{
+    width: 120%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 8;
+}
+
+
+.hst-index-page4 .title-content {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.hst-index-page4 .title-content img {
+    max-width: 60%;
+    margin: 55% auto 0 auto;
+    display: block;
+}
+
+.hst-index-page4 .right-content {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 19% 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.hst-index-page4 .right-content .right-text-content {
+    max-width: 500px;
+    min-width: 400px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-right: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page4 .right-content .right-text-content h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hst-index-page4 .right-content .right-text-content h2 span {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: -40px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hst-index-page4 .right-content .right-text-content p {
+    font-size: 16px;
+    line-height: 3;
+}
+
+
+
+/* page5 style
+* --------------------------------------- */
+
+.hst-index-page5 {
+    background-color: #763fd5;
+    position: relative;
+    overflow: hidden;
+}
+
+.hst-index-page5 .page5-content-bg {
+    width: 70%;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+
+.hst-index-page5 .left-content {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-top: 8%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hst-index-page5 .left-content .page5-left-content-img1{
+    width: 113%;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    z-index: 7;
+}
+.hst-index-page5 .left-content .page5-left-content-img2{
+    width: 113%;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    z-index: 9;
+}
+.hst-index-page5 .left-content .page5-left-content-img3{
+    width: 113%;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    z-index: 8;
+}
+
+.hst-index-page5 .title-content {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.hst-index-page5 .title-content img {
+    max-width: 60%;
+    margin: 55% auto 0 auto;
+    display: block;
+}
+
+.hst-index-page5 .right-content {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    padding: 19% 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.hst-index-page5 .right-content .right-text-content {
+    max-width: 500px;
+    min-width: 400px;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-right: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hst-index-page5 .right-content .right-text-content h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hst-index-page5 .right-content .right-text-content h2 span {
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: -40px;
+    display: inline-block;
+    position: absolute;
+}
+
+.hst-index-page5 .right-content .right-text-content p {
+    font-size: 16px;
+    line-height: 3;
+}
+.hst-index-page5  .bottom-content{
+  width: 100%;
+  position: absolute;
+  left:0;
+  bottom: 40px;
+  text-align: center;
+}
+.hst-index-page5  .bottom-content ul{
+  font-size: 0;
+  margin-bottom: 10px
+}
+.hst-index-page5  .bottom-content li{
+  display: inline-block;
+  border-right: 1px solid #ffffff;
+  line-height: 1;
+}
+.hst-index-page5  .bottom-content li:nth-last-child(1){
+  border-right: none;
+}
+.hst-index-page5  .bottom-content li a{
+  padding: 0 10px;
+  color: #ffffff;
+  font-size: 12px;
+}
+.hst-index-page5  .bottom-content li:hover a{
+  color: #ccc;
+  transition: color 1s;
+  -moz-transition: color 1s;	/* Firefox 4 */
+  -webkit-transition: color 1s;	/* Safari 和 Chrome */
+  -o-transition: color 1s;	/* Opera */
+}
+.hst-index-page5  .bottom-content p {
+  font-size: 12px;
+  color: #ffffff;
+}
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+
+.fp-tooltip {
+    color: #ffffff;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background-color: #ffffff;
+}
+
+#fp-nav span, .fp-slidesNav span {
+    border-color: #ffffff;
+}
+
+#fp-nav li .active span, .fp-slidesNav .active span {
+    background: #ffffff;
+}
+
+/*二维码区域*/
+.fixed-code-top{
+  width:160px;
+  height:204px;
+  background: url('../image/downloadCodeBgUp.png') no-repeat;
+  background-size: 100% 100%;
+  position:fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 12px 12px 12px;
+  display: none;
+}
+.fixed-code-down{
+  width:160px;
+  height:204px;
+  background: url('../image/downloadCodeBgDwon.png') no-repeat;
+  background-size: 100% 100%;
+  position:fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 12px 12px 12px;
+  display: none;
+}
+.fixed-code img{
+  width: 100%;
+}
+.fixed-code p{
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: bold;
+}
