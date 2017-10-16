@@ -1,0 +1,207 @@
+html {
+    font-size: 125%;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+/*新增不在微信样式*/
+.not-wechat{
+  width: 100%;
+  height: 260px;
+  margin: auto auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.not-wechat img{
+  width: 100px;
+  margin: 20px auto;
+  display: block;
+}
+.not-wechat p{
+  color: #333333;
+  font-size: 16px;
+  text-align: center;
+}
+.flow-recharge {
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /*display: none;*/
+}
+
+.flow-recharge .recharge-content {
+    background-color: #ffffff;
+}
+
+.flow-recharge .recharge-content .input-content {
+    padding: 0.45rem 0.45rem 0 0.45rem;
+    height: 2.1rem;
+    line-height: 2.1rem;
+}
+.flow-recharge .recharge-content .input-content .input-border{
+    border: 1px solid #dfdfdf;
+    border-radius: 0.25rem;
+    padding: 0 0.45rem;
+    box-sizing: border-box;
+}
+.flow-recharge .recharge-content .input-content .phone-icon {
+    width: 0.65rem;
+    height: 0.875rem;
+    background: url('../image/phoneIcon.png') no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -0.1rem;
+    display: inline-block;
+}
+
+.flow-recharge .recharge-content .input-content input {
+    width: 12rem;
+    height: 0.65rem;
+    font-size: 0.65rem;
+    border: none;
+    line-height: 0.65rem;
+    display: inline-block;
+    vertical-align: 0.15rem;
+}
+
+.flow-recharge .recharge-content .input-content .close-icon {
+    width: 0.55rem;
+    height: 0.55rem;
+    vertical-align: 0.1rem;
+    background: url('../image/closeIcon.png') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.flow-recharge .recharge-content .recharge-list {
+    width: 100%;
+    padding: 0.3rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.flow-recharge .recharge-content .recharge-list li {
+    width: 33.33%;
+    height: 2.9rem;
+    float: left;
+    padding: 0.15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flow-recharge .recharge-content .recharge-list li .list-details {
+    height: 100%;
+    border: 1px solid #dedede;
+    border-radius: 0.25rem;
+    padding-top: 0.45rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flow-recharge .recharge-content .recharge-list li .list-details .flow-text {
+    font-size: 0.85rem;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.flow-recharge .recharge-content .recharge-list li .list-details .price-text {
+    font-size: 0.5rem;
+    color: #999999;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.flow-recharge .recharge-content .recharge-list .active-list .list-details {
+    background-color: #0195ff;
+    border: 1px solid #0195ff;
+    transition: background-color 1s,border 1s;
+}
+
+.flow-recharge .recharge-content .recharge-list .active-list .list-details .flow-text, .flow-recharge .recharge-content .recharge-list .active-list .list-details .price-text {
+    color: #ffffff;
+}
+
+.flow-recharge .recharge-content .recharge-type li {
+    width: 100%;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    overflow: hidden;
+    padding: 0 0.65rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flow-recharge .recharge-content .recharge-type li .type-icon {
+    width: 0.825rem;
+    height: 0.825rem;
+    display: inline-block;
+    background: url('../image/weChatIcon.png') no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.flow-recharge .recharge-content .recharge-type li span {
+    width: 12rem;
+    font-size: 0.65rem;
+    display: inline-block;
+}
+
+.flow-recharge .recharge-content .recharge-type li .check-icon {
+    width: 0.825rem;
+    height: 0.825rem;
+    display: inline-block;
+    background: url('../image/checkIcon.png') no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.flow-recharge .recharge-bottom {
+    margin-top: 1.1rem;
+    padding: 0 0.65rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flow-recharge .recharge-bottom button {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.35rem;
+    background-color: #0195ff;
+    color: #ffffff;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.flow-recharge .recharge-bottom .active-button {
+  background-color: #27a4fd;
+}
+.flow-recharge .recharge-bottom .active-button .loading-content:before{
+  content:'';
+  width:0.6rem;
+  height:0.6rem;
+  background: url('../image/loadingIcon.gif') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+.flow-recharge .recharge-bottom p {
+    padding: 0.8rem 0;
+    text-align: center;
+    color: #999999;
+    font-size: 0.5rem;
+}
