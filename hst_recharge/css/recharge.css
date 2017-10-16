@@ -74,11 +74,13 @@ body {
     -webkit-appearance:none;  /*清除浏览器默认的样式 */
     line-height: normal;
     display: inline-block;
-    vertical-align: 0.15rem;
+    vertical-align: 0.1rem;
 }
 
 .flow-recharge .recharge-content .input-content input::-webkit-input-placeholder { /* WebKit browsers */
-    vertical-align: middle;
+    vertical-align: 0.1rem;
+    font-size: 0.65rem;
+    line-height: normal;
 }
 .flow-recharge .recharge-content .input-content input:focus {
     color: #8b8791;
