@@ -57,7 +57,7 @@ body {
     height: 0.875rem;
     background: url('../image/phoneIcon.png') no-repeat;
     background-size: 100% 100%;
-    vertical-align: middle;
+    vertical-align: -0.1rem;
     display: inline-block;
 }
 
@@ -72,13 +72,13 @@ body {
     esize:none;
     outline:none;  /*清除选中效果的默认蓝色边框 */
     -webkit-appearance:none;  /*清除浏览器默认的样式 */
-    line-height: normal;   //光标问题
+    line-height: normal;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: 0.15rem;
 }
 
 .flow-recharge .recharge-content .input-content input::-webkit-input-placeholder { /* WebKit browsers */
-    line-height: 0.65rem;   //placeholder
+    vertical-align: middle;
 }
 .flow-recharge .recharge-content .input-content input:focus {
     color: #8b8791;
@@ -87,7 +87,7 @@ body {
 .flow-recharge .recharge-content .input-content .close-icon {
     width: 0.55rem;
     height: 0.55rem;
-    vertical-align: middle;
+    vertical-align: 0.1rem;
     background: url('../image/closeIcon.png') no-repeat;
     background-size: 100% 100%;
     display: none;
