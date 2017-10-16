@@ -57,24 +57,37 @@ body {
     height: 0.875rem;
     background: url('../image/phoneIcon.png') no-repeat;
     background-size: 100% 100%;
-    vertical-align: -0.1rem;
+    vertical-align: middle;
     display: inline-block;
 }
 
 .flow-recharge .recharge-content .input-content input {
-    width: 12rem;
+    width: 11.4rem;
     height: 0.65rem;
     font-size: 0.65rem;
-    border: none;
-    line-height: 0.65rem;
+    text-indent: 0;
+    background: transparent;
+    border: 0 none;
+    resize:none;
+    esize:none;
+    outline:none;  /*清除选中效果的默认蓝色边框 */
+    -webkit-appearance:none;  /*清除浏览器默认的样式 */
+    line-height: normal;   //光标问题
     display: inline-block;
-    vertical-align: 0.15rem;
+    vertical-align: middle;
+}
+
+.flow-recharge .recharge-content .input-content input::-webkit-input-placeholder { /* WebKit browsers */
+    line-height: 0.65rem;   //placeholder
+}
+.flow-recharge .recharge-content .input-content input:focus {
+    color: #8b8791;
 }
 
 .flow-recharge .recharge-content .input-content .close-icon {
     width: 0.55rem;
     height: 0.55rem;
-    vertical-align: 0.1rem;
+    vertical-align: middle;
     background: url('../image/closeIcon.png') no-repeat;
     background-size: 100% 100%;
     display: none;
